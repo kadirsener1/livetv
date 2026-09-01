@@ -1,17 +1,18 @@
 import asyncio
-import re
+import os
 from playwright.async_api import async_playwright
 
+# Hedef adresi buraya tanımlayabilirsiniz (Örnek amaçlı genel yapı kullanılmıştır)
 TARGET_URL = "https://livelive24.com/?channel=espn-1-netherlands"
+OUTPUT_FILE = "playlist.m3u"
 
-async def extract_stream():
-    extracted_streams = []
-    iframe_urls = []
+async def extract_and_save_m3u():
+    extracted_m3u8_links = []
 
     async with async_playwright() as p:
-        # Gerçek bir tarayıcı profili ile başlatıyoruz (Cloudflare ve bot korumalarını aşmak için)
+        # Tarayıcıyı başlat (Cloudflare vb. korumaları aşmak için uygun başlıklarla)
         browser = await p.chromium.launch(
-            headless=True,  # Test ederken arka planda çalışanı görmek için False yapabilirsiniz
+            headless=True,
             args=["--no-sandbox", "--disable-setuid-sandbox"]
         )
         
@@ -25,40 +26,26 @@ async def extract_stream():
 
         page = await context.new_page()
 
-        # Ağ isteklerini dinle (.m3u8 veya stream linklerini yakala)
+        # Ağ trafiğini dinle ve sadece .m3u8 uzantılı linkleri yakala
         def intercept_response(response):
             url = response.url
-            if ".m3u8" in url or ".mpd" in url or "playlist" in url:
-                if url not in extracted_streams:
-                    extracted_streams.append(url)
-                    print(f"\n[+] CANLI YAYIN LINKI (m3u8) BULUNDU:\n--> {url}\n")
+            # Linkin m3u8 içerip içermediğini ve geçerli bir URL şeması olduğunu kontrol et
+            if ".m3u8" in url and (url.startswith("http://") or url.startswith("https://")):
+                if url not in extracted_m3u8_links:
+                    extracted_m3u8_links.append(url)
+                    print(f"[+] .m3u8 Linki Yakalandı: {url}")
 
         page.on("response", intercept_response)
 
-        print(f"[*] Sayfaya bağlanılıyor: {TARGET_URL}")
+        print(f"[*] Sayfa yükleniyor: {TARGET_URL}")
         try:
-            # Sayfayı aç ve ağ trafiğinin oturmasını bekle
             await page.goto(TARGET_URL, wait_until="domcontentloaded", timeout=60000)
-            await page.wait_for_timeout(5000) # Reklam ve JS yönlendirmeleri için bekle
+            await page.wait_for_timeout(7000)  # Akışın ve reklamların yüklenmesi için bekleme süresi
         except Exception as e:
-            print(f"[!] Sayfa yükleme uyarısı: {e}")
+            print(f"[!] Sayfa yükleme hatası/uyarısı: {e}")
 
-        # Sayfadaki tüm iframe linklerini tespit et
-        frames = page.frames
-        print(f"[*] Toplam tespit edilen Frame/Iframe sayısı: {len(frames)}")
-        
-        for frame in frames:
-            if frame.url and frame.url != TARGET_URL and "about:blank" not in frame.url:
-                if frame.url not in iframe_urls:
-                    iframe_urls.append(frame.url)
-
-        print("\n--- BULUNAN IFRAME ADRESLERİ ---")
-        for idx, ifr in enumerate(iframe_urls, 1):
-            print(f"{idx}. {ifr}")
-
-        # Eğer yayın bir 'Play' butonuna basılınca başlıyorsa simüle edelim
+        # Olası oynat düğmelerine tıklayarak yayını tetiklemeyi dene
         try:
-            # Olası video/player oynatma butonlarını tıkla
             await page.click("button, .vjs-big-play-button, #player", timeout=3000)
             await page.wait_for_timeout(3000)
         except Exception:
@@ -66,13 +53,22 @@ async def extract_stream():
 
         await browser.close()
 
-    print("\n--- SONUÇ ÖZETİ ---")
-    if extracted_streams:
-        print("[BAŞARILI] Akış Linkleri:")
-        for s in extracted_streams:
-            print(s)
+    # Yakalanan linkleri M3U formatında dosyaya yazdır
+    if extracted_m3u8_links:
+        print(f"\n[*] {len(extracted_m3u8_links)} adet m3u8 linki bulundu. Dosya yazılıyor...")
+        
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            # Standart M3U başlığı
+            f.write("#EXTM3U\n")
+            
+            for idx, link in enumerate(extracted_m3u8_links, 1):
+                # Her kanal için etiket ekle (GSE veya VLC için)
+                f.write(f"#EXTINF:-1,Canli Yayin - Stream {idx}\n")
+                f.write(f"{link}\n")
+                
+        print(f"[BAŞARILI] Linkler '{OUTPUT_FILE}' dosyasına kaydedildi.")
     else:
-        print("[-] Doğrudan .m3u8 linki henüz başlamadı veya token bekliyor. Yukarıdaki iframe linklerini kontrol edin.")
+        print("[-] Aktif .m3u8 yayını bulunamadı. Sayfa yüklenirken akış başlamamış olabilir.")
 
 if __name__ == "__main__":
-    asyncio.run(extract_stream())
+    asyncio.run(extract_and_save_m3u())
