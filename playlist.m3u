@@ -1,3 +1,9 @@
 #EXTM3U
-#EXTINF:-1,Canli Yayin - Stream 1
-https://ds164.bluetier.top/ESPN1NL/index.m3u8?token=RVNQTjFOTHxub19jaGVja19pcHwxNzg4MjIzMzQ2.d0f0a1da65af36205c8dec6fd570870b38e79d48bec4ea97b89b126c5ff15331
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beIN SPORTS 1
+#EXTVLCOPT:http-referrer=https://livelive24.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+https://ds164.bluetier.top/beINSPORTS1TR/index.m3u8?token=YmVJTlNQT1JUUzFUUnxub19jaGVja19pcHwxNzg4MjI0MjA0.8311cc68bfce96abd31c466b4f23b7c4d27585865ae5011867059f818bddc1f2
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beIN SPORTS 2
+#EXTVLCOPT:http-referrer=https://livelive24.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+https://ds164.bluetier.top/beINSPORTS2TR/index.m3u8?token=YmVJTlNQT1JUUzJUUnxub19jaGVja19pcHwxNzg4MjI0MjA4.bcda8819de54ce82e0a0011f1440fe5c964b6102660cf7574274370ed54ae26c
