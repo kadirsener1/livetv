@@ -1,9 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beIN SPORTS 12
-#EXTVLCOPT:http-referrer=https://livelive24.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-https://patient-hill-ca2a.aymentra9.workers.dev/?channel=BEINSPORTS2TR
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beIN SPORTS 2
-#EXTVLCOPT:http-referrer=https://livelive24.com/
+#EXTVLCOPT:http-referrer=https://patient-hill-ca2a.aymentra9.workers.dev/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-https://ds164.bluetier.top/beINSPORTS2TR/index.m3u8?token=YmVJTlNQT1JUUzJUUnxub19jaGVja19pcHwxNzg4MjkxOTc4.edba7ac697edc745e3fe9780cae31fa6f475c53993ef90afe0e6e40cd03034bf
+https://ds164.bluetier.top/beINSPORTS2TR/index.m3u8?token=YmVJTlNQT1JUUzJUUnxub19jaGVja19pcHwxNzg4Mjk5MTcw.48bd50731d729221683ff1587b590ac63b850c4959728496573617346628701f
+
