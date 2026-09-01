@@ -1,41 +1,60 @@
 name: Stream Link Scraper
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Manuel çalıştırmak için
   schedule:
     - cron: '*/30 * * * *'  # Her 30 dakikada bir otomatik çalışır
+
+# Depoya yazma (push) izni vermek için gerekli izinler
+permissions:
+  contents: write
 
 jobs:
   run-scraper:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Proje kodlarını çek
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2. Python ortamını kur
       - name: Set up Python 3.10
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
           cache: 'pip'
 
+      # 3. Bağımlılıkları yükle
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # 4. Tarayıcıyı kur
       - name: Install Playwright Browsers
         run: |
           playwright install --with-deps chromium
 
+      # 5. Scraper'ı çalıştır (Bu adım playlist.m3u dosyasını oluşturur)
       - name: Run Scraper
         run: |
           python scraper.py
 
-      # Oluşturulan .m3u dosyasını GitHub arayüzünden indirilebilir hale getirir
-      - name: Upload M3U Playlist as Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: live-streams-playlist
-          path: playlist.m3u
-          retention-days: 2  # Dosya 2 gün boyunca indirilebilir kalır
+      # 6. Oluşan .m3u dosyasını doğrudan depoya (Commit & Push) yükle
+      - name: Commit and Push changes
+        run: |
+          # Git kullanıcı bilgilerini ayarla
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Eğer dosya değiştiyse veya yeni oluşturulduysa ekle
+          git add playlist.m3u
+          
+          # Değişiklik kontrolü yap ve commit et
+          if git diff --cached --quiet; then
+            echo "Herhangi bir değişiklik yok, push edilmeyecek."
+          else
+            git commit -m "Güncel playlist.m3u eklendi [skip ci]"
+            git push
+          fi
