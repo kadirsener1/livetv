@@ -2,5 +2,6 @@
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beIN SPORTS 2
 #EXTVLCOPT:http-referrer=https://patient-hill-ca2a.aymentra9.workers.dev/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-https://ds164.bluetier.top/beINSPORTS2TR/index.m3u8?token=YmVJTlNQT1JUUzJUUnxub19jaGVja19pcHwxNzg4Mzc5NjI0.b630444fa5069ed57000feafedcb8cdd7938d457f12a00d71bd31002edd706fa
+#EXTHTTP:{"Referer":"https://patient-hill-ca2a.aymentra9.workers.dev/","User-Agent":"Mozilla/5.0"}
+https://ds164.bluetier.top/beINSPORTS2TR/index.m3u8?token=YmVJTlNQT1JUUzJUUnxub19jaGVja19pcHwxNzg4Mzg4Mjc0.fca712157a770112c082be0e86b6ecb61fb719f0f8167b7e3f406a4da1ad778c
 
