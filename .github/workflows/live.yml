@@ -1,4 +1,4 @@
-name: Stream Link Scraper
+name: livetv Link güncelle
 
 on:
   workflow_dispatch: # Manuel çalıştırmak için
@@ -39,7 +39,7 @@ jobs:
       # 5. Scraper'ı çalıştır (playlist.m3u ve livetv/*.m3u8 dosyalarını oluşturur)
       - name: Run Scraper
         run: |
-          python scraper.py
+          python livetv.py
 
       # 6. Oluşan dosyaları depoya (Commit & Push) yükle
       - name: Commit and Push changes
