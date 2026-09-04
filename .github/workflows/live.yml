@@ -40,6 +40,7 @@ jobs:
       - name: Run Scraper
         run: |
           python tv247tr.py
+          python tv247ws.py
 
       # 6. Oluşan dosyaları depoya (Commit & Push) yükle
       - name: Commit and Push changes
