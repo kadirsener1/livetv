@@ -8,14 +8,14 @@ from playwright.async_api import async_playwright
 CHANNELS_FILE = "channels.json"
 OUTPUT_FILE = "playlist.m3u"
 LIVETV_DIR = "livetv"  # Bireysel m3u8 dosyalarının kaydedileceği klasör
-MAX_CONCURRENT_TASKS = 4
+MAX_CONCURRENT_TASKS = 3
 
 DEFAULT_CHANNELS = [
     {
-        "name": "Hoofoot Kanal",
+        "name": "Abc",
         "group": "Spor",
         "logo": "",
-        "url": "https://hoofoot.ru/iptv/channel?id=6303492"
+        "url": "https://tvnow247.top/watch/abc-usa/"
     }
 ]
 
