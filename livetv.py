@@ -5,10 +5,10 @@ import re
 from urllib.parse import urlparse
 from playwright.async_api import async_playwright
 
-CHANNELS_FILE = "channels.json"
-OUTPUT_FILE = "playlist.m3u"
-LIVETV_DIR = "livetv"  # Bireysel m3u8 dosyalarının kaydedileceği klasör
-MAX_CONCURRENT_TASKS = 3
+CHANNELS_FILE = "channels247.json"
+OUTPUT_FILE = "tv247.m3u"
+LIVETV_DIR = "tv247"  # Bireysel m3u8 dosyalarının kaydedileceği klasör
+MAX_CONCURRENT_TASKS = 2
 
 DEFAULT_CHANNELS = [
     {
@@ -169,7 +169,7 @@ async def main():
         await browser.close()
 
     if results:
-        # 1. Toplu playlist.m3u dosyasını yazdır
+        # 1. Toplu tv247.m3u dosyasını yazdır
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for item in results:
