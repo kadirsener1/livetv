@@ -2,15 +2,20 @@
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beIN SPORTS 1
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MiIsInRzIjoxNzg4NTU1NDIzNTE0fQ
+https://live.tv247.site/live/62/index.m3u8?v=1&e=1788642764&k=667d1ba584f9f7001401144cae91ee5f
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beIN SPORTS 2
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/63/index.m3u8?v=1&e=1788642765&k=dfbfa13e2222c0182f23933d670a0610
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beIN SPORTS 3
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NCIsInRzIjoxNzg4NTU1NDUzMzIyfQ
+https://live.tv247.site/live/64/index.m3u8?v=1&e=1788642765&k=1eea3b1be0d60c4e07e2fb3a361e2d14
 
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beIN SPORTS 5
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beIN SPORTS 4
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/1010/index.m3u8?v=1&e=1788641875&k=b5a78944744a7a650dc2f96b1865c191
+https://live.tv247.site/live/67/index.m3u8?v=1&e=1788642765&k=bbb604b601a872ea39f00ab3956ccb2e
 
