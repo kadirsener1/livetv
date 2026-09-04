@@ -1,81 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ABC USA-US
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beinsports2
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/51/index.m3u8?v=1&e=1788648205&k=ea79555b262d68ed95cb8e40f533ec36
+https://live.tv247.site/live/63/index.m3u8?v=1&e=1788649591&k=df8dac50cd4bb10332026fe5ea39e906
 
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Antenna TV USA-US
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beinsports3
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/283/index.m3u8?v=1&e=1788648211&k=705493a93a99ee606531625bd1e305f1
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",A&E USA-US
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/302/index.m3u8?v=1&e=1788648215&k=cfbf67553851f48e8d46c20daba79657
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",AMC USA-US
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/303/index.m3u8?v=1&e=1788648215&k=8b0cfc3ae7cdbf0628fb02ad3fe0355c
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Animal Planet-US
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/304/index.m3u8?v=1&e=1788648222&k=583cf2fb77e63e5ba4d4fd85f3bcf979
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Astro SuperSport 4-MY
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/126/index.m3u8?v=1&e=1788648236&k=8eec91a96d5619b0e9f01d981e64aa94
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 1 Premium-RS
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/134/index.m3u8?v=1&e=1788648237&k=3620d334844374977b0a33b30b925ccf
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 2 Premium-RS
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMzUiLCJ0cyI6MTc4ODU2MTg0NDM2MX0
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 3 Premium-RS
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/139/index.m3u8?v=1&e=1788648244&k=4329115d428ba1a352ea294e167e01c9
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 2 Serbia-RS
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/430/index.m3u8?v=1&e=1788648250&k=34a9a6be80d5205c20c35c9f3f34e65c
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 3 Serbia-RS
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzEiLCJ0cyI6MTc4ODU2MTg1ODI2M30
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 4 Serbia-RS
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/581/index.m3u8?v=1&e=1788648256&k=7fd6005ccf2a68a4104d4527c217b520
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 1 Croatia-HR
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/432/index.m3u8?v=1&e=1788648260&k=dbdeacf10aa31278c949cd3882ad4413
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 2 Croatia-HR
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/433/index.m3u8?v=1&e=1788648262&k=66b0c06f3c0ee6e0de2227ca79b139ba
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 3 Croatia-HR
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/434/index.m3u8?v=1&e=1788648265&k=750df749c1383653bf736613d194cef9
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 4 Croatia-HR
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/580/index.m3u8?v=1&e=1788648265&k=14e4b9dcf445713d29bbdce7a07d71ef
+https://live.tv247.site/live/64/index.m3u8?v=1&e=1788649589&k=fe262a336fdfa0236b4ee50ec1706232
 
