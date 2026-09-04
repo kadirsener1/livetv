@@ -1,6 +1,11 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beIN SPORTS 1
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=1788616344&k=823ddb405ab1206c6b27a11d6073085d
+
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beIN SPORTS 2
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MiIsInRzIjoxNzg4NTI5MjgxMTQ2fQ
+https://live.tv247.site/live/62/index.m3u8?v=1&e=1788616346&k=c4db95ded1d023bee00d5a9e755e97ef
 
