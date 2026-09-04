@@ -5,7 +5,7 @@ import re
 from urllib.parse import urlparse
 from playwright.async_api import async_playwright
 
-CHANNELS_FILE = "tv247ws.json"
+CHANNELS_FILE = "tv247tr.json"
 OUTPUT_FILE = "tv247tr.m3u"
 LIVETV_DIR = "tv247tr"
 MAX_CONCURRENT_TASKS = 8  # Sisteminizin gücüne göre 6-12 arası ayarlayabilirsiniz
