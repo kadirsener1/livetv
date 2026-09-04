@@ -7,20 +7,27 @@ from playwright.async_api import async_playwright
 
 CHANNELS_FILE = "channels.json"
 OUTPUT_FILE = "playlist.m3u"
-MAX_CONCURRENT_TASKS = 4  # Aynı anda taranacak kanal sayısı (Sistem gücüne göre 3-8 arası ayarlanabilir)
+LIVETV_DIR = "livetv"  # Bireysel m3u8 dosyalarının kaydedileceği klasör
+MAX_CONCURRENT_TASKS = 4
 
 DEFAULT_CHANNELS = [
     {
-        "name": "Abc usa",
+        "name": "Hoofoot Kanal",
         "group": "Spor",
         "logo": "",
-        "url": "https://tvnow247.top/watch/abc-usa/"
+        "url": "https://hoofoot.ru/iptv/channel?id=6303492"
     }
 ]
 
 def get_base_url(url):
     parsed = urlparse(url)
     return f"{parsed.scheme}://{parsed.netloc}/"
+
+def sanitize_filename(name):
+    """Dosya adındaki geçersiz karakterleri temizler ve boşlukları alt çizgi yapar."""
+    # Windows/Linux için yasaklı karakterleri temizle: \ / : * ? " < > |
+    clean_name = re.sub(r'[\\/*?:"<>|]', "", name)
+    return clean_name.strip().replace(" ", "_")
 
 async def get_stream_link(context, channel, semaphore):
     async with semaphore:
@@ -29,20 +36,18 @@ async def get_stream_link(context, channel, semaphore):
         
         page = await context.new_page()
         
-        # Gereksiz kaynakları (resim, font, medya vb.) engelleyerek hız kazandır
+        # Gereksiz kaynakları engelle
         await page.route(
             "**/*",
             lambda route: route.abort() if route.request.resource_type in ["image", "media", "font", "imageset"] else route.continue_()
         )
         
-        # Reklam sekmelerini doğrudan kapat
         page.on("popup", lambda popup: popup.close())
 
         found_link = None
         stream_referer = referer
         link_found_event = asyncio.Event()
 
-        # 1. Ağ Trafiğini Dinle
         async def intercept_response(response):
             nonlocal found_link, stream_referer
             if link_found_event.is_set():
@@ -71,19 +76,16 @@ async def get_stream_link(context, channel, semaphore):
                 Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
             """)
 
-            # 'domcontentloaded' sayfa iskeleti geldiğinde devam eder (çok daha hızlıdır)
             try:
                 await page.goto(target_url, wait_until="domcontentloaded", timeout=15000)
             except Exception:
                 pass
 
-            # Eğer ağ trafiğinden hemen link gelmediyse kısa bir süre bekle ya da frame'leri tara
             try:
                 await asyncio.wait_for(link_found_event.wait(), timeout=3.0)
             except asyncio.TimeoutError:
                 pass
 
-            # Link henüz bulunamadıysa frame ve butonları kontrol et
             if not link_found_event.is_set():
                 for frame in page.frames:
                     try:
@@ -96,7 +98,6 @@ async def get_stream_link(context, channel, semaphore):
                             link_found_event.set()
                             break
 
-                        # Oynatıcı tetikleyicilerine hızlı tıklama denemesi
                         selectors = [".play", "#play", "video", ".vjs-big-play-button", ".jw-display-icon-container"]
                         for sel in selectors:
                             loc = frame.locator(sel).first
@@ -106,7 +107,6 @@ async def get_stream_link(context, channel, semaphore):
                     except Exception:
                         pass
 
-            # Tıklamadan sonra ağ yanıtı için son kısa bekleme
             if not link_found_event.is_set():
                 try:
                     await asyncio.wait_for(link_found_event.wait(), timeout=5.0)
@@ -139,6 +139,9 @@ async def main():
     else:
         channels = DEFAULT_CHANNELS
 
+    # 'livetv' klasörü yoksa oluştur
+    os.makedirs(LIVETV_DIR, exist_ok=True)
+
     semaphore = asyncio.Semaphore(MAX_CONCURRENT_TASKS)
 
     async with async_playwright() as p:
@@ -159,16 +162,14 @@ async def main():
             viewport={"width": 1280, "height": 720}
         )
 
-        # Tüm kanalları eşzamanlı olarak tara
         tasks = [get_stream_link(context, ch, semaphore) for ch in channels]
         results_raw = await asyncio.gather(*tasks)
-
-        # Başarılı sonuçları filtrele
         results = [res for res in results_raw if res is not None]
 
         await browser.close()
 
     if results:
+        # 1. Toplu playlist.m3u dosyasını yazdır
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for item in results:
@@ -176,7 +177,22 @@ async def main():
                 f.write(f'#EXTVLCOPT:http-referrer={item["referer"]}\n')
                 f.write(f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n')
                 f.write(f"{item['stream']}\n\n")
-        print(f"\n[+] Toplam {len(results)} kanal ile '{OUTPUT_FILE}' başarıyla oluşturuldu.")
+        
+        # 2. Her kanal için livetv klasörüne ayrı m3u8 dosyası oluştur
+        print("\n[*] Bireysel m3u8 dosyaları oluşturuluyor...")
+        for item in results:
+            safe_name = sanitize_filename(item["name"])
+            channel_file_path = os.path.join(LIVETV_DIR, f"{safe_name}.m3u8")
+            
+            with open(channel_file_path, "w", encoding="utf-8") as cf:
+                cf.write("#EXTM3U\n")
+                cf.write(f'#EXTINF:-1 tvg-logo="{item["logo"]}" group-title="{item["group"]}",{item["name"]}\n')
+                cf.write(f'#EXTVLCOPT:http-referrer={item["referer"]}\n')
+                cf.write(f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n')
+                cf.write(f"{item['stream']}\n")
+                
+        print(f"[+] Toplam {len(results)} kanal için '{LIVETV_DIR}/' altında bağımsız m3u8 dosyaları oluşturuldu.")
+        print(f"[+] '{OUTPUT_FILE}' başarıyla güncellendi.")
     else:
         print("\n[-] Uygun yayın linki bulunamadı.")
 
