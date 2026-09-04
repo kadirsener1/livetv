@@ -1,4 +1,4 @@
-name: livetv Link güncelle
+name: tv247 tr Link güncelle
 
 on:
   workflow_dispatch: # Manuel çalıştırmak için
@@ -39,7 +39,7 @@ jobs:
       # 5. Scraper'ı çalıştır (playlist.m3u ve livetv/*.m3u8 dosyalarını oluşturur)
       - name: Run Scraper
         run: |
-          python livetv.py
+          python tv247.py
 
       # 6. Oluşan dosyaları depoya (Commit & Push) yükle
       - name: Commit and Push changes
@@ -49,7 +49,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           
           # Hem ana playlist dosyasını hem de livetv klasörünü ekle
-          git add playlist.m3u livetv/
+          git add tv247.m3u tv247/
           
           # Değişiklik kontrolü yap ve commit et
           if git diff --cached --quiet; then
