@@ -28,5 +28,12 @@
     "group": "Spor",
     "logo": "https://logo-adresi.com/logo.png",
     "url": "https://tvnow247.top/watch/bein-sports-5-turkey/"
+},
+
+    {
+    "name": "test",
+    "group": "Spor",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=fussball&code=de&user=cdnlivetv&plan=free"
 }
-]
+    ]
