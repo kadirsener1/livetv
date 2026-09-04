@@ -3,7 +3,7 @@ name: Stream Link Scraper
 on:
   workflow_dispatch: # Manuel çalıştırmak için
   schedule:
-    - cron: '*/30 * * * *'  # Her 30 dakikada bir otomatik çalışır
+    - cron: '0 */2 * * *'  # Her 2 saatte bir otomatik çalışır (00:00, 02:00, 04:00, ...)
 
 # Depoya yazma (push) izni vermek için gerekli izinler
 permissions:
@@ -36,25 +36,25 @@ jobs:
         run: |
           playwright install --with-deps chromium
 
-      # 5. Scraper'ı çalıştır (Bu adım playlist.m3u dosyasını oluşturur)
+      # 5. Scraper'ı çalıştır (playlist.m3u ve livetv/*.m3u8 dosyalarını oluşturur)
       - name: Run Scraper
         run: |
           python scraper.py
 
-      # 6. Oluşan .m3u dosyasını doğrudan depoya (Commit & Push) yükle
+      # 6. Oluşan dosyaları depoya (Commit & Push) yükle
       - name: Commit and Push changes
         run: |
           # Git kullanıcı bilgilerini ayarla
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Eğer dosya değiştiyse veya yeni oluşturulduysa ekle
-          git add playlist.m3u
+          # Hem ana playlist dosyasını hem de livetv klasörünü ekle
+          git add playlist.m3u livetv/
           
           # Değişiklik kontrolü yap ve commit et
           if git diff --cached --quiet; then
             echo "Herhangi bir değişiklik yok, push edilmeyecek."
           else
-            git commit -m "Güncel playlist.m3u eklendi [skip ci]"
+            git commit -m "Playlist ve LiveTV kanalları güncellendi [skip ci]"
             git push
           fi
