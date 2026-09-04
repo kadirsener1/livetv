@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 from playwright.async_api import async_playwright
 
 CHANNELS_FILE = "tv247tr.json"
-OUTPUT_FILE = "tv247.m3u"
+OUTPUT_FILE = "tv247tr.m3u"
 LIVETV_DIR = "tv247"  # Bireysel m3u8 dosyalarının kaydedileceği klasör
 MAX_CONCURRENT_TASKS = 2
 
