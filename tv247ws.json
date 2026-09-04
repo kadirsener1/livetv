@@ -1,39 +1,133 @@
-[
 {
-    "name": "beinsports1",
-    "group": "Spor",
+    "name": "ABC USA-US",
+    "group": "World Sports",
     "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://tvnow247.top/watch/bein-sports-1-turkey/"
-},
-{
-    "name": "beinsports2",
-    "group": "Spor",
+    "url": "https://tvnow247.top/embed/abc-usa/"
+  },
+  {
+    "name": "AHC (American Heroes Channel)-US",
+    "group": "World Sports",
     "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://tvnow247.top/watch/bein-sports-2-turkey/"
-},
-    {
-    "name": "beinsports3",
-    "group": "Spor",
+    "url": "https://tvnow247.top/embed/ahc-american-heroes-channel/"
+  },
+  {
+    "name": "Antenna TV USA-US",
+    "group": "World Sports",
     "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://tvnow247.top/watch/bein-sports-3-turkey/"
-},
-    {
-    "name": "beinsports4",
-    "group": "Spor",
+    "url": "https://tvnow247.top/embed/antenna-tv-usa/"
+  },
+  {
+    "name": "A&E USA-US",
+    "group": "World Sports",
     "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://tvnow247.top/watch/bein-sports-4-turkey/"
-},
-    {
-    "name": "beinsports5",
-    "group": "Spor",
+    "url": "https://tvnow247.top/embed/a-e-usa/"
+  },
+  {
+    "name": "AMC USA-US",
+    "group": "World Sports",
     "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://tvnow247.top/watch/bein-sports-5-turkey/"
-},
-
-    {
-    "name": "test",
-    "group": "Spor",
+    "url": "https://tvnow247.top/embed/amc-usa/"
+  },
+  {
+    "name": "Animal Planet-US",
+    "group": "World Sports",
     "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=fussball&code=de&user=cdnlivetv&plan=free"
-}
-    ]
+    "url": "https://tvnow247.top/embed/animal-planet/"
+  },
+  {
+    "name": "Astro SuperSport 1-MY",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/astro-supersport-1/"
+  },
+  {
+    "name": "Astro SuperSport 2-MY",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/astro-supersport-2/"
+  },
+  {
+    "name": "Astro SuperSport 3-MY",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/astro-supersport-3/"
+  },
+  {
+    "name": "Astro SuperSport 4-MY",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/astro-supersport-4/"
+  },
+  {
+    "name": "Arena Sport 1 Premium-RS",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/arena-sport-1-premium/"
+  },
+  {
+    "name": "Arena Sport 2 Premium-RS",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/arena-sport-2-premium/"
+  },
+  {
+    "name": "Arena Sport 3 Premium-RS",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/arena-sport-3-premium/"
+  },
+  {
+    "name": "Arena Sport 1 Serbia-RS",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/arena-sport-1-serbia/"
+  },
+  {
+    "name": "Arena Sport 2 Serbia-RS",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/arena-sport-2-serbia/"
+  },
+  {
+    "name": "Arena Sport 3 Serbia-RS",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/arena-sport-3-serbia/"
+  },
+  {
+    "name": "Arena Sport 4 Serbia-RS",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/arena-sport-4-serbia/"
+  },
+  {
+    "name": "Arena Sport 1 Croatia-HR",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/arena-sport-1-croatia/"
+  },
+  {
+    "name": "Arena Sport 2 Croatia-HR",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/arena-sport-2-croatia/"
+  },
+  {
+    "name": "Arena Sport 3 Croatia-HR",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/arena-sport-3-croatia/"
+  },
+  {
+    "name": "Arena Sport 4 Croatia-HR",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/arena-sport-4-croatia/"
+  },
+  {
+    "name": "Alkass One-QA",
+    "group": "World Sports",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/alkass-one/"
+  }
+]
