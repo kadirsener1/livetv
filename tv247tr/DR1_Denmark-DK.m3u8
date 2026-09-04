@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DR1 Denmark-DK
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/801/index.m3u8?v=1&e=1788651110&k=24215ef25952a1f830a59cd4d7b4e1c3

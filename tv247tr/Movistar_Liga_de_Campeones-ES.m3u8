@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Movistar Liga de Campeones-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/435/index.m3u8?v=1&e=1788651520&k=dabe8aa012522c7fa7cd5ee1e2c34575

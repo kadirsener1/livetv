@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",RTP 3 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/721/index.m3u8?v=1&e=1788651805&k=d8cc4848d83adab568e450157a1973bd

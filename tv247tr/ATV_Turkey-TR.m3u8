@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ATV Turkey-TR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/1000/index.m3u8?v=1&e=1788650778&k=3740d89ccf8a22980d370d424ef18bdc
