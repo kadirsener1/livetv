@@ -1,21 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beinsports1
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/62/index.m3u8?v=1&e=1788649703&k=0c3d420b5d4a8ceb31602049ba19827d
-
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beinsports2
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/63/index.m3u8?v=1&e=1788649704&k=241eaf7e05871c97f37aa4a583b7656f
-
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beinsports3
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/64/index.m3u8?v=1&e=1788649705&k=f1d19381f5beb2bd1d5fc2471cb03fc8
+https://live.tv247.site/live/64/index.m3u8?v=1&e=1788649869&k=d5394f2f484b51ec10c22d9e2d21951a
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",beinsports4
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/67/index.m3u8?v=1&e=1788649706&k=60c30a5aa1b107f812e6e17386cbd9ce
+https://live.tv247.site/live/67/index.m3u8?v=1&e=1788649874&k=6e53342c93de8ff4a37499b8eaae3d9d
 
