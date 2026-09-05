@@ -1,6 +1,96 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="" group-title="Spor",Abc
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/51/index.m3u8?v=1&e=1788660874&k=db863d1930c8ae5a9f89b758c7f9b7f0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=1788661088&k=0fb13fcf404d02d63f6b95bdcaaa6f13
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports2
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MyIsInRzIjoxNzg4NTc0NjkwMjcxfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports3
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/64/index.m3u8?v=1&e=1788661087&k=26797d32fd811656a24e521a4f5d1dfa
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports4
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/67/index.m3u8?v=1&e=1788661085&k=65ed172017854ad6e29352c58033c4c9
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports5
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/1010/index.m3u8?v=1&e=1788661091&k=cec34c0e64c4a2961f046f4863f07317
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports1cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3ODg1ODkwODc4OTg6Y2RubGl2ZXR2LnR2OjhiODMzMjFlMTc5OGE5ZDIuOGQyNTI0NDY5NTRhYzhmNWY0ODIyMWI4MWMwMWE0ZWM4MTE3NjQ0MTc2OWYyNGQ1NTI1NjM4YmEzY2QyMjUxMA
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports2cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc04/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA0OjE3ODg1ODkwODgyMDI6Y2RubGl2ZXR2LnR2OjIxYzU4ZjU1M2I1OTBjODQuYmE0MzZmYjFiMTJiNzA2ZTExZjg3ZTYxNjAyYjJlNjQ1ZGRhZGZmM2Y2ODUxYjBhOWJlNTFkNTNiN2RhZDk5Yw
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports3cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc08/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA4OjE3ODg1ODkwODg1MTE6Y2RubGl2ZXR2LnR2OjRiZmI3NDUxNzgwNTFlM2EuMzY5YzRjYWE4NzgxZGZlZDM5YjY5NDYyMWQ0OWFiYmM5ZDczMDNhNjMxOTI4NDk5YWQ3MTNmOGQxZjkzZDI2NQ
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports4cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBkOjE3ODg1ODkwODg2NDE6Y2RubGl2ZXR2LnR2Ojk0YzY5NjY1M2ZlYmY5NTUuZjE5ZGNlNjM5NjExZDRiZDk1MmJlZTBiNjAxODIwZGU5NDM3MzI4N2NiOWI1MmQ1ODdiOGNmNmZmZGQ2NGU3Yg
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports5cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76ca991/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhOTkxOjE3ODg1ODkwODg4NDU6Y2RubGl2ZXR2LnR2OmEwYzk5NzAyOWUzMGRiMDUuOWVkMTQ4MTYwZDJkOGM5OWFmN2NkZGI0ZDk2YmNlMGQ4ODUxZDUwYzdiNGY0NDNlNmMxOWJhZmI0NTM0MzVjOA
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsportsmax1cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc11/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzExOjE3ODg1ODkwODg5ODU6Y2RubGl2ZXR2LnR2OjVmZTRhOGQxOWM3MTM0YjMuYzVkZjkzZjkzOWQ3NGU0MTVlNWM1Y2Y1NTVkNTQ5OTUyOTY0MWQyMGYyNzA1ZTgyODVjMmM4NThlMTg3NTBlYg
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsportsmax2cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc13/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzEzOjE3ODg1ODkwODkyMTY6Y2RubGl2ZXR2LnR2OjhiZjFjZDM3OTQ4ZmYyMDAuZjM1N2FjZjZlYjg4MGMzYjA5ZTc4YjA0NmIyODQ2OTg0NDI1YmRhYjIzNDZjNDAzYWExN2MzMjFiYTljZjJkZg
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsportshabercdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBmOjE3ODg1ODkwODkzMzY6Y2RubGl2ZXR2LnR2OjU2MzM3NWU4OGRkZjRkMDAuNmQzMGEyNGFhOWViOGE5YzI2ODc5YjY1Yjg2MTJiZTdmNzUwOWUzYjZmMDc5Mjc0NjE2MGQ3NGJjMTEzMWU1MA
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trssportcdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76caa87/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhYTg3OjE3ODg1ODkwODk1Njg6Y2RubGl2ZXR2LnR2OjI5NmNiYmUyN2Q2MTY5ODYuNGMzYzlmNzlkNWY3ZWI0N2QxMDViZDExNmNkODgwZjQ5MGIwNTYwNWFkZjkwNzA2YzJkMTFkYTgyNGU1Y2U2MA
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trssport2cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc31/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzMxOjE3ODg1ODkwODk2OTI6Y2RubGl2ZXR2LnR2Ojk1YmZjMmFhMDA1OGY2YjIuNjFiNGJjMWE2YWEwODVmYjFlNmFjMzMxNzM4YjQ1M2Y2NjhlY2Y4YzhkYjQ3ZjZkNjBkNGU0MzBjNGE3N2VjMg
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trtivibuspor1cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3b/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNiOjE3ODg1ODkwODk5ODI6Y2RubGl2ZXR2LnR2OjgzZmI4ZGI4N2IzMGFiMDAuY2VlZDIxZWI5ZjQyMzIwOWEzZmY5YzBiZTZiZGI1NGI3OTA2YTk4YzcyMDM0ODg2YzljM2UxYzQ2ZjA1NmJhOA
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trtivibuspor2cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNkOjE3ODg1ODkwOTAwODI6Y2RubGl2ZXR2LnR2OjE0NmJlMDhhOTY5YjQ2ZjEuNWI1MGVmMTQxMmM5ZTA2ZDc4MWYzNmJlODFiMjAwMTJiNTFhYTgyNWMxNjc2ODVmNzM5NmY3NjcwYWE1ZGY5YQ
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trtivibuspor3cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNmOjE3ODg1ODkwOTAzNjE6Y2RubGl2ZXR2LnR2Ojc4MmYwMmVlMmE5ZWZkMjYuNDNmNTAzZGFmMmI0ZTI1ZjRmODljYjcxNGE2MzUzMDYxZjRlZmI1NTE1YzQ2ZmNiYzZlZjkxZTBlY2UzNDM4NQ
+
+#EXTINF:-1 tvg-logo="" group-title="Spor",trtivibuspor4cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc40/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzQwOjE3ODg1ODkwOTA0NjY6Y2RubGl2ZXR2LnR2OjBlYzFiNjM1ZDQwMjdhNmMuZTdhZjQyYjg5YWIxZDUzZDUyOWQ3NTZmZDVhNmE5NjhlY2M2ZjEwMjIxYjBhNzY4MjlhYTI4N2VlYjY1ZmNjMg
 
