@@ -1,8 +1,39 @@
 [
-    {
-    "name": "test",
+    
+{
+    "name": "beinsports1",
     "group": "Spor",
     "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://hoofoot.ru/iptv/channel?id=7644554"
+    "url": "https://tvnow247.top/embed/bein-sports-1-turkey/"
+},
+{
+    "name": "beinsports2",
+    "group": "Spor",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/bein-sports-2-turkey/"
+},
+    {
+    "name": "beinsports3",
+    "group": "Spor",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/bein-sports-3-turkey/"
+},
+    {
+    "name": "beinsports4",
+    "group": "Spor",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/bein-sports-4-turkey/"
+},
+    {
+    "name": "beinsports5",
+    "group": "Spor",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://tvnow247.top/embed/bein-sports-5-turkey/",
+},
+    {
+    "name": "beinsports1cdn",
+    "group": "Spor",
+    "logo": "https://logo-adresi.com/logo.png",
+    "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%201&code=tr&user=cdnlivetv&plan=free"
 }
     ]
