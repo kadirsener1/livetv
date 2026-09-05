@@ -11,8 +11,8 @@ LIVETV_DIR = "tv247tr"
 
 # HIZ AYARLARI
 # Bilgisayarınız ve internetiniz iyiyse bunu 12-15 yapabilirsiniz. Standart PC için 8-10 idealdir.
-MAX_CONCURRENT_TASKS = 3 
-MAX_RETRIES = 1  # 2 yerine 1 yapıldı (Ölü kanallarda vakit kaybetmemek için)
+MAX_CONCURRENT_TASKS = 1 
+MAX_RETRIES = 2  # 2 yerine 1 yapıldı (Ölü kanallarda vakit kaybetmemek için)
 
 # Engellenecek reklam ve gereksiz domainler
 AD_DOMAINS = [
