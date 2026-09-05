@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Formula 1-FR
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/273/index.m3u8?v=1&e=1788682799&k=814dd57dea5c28a001934a5dd79dc6a4
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/273/index.m3u8?v=1&e=1788713235&k=dceba0e088ab1335217df2e2b5eb0c95

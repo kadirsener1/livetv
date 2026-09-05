@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Arena Italy-IT
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/462/index.m3u8?v=1&e=1788683043&k=954dc51b3ce7192cf8bbdb7ec919c909
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/462/index.m3u8?v=1&e=1788714171&k=7adf2f6fc203608da6456ebd61b1ce75

@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",NBC Sports Philadelphia-US
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/777/index.m3u8?v=1&e=1788683568&k=3c6e40fd296545fa14b9f3de76e4cc15
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/777/index.m3u8?v=1&e=1788713746&k=faac242c68c87b28237fdef498db6290

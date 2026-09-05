@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",PDC TV-GB
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/43/index.m3u8?v=1&e=1788682851&k=1944ba1f8a5375172e23e6b177dc2352
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/43/index.m3u8?v=1&e=1788713270&k=e9866799e3fa0808cd6150d72b423042

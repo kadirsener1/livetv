@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport 6 NZ-NZ
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/593/index.m3u8?v=1&e=1788683167&k=46992f6f0d7bc88cf7e1e452dec8767d
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/593/index.m3u8?v=1&e=1788713475&k=64043a4c120d8ffc80b913cca26b88cd

@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Calcio Italy-IT
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/870/index.m3u8?v=1&e=1788683046&k=030262d6f48af60a6ca87163a3bce42b
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/870/index.m3u8?v=1&e=1788714172&k=7e6f72d39da69eb7b00f41cb52ca2543

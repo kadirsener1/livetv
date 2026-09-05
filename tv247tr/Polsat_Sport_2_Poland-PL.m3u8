@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Polsat Sport 2 Poland-PL
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/50/index.m3u8?v=1&e=1788683213&k=a11066c8851234d2427f8cb1ba64f5d6
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/50/index.m3u8?v=1&e=1788713502&k=03e4db095f64c3bc5af8d4d365e0f376

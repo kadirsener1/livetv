@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN LaLiga-ES
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/538/index.m3u8?v=1&e=1788682757&k=fd7cb52c2fa8c55b5c62b3b530fc418e
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/538/index.m3u8?v=1&e=1788713206&k=94aafe936e59a2a93c9b5d8a0a372779
