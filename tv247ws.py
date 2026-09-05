@@ -11,7 +11,7 @@ LIVETV_DIR = "tv247tr"
 
 # 800 kanal için ideal kararlılık hızı. Sisteminiz ve internetiniz çok iyiyse 6 yapabilirsiniz.
 # Çok yüksek sayı sitelerin sizi engellemesine (HTTP 429) yol açar.
-MAX_CONCURRENT_TASKS = 3
+MAX_CONCURRENT_TASKS = 4 
 MAX_RETRIES = 2  # Başarısız olan kanallar için ekstra deneme sayısı
 
 # Engellenecek reklam ve takipçi domain kalıpları
@@ -213,7 +213,7 @@ async def main():
         await browser.close()
 
     if results:
-        # Toplu M3U Yazma
+        # Toplu Genel IPTV M3U Dosyası Yazma
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for item in results:
@@ -222,17 +222,17 @@ async def main():
                 f.write(f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n')
                 f.write(f"{item['stream']}\n\n")
         
-        # Bireysel M3U8 Dosyalarını Yazma
+        # Bireysel M3U8 Dosyalarını İstenen Formatta Yazma
         print(f"\n[*] Bireysel m3u8 dosyaları oluşturuluyor ({len(results)} kanal)...")
         for item in results:
             safe_name = sanitize_filename(item["name"])
             channel_file_path = os.path.join(LIVETV_DIR, f"{safe_name}.m3u8")
             
+            # --- İstenen Özel Format ---
             with open(channel_file_path, "w", encoding="utf-8") as cf:
                 cf.write("#EXTM3U\n")
-                cf.write(f'#EXTINF:-1 tvg-logo="{item["logo"]}" group-title="{item["group"]}",{item["name"]}\n')
-                cf.write(f'#EXTVLCOPT:http-referrer={item["referer"]}\n')
-                cf.write(f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n')
+                cf.write("#EXT-X-VERSION:3\n")
+                cf.write("#EXT-X-STREAM-INF:BANDWIDTH=8000000\n")
                 cf.write(f"{item['stream']}\n")
                 
         print(f"[+] Başarıyla tamamlandı! {len(results)} adet aktif yayın dosyalandı.")
