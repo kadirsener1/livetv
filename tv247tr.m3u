@@ -24,9 +24,10 @@ https://live.tv247.site/live/67/index.m3u8?v=1&e=1788698930&k=6d7d9595b9655b6479
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://live.tv247.site/live/1010/index.m3u8?v=1&e=1788698929&k=e68a778322fc43c622f6c45b5686c432
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports1cdn
+#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports1cdn1
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+
 https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3ODg2MjY5Mjg4MjU6Y2RubGl2ZXR2LnR2OjdmNjUxOTkwZWE2OWUzYjcuMWY4NjNiOGRlMmM5NmYzMGEzZTQzNDIyYjI4Mzg5MDk2MWI4YmU0ZDEyYjQ4NDRjNTkwMzZhZTIwYTk0NWM3Zg
 
 #EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports2cdn
