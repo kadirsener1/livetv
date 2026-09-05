@@ -1,39 +1,103 @@
 [
     
 {
-    "name": "beinsports1",
+    "name": "trbeinsports1",
     "group": "Spor",
     "logo": "https://logo-adresi.com/logo.png",
     "url": "https://tvnow247.top/embed/bein-sports-1-turkey/"
 },
 {
-    "name": "beinsports2",
+    "name": "trbeinsports2",
     "group": "Spor",
     "logo": "https://logo-adresi.com/logo.png",
     "url": "https://tvnow247.top/embed/bein-sports-2-turkey/"
 },
     {
-    "name": "beinsports3",
+    "name": "trbeinsports3",
     "group": "Spor",
     "logo": "https://logo-adresi.com/logo.png",
     "url": "https://tvnow247.top/embed/bein-sports-3-turkey/"
 },
     {
-    "name": "beinsports4",
+    "name": "trbeinsports4",
     "group": "Spor",
     "logo": "https://logo-adresi.com/logo.png",
     "url": "https://tvnow247.top/embed/bein-sports-4-turkey/"
 },
     {
-    "name": "beinsports5",
+    "name": "trbeinsports5",
     "group": "Spor",
     "logo": "https://logo-adresi.com/logo.png",
     "url": "https://tvnow247.top/embed/bein-sports-5-turkey/",
 },
     {
-    "name": "beinsports1cdn",
-    "group": "Spor",
-    "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%201&code=tr&user=cdnlivetv&plan=free"
-}
+        "name": "trbeinsports1cdn",
+        "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%201&code=tr&user=cdnlivetv&plan=free",
+        "group": "tr"
+    },
+    {
+        "name": "trbeinsports2cdn",
+        "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%202&code=tr&user=cdnlivetv&plan=free",
+        "group": "tr"
+    },
+    {
+        "name": "trbeinsports3cdn",
+        "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%203&code=tr&user=cdnlivetv&plan=free",
+        "group": "tr"
+    },
+    {
+        "name": "trbeinsports4cdn",
+        "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%204&code=tr&user=cdnlivetv&plan=free",
+        "group": "tr"
+    },
+    {
+        "name": "trbeinsports5cdn",
+        "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%205&code=tr&user=cdnlivetv&plan=free",
+        "group": "tr"
+    },
+    {
+    "name": "trbeinsportsmax1cdn",
+    "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%20MAX%201&code=tr&user=cdnlivetv&plan=free",
+    "group": "tr"
+  },
+    {
+    "name": "trbeinsportsmax2cdn",
+    "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%20MAX%202&code=tr&user=cdnlivetv&plan=free",
+    "group": "tr"
+  },
+    {
+        "name": "trbeinsportshabercdn",
+        "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%20Haber&code=tr&user=cdnlivetv&plan=free",
+        "group": "tr"
+    },
+    {
+        "name": "trssportcdn",
+        "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=S%20Sport&code=tr&user=cdnlivetv&plan=free",
+        "group": "tr"
+    },
+    {
+        "name": "trssport2cdn",
+        "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=S%20Sport%202&code=tr&user=cdnlivetv&plan=free",
+        "group": "tr"
+    },
+    {
+        "name": "trtivibuspor1cdn",
+        "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=Tivibu%20Spor%201&code=tr&user=cdnlivetv&plan=free",
+        "group": "tr"
+    },
+    {
+        "name": "trtivibuspor2cdn",
+        "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=Tivibu%20Spor%202&code=tr&user=cdnlivetv&plan=free",
+        "group": "tr"
+    },
+    {
+        "name": "trtivibuspor3cdn",
+        "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=Tivibu%20Spor%203&code=tr&user=cdnlivetv&plan=free",
+        "group": "tr"
+    },
+    {
+        "name": "trtivibuspor4cdn",
+        "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=Tivibu%20Spor%204&code=tr&user=cdnlivetv&plan=free",
+        "group": "tr"
+    }
     ]
