@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsportshabercdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBmOjE3ODg2MjI3NTI5NTk6Y2RubGl2ZXR2LnR2OmIzOGVhYjM5YTM5NDY2ZTYuMmViYTAzOWNkYjMxZjUzODQ5NzVkYmQ1OGUwNDhjZjI4NmU0MGUwNTE2MWU4OTk1NTk0Mjk1NjA5MjJiMjI3Mg
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBmOjE3ODg2MjY5MzA1NDI6Y2RubGl2ZXR2LnR2OjU4OGY0NGZiZTk3NjZjN2QuYjA0NTJlN2ViNmE3NjBhYzlmNTI0NTU2ODAxZDlmODBhYzBkNGVmZmFjNjIzZTQyZDA0YzQxODQ5OTY3YThiMQ

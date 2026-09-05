@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="" group-title="Spor",trtivibuspor4cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc40/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzQwOjE3ODg2MjI3NTM2NzA6Y2RubGl2ZXR2LnR2OjBiNjE1MjZhMjNjYjQxY2MuZTMxODQzMzVlMjdiNjAwNDhiYjZkOTlmNDVkMzNhOGZkYzNmZDAzOTJlZDY0NWFmNTJhMzQ0Zjc2N2ZjYWI5NA
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc40/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzQwOjE3ODg2MjY5MzEyMzU6Y2RubGl2ZXR2LnR2OjY1MGM5MTUwOGU0MjZjNGUuOGJiZTk0YmZjZDcwMjI3MzYwZWUyZjI4Mjg5ZjYzZjdkMjZlMjAzYTYwZGUzYmRiNjc2NzExMDgyOWRmMzM4Zg
