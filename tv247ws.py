@@ -11,7 +11,7 @@ LIVETV_DIR = "tv247tr"
 
 # 800 kanal için ideal kararlılık hızı. Sisteminiz ve internetiniz çok iyiyse 6 yapabilirsiniz.
 # Çok yüksek sayı sitelerin sizi engellemesine (HTTP 429) yol açar.
-MAX_CONCURRENT_TASKS = 2 
+MAX_CONCURRENT_TASKS = 10 
 MAX_RETRIES = 2  # Başarısız olan kanallar için ekstra deneme sayısı
 
 # Engellenecek reklam ve takipçi domain kalıpları
