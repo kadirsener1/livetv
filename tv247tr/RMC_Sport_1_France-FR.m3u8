@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",RMC Sport 1 France-FR
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMTkiLCJ0cyI6MTc4ODU5NjQzMTk0Mn0
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/119/index.m3u8?v=1&e=1788720776&k=e34b1221277e844e2ee7cef1fe3cf226

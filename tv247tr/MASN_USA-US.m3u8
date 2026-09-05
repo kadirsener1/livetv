@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",MASN USA-US
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/829/index.m3u8?v=1&e=1788683549&k=d0aae73fd1a5770046f5658391a0524d
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/829/index.m3u8?v=1&e=1788720980&k=060967c3a02cd27da8fdf51c67dccd01

@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN 2 NL-NL
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/386/index.m3u8?v=1&e=1788683111&k=5c57e9f06b738044c7e84a11e0b375f5
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzODYiLCJ0cyI6MTc4ODYzNDQ2ODc4MX0

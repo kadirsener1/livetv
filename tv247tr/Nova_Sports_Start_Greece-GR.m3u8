@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Nova Sports Start Greece-GR
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/637/index.m3u8?v=1&e=1788682938&k=df84d2b0da5d3627590318ead6d4237a
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MzciLCJ0cyI6MTc4ODYzNDQxOTgxN30

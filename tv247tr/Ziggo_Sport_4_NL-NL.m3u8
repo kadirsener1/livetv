@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Ziggo Sport 4 NL-NL
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/396/index.m3u8?v=1&e=1788683129&k=49c5a5427934defe89a1dacc9e7f3090
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOTYiLCJ0cyI6MTc4ODYzNDQ3Mzg3Nn0

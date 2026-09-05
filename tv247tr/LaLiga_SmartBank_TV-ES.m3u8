@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",LaLiga SmartBank TV-ES
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/539/index.m3u8?v=1&e=1788682759&k=c5b82dd093f688f6f8b6e7b718a8c0e5
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/539/index.m3u8?v=1&e=1788720758&k=9ef11ed087bde234f72d6b5fa98681ec

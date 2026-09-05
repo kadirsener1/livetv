@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Movistar Deportes 2 Spain-ES
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/438/index.m3u8?v=1&e=1788682761&k=6378c97953d81099822094a694f0ac5b
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/438/index.m3u8?v=1&e=1788720758&k=5200d8ce73897fbf4bd9a7350bfe9eb4

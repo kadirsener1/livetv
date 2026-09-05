@@ -1,96 +1,2256 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Abu Dhabi Sports 1 Premium-AE
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/62/index.m3u8?v=1&e=1788719036&k=d087c4d565c317ed744ba5602528cc8f
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MDkiLCJ0cyI6MTc4ODYzNDI4Mjc1NH0
 
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports2
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Abu Dhabi Sports 1 UAE-AE
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MyIsInRzIjoxNzg4NjMyNjQzNDEwfQ
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MDAiLCJ0cyI6MTc4ODYzMjk1OTUwMX0
 
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports3
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Abu Dhabi Sports 2 Premium-AE
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NCIsInRzIjoxNzg4NjMyNjQ0NTAxfQ
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MTAiLCJ0cyI6MTc4ODYzNDI4MjkwOX0
 
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports4
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Abu Dhabi Sports 2 UAE-AE
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NyIsInRzIjoxNzg4NjMyNjUyMTU1fQ
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MDEiLCJ0cyI6MTc4ODYzNDI4Mzg4OX0
 
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports5
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Dubai Racing 2 UAE-AE
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDEwIiwidHMiOjE3ODg2MzI2NTIzMDl9
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MDgiLCJ0cyI6MTc4ODYzNDI4Njc2MH0
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports1cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Dubai Sports 1 UAE-AE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3ODg2NDcwNTI2MzM6Y2RubGl2ZXR2LnR2OjI3ZTAzYjQxM2VmNDFiMDUuYzgwNmRmYjE2MTI5ZjRhMDU5MzU4ZDVkMjk2NzZiOGU5NmViN2M2NGU0YmQwMmU3MmIzNmQ1MDgzNTI5MmU5ZQ
+https://live.tv247.site/live/604/index.m3u8?v=1&e=1788720681&k=e8f5aadfeb6794d3783d3cfc474b0ce3
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports2cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Dubai Sports 2 UAE-AE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc04/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA0OjE3ODg2NDcwNTI2MzM6Y2RubGl2ZXR2LnR2OjQyYWQ4MjA3MmFkNWZmNGMuYTgwNjU3NjA4OWZhZjNjM2YwMDNhN2U5YzU1NWUyODNlOWU3N2YzNjJkMjM1NjVlNTgwZDE5ZjEwNDU3MmFiZQ
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MDUiLCJ0cyI6MTc4ODYzNDI4Mzk4MX0
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports3cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Dubai Sports 3 UAE-AE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc08/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA4OjE3ODg2NDcwNTMwMTI6Y2RubGl2ZXR2LnR2OmUyN2NmYzIxMTA1ZDU5OTYuN2RiMjNlOGI4Mzc5Y2Y1OWY1OWMxMTE5YzViOGQzZDU3ZDU5ODMxZjYxMDFmYmZiNGY4OWE0NDBlOTA0YWQ4ZQ
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MDYiLCJ0cyI6MTc4ODYzNDI4OTIxOX0
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports4cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport MaXimo 1-AO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBkOjE3ODg2NDcwNTMwMTc6Y2RubGl2ZXR2LnR2Ojg5MWIwZjMwZTJiNDI0YjYuMGYxY2Y5ZGJmMmRiZDUzNWI2ZTk5NmM1NmViZmQ3Mzc5Nzk5YmM1MjM5YmI3Y2YzNzU2Mjc4YTRkZmNjZDlkMA
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NzIiLCJ0cyI6MTc4ODYzMjk1OTI2N30
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsports5cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN Argentina-AR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76ca991/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhOTkxOjE3ODg2NDcwNTMzODE6Y2RubGl2ZXR2LnR2OjM4OGY4MThlZGJmMzhlODQuNzM2MTdiZDU1YTJjZWQzYmQyYmI2MzYyY2YzZTk4Yjk0YzhmN2E2MjQwYmU0NjU3N2VhM2RmOTI3ZGVhZTdkNQ
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxNDkiLCJ0cyI6MTc4ODYzMjk1OTUxNn0
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsportsmax1cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN Premium Argentina-AR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc11/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzExOjE3ODg2NDcwNTM0MDU6Y2RubGl2ZXR2LnR2OmFkMGQ5NTQ4NDE4ZDIxOGIuYWRiNzgwNjFhMTYyM2ZlOGRmOGY4ZDZlMGUzMDYzY2JmNmFjZTA4OTllMzcyZTRmNmVlZWI3MDIzNWZiNWRmNQ
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzODciLCJ0cyI6MTc4ODYzMjk2ODgwNH0
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsportsmax2cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN2 Argentina-AR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc13/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzEzOjE3ODg2NDcwNTM3NTg6Y2RubGl2ZXR2LnR2OjA5YzA3ODI0MThhNjRjNWMuM2JlMGQxYzkyYjE2MTdiNjdkZTljYzMyMzlkZGY0OWI3M2YxZTBkNTU5MzgzM2NiNGIzNzJmNWJjNzU1ZjgyZg
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxNTAiLCJ0cyI6MTc4ODYzMjk3MTk5Nn0
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trbeinsportshabercdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN3 Argentina-AR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBmOjE3ODg2NDcwNTM3OTI6Y2RubGl2ZXR2LnR2OjRhYWE1YTc5OGU2ZjRmYWYuMzc5ZDgzNGYwOTdhYzgxNWU2ZDdjZjcwYzllNmYyMmJmNmFlMWFmYjQ2ODZlMTU4MTY3NzlhYTM5ODgyMjZmZg
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3OTgiLCJ0cyI6MTc4ODYzMjk3MjAzNn0
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trssportcdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Fox Sports 2 Argentina-AR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76caa87/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhYTg3OjE3ODg2NDcwNTQxNDI6Y2RubGl2ZXR2LnR2OmE3ZGVkZWE2MjAxOTY2ZWUuZDBkODYzZjVkOTBmOTZkMGVhMDU1MmI5NWNjOWQ2YmNkNmRlODVhNjNjOTJhNWQyNWIwMGU4YTA1ZWE4YzY5Mg
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3ODgiLCJ0cyI6MTc4ODYzMjk3NjMzM30
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trssport2cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Fox Sports 3 Argentina-AR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc31/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzMxOjE3ODg2NDcwNTQxOTc6Y2RubGl2ZXR2LnR2OmQ5ZDkzZGQ0MzhjYzRjMDEuZTI2NDZlNzg3YTQ1Yzk5MDk3ZmI0MTI4NjVmYzUwOWU0NzNkNmRlMDBmNTI3MTZkY2RhMWJlZmM2MTMxMTU0MA
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3ODkiLCJ0cyI6MTc4ODYzNDI5MDcwN30
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trtivibuspor1cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Fox Sports Argentina-AR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3b/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNiOjE3ODg2NDcwNTQ1MDU6Y2RubGl2ZXR2LnR2OjE2ZjcwYzQ0Njg0MjNmOGUuYzE3MTU5ZjQxMjVmZDViMzM5MzZmMDU5YjI0ZDQ3MmM1OGYwNjFmYzMxMTI5N2IzMmEyMTdmZGFiYmI2NWRhZQ
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3ODciLCJ0cyI6MTc4ODYzMjk3NzY3NH0
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trtivibuspor2cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TNT Sports Argentina-AR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNkOjE3ODg2NDcwNTQ1Mzg6Y2RubGl2ZXR2LnR2OmQxZWE2MWVjNThkYTJiMDMuYmJkYmI3YmIyZThiMmM1MmIxMDlmNWRmNjRjZmMxZGIxMWFjNGVjMzUxZmIzZTZlZTRiYjI0Njg4ODU1NDU1ZQ
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzODgiLCJ0cyI6MTc4ODYzMjk3OTA5NH0
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trtivibuspor3cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TYC Sports Argentina-AR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNmOjE3ODg2NDcwNTQ5MTY6Y2RubGl2ZXR2LnR2OjllZTgzZTNmYmY0M2UyNWQuMzY2ODI5OTY0YjRmMGJjOGRiZDdhY2M1ZmYzZTIwMGI3NDFjODY4OTM4MzQ5ZWJmNTg1N2Q1ZTkzMGM5ZWI3Nw
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NDYiLCJ0cyI6MTc4ODYzNDI4OTMyN30
 
-#EXTINF:-1 tvg-logo="" group-title="Spor",trtivibuspor4cdn
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Austria 1 HD-AT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc40/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzQwOjE3ODg2NDcwNTQ5MDk6Y2RubGl2ZXR2LnR2OmI0M2NkOWU3MDgwMDcxYzIuNzM3OTY0OGYxZDk4YTY0NWVhNWJmMmFmMDI5YjQ2ZDY3ZDIyOTY4MzAzNjM1NDk1NGVlMzk5MDkzNjE3YmNmZQ
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NTkiLCJ0cyI6MTc4ODYzNDI4OTU1M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN SPORTS Australia 1-AU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0OTEiLCJ0cyI6MTc4ODYzNDI4ODU4N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN SPORTS Australia 2-AU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0OTIiLCJ0cyI6MTc4ODYzNDI4ODgzOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN SPORTS Australia 3-AU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0OTMiLCJ0cyI6MTc4ODYzNDI5MTA0OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Fox Cricket-AU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNjkiLCJ0cyI6MTc4ODYzNDI5MTI4OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FOX Sports 502 AU-AU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MjAiLCJ0cyI6MTc4ODYzNDI5MTM1NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FOX Sports 503 AU-AU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MjEiLCJ0cyI6MTc4ODYzNDI5NDY1NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FOX Sports 504 AU-AU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MjIiLCJ0cyI6MTc4ODYzNDI5NjY4NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FOX Sports 505 AU-AU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/823/index.m3u8?v=1&e=1788720690&k=32393f0d45d70b6f41b96a54a3acc3dc
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FOX Sports 506 AU-AU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MjQiLCJ0cyI6MTc4ODYzNDI5NjUyOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FOX Sports 507 AU-AU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MjUiLCJ0cyI6MTc4ODYzNDI5NzQ3Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 1 BiH-BA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NzkiLCJ0cyI6MTc4ODYzNDI5Nzc4N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",T Sports BD-BD
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyNzAiLCJ0cyI6MTc4ODYzNDI5ODgyOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Diema Sport 2 Bulgaria-BG
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NjYiLCJ0cyI6MTc4ODYzNDI5Nzk2NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Diema Sport 3 Bulgaria-BG
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NjciLCJ0cyI6MTc4ODYzNDI5OTIxOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Diema Sport Bulgaria-BG
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NjUiLCJ0cyI6MTc4ODYzNDI5ODY5OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Max Sport 1 Bulgaria-BG
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NzIiLCJ0cyI6MTc4ODYzNDI5OTUwNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Max Sport 2 Bulgaria-BG
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NzMiLCJ0cyI6MTc4ODYzNDMwMjU4MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Max Sport 3 Bulgaria-BG
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NzQiLCJ0cyI6MTc4ODYzNDMwMzY2Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Max Sport 4 Bulgaria-BG
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NzUiLCJ0cyI6MTc4ODYzNDMwMzg2MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Nova Sport Bulgaria-BG
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NjgiLCJ0cyI6MTc4ODYzNDMwNTUyM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Ring Bulgaria-BG
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NzEiLCJ0cyI6MTc4ODYzNDMwNDk4OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Bandsports Brasil-BR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyNzUiLCJ0cyI6MTc4ODYzNDMwNTkxN30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Combate Brasil-BR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4OSIsInRzIjoxNzg4NjM0MzA2ODA0fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN Brasil-BR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MSIsInRzIjoxNzg4NjM0MzA3MDU1fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN2 Brasil-BR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MiIsInRzIjoxNzg4NjM0MzA3MjM1fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN3 Brasil-BR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MyIsInRzIjoxNzg4NjM0MzA3NjM1fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN4 Brasil-BR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NSIsInRzIjoxNzg4NjM0MzA5NzE5fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Premier Brasil-BR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4OCIsInRzIjoxNzg4NjM0MzEwODk2fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SporTV Brasil-BR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3OCIsInRzIjoxNzg4NjM0MzExNzc5fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SporTV2 Brasil-BR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3OSIsInRzIjoxNzg4NjM0MzEyMTE2fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SporTV3 Brasil-BR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MCIsInRzIjoxNzg4NjM0MzEzNDU3fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Fight Network-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NTciLCJ0cyI6MTc4ODYzNDMxMzE4NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",RDS 2 CA-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NDAiLCJ0cyI6MTc4ODYzNDMxNDc1MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",RDS CA-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/839/index.m3u8?v=1&e=1788720710&k=5f87d61087ef1dec2b53fe60c55ef96b
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",RDS Info CA-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NDEiLCJ0cyI6MTc4ODYzNDMxNTMwM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sportsnet 360-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MDkiLCJ0cyI6MTc4ODYzNDMxNTEwOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sportsnet East-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MDgiLCJ0cyI6MTc4ODYzNDMxNjk3NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sportsnet One-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MTEiLCJ0cyI6MTc4ODYzNDMxODgwNX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sportsnet Ontario-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/406/index.m3u8?v=1&e=1788720712&k=a5556d74f312cbe6c7af5c1fe4f188fb
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sportsnet West-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/407/index.m3u8?v=1&e=1788720713&k=e13cf831fcc22aee7d2419dec55ce50e
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sportsnet World-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MTAiLCJ0cyI6MTc4ODYzNDMxOTQwNX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TSN1-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMTEiLCJ0cyI6MTc4ODYzNDMyMDg3NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TSN2-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMTIiLCJ0cyI6MTc4ODYzNDMyMTM3NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TSN3-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/113/index.m3u8?v=1&e=1788720716&k=cbfbccbb6ab89d73f9715e5f697c9770
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TSN4-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMTQiLCJ0cyI6MTc4ODYzNDMyMTg2MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TSN5-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMTUiLCJ0cyI6MTc4ODYzNDMyMjczMX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TVA Sports-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/833/index.m3u8?v=1&e=1788720720&k=0c53f27852733926d52516ef8b2f10cb
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TVA Sports 2-CA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/834/index.m3u8?v=1&e=1788720717&k=6976ed8b31ff14e8d55879b72eec1570
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TNT Sports HD Chile-CL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NDIiLCJ0cyI6MTc4ODYzNDMyNDcxOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Win Sports+ Columbia-CO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOTIiLCJ0cyI6MTc4ODYzNDMyNDkyOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Cytavision Sports 1 Cyprus-CY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MTEiLCJ0cyI6MTc4ODYzNDMyNDM0Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Cytavision Sports 2 Cyprus-CY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MTIiLCJ0cyI6MTc4ODYzNDMyNTk1MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Cytavision Sports 3 Cyprus-CY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MTMiLCJ0cyI6MTc4ODYzNDMyNzI4Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Cytavision Sports 4 Cyprus-CY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MTQiLCJ0cyI6MTc4ODYzNDMyODQ1Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Cytavision Sports 5 Cyprus-CY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MTUiLCJ0cyI6MTc4ODYzNDMyODc0NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Cytavision Sports 6 Cyprus-CY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MTYiLCJ0cyI6MTc4ODYzNDMyODcwNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Cytavision Sports 7 Cyprus-CY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MTciLCJ0cyI6MTc4ODYzNDMyOTk5OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport CZ-CZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDIwIiwidHMiOjE3ODg2MzQzMzA3OTJ9
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",CT Sport CZ-CZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDMzIiwidHMiOjE3ODg2MzQzMzE1MTF9
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Nova Sport 6 CZ-CZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDI2IiwidHMiOjE3ODg2MzQzMzY4ODl9
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Premier Sport 1 CZ-CZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDMwIiwidHMiOjE3ODg2MzQzMzk2ODZ9
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Premier Sport 2 CZ-CZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDMxIiwidHMiOjE3ODg2MzQzNDIzMTJ9
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Premier Sport 3 CZ-CZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDMyIiwidHMiOjE3ODg2MzQzNDI0Nzl9
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN 1 Bar DE-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MjYiLCJ0cyI6MTc4ODYzNDM0NDQ0MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN 2 Bar DE-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/427/index.m3u8?v=1&e=1788720740&k=810e1028db84561faa5c19c1237290d0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Bundesliga 1 HD-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NTgiLCJ0cyI6MTc4ODYzNDM0NDkzMH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Bundesliga 2-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5NDYiLCJ0cyI6MTc4ODYzNDM0Njc2OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Bundesliga 3-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5NDciLCJ0cyI6MTc4ODYzNDM0NzIxMX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Bundesliga 4-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5NDgiLCJ0cyI6MTc4ODYzNDM0NjgxOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Mix DE-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NTciLCJ0cyI6MTc4ODYzNDM0NzUxM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Top Event DE-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NTYiLCJ0cyI6MTc4ODYzNDM0ODE3MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports 1 DE-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/240/index.m3u8?v=1&e=1788720747&k=bcd24b7aec03a6d6910814444110b02f
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports 2 DE-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/241/index.m3u8?v=1&e=1788720745&k=e1188a8889f649c80cf9c0fa2a110842
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports F1 DE-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/274/index.m3u8?v=1&e=1788720744&k=7c1b5ffd88315acf76f6bdd830247bec
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports Golf DE-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3ODUiLCJ0cyI6MTc4ODYzNDM1Mjc1MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports Tennis DE-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4ODQiLCJ0cyI6MTc4ODYzNDM1MjMxOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport1 Germany-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NDEiLCJ0cyI6MTc4ODYzNDM1MjA5M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SportDigital Fussball-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NzEiLCJ0cyI6MTc4ODYzNDM1Mzg2MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sportdigital1+ Germany-DE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NDAiLCJ0cyI6MTc4ODYzNDM1NDcxMX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TV2 Sport Denmark-DK
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MTAiLCJ0cyI6MTc4ODYzNDM1NDgyMX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TV2 Sport X Denmark-DK
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MDgiLCJ0cyI6MTc4ODYzNDM1NTAxOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TV3 Sport Denmark-DK
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MDkiLCJ0cyI6MTc4ODYzNDM1NTI2Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",OnTime Sports-EG
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MTEiLCJ0cyI6MTc4ODYzNDM1NjAxNH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",#Vamos Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/521/index.m3u8?v=1&e=1788720751&k=ce41354893826e38aabbe823e4d184a2
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Barca TV Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1MjIiLCJ0cyI6MTc4ODYzNDM1OTk3OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN 1 Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NDUiLCJ0cyI6MTc4ODYzNDM2MDI5Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN 2 Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NDYiLCJ0cyI6MTc4ODYzNDM1OTg2Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN 3 Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NDciLCJ0cyI6MTc4ODYzNDM2MDQwMn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN 4 Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/448/index.m3u8?v=1&e=1788720755&k=91cffe07711491ff0b1fc4e8eda91e7b
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN F1 ES-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/537/index.m3u8?v=1&e=1788720756&k=541b3642044582590629ba4823a578a5
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN LaLiga-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/538/index.m3u8?v=1&e=1788720756&k=97fc164a6d3e1c2d6167009e8957e9b7
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",EuroSport 1 Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/524/index.m3u8?v=1&e=1788720758&k=c7e71bfbd7326e718702901226468615
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",EuroSport 2 Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1MjUiLCJ0cyI6MTc4ODYzNDM2MzUyM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",GOL PLAY Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1MzAiLCJ0cyI6MTc4ODYzNDM2NDIwMn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",LaLiga SmartBank TV-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/539/index.m3u8?v=1&e=1788720758&k=9ef11ed087bde234f72d6b5fa98681ec
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Movistar Deportes 2 Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/438/index.m3u8?v=1&e=1788720758&k=5200d8ce73897fbf4bd9a7350bfe9eb4
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Movistar Deportes 3 Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/526/index.m3u8?v=1&e=1788720761&k=a303874064a8601b8a17c73c49db318f
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Movistar Deportes 4 Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1MjciLCJ0cyI6MTc4ODYzNDM2NjA4MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Movistar Deportes Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzYiLCJ0cyI6MTc4ODYzNDM2NjY2NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Movistar Golf Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1MjgiLCJ0cyI6MTc4ODYzNDM2NzA0MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Movistar Laliga-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/84/index.m3u8?v=1&e=1788720760&k=d432c3571e23e5b75e6fb9111af8b31a
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Movistar Liga de Campeones-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzUiLCJ0cyI6MTc4ODYzNDM2NzM2NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Movistar Supercopa de España-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzciLCJ0cyI6MTc4ODYzNDM2ODUwMn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Mundotoro TV Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NDkiLCJ0cyI6MTc4ODYzNDM2ODYzOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Real Madrid TV Spain-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1MjMiLCJ0cyI6MTc4ODYzNDM2OTQ0Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Teledeporte Spain (TDP)-ES
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1MjkiLCJ0cyI6MTc4ODYzNDM2ODg4N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Automoto La chaîne-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5NjEiLCJ0cyI6MTc4ODYzNDM3MTQ2MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Foot France-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NjMiLCJ0cyI6MTc4ODYzNDM3MjM2MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Formula 1-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyNzMiLCJ0cyI6MTc4ODYzNDM3NDA0OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ MotoGP France-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyNzEiLCJ0cyI6MTc4ODYzNDM3NDc3NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport 1 Afrique-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0ODYiLCJ0cyI6MTc4ODYzNDM3NTM1Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport 2 Afrique-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0ODciLCJ0cyI6MTc4ODYzNDM3NTU4OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport 3 Afrique-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0ODgiLCJ0cyI6MTc4ODYzNDM3NjU1MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport 4 Afrique-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0ODkiLCJ0cyI6MTc4ODYzNDM3NTk1NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport 5 Afrique-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0OTAiLCJ0cyI6MTc4ODYzNDM3NzA5OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport France-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMjIiLCJ0cyI6MTc4ODYzNDM3NzcyOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport360-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NjQiLCJ0cyI6MTc4ODYzNDM3OTc2MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eurosport 1 France-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NzIiLCJ0cyI6MTc4ODYzNDM4MDY1NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eurosport 2 France-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NzMiLCJ0cyI6MTc4ODYzNDM4Mjc3MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",L'Equipe France-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NDUiLCJ0cyI6MTc4ODYzNDM4Mjg2OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",RMC Sport 1 France-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/119/index.m3u8?v=1&e=1788720776&k=e34b1221277e844e2ee7cef1fe3cf226
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",RMC Sport 2 France-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMjAiLCJ0cyI6MTc4ODYzNDM4MzczNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Tennis+ 10-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MDkiLCJ0cyI6MTc4ODYzNDM4Mzc3Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Tennis+ 12-FR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MTEiLCJ0cyI6MTc4ODYzNDM4NDkzMH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN 1 UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyMzAiLCJ0cyI6MTc4ODYzNDM4NDcyM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",LaLigaTV UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyNzYiLCJ0cyI6MTc4ODYzNDM4NTYwMX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Liverpool TV (LFC TV)-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4MjYiLCJ0cyI6MTc4ODYzNDM4NjEzOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",MUTV UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/377/index.m3u8?v=1&e=1788720782&k=cba01d0e3b7b6c1fc6bff95d49c4fe51
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",PDC TV-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MyIsInRzIjoxNzg4NjM0Mzg5MTA3fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Racing Tv UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NTUiLCJ0cyI6MTc4ODYzNDM5MDAwMX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports Action UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNyIsInRzIjoxNzg4NjM0MzkwNjUzfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports Cricket-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NSIsInRzIjoxNzg4NjM0MzkxMzI5fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports F1 UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MCIsInRzIjoxNzg4NjM0MzkxNzEwfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports Football UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNSIsInRzIjoxNzg4NjM0MzkyMjU4fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports Golf UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MCIsInRzIjoxNzg4NjM0MzkyNzE5fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports Main Event-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOCIsInRzIjoxNzg4NjM0MzkyODA5fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports MIX UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NDkiLCJ0cyI6MTc4ODYzNDM5Mzg3M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports News UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNjYiLCJ0cyI6MTc4ODYzNDM5NDQ1Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky sports Premier League-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMzAiLCJ0cyI6MTc4ODYzNDM5NjI1OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports Racing UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NTQiLCJ0cyI6MTc4ODYzNDM5ODE2M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports Tennis UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/46/index.m3u8?v=1&e=1788720794&k=f5f684b721215b9af32f559e70135cc7
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports+ Plus-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNiIsInRzIjoxNzg4NjM0Mzk5MzM5fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TNT Sports 1 UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMSIsInRzIjoxNzg4NjM0Mzk4Nzg3fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TNT Sports 2 UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMiIsInRzIjoxNzg4NjM0NDAwMzc3fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TNT Sports 3 UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/33/index.m3u8?v=1&e=1788720796&k=c2937edd829e7b3a809daef3ea7bb022
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TNT Sports 4 UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/34/index.m3u8?v=1&e=1788720795&k=a333402d5a28c9c38414f0e7d13fc731
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Viaplay Sports 1 UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NTEiLCJ0cyI6MTc4ODYzNDQwMTAyM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Viaplay Sports 2 UK-GB
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NTAiLCJ0cyI6MTc4ODYzNDQwMjI0N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Cosmote Sport 1 HD-GR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MjIiLCJ0cyI6MTc4ODYzNDQwMjQwNH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Cosmote Sport 6 HD-GR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MjciLCJ0cyI6MTc4ODYzNDQwODQyMn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Cosmote Sport 7 HD-GR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MjgiLCJ0cyI6MTc4ODYzNDQwODMxNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Cosmote Sport 8 HD-GR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MjkiLCJ0cyI6MTc4ODYzNDQwODcwNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Cosmote Sport 9 HD-GR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MzAiLCJ0cyI6MTc4ODYzNDQwODIzN30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",EuroSport 1 Greece-GR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MSIsInRzIjoxNzg4NjM0NDA5NjU1fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",EuroSport 2 Greece-GR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MiIsInRzIjoxNzg4NjM0NDEwNDQ0fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Nova Sports 1 Greece-GR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MzEiLCJ0cyI6MTc4ODYzNDQxNDYzN30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Nova Sports 3 Greece-GR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MzMiLCJ0cyI6MTc4ODYzNDQxNjQwMn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Nova Sports Premier League Greece-GR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1OTkiLCJ0cyI6MTc4ODYzNDQxOTAzM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Nova Sports Prime Greece-GR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MzgiLCJ0cyI6MTc4ODYzNDQxOTA1MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Nova Sports Start Greece-GR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MzciLCJ0cyI6MTc4ODYzNDQxOTgxN30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 1 Croatia-HR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzIiLCJ0cyI6MTc4ODYzNDQyMjkwOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 2 Croatia-HR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzMiLCJ0cyI6MTc4ODYzNDQyNTA5NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 3 Croatia-HR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzQiLCJ0cyI6MTc4ODYzNDQyNDAzOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 4 Croatia-HR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1ODAiLCJ0cyI6MTc4ODYzNDQyNTU1OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Max Sport 1 Croatia-HR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NzkiLCJ0cyI6MTc4ODYzNDQyNTg1MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Max Sport 2 Croatia-HR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3ODAiLCJ0cyI6MTc4ODYzNDQyNjE0OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport KLUB Golf Croatia-HR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MTAiLCJ0cyI6MTc4ODYzNDQyNjk4MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",M4 Sports Hungary-HU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyNjUiLCJ0cyI6MTc4ODYzNDQyNjQwN30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Premier Sports Ireland 1-IE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NzEiLCJ0cyI6MTc4ODYzNDQyNjY5NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Premier Sports Ireland 2-IE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3OTkiLCJ0cyI6MTc4ODYzNDQyODAzMn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ONE 1 HD Israel-IL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NDEiLCJ0cyI6MTc4ODYzNDQzMTU2OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ONE 2 HD Israel-IL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NDIiLCJ0cyI6MTc4ODYzNDQzMjMyM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport 1 Israel-IL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxNDAiLCJ0cyI6MTc4ODYzNDQzMzE4Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport 2 Israel-IL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxNDEiLCJ0cyI6MTc4ODYzNDQzMjk4MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport 3 Israel-IL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxNDIiLCJ0cyI6MTc4ODYzNDQzMzE4NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport 4 Israel-IL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxNDMiLCJ0cyI6MTc4ODYzNDQzMzUzNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport 5 Gold Israel-IL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxNDgiLCJ0cyI6MTc4ODYzNDQzNDc3OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport 5 Israel-IL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxNDQiLCJ0cyI6MTc4ODYzNDQzNDc4N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport 5 Live Israel-IL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxNDYiLCJ0cyI6MTc4ODYzNDQzNDY0Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport 5 PLUS Israel-IL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/145/index.m3u8?v=1&e=1788720833&k=10eea8fc00cd040d5d5e963f73261791
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport 5 Star Israel-IL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxNDciLCJ0cyI6MTc4ODYzNDQzOTcyN30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SONY TEN 1-IN
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/885/index.m3u8?v=1&e=1788720836&k=dcf5cc5aa0d739976d93278e277762d3
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SONY TEN 2-IN
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/886/index.m3u8?v=1&e=1788720837&k=b33326314cfd206d30b163d51ebc8345
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SONY TEN 3-IN
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4ODciLCJ0cyI6MTc4ODYzNDQ0MTYzOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Star Sports 1 IN-IN
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyNjciLCJ0cyI6MTc4ODYzNDQ0MTc1N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Star Sports Hindi IN-IN
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyNjgiLCJ0cyI6MTc4ODYzNDQ0MTYyNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN ZONA Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NzciLCJ0cyI6MTc4ODYzNDQ0MTczOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",EuroSport 1 Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NzgiLCJ0cyI6MTc4ODYzNDQ0MjA4Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",EuroSport 2 Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/879/index.m3u8?v=1&e=1788720839&k=6731da8eb44ead48063550b5055e32d2
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Rai Sport Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4ODIiLCJ0cyI6MTc4ODYzNDQ0MzEzNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Calcio 1 (251) Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NzEiLCJ0cyI6MTc4ODYzNDQ0MzkwNH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Calcio 2 (252) Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NzIiLCJ0cyI6MTc4ODYzNDQ0NDY4NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Calcio 3 (253) Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NzMiLCJ0cyI6MTc4ODYzNDQ0NjkxNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Calcio 4 (254) Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/874/index.m3u8?v=1&e=1788720846&k=3d66d5bc761db7cf844963e593ac0076
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport 24 Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NjkiLCJ0cyI6MTc4ODYzNDQ0OTMwNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Arena Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NjIiLCJ0cyI6MTc4ODYzNDQ1MDE5MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Basket Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NzUiLCJ0cyI6MTc4ODYzNDQ1MDIyOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Calcio Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NzAiLCJ0cyI6MTc4ODYzNDQ0OTE3OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport F1 Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NzciLCJ0cyI6MTc4ODYzNDQ0OTU1MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport MAX Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NjAiLCJ0cyI6MTc4ODYzNDQ1MDM2Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport MotoGP Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NzUiLCJ0cyI6MTc4ODYzNDQ1MTEzN30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Tennis Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NzYiLCJ0cyI6MTc4ODYzNDQ1MTY4N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport UNO Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NjEiLCJ0cyI6MTc4ODYzNDQ1MzI2OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sports Golf Italy-IT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/574/index.m3u8?v=1&e=1788720852&k=2588d4cbebbed6921c6f82e2fec33f17
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Claro Sports MX-MX
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MzMiLCJ0cyI6MTc4ODYzNDQ1NzIyMX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN 1 MX-MX
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MjUiLCJ0cyI6MTc4ODYzNDQ1NzI4Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN 2 MX-MX
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MjYiLCJ0cyI6MTc4ODYzNDQ1NzgyNH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN 3 MX-MX
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MjciLCJ0cyI6MTc4ODYzNDQ1ODQ5OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN 4 MX-MX
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MjgiLCJ0cyI6MTc4ODYzNDQ1ODYzN30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Fox Sports 1 MX-MX
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MjkiLCJ0cyI6MTc4ODYzNDQ1Nzk1MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Fox Sports 2 MX-MX
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/930/index.m3u8?v=1&e=1788720857&k=d2f779a896089a1cef192b33cdd2ffb6
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Fox Sports 3 MX-MX
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MzEiLCJ0cyI6MTc4ODYzNDQ1OTkyN30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Fox Sports Premium MX-MX
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/830/index.m3u8?v=1&e=1788720854&k=99ef2f526cc900000a632b73ad5bb0b6
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TUDN MX-MX
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MzUiLCJ0cyI6MTc4ODYzNDQ2MTQ4N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TVC Deportes MX-MX
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MzIiLCJ0cyI6MTc4ODYzNDQ2MjUyMH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Astro Cricket-MY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNzAiLCJ0cyI6MTc4ODYzNDQ2NDc2N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Astro SuperSport 1-MY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/123/index.m3u8?v=1&e=1788720859&k=afd41d2c2a3468f351c23f4735540856
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Astro SuperSport 2-MY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMjQiLCJ0cyI6MTc4ODYzNDQ2NDk0MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Astro SuperSport 3-MY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMjUiLCJ0cyI6MTc4ODYzNDQ2NTQ0MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Astro SuperSport 4-MY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMjYiLCJ0cyI6MTc4ODYzNDQ2NTU2Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports 1 Malaysia-MY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MTIiLCJ0cyI6MTc4ODYzNDQ2NzIzNH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports 2 Malaysia-MY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MTMiLCJ0cyI6MTc4ODYzNDQ2NzIxM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports 3 Malaysia-MY
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MTQiLCJ0cyI6MTc4ODYzNDQ2NjY4MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN 1 NL-NL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNzkiLCJ0cyI6MTc4ODYzNDQ2ODEwOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN 2 NL-NL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzODYiLCJ0cyI6MTc4ODYzNDQ2ODc4MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN 3 NL-NL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4ODgiLCJ0cyI6MTc4ODYzNDQ2OTY1Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eurosport 1 NL-NL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyMzMiLCJ0cyI6MTc4ODYzNDQ3MjY3MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eurosport 2 NL-NL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyMzQiLCJ0cyI6MTc4ODYzNDQ3Mjc5MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Ziggo Sport 2 NL-NL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOTgiLCJ0cyI6MTc4ODYzNDQ3MzQzMn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Ziggo Sport 3 NL-NL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MTkiLCJ0cyI6MTc4ODYzNDQ3MzUwNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Ziggo Sport 4 NL-NL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOTYiLCJ0cyI6MTc4ODYzNDQ3Mzg3Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Ziggo Sport 5 NL-NL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzODMiLCJ0cyI6MTc4ODYzNDQ3NTI1Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Ziggo Sport 6 NL-NL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MDEiLCJ0cyI6MTc4ODYzNDQ3NTE1MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Ziggo Sport NL-NL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOTMiLCJ0cyI6MTc4ODYzNDQ3NTM0NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport 1 NZ-NZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1ODgiLCJ0cyI6MTc4ODYzNDQ3NjczNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport 2 NZ-NZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1ODkiLCJ0cyI6MTc4ODYzNDQ3Njg2NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport 3 NZ-NZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1OTAiLCJ0cyI6MTc4ODYzNDQ4MDY3OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport 4 NZ-NZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1OTEiLCJ0cyI6MTc4ODYzNDQ4MDcwNX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport 5 NZ-NZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1OTIiLCJ0cyI6MTc4ODYzNDQ4MTc2MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport 6 NZ-NZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1OTMiLCJ0cyI6MTc4ODYzNDQ4MTcxOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport 7 NZ-NZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1OTQiLCJ0cyI6MTc4ODYzNDQ4MzM5OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport 8 NZ-NZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1OTUiLCJ0cyI6MTc4ODYzNDQ4MzE2OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport 9 NZ-NZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1OTYiLCJ0cyI6MTc4ODYzNDQ4MzQwOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sky Sport Select NZ-NZ
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1ODciLCJ0cyI6MTc4ODYzNDQ4MzMyOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",A Sport PK-PK
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyNjkiLCJ0cyI6MTc4ODYzNDQ4NDcxMX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",PTV Sports-PK
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NTAiLCJ0cyI6MTc4ODYzNDQ4NDg4MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Ten Sports PK-PK
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NDEiLCJ0cyI6MTc4ODYzNDQ4OTIzMH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport 2 Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MyIsInRzIjoxNzg4NjM0NDg5ODU1fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport 3 Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyNTkiLCJ0cyI6MTc4ODYzNDQ4OTc2Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport 5 Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NSIsInRzIjoxNzg4NjM0NDg5MTg2fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/48/index.m3u8?v=1&e=1788720889&k=bb9c56e0dffaf61ac4c949fb4935468e
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eleven Sports 1 Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/71/index.m3u8?v=1&e=1788720889&k=e660786f12040f1c0023fa2db45feac6
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eleven Sports 2 Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MiIsInRzIjoxNzg4NjM0NDkxNzMyfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eleven Sports 3 Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MjgiLCJ0cyI6MTc4ODYzNDQ5MDc0Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",EuroSport 1 Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NyIsInRzIjoxNzg4NjM0NDkxOTAzfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",EuroSport 2 Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/58/index.m3u8?v=1&e=1788720891&k=d38d4fc39ab6f15a7449086e0d0e0b56
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Motowizja Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NjMiLCJ0cyI6MTc4ODYzNDQ5NzExNX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Polsat Sport 2 Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1MCIsInRzIjoxNzg4NjM0NDk3MTE0fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Polsat Sport 3 Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMjkiLCJ0cyI6MTc4ODYzNDQ5NzA2NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Polsat Sport Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/47/index.m3u8?v=1&e=1788720893&k=58916d7ee8206395ab2acae6db157442
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TVP Sport Poland-PL
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMjgiLCJ0cyI6MTc4ODYzNDQ5NzM1OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Benfica TV PT-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzODAiLCJ0cyI6MTc4ODYzNDQ5ODM1OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal 11 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NDAiLCJ0cyI6MTc4ODYzNDQ5ODk5NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN Portugal FIFA Mundial de Clubes-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MTgiLCJ0cyI6MTc4ODYzNDQ5OTk0MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eleven Sports 1 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/455/index.m3u8?v=1&e=1788720893&k=7939cfb6718d7c85e8089f12a595cbfb
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eleven Sports 2 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NTYiLCJ0cyI6MTc4ODYzNDUwMDMyN30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eleven Sports 3 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NTciLCJ0cyI6MTc4ODYzNDUwMTE3Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eleven Sports 4 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/458/index.m3u8?v=1&e=1788720897&k=7ed8e3ca849859108446c2b5ef12e6d7
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eleven Sports 5 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NTkiLCJ0cyI6MTc4ODYzNDUwNDUxNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Porto Canal Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/718/index.m3u8?v=1&e=1788720904&k=97c51e14a632351740822833a09fa33f
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport TV1 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/49/index.m3u8?v=1&e=1788720900&k=5cd082a468e281bf73f87aa250f0995e
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport TV2 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NCIsInRzIjoxNzg4NjM0NTA1MDA3fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport TV3 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NTQiLCJ0cyI6MTc4ODYzNDUwNjA5M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport TV4 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/289/index.m3u8?v=1&e=1788720902&k=369128342a0a8ed38e03ac4229d4f3f9
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport TV5 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyOTAiLCJ0cyI6MTc4ODYzNDUwNzIyOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport TV6 Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/291/index.m3u8?v=1&e=1788720902&k=2d760e5c40282a32f08950f5cc985f79
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sporting TV Portugal-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MTYiLCJ0cyI6MTc4ODYzNDUwNzk0M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Vodafone Sport-PT
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyNjAiLCJ0cyI6MTc4ODYzNDUwOTE5MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Alkass Four-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3ODQiLCJ0cyI6MTc4ODYzNDUwODc4OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Alkass One-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3ODEiLCJ0cyI6MTc4ODYzNDUxMDQ4Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Alkass Three-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3ODMiLCJ0cyI6MTc4ODYzNDUxMDI1Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Alkass Two-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3ODIiLCJ0cyI6MTc4ODYzNDUxMTE5OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports 1 Arabic-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MSIsInRzIjoxNzg4NjM0NTEyODYzfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports 2 Arabic-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MiIsInRzIjoxNzg4NjM0NTEzMjU2fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports 3 Arabic-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MyIsInRzIjoxNzg4NjM0NTEzNTQ3fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports 4 Arabic-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5NCIsInRzIjoxNzg4NjM0NTE1MzUzfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports 5 Arabic-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5NSIsInRzIjoxNzg4NjM0NTE1MzYyfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports 6 Arabic-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5NiIsInRzIjoxNzg4NjM0NTE2ODg5fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports 7 Arabic-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5NyIsInRzIjoxNzg4NjM0NTE3NDUzfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports 8 Arabic-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5OCIsInRzIjoxNzg4NjM0NTE4MzAxfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports 9 Arabic-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5OSIsInRzIjoxNzg4NjM0NTE4NTcwfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",BeIn Sports HD Qatar-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NzgiLCJ0cyI6MTc4ODYzNDUxODY1MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports MENA English 1-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MSIsInRzIjoxNzg4NjM0NTIwMjAzfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN Sports MENA English 2-QA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MCIsInRzIjoxNzg4NjM0NTIwNzM5fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Digi Sport 1 Romania-RO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MDAiLCJ0cyI6MTc4ODYzNDUyMDk5Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Digi Sport 2 Romania-RO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MDEiLCJ0cyI6MTc4ODYzNDUyMjY4N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Digi Sport 3 Romania-RO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MDIiLCJ0cyI6MTc4ODYzNDUyMzAyOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Digi Sport 4 Romania-RO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MDMiLCJ0cyI6MTc4ODYzNDUyNDk3N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Orange Sport 1 Romania-RO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzkiLCJ0cyI6MTc4ODYzNDUyNTU0NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Orange Sport 2 Romania-RO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NDAiLCJ0cyI6MTc4ODYzNDUyNTgxMX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Orange Sport 3 Romania-RO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NDEiLCJ0cyI6MTc4ODYzNDUyNjIyOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Orange Sport 4 Romania-RO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NDIiLCJ0cyI6MTc4ODYzNDUyNjIxOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Prima Sport 1-RO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1ODMiLCJ0cyI6MTc4ODYzNDUyODQ4NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Prima Sport 2-RO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1ODQiLCJ0cyI6MTc4ODYzNDUyODI0Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Prima Sport 3-RO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1ODUiLCJ0cyI6MTc4ODYzNDUyOTIyOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Prima Sport 4-RO
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1ODYiLCJ0cyI6MTc4ODYzNDUzMDg0OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 1 Premium-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMzQiLCJ0cyI6MTc4ODYzNDUzMDU1MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 1 Serbia-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MjkiLCJ0cyI6MTc4ODYzNDUzMzA3N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 10 Serbia-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5NDUiLCJ0cyI6MTc4ODYzNDUzMzcxMH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 2 Premium-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMzUiLCJ0cyI6MTc4ODYzNDUzNDE3N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 2 Serbia-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzAiLCJ0cyI6MTc4ODYzNDUzNjAwNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 3 Premium-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMzkiLCJ0cyI6MTc4ODYzNDUzNTM4OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 3 Serbia-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MzEiLCJ0cyI6MTc4ODYzNDUzODIxNH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sport 9 Serbia-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5NDQiLCJ0cyI6MTc4ODYzNDU0MzIyMH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Arena Sports Tenis Serbia-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MTIiLCJ0cyI6MTc4ODYzNDU0MjQ0MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Nova Sport Serbia-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1ODIiLCJ0cyI6MTc4ODYzNDU0MzI5NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport Klub 1 Serbia-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDEiLCJ0cyI6MTc4ODYzNDU0MzE5MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport Klub 2 Serbia-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDIiLCJ0cyI6MTc4ODYzNDU0NTU5N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport Klub 3 Serbia-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDMiLCJ0cyI6MTc4ODYzNDU0Njg1OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport Klub 4 Serbia-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDQiLCJ0cyI6MTc4ODYzNDU0NjYzMH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Sport Klub HD Serbia-RS
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0NTMiLCJ0cyI6MTc4ODYzNDU0ODU2MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Match Football 1 Russia-RU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMzYiLCJ0cyI6MTc4ODYzNDU0ODkzMH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Match Football 2 Russia-RU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMzciLCJ0cyI6MTc4ODYzNDU1MDM0Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Match Football 3 Russia-RU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMzgiLCJ0cyI6MTc4ODYzNDU1MTQ3OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Match Premier Russia-RU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NzMiLCJ0cyI6MTc4ODYzNDU1MTUwOH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Match TV Russia-RU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMjciLCJ0cyI6MTc4ODYzNDU1MTY2OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",МАТЧ! БОЕЦ Russia-RU
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOTUiLCJ0cyI6MTc4ODYzNDU1MTY4OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SSC Sport 1-SA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MTQiLCJ0cyI6MTc4ODYzNDU1Mzg2N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SSC Sport 2-SA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MTUiLCJ0cyI6MTc4ODYzNDU1NDY4OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SSC Sport 3-SA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MTYiLCJ0cyI6MTc4ODYzNDU1NDA3M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SSC Sport 4-SA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MTciLCJ0cyI6MTc4ODYzNDU1NzA1OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SSC Sport 5-SA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MTgiLCJ0cyI6MTc4ODYzNDU1NzgwNX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SSC Sport Extra 1-SA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MTkiLCJ0cyI6MTc4ODYzNDU1ODUzMX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SSC Sport Extra 2-SA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MjAiLCJ0cyI6MTc4ODYzNDU1ODgyNH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SSC Sport Extra 3-SA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MjEiLCJ0cyI6MTc4ODYzNDU1OTc5M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TV4 Football Sweden-SE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NDciLCJ0cyI6MTc4ODYzNDU1OTk1MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TV4 Hockey-SE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MDAiLCJ0cyI6MTc4ODYzNDU1OTQwNH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TV4 Motor-SE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MDIiLCJ0cyI6MTc4ODYzMzQxOTA4OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TV4 Sport Live 1-SE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MDMiLCJ0cyI6MTc4ODYzNDU2MTMzNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TV4 Sport Live 2-SE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MDQiLCJ0cyI6MTc4ODYzNDU2MjE2M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TV4 Sport Live 3-SE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MDUiLCJ0cyI6MTc4ODYzNDU2MjY2OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TV4 Sport Live 4-SE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MDYiLCJ0cyI6MTc4ODYzNDU2NDUzNH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TV4 Sportkanalen-SE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MDciLCJ0cyI6MTc4ODYzNDU2NTgxOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TV4 Tennis-SE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3MDEiLCJ0cyI6MTc4ODYzNDU2NTY2OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",V Sport Motor Sweden-SE
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyNzIiLCJ0cyI6MTc4ODYzNDU2Njc0Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",A Spor Turkey-TR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDExIiwidHMiOjE3ODg2MzQ1Njc3ODJ9
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TRT Spor TR-TR
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4ODkiLCJ0cyI6MTc4ODYzNDU2Nzc4Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ACC Network USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NjQiLCJ0cyI6MTc4ODYzNDU2ODM1Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Altitude Sports-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MjMiLCJ0cyI6MTc4ODYzNDU2OTQ1NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN SPORTS en Español-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/372/index.m3u8?v=1&e=1788720964&k=b5337998b0ca99a65c0a040965a963d4
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",BeIn SPORTS USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MjUiLCJ0cyI6MTc4ODYzNDU3MDc3N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",beIN SPORTS XTRA 1-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDAiLCJ0cyI6MTc4ODYzNDU3MjgwMH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",BIG TEN Network (BTN USA)-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOTciLCJ0cyI6MTc4ODYzNDU3MTQ5N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",CBS Sports Golazo-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MTAiLCJ0cyI6MTc4ODYzNDU3MzY5OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",CBS Sports Network (CBSSN)-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMDgiLCJ0cyI6MTc4ODYzMzQzNzczM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Chicago Sports Network-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NzYiLCJ0cyI6MTc4ODYzMzQzNjk2OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN Deportes-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/375/index.m3u8?v=1&e=1788719835&k=c4113f8c198fd750ef37248c28457c95
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/44/index.m3u8?v=1&e=1788719830&k=29e720b59da4a557b516c55b08aca750
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN2 USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/45/index.m3u8?v=1&e=1788719835&k=534af243456b930c01ee68d510e29943
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPNews-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyODgiLCJ0cyI6MTc4ODYzMzQzOTM1NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPNU USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMTYiLCJ0cyI6MTc4ODYzMzQzOTg5NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network Arizona-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4OTAiLCJ0cyI6MTc4ODYzMzQ0MzY2NX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network Detroit-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4OTEiLCJ0cyI6MTc4ODYzMzQ0Mzg1OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network Florida-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4OTIiLCJ0cyI6MTc4ODYzMzQ0MzQzMX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network Great Lakes-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4OTMiLCJ0cyI6MTc4ODYzMzQ0Mjg2OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network Indiana-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4OTQiLCJ0cyI6MTc4ODYzMzQ0NjY3M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network Kansas City-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4OTUiLCJ0cyI6MTc4ODYzMzQ0NzA1OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network Midwest-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4OTYiLCJ0cyI6MTc4ODYzMzQ1MzU2N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network New Orleans-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/897/index.m3u8?v=1&e=1788720969&k=1470712d272132beeeebc6b7afc3e72a
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network North-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4OTgiLCJ0cyI6MTc4ODYzMzQ1NDA0N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network Ohio-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4OTkiLCJ0cyI6MTc4ODYzNDU3NDY4OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network Oklahoma-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MDAiLCJ0cyI6MTc4ODYzNDU3NjA2MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network SoCal-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MDIiLCJ0cyI6MTc4ODYzNDU3NTgwMH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network South-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MDMiLCJ0cyI6MTc4ODYzNDU3NjM1M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network Southeast-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MDQiLCJ0cyI6MTc4ODYzNDU3NzI4Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network Sun-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MDUiLCJ0cyI6MTc4ODYzNDU3NjY5MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network West-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/906/index.m3u8?v=1&e=1788720974&k=5c95dbc35517742f2cc70d9c657e91de
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network Wisconsin-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MDciLCJ0cyI6MTc4ODYzNDU3OTQ0N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FOX Deportes USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NDMiLCJ0cyI6MTc4ODYzNDU3OTk3M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FOX Soccer Plus-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NTYiLCJ0cyI6MTc4ODYzNDU4MTc2Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Fox Sports 1 USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOSIsInRzIjoxNzg4NjM0NTgxMTU1fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Fox Sports 2 USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/758/index.m3u8?v=1&e=1788720976&k=ccc3ed0cb6230e9c4af301021e2cec3a
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",GOLF Channel USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMTgiLCJ0cyI6MTc4ODYzNDU4MzgwN30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",GOLTV USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1OTciLCJ0cyI6MTc4ODYzNDU4NDE5MX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Marquee Sports Network-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/770/index.m3u8?v=1&e=1788720978&k=89ff0d65d6ada9870e4f6c7fdc5c1d62
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",MASN USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/829/index.m3u8?v=1&e=1788720980&k=060967c3a02cd27da8fdf51c67dccd01
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",MAVTV USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NDYiLCJ0cyI6MTc4ODYzNDU4NDEzM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",MLB Network USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzOTkiLCJ0cyI6MTc4ODYzNDU4NTUyNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Monumental Sports Network-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NzgiLCJ0cyI6MTc4ODYzNDU4NjQ4MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Motor Trend-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NjEiLCJ0cyI6MTc4ODYzNDU4NzI3Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",MSG USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NjUiLCJ0cyI6MTc4ODYzNDU4NzMwN30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",NBA TV USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MDQiLCJ0cyI6MTc4ODYzNDU4ODQ2N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",NBC Sports Bay Area-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NTMiLCJ0cyI6MTc4ODYzNDU4OTAwMH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",NBC Sports Boston-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NTQiLCJ0cyI6MTc4ODYzNDU4OTU1NH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",NBC Sports California-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NTUiLCJ0cyI6MTc4ODYzNDU5MTAxMH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",NBC Sports Philadelphia-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NzciLCJ0cyI6MTc4ODYzNDU5MjAzNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",NESN USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NjIiLCJ0cyI6MTc4ODYzNDU5MTQ5N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",NFL Network-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MDUiLCJ0cyI6MTc4ODYzNDU5MjMyNH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",NFL RedZone-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NjciLCJ0cyI6MTc4ODYzNDU5NDkxNX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",NHL Network USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NjMiLCJ0cyI6MTc4ODYzNDU5NTQ4Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Outdoor Channel USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI4NDgiLCJ0cyI6MTc4ODYzNDU5NTYxNn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Pac-12 Network USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyODciLCJ0cyI6MTc4ODYzNDU5NTkxM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Rally Tv-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MDciLCJ0cyI6MTc4ODYzNDU5NjI3Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Root Sports Northwest-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MjAiLCJ0cyI6MTc4ODYzNDU5ODM0N30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SEC Network USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzODUiLCJ0cyI6MTc4ODYzNDU5OTIwNH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Space City Home Network-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MjEiLCJ0cyI6MTc4ODYzNDU5OTQ4M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Spectrum Sportsnet LA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NjQiLCJ0cyI6MTc4ODYzNDYwMDMxOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Spectrum SportsNet USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5ODIiLCJ0cyI6MTc4ODYzNDU5OTczNX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SportsNet New York (SNY)-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NTkiLCJ0cyI6MTc4ODYzNDYwMjIyMn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SportsNet Pittsburgh-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MjIiLCJ0cyI6MTc4ODYzNDYwMzg1OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",StarzPlay CricLife 1 HD-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIyODQiLCJ0cyI6MTc4ODYzNDYwMzg5OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Tennis Channel-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MCIsInRzIjoxNzg4NjM0NjA0ODQ4fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TUDN USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NiIsInRzIjoxNzg4NjM0NjA0NjY3fQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Willow Cricket-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNDYiLCJ0cyI6MTc4ODYzNDYwNjU5Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Willow XTRA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1OTgiLCJ0cyI6MTc4ODYzNDYwNzI3OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",WWE Network-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNzYiLCJ0cyI6MTc4ODYzNDYwNzY1Nn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",YES Network USA-US
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI3NjMiLCJ0cyI6MTc4ODYzNDYwNzgwM30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport Action-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MjAiLCJ0cyI6MTc4ODYzNDI3Mjc2M30
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport Cricket-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzNjgiLCJ0cyI6MTc4ODYzNDI3MzU5Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Supersport Football-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI1NiIsInRzIjoxNzg4NjM0MjczNjQyfQ
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport Golf-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MjIiLCJ0cyI6MTc4ODYzNDI3NDM4MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport Grandstand-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MTIiLCJ0cyI6MTc4ODYzNDI3NDU5OX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport LaLiga-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MTUiLCJ0cyI6MTc4ODYzNDI3NDE1MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport Motorsport-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MjQiLCJ0cyI6MTc4ODYzNDI3NDEyOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport Premier league-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/414/index.m3u8?v=1&e=1788720671&k=868ad9d917e2fe2a385f4ea86a5be1a2
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport PSL-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MTMiLCJ0cyI6MTc4ODYzNDI3NTc3Mn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport Rugby-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MjEiLCJ0cyI6MTc4ODYzNDI3NTU2MH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport Tennis-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MjMiLCJ0cyI6MTc4ODYzNDI3ODkwOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport Variety 1-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MTYiLCJ0cyI6MTc4ODYzNDI4MTE2OH0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport Variety 2-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MTciLCJ0cyI6MTc4ODYzNDI4MTEzOX0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport Variety 3-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MTgiLCJ0cyI6MTc4ODYzNDI4MTQwMn0
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",SuperSport Variety 4-ZA
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI0MTkiLCJ0cyI6MTc4ODYzNDI4MTkyN30
 

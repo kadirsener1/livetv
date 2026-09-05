@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Eleven Sports 1 Portugal-PT
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/455/index.m3u8?v=1&e=1788683225&k=2cab0984cabbda8eb0cc63a5308bcf2d
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/455/index.m3u8?v=1&e=1788720893&k=7939cfb6718d7c85e8089f12a595cbfb

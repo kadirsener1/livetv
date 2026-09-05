@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Fox Sports 2 USA-US
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/758/index.m3u8?v=1&e=1788683540&k=5c48ada3f2a12e8d39f41a294cfb6de3
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/758/index.m3u8?v=1&e=1788720976&k=ccc3ed0cb6230e9c4af301021e2cec3a

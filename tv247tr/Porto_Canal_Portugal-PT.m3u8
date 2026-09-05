@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Porto Canal Portugal-PT
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/718/index.m3u8?v=1&e=1788683237&k=207f308da49b4dfd72550f1071805f0b
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/718/index.m3u8?v=1&e=1788720904&k=97c51e14a632351740822833a09fa33f

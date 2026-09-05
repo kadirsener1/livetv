@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",TVA Sports-CA
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/833/index.m3u8?v=1&e=1788682639&k=696278040f4427e2aa64537f5d40dd02
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/833/index.m3u8?v=1&e=1788720720&k=0c53f27852733926d52516ef8b2f10cb

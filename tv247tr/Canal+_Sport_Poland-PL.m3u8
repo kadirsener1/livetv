@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Canal+ Sport Poland-PL
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/48/index.m3u8?v=1&e=1788683193&k=9e2b6e54a7a55ca7d9faafbf54076921
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/48/index.m3u8?v=1&e=1788720889&k=bb9c56e0dffaf61ac4c949fb4935468e

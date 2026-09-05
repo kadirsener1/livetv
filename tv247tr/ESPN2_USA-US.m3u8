@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",ESPN2 USA-US
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/45/index.m3u8?v=1&e=1788683471&k=ade0a2a841e58c81fce08bd4f04abd6c
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/45/index.m3u8?v=1&e=1788719835&k=534af243456b930c01ee68d510e29943

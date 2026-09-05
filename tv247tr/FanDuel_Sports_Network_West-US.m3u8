@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",FanDuel Sports Network West-US
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI5MDYiLCJ0cyI6MTc4ODU5NzEzNDAxMn0
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/906/index.m3u8?v=1&e=1788720974&k=5c95dbc35517742f2cc70d9c657e91de

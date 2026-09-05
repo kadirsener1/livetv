@@ -1,5 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",DAZN 4 Spain-ES
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/448/index.m3u8?v=1&e=1788682754&k=edfab5946faa6d85441d5241cb340d05
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://live.tv247.site/live/448/index.m3u8?v=1&e=1788720755&k=91cffe07711491ff0b1fc4e8eda91e7b
