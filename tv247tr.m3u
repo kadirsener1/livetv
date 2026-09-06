@@ -4,6 +4,11 @@
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://cdn6.zohanayaan.com:1686/hls/do91.m3u8?md5=cow0JT7OxIo6lsppKhrkZA&expires=1788724258
 
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1kre
+#EXTVLCOPT:http-referrer=https://livelive24.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://hls.hockey.do/secure_hls.php?path=c39a7e658e9c50b484d2e841aebb3181%2Findex.m3u8&e=1788719013&sig=_exgp6VXbkgt1GMm1cUrAJNvKb8V9-1iCXgG6F92_qE&v=1788717213-3079
+
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports2
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
