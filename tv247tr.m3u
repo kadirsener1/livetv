@@ -1,8 +1,8 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1zohan
+#EXTVLCOPT:http-referrer=https://livelive24.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/62/index.m3u8?v=1&e=1788802558&k=dd59138565194b517257ad4b9f8aac22
+https://cdn6.zohanayaan.com:1686/hls/do91.m3u8?md5=cow0JT7OxIo6lsppKhrkZA&expires=1788724258
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports2
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
