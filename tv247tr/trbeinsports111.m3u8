@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
+https://cdn.jsdelivr.net/npm/@swarmcloud/hls/p2p-engine.min.js
