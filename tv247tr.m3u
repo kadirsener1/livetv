@@ -1,9 +1,8 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1zohan
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1vertex
 #EXTVLCOPT:http-referrer=https://livelive24.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdn6.zohanayaan.com:1686/hls/do91.m3u8?md5=cow0JT7OxIo6lsppKhrkZA&expires=1788724258
-
+https://hls.hockey.do/secure_hls.php?path=c39a7e658e9c50b484d2e841aebb3181%2Findex.m3u8&e=1788719314&sig=F0WKujFOGBArGicrdqEXgKiSrKWq_xZtlW5zA-TPxDw&v=1788717514-4747
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1kre
 #EXTVLCOPT:http-referrer=https://livelive24.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
