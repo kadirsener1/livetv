@@ -9,12 +9,9 @@ CHANNELS_FILE = "tv247ws.json"
 OUTPUT_FILE = "tv247tr.m3u"
 LIVETV_DIR = "tv247tr"
 
-# 800 kanal için ideal kararlılık hızı. Sisteminiz ve internetiniz çok iyiyse 6 yapabilirsiniz.
-# Çok yüksek sayı sitelerin sizi engellemesine (HTTP 429) yol açar.
-MAX_CONCURRENT_TASKS = 10 
-MAX_RETRIES = 2  # Başarısız olan kanallar için ekstra deneme sayısı
+MAX_CONCURRENT_TASKS = 2 
+MAX_RETRIES = 2 
 
-# Engellenecek reklam ve takipçi domain kalıpları
 AD_DOMAINS = [
     "doubleclick", "google-analytics", "googlesyndication", "adservice", 
     "adsterra", "propellerads", "popads", "juicyads", "exoclick", "onclickads",
@@ -38,6 +35,66 @@ def sanitize_filename(name):
     clean_name = re.sub(r'[\\/*?:"<>|]', "", name)
     return clean_name.strip().replace(" ", "_")
 
+def update_existing_m3u(file_path, results):
+    """
+    Mevcut M3U dosyasını bozmadan, sadece kanal ismine göre
+    yayın linklerini güncelleyen fonksiyon.
+    """
+    # Kolay eşleştirme için { "kanal adı": "yeni_stream_url" } sözlüğü oluştur
+    new_links = {
+        item["name"].strip().lower(): item["stream"].strip() 
+        for item in results if item.get("stream")
+    }
+
+    # Eğer m3u dosyası henüz hiç yoksa sıfırdan oluşturur
+    if not os.path.exists(file_path):
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for item in results:
+                f.write(f'#EXTINF:-1 tvg-logo="{item["logo"]}" group-title="{item["group"]}",{item["name"]}\n')
+                f.write(f"{item['stream']}\n\n")
+        print(f"[+] '{file_path}' dosyası bulunamadığı için yeni oluşturuldu.")
+        return
+
+    with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+        lines = f.readlines()
+
+    updated_lines = []
+    pending_new_stream = None
+
+    for line in lines:
+        stripped = line.strip()
+
+        # 1. #EXTINF satırından kanal adını al
+        if stripped.startswith("#EXTINF"):
+            pending_new_stream = None  # Sıfırla
+            if "," in stripped:
+                channel_name = stripped.rsplit(",", 1)[1].strip().lower()
+                if channel_name in new_links:
+                    pending_new_stream = new_links[channel_name]
+            
+            # Orijinal #EXTINF satırına (logo, id, grup vb.) DOKUNMADAN ekle
+            updated_lines.append(line)
+
+        # 2. Diğer etiketler (#EXTVLCOPT, #EXTM3U vb.) veya boş satırlar
+        elif stripped.startswith("#") or not stripped:
+            updated_lines.append(line)
+
+        # 3. Stream linkinin olduğu satır
+        else:
+            if pending_new_stream:
+                # Eşleşen yeni linki yaz
+                updated_lines.append(pending_new_stream + "\n")
+                pending_new_stream = None
+            else:
+                # Eşleşme yoksa eski linki aynen koru
+                updated_lines.append(line)
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.writelines(updated_lines)
+
+    print(f"[+] '{file_path}' dosyası yapısı korunarak sadece isim eşleşmesiyle güncellendi.")
+
 async def scan_channel(context, channel, semaphore):
     """Kanalı kararlı hale getirmek için hata durumunda yeniden deneme (retry) mekanizması içeren ana fonksiyon."""
     for attempt in range(1, MAX_RETRIES + 2):
@@ -50,7 +107,6 @@ async def scan_channel(context, channel, semaphore):
                 print(f"  [!] Hata ({channel['name']} - Deneme {attempt}): {str(e)[:50]}")
             
             if attempt < MAX_RETRIES + 1:
-                # Yeniden denemeden önce kısa bir süre bekle (Sitenin kendine gelmesi için)
                 await asyncio.sleep(2)
     return None
 
@@ -60,25 +116,20 @@ async def get_stream_link(context, channel, attempt):
     
     page = await context.new_page()
     
-    # Reklamları, resimleri ve CSS dosyalarını engelleyerek hem hız kazanın hem de reklam yönlendirmelerini önleyin
     async def route_interceptor(route):
         req = route.request
         url = req.url.lower()
-        # Görsel, yazı tipi veya reklam domaini ise engelle
         if req.resource_type in ["image", "font", "imageset"] or any(ad in url for ad in AD_DOMAINS):
             return await route.abort()
         return await route.continue_()
 
     await page.route("**/*", route_interceptor)
-    
-    # Popup (Yeni sekme açılmasını) anında kapat
     page.on("popup", lambda popup: popup.close())
 
     found_link = None
     stream_referer = referer
     link_found_event = asyncio.Event()
 
-    # Link yakalama fonksiyonu
     def check_and_set_link(url, req_headers=None):
         nonlocal found_link, stream_referer
         if link_found_event.is_set():
@@ -92,36 +143,29 @@ async def get_stream_link(context, channel, attempt):
                     stream_referer = req_headers["referer"]
                 link_found_event.set()
 
-    # Ağ isteklerini (Requests) milisaniyelik seviyede dinle (En kesin yöntem)
     page.on("request", lambda req: check_and_set_link(req.url, req.headers))
     page.on("response", lambda res: check_and_set_link(res.url, res.request.headers))
 
     try:
-        # Deneme sayısına göre dinamik zaman aşımı belirle (Sonraki denemelerde süreyi artır)
         timeout_limit = 10000 if attempt == 1 else 15000
         
-        # Sayfanın reklamlar yüzünden başka yere yönlenmesini JS ile sabitle
         await page.add_init_script("""
             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
             window.open = function() { return null; }; 
             window.onbeforeunload = function() { return null; };
         """)
 
-        # Sayfayı yükle
         await page.goto(target_url, wait_until="domcontentloaded", timeout=timeout_limit)
         
-        # İlk 3 saniye ağ trafiğinde m3u8 aranıyor
         try:
             await asyncio.wait_for(link_found_event.wait(), timeout=3.5)
         except asyncio.TimeoutError:
             pass
 
-        # Eğer hala bulunamadıysa, tüm Iframe'lerin içine sız ve tetikle
         if not link_found_event.is_set():
             frames = page.frames
             for frame in frames:
                 try:
-                    # 1. Adım: Frame içindeki HTML kodundan Regex ile m3u8 ayıkla
                     content = await frame.content()
                     matches = re.findall(r'["\'](https?://[^"\']+\.m3u8[^"\']*)["\']', content)
                     if matches:
@@ -129,7 +173,6 @@ async def get_stream_link(context, channel, attempt):
                         stream_referer = frame.url
                         break
                     
-                    # 2. Adım: Oynatıcı butonlarını JavaScript ile tetikle (Overlay/Reklam engelini aşar)
                     selectors = [
                         "video", ".jw-video", "iframe", "button[class*='play']", 
                         ".vjs-big-play-button", ".jw-display-icon-container", 
@@ -138,20 +181,18 @@ async def get_stream_link(context, channel, attempt):
                     for sel in selectors:
                         locator = frame.locator(sel).first
                         if await locator.count() > 0:
-                            # Standart click yerine JS click kullanarak reklam katmanını delip geçiyoruz
                             await locator.evaluate("el => el.click()")
                             break
                 except Exception:
                     continue
 
-        # Tıklamadan sonra ağın tepki vermesi için son bekleme
         if not link_found_event.is_set():
             try:
                 await asyncio.wait_for(link_found_event.wait(), timeout=6.0)
             except asyncio.TimeoutError:
                 pass
 
-    except Exception as e:
+    except Exception:
         if attempt == (MAX_RETRIES + 1):
             print(f"  [-] Link bulunamadı: {channel['name']} (Tüm denemeler başarısız)")
     finally:
@@ -183,7 +224,6 @@ async def main():
     semaphore = asyncio.Semaphore(MAX_CONCURRENT_TASKS)
 
     async with async_playwright() as p:
-        # Chromium tarayıcıyı gelişmiş iframe sızma argümanlarıyla başlatıyoruz
         browser = await p.chromium.launch(
             headless=True,
             args=[
@@ -194,7 +234,6 @@ async def main():
                 "--disable-gpu",
                 "--disable-dev-shm-usage",
                 "--blink-settings=imagesEnabled=false",
-                # Aşağıdaki iki satır cross-origin iframe kısıtlamalarını tamamen kaldırır!
                 "--disable-features=IsolateOrigins,site-per-process",
                 "--disable-site-isolation-trials"
             ]
@@ -213,16 +252,10 @@ async def main():
         await browser.close()
 
     if results:
-    # Toplu Genel IPTV M3U Dosyası Yazma
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
-            for item in results:
-                f.write(f'#EXTINF:-1 tvg-logo="{item["logo"]}" group-title="{item["group"]}",{item["name"]}\n')
-                f.write(f'#EXTVLCOPT:http-referrer={item["referer"]}\n')
-                f.write(f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n')
-                f.write(f"{item['stream']}\n\n")
+        # 1. Mevcut M3U Dosyasını SADECE Linkleri Güncelleyerek Düzenle
+        update_existing_m3u(OUTPUT_FILE, results)
         
-        # Bireysel M3U8 Dosyalarını İstenen Formatta Yazma
+        # 2. Bireysel M3U8 Dosyalarını Yazma
         print(f"\n[*] Bireysel m3u8 dosyaları oluşturuluyor ({len(results)} kanal)...")
         for item in results:
             safe_name = sanitize_filename(item["name"])
@@ -234,8 +267,9 @@ async def main():
                 cf.write("#EXT-X-STREAM-INF:BANDWIDTH=8000000\n")
                 cf.write(f"{item['stream']}\n")
                 
-        print(f"[+] Tamamlandı! {len(results)} adet aktif yayın kaydedildi.")
+        print(f"[+] Tamamlandı! {len(results)} adet aktif yayın işlendi.")
     else:
         print("\n[-] Hiçbir aktif yayın tespit edilemedi.")
+
 if __name__ == "__main__":
     asyncio.run(main())
