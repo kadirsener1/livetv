@@ -7,10 +7,82 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/in
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
 https://corestream.ardastream.live//beintv/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",trbeinsports1-tvnow
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1-tvnow
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://live.tv247.site/live/62/index.m3u8?v=1&e=1788890001&k=fc684ddcd3f0c2d04717b4733572c78d
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports2-tvnow
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports3-tvnow
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports4-tvnow
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports5-tvnow
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports2cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports3cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports4cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports5cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsportsmax1cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsportsmax2cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trssportcdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trssport2cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trtivibuspor1cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trtivibuspor2cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trtivibuspor3cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trtivibuspor4cdn
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://live.tv247.site/live/62/index.m3u8?v=1&e=
 
 #EXTINF:-1 tvg-id="bein_sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor",BeIN Sport 1-ZEUS
 https://zeus645423.cfd/b1/index.txt
