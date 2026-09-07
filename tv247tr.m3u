@@ -1,18 +1,185 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="İNFO",BİLGİLENDİRME
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/info.m3u8
-#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-ATOM
-#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
+
+#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" group-title="Spor",BEIN SPORTS 1
+#EXTVLCOPT:http-referrer=https://www.atomsportv513.top
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
 https://corestream.ardastream.live//beintv/tracks-v1a1/mono.m3u8
 
+
 #EXTINF:-1 tvg-id="bein_sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor",BeIN Sport 1-ZEUS
 https://zeus645423.cfd/b1/index.txt
+
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor", TR:beIN Sport 1 HD-Mahsun
 #EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
 https://andro.evrenesoglu99.click/checklist/androstreamlivebs1.m3u8
+
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor",beIN SPORTS HD 1 [TR]-ace
 http://88.99.165.164:6878/ace/getstream?infohash=071b49a1c52d304cae6300e2776022eec7ebe6cd&pid=238
+
+#EXTINF:-1 tvg-id="bein-sports-2" tvg-name="BEIN SPORTS 2" group-title="Spor",BEIN SPORTS 2
+#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://corestream.ardastream.live//bein2/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor-Diğer",Spor Smart 2
+https://65.108.239.207/smart2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport 2 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivebs2.m3u8
+
+#EXTINF:-1 group-title="Spor",beIN SPORTS HD 2 [TR]-ace
+http://88.99.165.164:6878/ace/getstream?infohash=36e9427b55dd3574f9f40eab30aef8e0f34f477e&pid=239
+
+
+
+#EXTINF:-1 tvg-id="bein-sports-3" tvg-name="BEIN SPORTS 3" group-title="Atom Spor",BEIN SPORTS 3
+#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://corestream.ardastream.live//bein3/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="bein-sports-4" tvg-name="BEIN SPORTS 4" group-title="Atom Spor",BEIN SPORTS 4
+#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://corestream.ardastream.live//bein4/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="bein-sports-5" tvg-name="BEIN SPORTS 5" group-title="Atom Spor",BEIN SPORTS 5
+#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://corestream.ardastream.live//bein5/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="bein-sports-max-1" tvg-name="BEIN SPORTS MAX 1" group-title="Atom Spor",BEIN SPORTS MAX 1
+#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://corestream.ardastream.live//beinmax1/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="bein-sports-max-2" tvg-name="BEIN SPORTS MAX 2" group-title="Atom Spor",BEIN SPORTS MAX 2
+#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://corestream.ardastream.live//beinmax2/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="s-sport" tvg-name="S SPORT" group-title="Atom Spor",S SPORT
+#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://corestream.ardastream.live//s-sport/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="s-sport-2" tvg-name="S SPORT 2" group-title="Atom Spor",S SPORT 2
+#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://corestream.ardastream.live//s-sport2/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="trt-spor" tvg-name="TRT SPOR" group-title="Atom Spor",TRT SPOR
+#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://corestream.ardastream.live//trt-spor/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="a-spor" tvg-name="A SPOR" group-title="Atom Spor",A SPOR
+#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://corestream.ardastream.live//aspor/tracks-v1a1/mono.m3u8
+
+
+
+
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/UGbdQLv.png" group-title="TR Spor",beIN Sports Haber-talip
+http://taliptv01.xyz:8080/play/live.php?mac=00:1A:79:4D:06:6C&stream=620421&extension=ts
+
+
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport 3 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivebs3.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport 4 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivebs4.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport 5 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivebs5.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport Max 1 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivebsm1.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport Max 2 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivebsm2.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:S Sport 1 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivess1.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:S Sport 2 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivess2.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tivibu Sport HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivets.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tivibu Sport 1 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivets1.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tivibu Sport 2 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivets2.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tivibu Sport 3 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivets3.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tivibu Sport 4 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivets4.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Smart Sport 1 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivesm1.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Smart Sport 2 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivesm2.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Euro Sport 1 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivees1.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Euro Sport 2 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivees2.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivetb.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 1 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivetb1.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 2 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivetb2.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 3 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivetb3.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 4 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivetb4.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 5 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivetb5.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 6 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivetb6.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 7 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivetb7.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 8 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamlivetb8.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamliveexn.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 1 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamliveexn1.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 2 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamliveexn2.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 3 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamliveexn3.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 4 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamliveexn4.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 5 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamliveexn5.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 6 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamliveexn6.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 7 HD-Mahsun
+#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
+https://andro.evrenesoglu99.click/checklist/androstreamliveexn7.m3u8
+
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",beIN SPORTS 5-Tal
 http://taliptv01.xyz:8080/play/live.php?mac=00:1A:79:4D:06:6C&stream=620422&extension=ts
@@ -26,8 +193,7 @@ https://65.108.239.207/t3/index.m3u8
 https://65.108.239.207/t4/index.m3u8
 #EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor-Diğer",Spor Smart 1
 https://65.108.239.207/smart1/index.m3u8
-#EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor-Diğer",Spor Smart 2
-https://65.108.239.207/smart2/index.m3u8
+
 #EXTINF:-1 tvg-id="bein_sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Neon",BeIN Sport 2 zeus
 https://zeus645423.cfd/b2/index.txt
 #EXTINF:-1 tvg-id="bein_sport" tvg-name="BeIN Sport 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Neon",BeIN Sport 3 zeus
@@ -72,52 +238,13 @@ https://proxy.cors.sh/https://yayinlarfidanafidanlaragaca.xyz/hls/9.m3u8
 https://proxy.cors.sh/https://yayinlarfidanafidanlaragaca.xyz/hls/10.m3u8
 #EXTINF:-1 group-title="Spor",beIN SPORTS HABER [TR]-ace
 http://88.99.165.164:6878/ace/getstream?infohash=22d5b3999d11a4f1bad9da8fdaa9034935fb2706&pid=237
-#EXTINF:-1 group-title="Spor",beIN SPORTS HD 2 [TR]-ace
-http://88.99.165.164:6878/ace/getstream?infohash=36e9427b55dd3574f9f40eab30aef8e0f34f477e&pid=239
+
 #EXTINF:-1 group-title="Spor",beIN SPORTS HD 3 [TR]-ace
 http://88.99.165.164:6878/ace/getstream?infohash=7fee896143ae89590d97793a0be7ad8ec6fa4552&pid=240
 #EXTINF:-1 group-title="Spor",beIN SPORTS HD 4 [TR]-ace
 http://88.99.165.164:6878/ace/getstream?infohash=26c1fe91207fb2a1cfa6271970081d4c2009b6fa&pid=241
-#EXTINF:-1 tvg-id="bein-sports-2" tvg-name="BEIN SPORTS 2" group-title="Atom Spor",BEIN SPORTS 2
-#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.ardastream.live//bein2/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="bein-sports-3" tvg-name="BEIN SPORTS 3" group-title="Atom Spor",BEIN SPORTS 3
-#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.ardastream.live//bein3/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="bein-sports-4" tvg-name="BEIN SPORTS 4" group-title="Atom Spor",BEIN SPORTS 4
-#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.ardastream.live//bein4/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="bein-sports-5" tvg-name="BEIN SPORTS 5" group-title="Atom Spor",BEIN SPORTS 5
-#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.ardastream.live//bein5/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="bein-sports-max-1" tvg-name="BEIN SPORTS MAX 1" group-title="Atom Spor",BEIN SPORTS MAX 1
-#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.ardastream.live//beinmax1/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="bein-sports-max-2" tvg-name="BEIN SPORTS MAX 2" group-title="Atom Spor",BEIN SPORTS MAX 2
-#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.ardastream.live//beinmax2/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="s-sport" tvg-name="S SPORT" group-title="Atom Spor",S SPORT
-#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.ardastream.live//s-sport/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="s-sport-2" tvg-name="S SPORT 2" group-title="Atom Spor",S SPORT 2
-#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.ardastream.live//s-sport2/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="trt-spor" tvg-name="TRT SPOR" group-title="Atom Spor",TRT SPOR
-#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.ardastream.live//trt-spor/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="a-spor" tvg-name="A SPOR" group-title="Atom Spor",A SPOR
-#EXTVLCOPT:http-referrer=https://www.atomsportv512.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.ardastream.live//aspor/tracks-v1a1/mono.m3u8
+
+
 #EXTINF:-1 tvg-logo="https://cms-tabii-public-image.tabii.com/int/w300/43023.jpeg" group-title="TabiiSpor",TABİİ SPOR
 https://kl9mr2vxw7nq5py1sh4tj3gb6.medya.trt.com.tr/master_1080p.m3u8
 #EXTINF:-1 tvg-name="Tabii Spor 1" tvg-language="Turkish" tvg-country="TR" tvg-id="TabiiSpor1" tvg-logo="https://cms-tabii-public-image.tabii.com/int/w500/43005.jpeg" group-title="TabiiSpor",Tabii Spor 1
@@ -1892,114 +2019,9 @@ https://moondigitaledge.radyotvonline.net/radyolanddoksanlar/playlist.m3u8
 http://37.247.98.8/stream/34/
 #EXTINF:1 group-title="Radyolar",X Radio
 https://stream.xradio.com.tr:8770/stream
-#EXTINF:-1 tvg-logo="https://i.imgur.com/UGbdQLv.png" group-title="TR Spor",beIN Sports Haber-talip
-http://taliptv01.xyz:8080/play/live.php?mac=00:1A:79:4D:06:6C&stream=620421&extension=ts
-#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" group-title="Atom Spor",BEIN SPORTS 1
-#EXTVLCOPT:http-referrer=https://www.atomsportv513.top
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.ardastream.live//beintv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport 2 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivebs2.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport 3 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivebs3.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport 4 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivebs4.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport 5 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivebs5.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport Max 1 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivebsm1.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport Max 2 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivebsm2.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:S Sport 1 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivess1.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:S Sport 2 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivess2.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tivibu Sport HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivets.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tivibu Sport 1 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivets1.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tivibu Sport 2 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivets2.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tivibu Sport 3 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivets3.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tivibu Sport 4 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivets4.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Smart Sport 1 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivesm1.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Smart Sport 2 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivesm2.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Euro Sport 1 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivees1.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Euro Sport 2 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivees2.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivetb.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 1 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivetb1.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 2 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivetb2.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 3 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivetb3.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 4 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivetb4.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 5 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivetb5.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 6 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivetb6.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 7 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivetb7.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Tabii 8 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamlivetb8.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamliveexn.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 1 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamliveexn1.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 2 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamliveexn2.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 3 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamliveexn3.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 4 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamliveexn4.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 5 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamliveexn5.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 6 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamliveexn6.m3u8
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:Exxen 7 HD-Mahsun
-#EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
-https://andro.evrenesoglu99.click/checklist/androstreamliveexn7.m3u8
+
+
+
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Abu Dhabi Sports 1 Premium-AE
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
