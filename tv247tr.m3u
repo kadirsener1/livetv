@@ -7,6 +7,10 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/in
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
 https://corestream.ardastream.live//beintv/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",trbeinsports1-tvnow
+#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://chunk.tvnow247.today/api/proxy/playlist?token=
 
 #EXTINF:-1 tvg-id="bein_sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor",BeIN Sport 1-ZEUS
 https://zeus645423.cfd/b1/index.txt
