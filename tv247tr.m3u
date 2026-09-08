@@ -1,8 +1,9 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="İNFO",BİLGİLENDİRME
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/info.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="İNFO",test2
+#EXTINF:-1 tvg-id="bein_sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor",BeIN Sport 1-RAW
+http://4kx8k.xyz:2095/live/andreas.stn/kdJyAM3ctj/214050.m3u8
+#EXTINF:-1 tvg-id="bein_sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor",BeIN Sport 1-HD
 http://4kx8k.xyz:2095/live/andreas.stn/kdJyAM3ctj/209476.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" group-title="Spor",BEIN SPORTS 1-ARDA
