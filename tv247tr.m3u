@@ -3,7 +3,7 @@
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/info.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="İNFO",test
-https://tv.canlitvvolo.com/players/hls/hls.light.min.js?v=lGe5oyeLznQHc-WUI0CaAvvLuNxmg3HxcZixjCoaszY
+http://july.misekran.xyz:8080/live/Sanetgerstut4141/jkZtbf2cU2Fu/748242.m3u8
 
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" group-title="Spor",BEIN SPORTS 1-ARDA
 #EXTVLCOPT:http-referrer=https://www.atomsportv513.top
@@ -16,12 +16,12 @@ https://zeus645423.cfd/b1/index.txt
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1-tvnow
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/62/index.m3u8?v=1&e=1788962975&k=21b322eacbf27b0318e67e39c72d6536
+https://live.tv247.site/live/62/index.m3u8?v=1&e=1788964119&k=95b57f91b155b8cd4bb8e9ac37c25ece
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3ODg4OTA5ODc5MDA6Y2RubGl2ZXR2LnR2OjM3ODU5ODMxNzRjOWIwYTkuYWQyZWMzZDQ4MjFiZjRmNTIyODc3Nzk4ZTU4ODliNTc5OTliY2VjNzRlZTczYTc2MWI2NmY2ZTMyOGNiYmFjZg
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3ODg4OTIxMzA4NzM6Y2RubGl2ZXR2LnR2OjQzY2MyYzZlMGVmMmU3ZGMuMjRhYTYyMTg5MmJjY2E0MGRlNDZkMDM3Nzc4ZWZiZDc2NjA4YTE5ODIwZmUwNjczMGIzZTdmZDE3YzMwMjlkNg
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",BeIN SPORTS 1 bite
 #EXTVLCOPT:http-referrer=https://sportsbite.org
@@ -49,12 +49,12 @@ https://65.108.239.207/smart2/index.m3u8
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports2-tvnow
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/63/index.m3u8?v=1&e=1788962979&k=236058869af8b7315fb8b690f6a8de69
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MyIsInRzIjoxNzg4ODc3NzI2ODU1fQ
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports2cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc04/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA0OjE3ODg4OTA5ODgyNDI6Y2RubGl2ZXR2LnR2OjU4ODMzZjFjOTkzOGYwZjkuZDgwYjQwNjIzZGEwYTdiN2VlMTE1MmVkNzQ3YWZjMjllM2FiZGY0OTEwZDg5YTc1ZWMzMTYyYTE0OTJiMmRjNg
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc04/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA0OjE3ODg4OTIxMzEyMTY6Y2RubGl2ZXR2LnR2OjY2YTc0NTM3ZjUwODkwMTYuZjkxMTk4ZjU3MDE0NmFjNzA2YWMxOGQ1NDVhYmM0NzJjYWEwOWRmYmM5ZTVlZmRhOTZmYWU1ZjRjNTRkNWZlZA
 
 
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport 2 HD-Mahsun
@@ -73,61 +73,61 @@ http://88.99.165.164:6878/ace/getstream?infohash=36e9427b55dd3574f9f40eab30aef8e
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports3-tvnow
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NCIsInRzIjoxNzg4ODc2NTg2NDU1fQ
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NCIsInRzIjoxNzg4ODc3NzI3NDc5fQ
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports4-tvnow
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NyIsInRzIjoxNzg4ODc2NTg3MTcxfQ
+https://live.tv247.site/live/67/index.m3u8?v=1&e=1788964130&k=b929b90f2c463dc21d84e39ec823ef9c
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports5-tvnow
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDEwIiwidHMiOjE3ODg4NzY1OTQ0MzR9
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDEwIiwidHMiOjE3ODg4Nzc3MzU0Mjh9
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports3cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc08/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA4OjE3ODg4OTA5ODg1Nzg6Y2RubGl2ZXR2LnR2OjVmMzAyM2U4MzViMGIxNmQuZmRjNmI1YzNmYmVjMTUwODc3ZGVlOGQ5ZTIxMjA0ZTQwMmI5MWY0MTExZWZkNWQzMzA1NjQ4YThhZjFmNWE1NA
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc08/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA4OjE3ODg4OTIxMzE1NDc6Y2RubGl2ZXR2LnR2Ojk1OTRlODM4Mjg1MTNhMTUuM2Q0Zjk0ODIzY2YyMzRjYTI5NzI5YzEyMjEwMmU3YzU0MTkzNWE2YjU5N2IyN2FjM2MyNWI1NjkzYzY4NTJiNw
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports4cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBkOjE3ODg4OTA5ODg5MDk6Y2RubGl2ZXR2LnR2OjEyZWIxNTFmMzI1ODM1MDUuYWQ0ZjY2MjI2NTUyZmMyYWUzNzg5NzlkZmE3YjYxMWY1YWUzNDQ2YzU1YmNmNThjMTU3NmNmODYwMTQwZDQxNQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBkOjE3ODg4OTIxMzE5MDU6Y2RubGl2ZXR2LnR2OjQxODdhMTVlOTQ5NDVhZTIuYjJjOWYyMTc1YjY4NzBiM2ZlMjNjNjhkZTFiYWJjOTg0YTc3YTMxY2M5YmE5NTdjMmRhNzQ2ZjFmNjBlMjI1Zg
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports5cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76ca991/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhOTkxOjE3ODg4OTA5ODkyNDU6Y2RubGl2ZXR2LnR2OmEyOThhYzA4ZGVmN2FmMTIuYjNmZDNhNTFjMWE4OTEwMGJiMDYzZTg1ZmY4MjRhM2FmZDdhZmE1MDgxMjA2NDY4Y2E4YjQ0NTllYmIxMDYwNQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76ca991/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhOTkxOjE3ODg4OTIxMzIyNDA6Y2RubGl2ZXR2LnR2OjE2OGE4MWE0ZDAyNTY4OTYuOTU4NTkwNjA2N2YxMTJmMDFhMTRmMjIxYzkzYTFkNjdkYjM1OGQ1MGMwMGM5ZmI0ZmU0NTFiZjE3ZDc2NTQxMg
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsportsmax1cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc11/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzExOjE3ODg4OTA5ODk2MDE6Y2RubGl2ZXR2LnR2OmE4NzRhZWM1ZDcyZDgzM2UuMDJhMWNjNTFhN2I1MjNhMWMwZTNlYWRmNTJkNDYzZmI5ZTMyMTQ2NTc2ZDI4MDAwYmU0NjU4NTRiMGY2NmM5Mw
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc11/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzExOjE3ODg4OTIxMzI2MDE6Y2RubGl2ZXR2LnR2OmE2NjMzMjE1ZGVjZjllY2UuOWNmMDIzYzhhZDY0YWVkNWQxNDc3ZjFkZTYxYmIxMTY5NmMzYWYxNmZmZGRhYjVlNTI2NGIwZDJmYWE1YmRlNg
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsportsmax2cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc13/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzEzOjE3ODg4OTA5ODk5NzY6Y2RubGl2ZXR2LnR2OjJlYjg3ZjFkNWM5YWY4MDUuMDVkMzMzOTY5MGM0YjBhM2Y4NmQ1ODFlNWQwZDU1MDkzZDlhNjE5MGI1ZDUwYmJmODcxN2FmMzc0ZmU5YTQ1NQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc13/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzEzOjE3ODg4OTIxMzI5NTY6Y2RubGl2ZXR2LnR2OmUxZDIzM2MwMTQyNTJkM2MuMzhkM2I5ZTU1YmFmMmEyZjE3ZjgwNTllZTE3YjBhZTI5MzhmMjM5YTdmYTQyNmJhYjI4NmQyMzUzNmRkYTNiMQ
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trssportcdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76caa87/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhYTg3OjE3ODg4OTA5OTA2Nzc6Y2RubGl2ZXR2LnR2OjI4YmVlYmE5ZmM0ZjkwZmIuZDhjYzE0MDU4OWY1YzM2YzNiODU4MTc1MDIzZjljMmU4YWYwMGFhYzQzZjJlZmY4YjVlYzc5YzJmYzBkODczYw
+https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76caa87/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhYTg3OjE3ODg4OTIxMzM2NjU6Y2RubGl2ZXR2LnR2OjNmYzI1NDYyYjBlMWEwYmQuNTNkMGI5MjQ1NjYzM2E0ZjZmYTU0ZWFjNTY1MDQ0M2Q1YmYxN2UyYzdlZjBiZWQ3Zjk2M2ZmNjFlMTU0NDY0MA
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trssport2cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc31/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzMxOjE3ODg4OTA5OTEwMzI6Y2RubGl2ZXR2LnR2OjY1YmUxOTgyOTM5YjcyOGQuMjc2ZjQxZmYxYzgxYWYzZDIxYjhkNGY4YWI3YzY5ZTA2YWNjZGNiYzNhYTkzN2VkZTU1YWQ4NmE2NTg2YWM3YQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc31/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzMxOjE3ODg4OTIxMzQwMjE6Y2RubGl2ZXR2LnR2OjZjZDE3YmZiZmI4MmNmOTEuZTYwM2NiOTVmNDhhODUwYWFjNGM1NjZhNzQ3MWNkYTM3ZWNjOTZiNGQ3MzhiMWNlYTJhNmYyZmEwYzBhZWYyNw
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trtivibuspor1cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3b/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNiOjE3ODg4OTA5OTEzNzk6Y2RubGl2ZXR2LnR2OjhiODM2NjhkMGZiNTM3N2UuN2E5MjBjNDUzMzYyNmE2MDQwMjU3Y2ZmODRmZWRkMWUyY2Q2YTNmY2M1MjY0OGZmZjJiOGRjNWM1MjA3MmY0MA
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3b/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNiOjE3ODg4OTIxMzQzODQ6Y2RubGl2ZXR2LnR2OjQyMmZlYTIzZDU2NWE1NTcuZjBmZjk3MTlhNTMzY2YwNjZiMTg0ZDAwYTY2MzA2YTMxNTEwMjM0YTcxOTFiNzY0NjI2YjcxZjZmNzQ3NmRlMg
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trtivibuspor2cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNkOjE3ODg4OTA5OTE3MjY6Y2RubGl2ZXR2LnR2Ojc1ZGM5YjgwNzU5MGQyZTguMjBmMmIwMWJjYzk1ZDgyNjFjMTIyYjM0N2IwODFmZDU4NjBkNTcxZjcxY2Q3YjMyNWYwMTllNzc2YjM3YzZkMw
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNkOjE3ODg4OTIxMzQ3NDI6Y2RubGl2ZXR2LnR2OjQxMThmZTlmNjBmZTA0NzkuYmQ3ZDFmZGViYjQwNjAzODg1OWU3NTMxZTJjNjY2ZjYwMjdkNzJlYTcwZTFiOWIzZTVhMGU4MDdjMWExODA5MA
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trtivibuspor3cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNmOjE3ODg4OTA5OTIxMDU6Y2RubGl2ZXR2LnR2OmUyNzlhN2Q3YTBhMTFkY2MuMDhkOWVhMTc0MDEwNjExNDEyNzczMmI2MDRiYmRhMWFiZThmY2FjODQwY2IwMjVjNmEwN2Y4OWY1NWQ3ZTk2YQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNmOjE3ODg4OTIxMzUxMjI6Y2RubGl2ZXR2LnR2OjUxYWMyMWFhODliMjAxNzkuNGY2M2Q3ZjZlNzA4MGE3YzQyMDczYjVhZWYxOWNkZjhiZDBkNjU3OTIzMTM0NTlhNjEzZThmYzE5NGIxMjBkOQ
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trtivibuspor4cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc40/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzQwOjE3ODg4OTA5OTI0ODA6Y2RubGl2ZXR2LnR2OjAwOTc1Y2RlOTk3ZTlhMDkuMGYxZTM2ZTJhODA4MmEzZDFmMmZiNWNiNWUwMDY4Mzk1MDYzYTUyNzM5OGRkNTIxNWUyZTc1N2ExMjkwNDAyYw
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc40/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzQwOjE3ODg4OTIxMzU0NzM6Y2RubGl2ZXR2LnR2OmM0M2M4M2FiNTMwNmYwZDcuY2NiNWVkMDg4ZGQwNzhlZWRmMzc4YmI4NDliODg0MjU3MjFlOWRlNDc3YjU3Zjk0YWY0MjhiOTE1Zjc0MmRmMQ
 
 
 
@@ -687,7 +687,7 @@ https://vavoo.biz-az.workers.dev/play/9503946568377e1ba14c8.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",ÇİFTÇİ TV
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",YABAN TV
-https://yayin1.canlitv.fun/canlitv/yabantv.stream/playlist.m3u8?hash=5846abd7fab9c7508c4659afe60c99e8
+https://yayin1.canlitv.fun/canlitv/yabantv.stream/playlist.m3u8?hash=4d8c14aa3c756470823b372305a51a63
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",KÖY TV
 https://streams.uzunmuhalefet.com/stream/7a1294e7-9fa8-4c3d-89b8-eb67e33bc2e6.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",TARIM TV
