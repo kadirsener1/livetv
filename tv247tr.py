@@ -12,6 +12,8 @@ LIVETV_DIR = "tv247tr"
 MAX_CONCURRENT_TASKS = 2 
 MAX_RETRIES = 2 
 
+USER_AGENT_SUFFIX = "|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+
 AD_DOMAINS = [
     "doubleclick", "google-analytics", "googlesyndication", "adservice", 
     "adsterra", "propellerads", "popads", "juicyads", "exoclick", "onclickads",
@@ -40,13 +42,11 @@ def update_existing_m3u(file_path, results):
     Mevcut M3U dosyasını bozmadan, sadece kanal ismine göre
     yayın linklerini güncelleyen fonksiyon.
     """
-    # Kolay eşleştirme için { "kanal adı": "yeni_stream_url" } sözlüğü oluştur
     new_links = {
         item["name"].strip().lower(): item["stream"].strip() 
         for item in results if item.get("stream")
     }
 
-    # Eğer m3u dosyası henüz hiç yoksa sıfırdan oluşturur
     if not os.path.exists(file_path):
         with open(file_path, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
@@ -65,29 +65,23 @@ def update_existing_m3u(file_path, results):
     for line in lines:
         stripped = line.strip()
 
-        # 1. #EXTINF satırından kanal adını al
         if stripped.startswith("#EXTINF"):
-            pending_new_stream = None  # Sıfırla
+            pending_new_stream = None
             if "," in stripped:
                 channel_name = stripped.rsplit(",", 1)[1].strip().lower()
                 if channel_name in new_links:
                     pending_new_stream = new_links[channel_name]
             
-            # Orijinal #EXTINF satırına (logo, id, grup vb.) DOKUNMADAN ekle
             updated_lines.append(line)
 
-        # 2. Diğer etiketler (#EXTVLCOPT, #EXTM3U vb.) veya boş satırlar
         elif stripped.startswith("#") or not stripped:
             updated_lines.append(line)
 
-        # 3. Stream linkinin olduğu satır
         else:
             if pending_new_stream:
-                # Eşleşen yeni linki yaz
                 updated_lines.append(pending_new_stream + "\n")
                 pending_new_stream = None
             else:
-                # Eşleşme yoksa eski linki aynen koru
                 updated_lines.append(line)
 
     with open(file_path, "w", encoding="utf-8") as f:
@@ -96,7 +90,7 @@ def update_existing_m3u(file_path, results):
     print(f"[+] '{file_path}' dosyası yapısı korunarak sadece isim eşleşmesiyle güncellendi.")
 
 async def scan_channel(context, channel, semaphore):
-    """Kanalı kararlı hale getirmek için hata durumunda yeniden deneme (retry) mekanizması içeren ana fonksiyon."""
+    """Kanalı kararlı hale getirmek için hata durumunda yeniden deneme mekanizması."""
     for attempt in range(1, MAX_RETRIES + 2):
         async with semaphore:
             try:
@@ -200,11 +194,13 @@ async def get_stream_link(context, channel, attempt):
 
     if found_link:
         print(f"  [+] Yakalandı ({attempt}. Denemede): {channel['name']}")
+        # Linkin sonuna User-Agent parametresi eklendi
+        full_stream_link = f"{found_link}{USER_AGENT_SUFFIX}"
         return {
             "name": channel.get("name", "Kanal"),
             "group": channel.get("group", "Genel"),
             "logo": channel.get("logo", ""),
-            "stream": found_link,
+            "stream": full_stream_link,
             "referer": stream_referer
         }
     return None
