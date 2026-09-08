@@ -24,10 +24,6 @@ https://live.tv247.site/live/62/index.m3u8?v=1&e=1788964119&k=95b57f91b155b8cd4b
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3ODg4OTIxMzA4NzM6Y2RubGl2ZXR2LnR2OjQzY2MyYzZlMGVmMmU3ZGMuMjRhYTYyMTg5MmJjY2E0MGRlNDZkMDM3Nzc4ZWZiZDc2NjA4YTE5ODIwZmUwNjczMGIzZTdmZDE3YzMwMjlkNg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",BeIN SPORTS 1 bitew
-#EXTVLCOPT:http-referrer=https://sportsbite.org
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://sportsbite.org/ch1/track/62|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor", TR:beIN Sport 1 HD-Mahsun
 #EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
