@@ -11,7 +11,7 @@ http://4kx8k.xyz:2095/live/andreas.stn/kdJyAM3ctj/209476.m3u8|User-Agent=Mozilla
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" group-title="Spor",BEIN SPORTS 1-ARDA
 #EXTVLCOPT:http-referrer=https://www.atomsportv513.top
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.d72377a9ds0ec71.cfd//hls/trt1.m3u8
+https://corestream.d72377a9ds0ec71.cfd//beintv/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="bein_sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor",BeIN Sport 1-ZEUS
 https://zeus645423.cfd/b1/index.txt
@@ -167,7 +167,7 @@ https://corestream.d72377a9ds0ec71.cfd//s-sport2/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="trt-spor" tvg-name="TRT SPOR" group-title="Atom Spor",TRT SPOR-ARDA
 #EXTVLCOPT:http-referrer=https://www.atomsportv512.top
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://corestream.d72377a9ds0ec71.cfd//hls/trt1.m3u8
+https://corestream.d72377a9ds0ec71.cfd//trt-spor/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="a-spor" tvg-name="A SPOR" group-title="Atom Spor",A SPOR-ARDA
 #EXTVLCOPT:http-referrer=https://www.atomsportv512.top
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
