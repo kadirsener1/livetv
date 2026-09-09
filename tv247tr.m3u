@@ -506,7 +506,7 @@ https://live01.iha.tv/webabone/live2/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",BHA TV
 https://live.euromediacenter.com/bhatv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VWygoj9.png" group-title="TR Spor",TRT SPOR
-https://corestream.ardastream.live//trt-spor/tracks-v1a1/mono.m3u8
+https://trt.daioncdn.net/trtspor/master.m3u8?app=web&platform=trtspor
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VWygoj9.png" group-title="TR Spor",TRT SPOR YILDIZ
 https://tv-trtspor2.medya.trt.com.tr/master_1440p.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/UGbdQLv.png" group-title="TR Spor",beIN Sports Haber-tul
