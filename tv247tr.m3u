@@ -181,9 +181,6 @@ https://corestream.d72377a9ds0ec24.cfd//aspor/tracks-v1a1/mono.m3u8
 
 
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/UGbdQLv.png" group-title="TR Spor",beIN Sports Haber-talip
-http://taliptv01.xyz:8080/play/live.php?mac=00:1A:79:4D:06:6C&stream=620421&extension=ts
-
 
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport 3 HD-Mahsun
 #EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
@@ -329,6 +326,12 @@ https://zeus645423.cfd/tivibu2/index.txt
 https://zeus645423.cfd/tivibu3/index.txt
 #EXTINF:-1 tvg-id="tivibu_spor" tvg-name="Tivibu Spor 4" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/3/36/Tivibu_spor_logosu.jpg" group-title="Spor-Neon",Tivibu Spor 4
 https://zeus645423.cfd/tivibu4/index.txt
+#EXTINF:-1 tvg-id="tivibu_spor" tvg-name="Tivibu Spor 4" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/3/36/Tivibu_spor_logosu.jpg" group-title="Spor-Neon",Eurosport 1
+https://zeus645423.cfd/euro1/index.txt
+#EXTINF:-1 tvg-id="tivibu_spor" tvg-name="Tivibu Spor 4" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/3/36/Tivibu_spor_logosu.jpg" group-title="Spor-Neon",Eurosport 2
+https://zeus645423.cfd/euro2/index.txt
+
+
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Bigo",Bein Bigo tv
 https://proxy.cors.sh/https://yayinlarfidanafidanlaragaca.xyz/hls/4.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Bigo",Bein2 Bigo tv
