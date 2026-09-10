@@ -4,9 +4,7 @@ permissions:
   contents: write   # Push yapabilmesi için zorunlu yazma izni
 
 on:
-  schedule:
-    - cron: '0 */3 * * *'   # Her gece 00:00'da otomatik çalışır
-  workflow_dispatch:       # Manuel çalıştırma butonu
+   workflow_dispatch:       # Manuel çalıştırma butonu
 
 jobs:
   build:
