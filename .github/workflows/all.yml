@@ -1,24 +1,23 @@
-name: TÜM Linkleri Guncelle
+name: Tüm Linkleri Guncelle
 
 on:
-  workflow_dispatch: # Manuel tetikleme için
+  workflow_dispatch: # Manuel çalıştırmak için
   schedule:
     - cron: '0 */2 * * *'  # Her 2 saatte bir otomatik çalışır
 
-# Depoya yazma izni
 permissions:
   contents: write
 
 jobs:
-  run-all-scrapers:
+  run-scrapers:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Depoyu indir
+      # 1. Depoyu çek
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Python ortamını hazırla
+      # 2. Python ortamını kur
       - name: Set up Python 3.10
         uses: actions/setup-python@v5
         with:
@@ -31,44 +30,65 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      # 4. Playwright tarayıcılarını yükle
+      # 4. Tarayıcıyı kur
       - name: Install Playwright Browsers
         run: |
           playwright install --with-deps chromium
 
-      # 5. Adım: tv247tr çalıştır
-      - name: Run tv247tr Scraper
+      # 5. Git kimlik bilgilerini ayarla
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      # --- 1. TV247TR İŞLEMİ ---
+      - name: Run tv247tr Scraper & Save
+        continue-on-error: true
         run: |
           python tv247tr.py
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "tv247tr linkleri güncellendi [skip ci]"
+            git push
+          else
+            echo "tv247tr için değişiklik yok."
+          fi
 
-      # 6. Adım: atom çalıştır
-      - name: Run atom Scraper
+      # --- 2. ATOM İŞLEMİ ---
+      - name: Run atom Scraper & Save
+        continue-on-error: true
         run: |
           python atom.py
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "atom linkleri güncellendi [skip ci]"
+            git push
+          else
+            echo "atom için değişiklik yok."
+          fi
 
-      # 7. Adım: mahsun çalıştır
-      - name: Run mahsun Scraper
+      # --- 3. MAHSUN İŞLEMİ ---
+      - name: Run mahsun Scraper & Save
+        continue-on-error: true
         run: |
           python mahsun.py
-
-      # 8. Adım: worldsport çalıştır
-      - name: Run worldsport Scraper
-        run: |
-          python worldsport.py
-
-      # 9. Tüm değişiklikleri kontrol et, commit ve push yap
-      - name: Commit and Push changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-
-          # Oluşan tüm .m3u dosyalarını ve ilgili klasörleri ekle
           git add -A
-
-          # Değişiklik kontrolü
-          if git diff --cached --quiet; then
-            echo "Herhangi bir değişiklik bulunamadı, push yapılmayacak."
-          else
-            git commit -m "Tum yayin listeleri ve m3u dosyalari guncellendi [skip ci]"
+          if ! git diff --cached --quiet; then
+            git commit -m "mahsun linkleri güncellendi [skip ci]"
             git push
+          else
+            echo "mahsun için değişiklik yok."
+          fi
+
+      # --- 4. TV247WS İŞLEMİ ---
+      - name: Run tv247ws Scraper & Save
+        continue-on-error: true
+        run: |
+          python tv247ws.py
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "tv247ws linkleri güncellendi [skip ci]"
+            git push
+          else
+            echo "tv247ws için değişiklik yok."
           fi
