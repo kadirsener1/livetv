@@ -2,8 +2,6 @@ name: tv247 türkiye Link güncelle
 
 on:
   workflow_dispatch: # Manuel çalıştırmak için
-  schedule:
-    - cron: '0 */2 * * *'  # Her 2 saatte bir otomatik çalışır (00:00, 02:00, 04:00, ...)
 
 # Depoya yazma (push) izni vermek için gerekli izinler
 permissions:
