@@ -22,6 +22,10 @@ https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MiIsIn
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3ODkwOTM0MzE4MzU6Y2RubGl2ZXR2LnR2OmFmYTAzMWYyM2JkMzFmYmUuOTQxNTQ2NmE0MTAxMWYyYWZkMmFiNmRmNzA1YzZmZDM0ZTg3YmEwN2ZmMjhmNzA4ZGNhZTkyMzFlODIzZWNiYQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor" tvg-name="beIN Sports 1",beIN Sports 1
+#EXTVLCOPT:http-referrer=https://sportsbite.org//
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+https://sportsbite.org//ch1/track/62
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor", BEIN SPORTS 1-Mahsun
 #EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
