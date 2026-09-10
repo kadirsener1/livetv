@@ -103,6 +103,7 @@ async def get_stream_link(context, channel, attempt):
     page = await context.new_page()
     page.on("popup", lambda popup: asyncio.create_task(popup.close()))
 
+    # Sadece gereksiz resim ve reklamları filtrele
     async def route_interceptor(route):
         req = route.request
         url = req.url.lower()
@@ -119,136 +120,189 @@ async def get_stream_link(context, channel, attempt):
     def set_found_link(url, ref=None):
         nonlocal found_link, stream_referer
         if not link_found_event.is_set():
-            found_link = url
-            if ref:
-                stream_referer = ref
-            link_found_event.set()
+            clean = url.strip().replace(r'\/', '/')
+            # Reklam segmentlerini ele
+            if not any(bad in clean.lower() for bad in ["ad.", "ads.", "statcounter", "beacon"]):
+                found_link = clean
+                if ref:
+                    stream_referer = ref
+                link_found_event.set()
 
-    # Ağ istek ve yanıtlarını derinlemesine dinleme
+    # JavaScript Tarafından Çağrılacak Köprü Fonksiyon
+    await page.expose_function("__onStreamCaught", lambda u: set_found_link(u, page.url))
+
+    # Tarayıcı Motoruna Enjekte Edilen Sniffer (XHR / Fetch / Hls.js / Video Hook)
+    await page.add_init_script("""
+        (function() {
+            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+
+            function checkUrl(u) {
+                if (!u || typeof u !== 'string') return;
+                if (u.includes('.m3u8') || u.includes('/hls/') || u.includes('master.m3u8') || u.includes('playlist.m3u8')) {
+                    try { window.__onStreamCaught(u); } catch(e){}
+                }
+            }
+
+            // Hook XMLHttpRequest
+            const origOpen = XMLHttpRequest.prototype.open;
+            XMLHttpRequest.prototype.open = function(method, url) {
+                checkUrl(url);
+                return origOpen.apply(this, arguments);
+            };
+
+            // Hook Fetch API
+            const origFetch = window.fetch;
+            window.fetch = function(input, init) {
+                const url = (typeof input === 'string') ? input : (input ? input.url : '');
+                checkUrl(url);
+                return origFetch.apply(this, arguments);
+            };
+
+            // Hook HTMLMediaElement (Video player src)
+            const videoSrcDesc = Object.getOwnPropertyDescriptor(HTMLMediaElement.prototype, 'src');
+            if (videoSrcDesc && videoSrcDesc.set) {
+                const origSet = videoSrcDesc.set;
+                Object.defineProperty(HTMLMediaElement.prototype, 'src', {
+                    set: function(val) {
+                        checkUrl(val);
+                        return origSet.call(this, val);
+                    }
+                });
+            }
+        })();
+    """)
+
+    # Ağ yanıtlarını izleme
     async def handle_response(res):
         if link_found_event.is_set():
             return
-        
         url = res.url
         clean_url = url.split("?")[0].lower()
-
-        # 1. Doğrudan URL kontrolü
-        if any(ext in clean_url for ext in [".m3u8", "/hls/", "playlist.m3u8", "master.m3u8", "chunklist"]):
-            if not any(bad in clean_url for bad in ["ad.", "ads.", "tracking", "beacon"]):
-                set_found_link(url, res.request.headers.get("referer", referer))
-                return
-
-        # 2. Content-Type HLS kontrolü
-        ct = res.headers.get("content-type", "").lower()
-        if any(hls_type in ct for hls_type in ["mpegurl", "application/vnd.apple.mpegurl", "x-mpegurl"]):
+        
+        if any(ext in clean_url for ext in [".m3u8", "master.m3u8", "playlist.m3u8", "/hls/"]):
             set_found_link(url, res.request.headers.get("referer", referer))
             return
 
-        # 3. JSON / API Yanıtlarının içindeki gizli m3u8 taraması
+        ct = res.headers.get("content-type", "").lower()
+        if any(t in ct for t in ["mpegurl", "application/vnd.apple.mpegurl"]):
+            set_found_link(url, res.request.headers.get("referer", referer))
+            return
+
         if any(t in ct for t in ["json", "javascript", "text/plain"]):
             try:
                 text = await res.text()
                 if ".m3u8" in text:
-                    matches = re.findall(r'(https?://[^"\'\s<>\\]+?\.m3u8[^"\'\s<>\\]*)', text)
+                    matches = re.findall(r'(https?://[^\s"\'<>\\]+?\.m3u8[^\s"\'<>\\]*)', text)
                     if matches:
-                        clean_found = matches[0].replace(r'\/', '/')
-                        set_found_link(clean_found, res.request.headers.get("referer", referer))
+                        set_found_link(matches[0], res.request.headers.get("referer", referer))
             except Exception:
                 pass
 
     page.on("response", handle_response)
-    page.on("request", lambda req: (
-        set_found_link(req.url, req.headers.get("referer", referer))
-        if any(ext in req.url.split("?")[0].lower() for ext in [".m3u8", "master.m3u8"]) 
-        and not any(bad in req.url.lower() for bad in ["ad.", "ads."])
-        else None
-    ))
+    page.on("request", lambda req: set_found_link(req.url, req.headers.get("referer", referer)) if ".m3u8" in req.url.split("?")[0].lower() else None)
 
     try:
         timeout_limit = 25000 if attempt == 1 else 30000
+        print(f"[*] Sayfa yükleniyor: {channel['name']}")
         
-        await page.add_init_script("""
-            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+        # Sayfaya git
+        await page.goto(target_url, wait_until="domcontentloaded", timeout=timeout_limit)
+        await asyncio.sleep(2.0)
+
+        # 1. ADIM: "Servers" Sekmesini Aktifleştir
+        await page.evaluate("""
+            () => {
+                const elements = Array.from(document.querySelectorAll('button, a, div, li, span'));
+                const srvTab = elements.find(el => {
+                    const txt = (el.innerText || el.textContent || '').trim().toLowerCase();
+                    return txt === 'servers' || txt === 'server' || txt === 'sunucular';
+                });
+                if (srvTab) srvTab.click();
+            }
+        """)
+        await asyncio.sleep(1.5)
+
+        # 2. ADIM: Sayfadaki Aktif Sunucuları Tespit Et
+        active_server_names = await page.evaluate("""
+            () => {
+                const keywords = ["AUTO", "EARTH", "MERCURY", "VENUS", "MARS", "JUPITER", "SATURN", "SERVER"];
+                const candidates = Array.from(document.querySelectorAll('button, a, div[role="button"], li, .server-btn, [class*="server"]'));
+                const list = [];
+                
+                candidates.forEach(el => {
+                    const txt = (el.innerText || el.textContent || "").trim().toUpperCase();
+                    if (keywords.some(k => txt.includes(k))) {
+                        if (!txt.includes("OFFLINE") && !txt.includes("DISABLED") && !el.disabled) {
+                            list.push(txt.split('\\n')[0].trim());
+                        }
+                    }
+                });
+                return [...new Set(list)];
+            }
         """)
 
-        print(f"[*] Sayfa yükleniyor: {channel['name']}")
-        await page.goto(target_url, wait_until="domcontentloaded", timeout=timeout_limit)
-        await asyncio.sleep(2.5)
+        # Auto veya Earth sunucusunu öne al
+        active_server_names.sort(key=lambda x: 0 if "AUTO" in x else (1 if "EARTH" in x else 2))
+        print(f"  [*] Tespit edilen aktif sunucu sayısı: {len(active_server_names)}")
 
-        # 1. "Servers" / "Sunucular" sekmesini aç
-        try:
-            tab_selectors = [
-                "button:has-text('Servers')", "a:has-text('Servers')", 
-                "button:has-text('Server')", "a:has-text('Server')",
-                "[data-tab='servers']", "#servers-tab"
-            ]
-            for t_sel in tab_selectors:
-                tab_btn = page.locator(t_sel).first
-                if await tab_btn.count() > 0 and await tab_btn.is_visible():
-                    await tab_btn.click(force=True)
-                    await asyncio.sleep(1.0)
-                    break
-        except Exception:
-            pass
-
-        # 2. Aktif Sunucuları Tespit Et
-        server_names = ["AUTO", "MERCURY", "VENUS", "EARTH", "MARS", "JUPITER", "SATURN", "SERVER"]
-        elements = await page.locator("button, a, div[role='button'], li").all()
-        active_servers = []
-
-        for el in elements:
-            try:
-                if not await el.is_visible():
-                    continue
-                txt = (await el.text_content() or "").strip().upper()
-                if any(k in txt for k in server_names):
-                    if "OFFLINE" not in txt and "DISABLED" not in txt:
-                        active_servers.append((txt, el))
-            except Exception:
-                continue
-
-        # "AUTO" veya "EARTH" sunucularını listenin en başına koy
-        active_servers.sort(key=lambda x: 0 if "AUTO" in x[0] else (1 if "EARTH" in x[0] else 2))
-        print(f"  [*] Tespit edilen aktif sunucu sayısı: {len(active_servers)}")
-
-        # 3. Her Aktif Sunucuya Tıkla ve Video Oynatıcıyı Çalıştır
-        for srv_name, srv_el in active_servers:
+        # 3. ADIM: Sırayla Sunuculara Tıkla ve Video Başlat
+        for srv_name in active_server_names:
             if link_found_event.is_set():
                 break
 
             short_name = srv_name.split()[0]
             print(f"  [>] Aktif sunucu deneniyor: {short_name}")
-            try:
-                await srv_el.click(force=True)
-            except Exception:
-                pass
+            
+            # Sunucu butonuna JavaScript ile tıkla
+            await page.evaluate("""
+                (name) => {
+                    const candidates = Array.from(document.querySelectorAll('button, a, div[role="button"], li, .server-btn, [class*="server"]'));
+                    for (const el of candidates) {
+                        const txt = (el.innerText || el.textContent || "").trim().toUpperCase();
+                        if (txt.includes(name) && !txt.includes("OFFLINE")) {
+                            el.scrollIntoView({ behavior: 'instant', block: 'center' });
+                            el.click();
+                            break;
+                        }
+                    }
+                }
+            """, srv_name)
 
             await asyncio.sleep(2.0)
 
-            # Player / Video alanlarına fiziksel tıklama yap (Autoplay engelini aşmak için)
+            # Video Oynatıcıyı ve Frame'leri Oynatmaya Zorla
             for frame in page.frames:
                 try:
-                    # Video etiketine veya oynatıcı katmanına tıkla
-                    video_el = frame.locator("video, #player, .player-container, .jw-video, .vjs-tech, iframe").first
-                    if await video_el.count() > 0:
-                        await video_el.click(force=True, timeout=1500)
+                    await frame.evaluate("""
+                        () => {
+                            document.querySelectorAll('video').forEach(v => {
+                                v.muted = true;
+                                v.play().catch(e => {});
+                            });
+                            const selectors = ['.jw-display-icon-container', '.vjs-big-play-button', 'button[aria-label="Play"]', '.play-btn'];
+                            selectors.forEach(sel => {
+                                const btn = document.querySelector(sel);
+                                if (btn) btn.click();
+                            });
+                        }
+                    """)
                 except Exception:
                     pass
 
-            # Linkin yakalanması için bekle (Maksimum 5 sn)
+            # Linkin yakalanması için bekle
             try:
-                await asyncio.wait_for(link_found_event.wait(), timeout=5.0)
+                await asyncio.wait_for(link_found_event.wait(), timeout=4.5)
             except asyncio.TimeoutError:
                 pass
 
-        # 4. Son Kontrol: HTML Kaynak Kodlarında m3u8 Regex Taraması
+        # 4. ADIM: Frame İçeriklerinde Regex Kontrolü (Yayın doğrudan frame'deyse)
         if not link_found_event.is_set():
             for frame in page.frames:
                 try:
                     content = await frame.content()
-                    matches = re.findall(r'["\'](https?://[^"\']+\.m3u8[^"\']*)["\']', content)
-                    for m in matches:
-                        set_found_link(m, frame.url)
+                    matches = re.findall(r'["\'](https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*)["\']', content)
+                    if matches:
+                        set_found_link(matches[0], frame.url)
                         break
                 except Exception:
                     continue
@@ -260,7 +314,7 @@ async def get_stream_link(context, channel, attempt):
         await page.close()
 
     if found_link:
-        print(f"  [+] BAŞARILI: {channel['name']} -> Yayın linki yakalandı!")
+        print(f"  [+] BAŞARILI: {channel['name']} -> Link yakalandı!")
         full_stream_link = f"{found_link}{USER_AGENT_SUFFIX}"
         return {
             "name": channel.get("name", "Kanal"),
@@ -301,7 +355,9 @@ async def main():
         
         context = await browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-            viewport={"width": 1280, "height": 720}
+            viewport={"width": 1280, "height": 720},
+            bypass_csp=True,
+            ignore_https_errors=True
         )
 
         print(f"[*] Toplam {len(channels)} kanal taranıyor...")
