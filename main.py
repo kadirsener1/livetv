@@ -9,15 +9,16 @@ CHANNELS_FILE = "channels.json"
 OUTPUT_FILE = "playlist.m3u"
 LIVETV_DIR = "streams"
 
-MAX_CONCURRENT_TASKS = 1  # Sunucu tıklama işlemleri için kararlılık adına eşzamanlılığı 1-2 civarında tutmak iyidir
+MAX_CONCURRENT_TASKS = 1 
 MAX_RETRIES = 1 
 
 USER_AGENT_SUFFIX = "|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 
+# Engellenecek reklam domainleri (Yayın scriptlerini bozmayacak şekilde optimize edildi)
 AD_DOMAINS = [
-    "doubleclick", "google-analytics", "googlesyndication", "adservice", 
-    "adsterra", "propellerads", "popads", "juicyads", "exoclick", "onclickads",
-    "daisypath", "histats", "amung", "statcounter", "addthis", "sharethis"
+    "doubleclick.net", "google-analytics.com", "adservice.google", 
+    "adsterra.com", "propellerads.com", "popads.net", "onclickads.net",
+    "histats.com", "amung.us"
 ]
 
 DEFAULT_CHANNELS = [
@@ -49,7 +50,7 @@ def update_existing_m3u(file_path, results):
             for item in results:
                 f.write(f'#EXTINF:-1 tvg-logo="{item["logo"]}" group-title="{item["group"]}",{item["name"]}\n')
                 f.write(f"{item['stream']}\n\n")
-        print(f"[+] '{file_path}' oluşturuldu.")
+        print(f"[+] '{file_path}' dosyası oluşturuldu.")
         return
 
     with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -89,10 +90,10 @@ async def scan_channel(context, channel, semaphore):
                 if result:
                     return result
             except Exception as e:
-                print(f"  [!] Hata ({channel['name']} - Deneme {attempt}): {str(e)[:50]}")
+                print(f"  [!] Hata ({channel['name']} - Deneme {attempt}): {str(e)[:70]}")
             
             if attempt < MAX_RETRIES + 1:
-                await asyncio.sleep(3)
+                await asyncio.sleep(2)
     return None
 
 async def get_stream_link(context, channel, attempt):
@@ -101,6 +102,9 @@ async def get_stream_link(context, channel, attempt):
     
     page = await context.new_page()
     
+    # Popup reklamları otomatik kapat
+    page.on("popup", lambda popup: asyncio.create_task(popup.close()))
+
     async def route_interceptor(route):
         req = route.request
         url = req.url.lower()
@@ -109,7 +113,6 @@ async def get_stream_link(context, channel, attempt):
         return await route.continue_()
 
     await page.route("**/*", route_interceptor)
-    page.on("popup", lambda popup: popup.close())
 
     found_link = None
     stream_referer = referer
@@ -120,9 +123,10 @@ async def get_stream_link(context, channel, attempt):
         if link_found_event.is_set():
             return
         
-        clean_url = url.split("#")[0].split("?")[0] if "?" in url else url
-        if any(ext in clean_url.lower() for ext in [".m3u8", "m3u8", "/hls/", "playlist"]):
-            if not any(bad in clean_url.lower() for bad in ["ad.", "ads.", "tracking", "beacon"]):
+        # M3U8 ve HLS yayın linklerini yakala
+        clean_url = url.split("#")[0]
+        if any(ext in clean_url.lower() for ext in [".m3u8", "m3u8", "/hls/", "playlist.m3u8", "chunklist"]):
+            if not any(bad in clean_url.lower() for bad in ["ad.", "ads.", "tracking", "beacon", "statcounter"]):
                 found_link = url
                 if req_headers and "referer" in req_headers:
                     stream_referer = req_headers["referer"]
@@ -132,87 +136,102 @@ async def get_stream_link(context, channel, attempt):
     page.on("response", lambda res: check_and_set_link(res.url, res.request.headers))
 
     try:
-        timeout_limit = 15000 if attempt == 1 else 20000
+        timeout_limit = 20000 if attempt == 1 else 25000
         
+        # Anti-Bot Koruması
         await page.add_init_script("""
             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
-            window.open = function() { return null; }; 
-            window.onbeforeunload = function() { return null; };
+            window.open = function() { return null; };
         """)
 
-        print(f"  [*] Sayfa yükleniyor: {channel['name']}")
-        await page.goto(target_url, wait_until="networkidle", timeout=timeout_limit)
-        
-        # İlk başta otomatik başlaması için 5 saniye bekleyelim
+        print(f"[*] Sayfa yükleniyor: {channel['name']}")
+        await page.goto(target_url, wait_until="domcontentloaded", timeout=timeout_limit)
+        await asyncio.sleep(3)
+
+        # 1. ADIM: "Servers" sekmesini bul ve tıkla
         try:
-            await asyncio.wait_for(link_found_event.wait(), timeout=5.0)
-        except asyncio.TimeoutError:
+            server_tab_selectors = [
+                "button:has-text('Servers')", "a:has-text('Servers')", 
+                "button:has-text('Server')", "a:has-text('Server')",
+                "[data-tab='servers']", "#tab-servers", ".servers-tab"
+            ]
+            for tab_sel in server_tab_selectors:
+                tab_btn = page.locator(tab_sel).first
+                if await tab_btn.count() > 0 and await tab_btn.is_visible():
+                    print(f"  [>] 'Servers' sekmesine tıklandı.")
+                    await tab_btn.click(force=True)
+                    await asyncio.sleep(1.5)
+                    break
+        except Exception:
             pass
 
-        # Eğer link henüz bulunamadıysa sunucu butonlarını tarayalım
+        # 2. ADIM: Aktif Sunucu Butonlarını Tara ve Tıkla
         if not link_found_event.is_set():
-            print(f"  [*] Otomatik yayın başlamadı. Sunucu butonları taranıyor...")
-            
-            # Ana sayfadaki ve iframe'lerdeki tıklanabilir alanları tarama fonksiyonu
-            async def find_and_click_servers(frame_or_page):
-                if link_found_event.is_set():
-                    return
-                
-                # Olası buton, link ve liste elemanlarını bul
-                locators = await frame_or_page.locator("button, a, li, span, div").all()
-                active_servers = []
+            all_elements = await page.locator("button, a, div[role='button'], li").all()
+            active_servers = []
 
-                for loc in locators:
+            for el in all_elements:
+                try:
+                    if not await el.is_visible():
+                        continue
+                    text = (await el.text_content() or "").strip()
+                    text_upper = text.upper()
+
+                    # Bilinen sunucu isimleri
+                    server_keywords = ["AUTO", "MERCURY", "VENUS", "EARTH", "MARS", "JUPITER", "SATURN", "SERVER"]
+                    if any(k in text_upper for k in server_keywords):
+                        # OFFLINE olanları ele
+                        if "OFFLINE" not in text_upper and "DISABLED" not in text_upper:
+                            active_servers.append((text_upper, el))
+                except Exception:
+                    continue
+
+            # "AUTO" veya "EARTH" sunucularını öne al
+            active_servers.sort(key=lambda x: 0 if "AUTO" in x[0] else (1 if "EARTH" in x[0] else 2))
+
+            print(f"  [*] Tespit edilen aktif sunucu sayısı: {len(active_servers)}")
+
+            for srv_name, srv_el in active_servers:
+                if link_found_event.is_set():
+                    break
+                print(f"  [>] Aktif sunucu deneniyor: {srv_name.split()[0]}")
+                try:
+                    await srv_el.click(force=True)
+                except Exception:
+                    pass
+
+                # 3. ADIM: Oynatıcı / Play Butonu Tetikleme
+                await asyncio.sleep(1.5)
+                for frame in page.frames:
                     try:
-                        text = await loc.text_content()
-                        if not text:
-                            continue
-                        
-                        text_clean = text.strip().upper()
-                        
-                        # Sunucu isimlerini kontrol et
-                        server_names = ["AUTO", "MERCURY", "VENUS", "EARTH", "MARS", "JUPITER", "SATURN"]
-                        if any(srv in text_clean for srv in server_names):
-                            # Çevrimdışı (OFFLINE) olanları ele
-                            if "OFFLINE" not in text_clean:
-                                active_servers.append((text_clean, loc))
+                        play_btns = frame.locator("video, .jw-display-icon-container, .vjs-big-play-button, button[aria-label='Play'], #player, .play-btn")
+                        if await play_btns.count() > 0:
+                            await play_btns.first.click(force=True, timeout=1500)
                     except Exception:
                         continue
 
-                # "AUTO" olanı en öne al, diğerlerini arkaya sırala
-                active_servers.sort(key=lambda x: 0 if "AUTO" in x[0] else 1)
+                # Linkin ağdan yakalanması için bekle
+                try:
+                    await asyncio.wait_for(link_found_event.wait(), timeout=3.5)
+                except asyncio.TimeoutError:
+                    pass
 
-                for name, element in active_servers:
-                    if link_found_event.is_set():
-                        break
-                    print(f"    [>] Sunucu deneniyor: {name}")
-                    try:
-                        await element.scroll_into_view_if_needed()
-                        await element.click(timeout=3000)
-                        # Tıkladıktan sonra yayının yüklenmesi için bekle
-                        await asyncio.sleep(4.5)
-                    except Exception:
-                        pass
-
-            # Önce ana sayfada dene
-            await find_and_click_servers(page)
-
-            # Link hala yoksa iframe içlerindeki butonları dene
-            if not link_found_event.is_set():
-                for frame in page.frames:
-                    if frame != page.main_frame:
-                        await find_and_click_servers(frame)
-
-        # Son bir kez bekleyelim
+        # 4. ADIM: HTML ve Frame İçinde Direkt Regex Taraması (Eğer ağdan düşmediyse)
         if not link_found_event.is_set():
-            try:
-                await asyncio.wait_for(link_found_event.wait(), timeout=5.0)
-            except asyncio.TimeoutError:
-                pass
+            for frame in page.frames:
+                try:
+                    content = await frame.content()
+                    matches = re.findall(r'["\'](https?://[^"\']+\.m3u8[^"\']*)["\']', content)
+                    for m in matches:
+                        check_and_set_link(m)
+                        stream_referer = frame.url
+                        break
+                except Exception:
+                    continue
 
     except Exception as e:
         if attempt == (MAX_RETRIES + 1):
-            print(f"  [-] Sunuculardan link alınamadı: {channel['name']}")
+            print(f"  [-] Link bulunamadı: {channel['name']}")
     finally:
         await page.close()
 
@@ -252,7 +271,7 @@ async def main():
                 "--disable-web-security",
                 "--disable-gpu",
                 "--disable-dev-shm-usage",
-                "--blink-settings=imagesEnabled=false"
+                "--autoplay-policy=no-user-gesture-required"  # Otomatik video oynatmaya izin ver
             ]
         )
         
