@@ -14,7 +14,7 @@ MAX_RETRIES = 1
 
 USER_AGENT_SUFFIX = "|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 
-# Engellenecek reklam domainleri (Yayın scriptlerini bozmayacak şekilde optimize edildi)
+# Sadece zararlı/yavaşlatıcı reklamlar engellenir, yayın scriptlerine dokunulmaz
 AD_DOMAINS = [
     "doubleclick.net", "google-analytics.com", "adservice.google", 
     "adsterra.com", "propellerads.com", "popads.net", "onclickads.net",
@@ -101,14 +101,12 @@ async def get_stream_link(context, channel, attempt):
     referer = get_base_url(target_url)
     
     page = await context.new_page()
-    
-    # Popup reklamları otomatik kapat
     page.on("popup", lambda popup: asyncio.create_task(popup.close()))
 
     async def route_interceptor(route):
         req = route.request
         url = req.url.lower()
-        if req.resource_type in ["image", "font", "imageset"] or any(ad in url for ad in AD_DOMAINS):
+        if req.resource_type in ["image", "font"] or any(ad in url for ad in AD_DOMAINS):
             return await route.abort()
         return await route.continue_()
 
@@ -118,113 +116,139 @@ async def get_stream_link(context, channel, attempt):
     stream_referer = referer
     link_found_event = asyncio.Event()
 
-    def check_and_set_link(url, req_headers=None):
+    def set_found_link(url, ref=None):
         nonlocal found_link, stream_referer
+        if not link_found_event.is_set():
+            found_link = url
+            if ref:
+                stream_referer = ref
+            link_found_event.set()
+
+    # Ağ istek ve yanıtlarını derinlemesine dinleme
+    async def handle_response(res):
         if link_found_event.is_set():
             return
         
-        # M3U8 ve HLS yayın linklerini yakala
-        clean_url = url.split("#")[0]
-        if any(ext in clean_url.lower() for ext in [".m3u8", "m3u8", "/hls/", "playlist.m3u8", "chunklist"]):
-            if not any(bad in clean_url.lower() for bad in ["ad.", "ads.", "tracking", "beacon", "statcounter"]):
-                found_link = url
-                if req_headers and "referer" in req_headers:
-                    stream_referer = req_headers["referer"]
-                link_found_event.set()
+        url = res.url
+        clean_url = url.split("?")[0].lower()
 
-    page.on("request", lambda req: check_and_set_link(req.url, req.headers))
-    page.on("response", lambda res: check_and_set_link(res.url, res.request.headers))
+        # 1. Doğrudan URL kontrolü
+        if any(ext in clean_url for ext in [".m3u8", "/hls/", "playlist.m3u8", "master.m3u8", "chunklist"]):
+            if not any(bad in clean_url for bad in ["ad.", "ads.", "tracking", "beacon"]):
+                set_found_link(url, res.request.headers.get("referer", referer))
+                return
+
+        # 2. Content-Type HLS kontrolü
+        ct = res.headers.get("content-type", "").lower()
+        if any(hls_type in ct for hls_type in ["mpegurl", "application/vnd.apple.mpegurl", "x-mpegurl"]):
+            set_found_link(url, res.request.headers.get("referer", referer))
+            return
+
+        # 3. JSON / API Yanıtlarının içindeki gizli m3u8 taraması
+        if any(t in ct for t in ["json", "javascript", "text/plain"]):
+            try:
+                text = await res.text()
+                if ".m3u8" in text:
+                    matches = re.findall(r'(https?://[^"\'\s<>\\]+?\.m3u8[^"\'\s<>\\]*)', text)
+                    if matches:
+                        clean_found = matches[0].replace(r'\/', '/')
+                        set_found_link(clean_found, res.request.headers.get("referer", referer))
+            except Exception:
+                pass
+
+    page.on("response", handle_response)
+    page.on("request", lambda req: (
+        set_found_link(req.url, req.headers.get("referer", referer))
+        if any(ext in req.url.split("?")[0].lower() for ext in [".m3u8", "master.m3u8"]) 
+        and not any(bad in req.url.lower() for bad in ["ad.", "ads."])
+        else None
+    ))
 
     try:
-        timeout_limit = 20000 if attempt == 1 else 25000
+        timeout_limit = 25000 if attempt == 1 else 30000
         
-        # Anti-Bot Koruması
         await page.add_init_script("""
             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
-            window.open = function() { return null; };
         """)
 
         print(f"[*] Sayfa yükleniyor: {channel['name']}")
         await page.goto(target_url, wait_until="domcontentloaded", timeout=timeout_limit)
-        await asyncio.sleep(3)
+        await asyncio.sleep(2.5)
 
-        # 1. ADIM: "Servers" sekmesini bul ve tıkla
+        # 1. "Servers" / "Sunucular" sekmesini aç
         try:
-            server_tab_selectors = [
+            tab_selectors = [
                 "button:has-text('Servers')", "a:has-text('Servers')", 
                 "button:has-text('Server')", "a:has-text('Server')",
-                "[data-tab='servers']", "#tab-servers", ".servers-tab"
+                "[data-tab='servers']", "#servers-tab"
             ]
-            for tab_sel in server_tab_selectors:
-                tab_btn = page.locator(tab_sel).first
+            for t_sel in tab_selectors:
+                tab_btn = page.locator(t_sel).first
                 if await tab_btn.count() > 0 and await tab_btn.is_visible():
-                    print(f"  [>] 'Servers' sekmesine tıklandı.")
                     await tab_btn.click(force=True)
-                    await asyncio.sleep(1.5)
+                    await asyncio.sleep(1.0)
                     break
         except Exception:
             pass
 
-        # 2. ADIM: Aktif Sunucu Butonlarını Tara ve Tıkla
-        if not link_found_event.is_set():
-            all_elements = await page.locator("button, a, div[role='button'], li").all()
-            active_servers = []
+        # 2. Aktif Sunucuları Tespit Et
+        server_names = ["AUTO", "MERCURY", "VENUS", "EARTH", "MARS", "JUPITER", "SATURN", "SERVER"]
+        elements = await page.locator("button, a, div[role='button'], li").all()
+        active_servers = []
 
-            for el in all_elements:
-                try:
-                    if not await el.is_visible():
-                        continue
-                    text = (await el.text_content() or "").strip()
-                    text_upper = text.upper()
-
-                    # Bilinen sunucu isimleri
-                    server_keywords = ["AUTO", "MERCURY", "VENUS", "EARTH", "MARS", "JUPITER", "SATURN", "SERVER"]
-                    if any(k in text_upper for k in server_keywords):
-                        # OFFLINE olanları ele
-                        if "OFFLINE" not in text_upper and "DISABLED" not in text_upper:
-                            active_servers.append((text_upper, el))
-                except Exception:
+        for el in elements:
+            try:
+                if not await el.is_visible():
                     continue
+                txt = (await el.text_content() or "").strip().upper()
+                if any(k in txt for k in server_names):
+                    if "OFFLINE" not in txt and "DISABLED" not in txt:
+                        active_servers.append((txt, el))
+            except Exception:
+                continue
 
-            # "AUTO" veya "EARTH" sunucularını öne al
-            active_servers.sort(key=lambda x: 0 if "AUTO" in x[0] else (1 if "EARTH" in x[0] else 2))
+        # "AUTO" veya "EARTH" sunucularını listenin en başına koy
+        active_servers.sort(key=lambda x: 0 if "AUTO" in x[0] else (1 if "EARTH" in x[0] else 2))
+        print(f"  [*] Tespit edilen aktif sunucu sayısı: {len(active_servers)}")
 
-            print(f"  [*] Tespit edilen aktif sunucu sayısı: {len(active_servers)}")
+        # 3. Her Aktif Sunucuya Tıkla ve Video Oynatıcıyı Çalıştır
+        for srv_name, srv_el in active_servers:
+            if link_found_event.is_set():
+                break
 
-            for srv_name, srv_el in active_servers:
-                if link_found_event.is_set():
-                    break
-                print(f"  [>] Aktif sunucu deneniyor: {srv_name.split()[0]}")
+            short_name = srv_name.split()[0]
+            print(f"  [>] Aktif sunucu deneniyor: {short_name}")
+            try:
+                await srv_el.click(force=True)
+            except Exception:
+                pass
+
+            await asyncio.sleep(2.0)
+
+            # Player / Video alanlarına fiziksel tıklama yap (Autoplay engelini aşmak için)
+            for frame in page.frames:
                 try:
-                    await srv_el.click(force=True)
+                    # Video etiketine veya oynatıcı katmanına tıkla
+                    video_el = frame.locator("video, #player, .player-container, .jw-video, .vjs-tech, iframe").first
+                    if await video_el.count() > 0:
+                        await video_el.click(force=True, timeout=1500)
                 except Exception:
                     pass
 
-                # 3. ADIM: Oynatıcı / Play Butonu Tetikleme
-                await asyncio.sleep(1.5)
-                for frame in page.frames:
-                    try:
-                        play_btns = frame.locator("video, .jw-display-icon-container, .vjs-big-play-button, button[aria-label='Play'], #player, .play-btn")
-                        if await play_btns.count() > 0:
-                            await play_btns.first.click(force=True, timeout=1500)
-                    except Exception:
-                        continue
+            # Linkin yakalanması için bekle (Maksimum 5 sn)
+            try:
+                await asyncio.wait_for(link_found_event.wait(), timeout=5.0)
+            except asyncio.TimeoutError:
+                pass
 
-                # Linkin ağdan yakalanması için bekle
-                try:
-                    await asyncio.wait_for(link_found_event.wait(), timeout=3.5)
-                except asyncio.TimeoutError:
-                    pass
-
-        # 4. ADIM: HTML ve Frame İçinde Direkt Regex Taraması (Eğer ağdan düşmediyse)
+        # 4. Son Kontrol: HTML Kaynak Kodlarında m3u8 Regex Taraması
         if not link_found_event.is_set():
             for frame in page.frames:
                 try:
                     content = await frame.content()
                     matches = re.findall(r'["\'](https?://[^"\']+\.m3u8[^"\']*)["\']', content)
                     for m in matches:
-                        check_and_set_link(m)
-                        stream_referer = frame.url
+                        set_found_link(m, frame.url)
                         break
                 except Exception:
                     continue
@@ -236,7 +260,7 @@ async def get_stream_link(context, channel, attempt):
         await page.close()
 
     if found_link:
-        print(f"  [+] BAŞARILI: {channel['name']} -> Link yakalandı.")
+        print(f"  [+] BAŞARILI: {channel['name']} -> Yayın linki yakalandı!")
         full_stream_link = f"{found_link}{USER_AGENT_SUFFIX}"
         return {
             "name": channel.get("name", "Kanal"),
@@ -271,7 +295,7 @@ async def main():
                 "--disable-web-security",
                 "--disable-gpu",
                 "--disable-dev-shm-usage",
-                "--autoplay-policy=no-user-gesture-required"  # Otomatik video oynatmaya izin ver
+                "--autoplay-policy=no-user-gesture-required"
             ]
         )
         
@@ -301,7 +325,7 @@ async def main():
                 cf.write("#EXT-X-STREAM-INF:BANDWIDTH=8000000\n")
                 cf.write(f"{item['stream']}\n")
                 
-        print(f"[+] İşlem tamamlandı. {len(results)} yayın kaydedildi.")
+        print(f"[+] İşlem tamamlandı! {len(results)} yayın kaydedildi.")
     else:
         print("\n[-] Aktif yayın bağlantısı tespit edilemedi.")
 
