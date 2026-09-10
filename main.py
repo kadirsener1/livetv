@@ -14,13 +14,6 @@ MAX_RETRIES = 1
 
 USER_AGENT_SUFFIX = "|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 
-# Sadece zararlı/yavaşlatıcı reklamlar engellenir, yayın scriptlerine dokunulmaz
-AD_DOMAINS = [
-    "doubleclick.net", "google-analytics.com", "adservice.google", 
-    "adsterra.com", "propellerads.com", "popads.net", "onclickads.net",
-    "histats.com", "amung.us"
-]
-
 DEFAULT_CHANNELS = [
     {
         "name": "TV8 Turkey",
@@ -90,7 +83,7 @@ async def scan_channel(context, channel, semaphore):
                 if result:
                     return result
             except Exception as e:
-                print(f"  [!] Hata ({channel['name']} - Deneme {attempt}): {str(e)[:70]}")
+                print(f"  [!] Hata ({channel['name']} - Deneme {attempt}): {str(e)[:80]}")
             
             if attempt < MAX_RETRIES + 1:
                 await asyncio.sleep(2)
@@ -103,16 +96,6 @@ async def get_stream_link(context, channel, attempt):
     page = await context.new_page()
     page.on("popup", lambda popup: asyncio.create_task(popup.close()))
 
-    # Sadece gereksiz resim ve reklamları filtrele
-    async def route_interceptor(route):
-        req = route.request
-        url = req.url.lower()
-        if req.resource_type in ["image", "font"] or any(ad in url for ad in AD_DOMAINS):
-            return await route.abort()
-        return await route.continue_()
-
-    await page.route("**/*", route_interceptor)
-
     found_link = None
     stream_referer = referer
     link_found_event = asyncio.Event()
@@ -121,74 +104,63 @@ async def get_stream_link(context, channel, attempt):
         nonlocal found_link, stream_referer
         if not link_found_event.is_set():
             clean = url.strip().replace(r'\/', '/')
-            # Reklam segmentlerini ele
-            if not any(bad in clean.lower() for bad in ["ad.", "ads.", "statcounter", "beacon"]):
+            # Reklam/Sayaç filtreleme
+            if not any(bad in clean.lower() for bad in ["ad.", "ads.", "statcounter", "beacon", "doubleclick"]):
                 found_link = clean
                 if ref:
                     stream_referer = ref
                 link_found_event.set()
 
-    # JavaScript Tarafından Çağrılacak Köprü Fonksiyon
+    # JavaScript Tarafından Çağrılacak Sniffer Köprüsü
     await page.expose_function("__onStreamCaught", lambda u: set_found_link(u, page.url))
 
-    # Tarayıcı Motoruna Enjekte Edilen Sniffer (XHR / Fetch / Hls.js / Video Hook)
+    # Tarayıcı çekirdeğine enjekte edilen derin yakalayıcı (XHR, Fetch, Video src)
     await page.add_init_script("""
         (function() {
             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
 
             function checkUrl(u) {
                 if (!u || typeof u !== 'string') return;
-                if (u.includes('.m3u8') || u.includes('/hls/') || u.includes('master.m3u8') || u.includes('playlist.m3u8')) {
+                if (u.includes('.m3u8') || u.includes('/hls/') || u.includes('master.m3u8') || u.includes('chunklist')) {
                     try { window.__onStreamCaught(u); } catch(e){}
                 }
             }
 
-            // Hook XMLHttpRequest
             const origOpen = XMLHttpRequest.prototype.open;
             XMLHttpRequest.prototype.open = function(method, url) {
                 checkUrl(url);
                 return origOpen.apply(this, arguments);
             };
 
-            // Hook Fetch API
             const origFetch = window.fetch;
             window.fetch = function(input, init) {
                 const url = (typeof input === 'string') ? input : (input ? input.url : '');
                 checkUrl(url);
                 return origFetch.apply(this, arguments);
             };
-
-            // Hook HTMLMediaElement (Video player src)
-            const videoSrcDesc = Object.getOwnPropertyDescriptor(HTMLMediaElement.prototype, 'src');
-            if (videoSrcDesc && videoSrcDesc.set) {
-                const origSet = videoSrcDesc.set;
-                Object.defineProperty(HTMLMediaElement.prototype, 'src', {
-                    set: function(val) {
-                        checkUrl(val);
-                        return origSet.call(this, val);
-                    }
-                });
-            }
         })();
     """)
 
-    # Ağ yanıtlarını izleme
+    # Ağ yanıtlarını anlık izle
     async def handle_response(res):
         if link_found_event.is_set():
             return
         url = res.url
         clean_url = url.split("?")[0].lower()
         
+        # 1. Uzantı Kontrolü
         if any(ext in clean_url for ext in [".m3u8", "master.m3u8", "playlist.m3u8", "/hls/"]):
             set_found_link(url, res.request.headers.get("referer", referer))
             return
 
+        # 2. Content-Type Kontrolü
         ct = res.headers.get("content-type", "").lower()
-        if any(t in ct for t in ["mpegurl", "application/vnd.apple.mpegurl"]):
+        if any(t in ct for t in ["mpegurl", "application/vnd.apple.mpegurl", "application/x-mpegurl"]):
             set_found_link(url, res.request.headers.get("referer", referer))
             return
 
-        if any(t in ct for t in ["json", "javascript", "text/plain"]):
+        # 3. Metin/JSON Yanıtları İçinde Arama
+        if any(t in ct for t in ["json", "javascript", "text/plain", "html"]):
             try:
                 text = await res.text()
                 if ".m3u8" in text:
@@ -205,11 +177,10 @@ async def get_stream_link(context, channel, attempt):
         timeout_limit = 25000 if attempt == 1 else 30000
         print(f"[*] Sayfa yükleniyor: {channel['name']}")
         
-        # Sayfaya git
         await page.goto(target_url, wait_until="domcontentloaded", timeout=timeout_limit)
-        await asyncio.sleep(2.0)
+        await asyncio.sleep(2.5)
 
-        # 1. ADIM: "Servers" Sekmesini Aktifleştir
+        # 1. "Servers" Sekmesini Tıkla
         await page.evaluate("""
             () => {
                 const elements = Array.from(document.querySelectorAll('button, a, div, li, span'));
@@ -222,8 +193,8 @@ async def get_stream_link(context, channel, attempt):
         """)
         await asyncio.sleep(1.5)
 
-        # 2. ADIM: Sayfadaki Aktif Sunucuları Tespit Et
-        active_server_names = await page.evaluate("""
+        # 2. Aktif Sunucuları Bul
+        server_names = await page.evaluate("""
             () => {
                 const keywords = ["AUTO", "EARTH", "MERCURY", "VENUS", "MARS", "JUPITER", "SATURN", "SERVER"];
                 const candidates = Array.from(document.querySelectorAll('button, a, div[role="button"], li, .server-btn, [class*="server"]'));
@@ -242,18 +213,18 @@ async def get_stream_link(context, channel, attempt):
         """)
 
         # Auto veya Earth sunucusunu öne al
-        active_server_names.sort(key=lambda x: 0 if "AUTO" in x else (1 if "EARTH" in x else 2))
-        print(f"  [*] Tespit edilen aktif sunucu sayısı: {len(active_server_names)}")
+        server_names.sort(key=lambda x: 0 if "AUTO" in x else (1 if "EARTH" in x else 2))
+        print(f"  [*] Tespit edilen aktif sunucu sayısı: {len(server_names)}")
 
-        # 3. ADIM: Sırayla Sunuculara Tıkla ve Video Başlat
-        for srv_name in active_server_names:
+        # 3. Sırayla Sunucuları Dene ve Video Oynatıcıyı Tetikle
+        for srv_name in server_names:
             if link_found_event.is_set():
                 break
 
             short_name = srv_name.split()[0]
             print(f"  [>] Aktif sunucu deneniyor: {short_name}")
             
-            # Sunucu butonuna JavaScript ile tıkla
+            # Butona tıkla
             await page.evaluate("""
                 (name) => {
                     const candidates = Array.from(document.querySelectorAll('button, a, div[role="button"], li, .server-btn, [class*="server"]'));
@@ -270,39 +241,64 @@ async def get_stream_link(context, channel, attempt):
 
             await asyncio.sleep(2.0)
 
-            # Video Oynatıcıyı ve Frame'leri Oynatmaya Zorla
+            # Iframe ve Video Katmanlarına Fiziksel Koordinatlı Tıklama Simülasyonu
             for frame in page.frames:
                 try:
+                    # Video ve Oynatıcı elementlerini JavaScript ile başlat
                     await frame.evaluate("""
                         () => {
+                            // HTML5 Video Play
                             document.querySelectorAll('video').forEach(v => {
                                 v.muted = true;
                                 v.play().catch(e => {});
                             });
-                            const selectors = ['.jw-display-icon-container', '.vjs-big-play-button', 'button[aria-label="Play"]', '.play-btn'];
-                            selectors.forEach(sel => {
-                                const btn = document.querySelector(sel);
-                                if (btn) btn.click();
-                            });
+                            
+                            // JWPlayer Bellek Kontrolü
+                            if (window.jwplayer && typeof window.jwplayer === 'function') {
+                                try {
+                                    const jw = window.jwplayer();
+                                    jw.play();
+                                    const pl = jw.getPlaylist();
+                                    if (pl && pl[0] && pl[0].file) {
+                                        window.__onStreamCaught(pl[0].file);
+                                    }
+                                } catch(e){}
+                            }
+
+                            // Clappr / Hls Bellek Kontrolü
+                            if (window.player && window.player.options && window.player.options.source) {
+                                window.__onStreamCaught(window.player.options.source);
+                            }
                         }
                     """)
                 except Exception:
                     pass
 
-            # Linkin yakalanması için bekle
+                # Sayfa üstündeki Iframe veya Video kutucuğunun merkezine doğrudan tıkla
+                try:
+                    video_box = frame.locator("video, #player, .jwplayer, .player, iframe").first
+                    if await video_box.count() > 0:
+                        box = await video_box.bounding_box()
+                        if box:
+                            # Merkeze tıkla
+                            await page.mouse.click(box['x'] + box['width'] / 2, box['y'] + box['height'] / 2)
+                except Exception:
+                    pass
+
+            # Linkin ağ trafiğinden yakalanması için bekle
             try:
-                await asyncio.wait_for(link_found_event.wait(), timeout=4.5)
+                await asyncio.wait_for(link_found_event.wait(), timeout=5.0)
             except asyncio.TimeoutError:
                 pass
 
-        # 4. ADIM: Frame İçeriklerinde Regex Kontrolü (Yayın doğrudan frame'deyse)
+        # 4. Sayfa ve Iframe Kaynak Kodlarında Son Tarama
         if not link_found_event.is_set():
             for frame in page.frames:
                 try:
                     content = await frame.content()
                     matches = re.findall(r'["\'](https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*)["\']', content)
-                    if matches:
-                        set_found_link(matches[0], frame.url)
+                    for m in matches:
+                        set_found_link(m, frame.url)
                         break
                 except Exception:
                     continue
@@ -314,7 +310,7 @@ async def get_stream_link(context, channel, attempt):
         await page.close()
 
     if found_link:
-        print(f"  [+] BAŞARILI: {channel['name']} -> Link yakalandı!")
+        print(f"  [+] BAŞARILI: {channel['name']} -> Link yakalandı: {found_link[:60]}...")
         full_stream_link = f"{found_link}{USER_AGENT_SUFFIX}"
         return {
             "name": channel.get("name", "Kanal"),
@@ -381,7 +377,7 @@ async def main():
                 cf.write("#EXT-X-STREAM-INF:BANDWIDTH=8000000\n")
                 cf.write(f"{item['stream']}\n")
                 
-        print(f"[+] İşlem tamamlandı! {len(results)} yayın kaydedildi.")
+        print(f"[+] İşlem başarıyla tamamlandı! {len(results)} yayın dosyası güncellendi.")
     else:
         print("\n[-] Aktif yayın bağlantısı tespit edilemedi.")
 
