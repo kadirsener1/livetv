@@ -1,4 +1,4 @@
-name: Canli Yayin Linklerini Guncelle
+name: TÜM Linkleri Guncelle
 
 on:
   workflow_dispatch: # Manuel tetikleme için
