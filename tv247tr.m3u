@@ -15,12 +15,12 @@ https://zeus645423.cfd/b1/index.txt
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1-tvnow
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MiIsInRzIjoxNzg5MDY2NjQ4NzEzfQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live.tv247.site/live/62/index.m3u8?v=1&e=1789153652&k=9cdac8ffe9a210962419def5cea25c1d|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports1cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3ODkwODEwNjI5NjQ6Y2RubGl2ZXR2LnR2OmZmZDMzMDQ5N2U1YTk1MzguYWI5ZWE3MGFhOGZmZjBlMmM1YWMwN2Q5ZDA5YWFiMDM2ZTUyNTY1YTg3MGJiYmYzYmUxNWM1NDllNTBhOWIzZA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3ODkwODE2NjgyNTg6Y2RubGl2ZXR2LnR2OmI5NWI4NzFlZWQxMTgzNTYuNjQ4YzA3NzljNmNmYjM4NzU5YzA2NGQxOGUzYTgxNzY4ZjVmOTgyMjk5ZTk2M2I2MjhjZmE1YTcyNDM2MTUyOQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" group-title="Spor", TR:beIN Sport 1 HD-Mahsun
@@ -44,12 +44,12 @@ https://65.108.239.207/smart2/index.m3u8
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports2-tvnow
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MyIsInRzIjoxNzg5MDY2NjU2NTQxfQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MyIsInRzIjoxNzg5MDY3MjU5OTc3fQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports2cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc04/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA0OjE3ODkwODEwNjMzMTY6Y2RubGl2ZXR2LnR2OjMyOGIxOTJjNGIyZDQ4NzIuMjIwYmEzZmM0MTVmYjc2ZWY0ZDlhM2QyNTZhODUzMmFmZGVjYjJkOGU1NWJkYjQ3NzllYmQzYTMzYmQ3NzBlZQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc04/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA0OjE3ODkwODE2Njg1NjM6Y2RubGl2ZXR2LnR2OjliYTA5NjBmMDUwNTgxNjYuNzZiMDJjOTY4ZTgxOWJmNGUwZWQ1Yzc3MWNkZWQ2NDQwYjlhOTk5ZGE2ODM3YTA1ODk1YTYwNzY4MTc0N2JjOA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TR:beIN Sport 2 HD-Mahsun
@@ -68,61 +68,61 @@ http://88.99.165.164:6878/ace/getstream?infohash=36e9427b55dd3574f9f40eab30aef8e
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports3-tvnow
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/64/index.m3u8?v=1&e=1789153056&k=5b7680a732d0311a8167d3a9848b8121|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NCIsInRzIjoxNzg5MDY3MjYzMjI5fQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports4-tvnow
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://live.tv247.site/live/67/index.m3u8?v=1&e=1789153062&k=3f29c1d5bec5cf5779b4f3ad76f34ab8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NyIsInRzIjoxNzg5MDY3MjY3NzgxfQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports5-tvnow
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDEwIiwidHMiOjE3ODkwNjY2NjM2MjB9|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDEwIiwidHMiOjE3ODkwNjcyNzAzMzN9|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports3cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc08/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA4OjE3ODkwODEwNjM2MzI6Y2RubGl2ZXR2LnR2OjI4MDMyOWJjNTRiZTQyNTUuZTdhMjc4YjUwZDAyMzVlMTQ2NTM4OTE2ZTNhMGE4ZGMyNTI1ZjY1OGZlYTI2ODhmYzYyMmI2NTk1NzgxMzBmZg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc08/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA4OjE3ODkwODE2Njg4NDU6Y2RubGl2ZXR2LnR2OjQ0ZDM5ODIxYzBlY2I0YjYuNzdiYjA2NDk2ZTgwYWE4N2FkYmIwYzI3MjY4ZTYyYjYxMzE5NzNhNTU0N2ViMDI0NGE0MTJhYThiNzhiZTRmOQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports4cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBkOjE3ODkwODEwNjM4ODM6Y2RubGl2ZXR2LnR2OmE1NGYyOGM2YzE4MThmY2QuODdkMDMxNjc3MTBmYWE4ZGJiOGEyOWVhMjYwZmI2MDlmZmJlN2RjMmQ2OGQ2MDdlNGM3NDk2ZDVjNzQ4NzlmZg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBkOjE3ODkwODE2NjkxNjg6Y2RubGl2ZXR2LnR2OjliYmUxYzM5OWNmZjZiYTIuZjU3ODBkMGQ0ODY1NjUwOGM5ZTM1YWQ0YTFiNzgwODAzMmU1MjNjMjNmZTA2Zjc5MmZkMjg2NDljNjE3NWM0Nw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsports5cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76ca991/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhOTkxOjE3ODkwODEwNjQwMjk6Y2RubGl2ZXR2LnR2OmZhN2U3NTBlNGRhMjEwMTUuNDE1MmRiMGQ1ODlhY2NiYjRlNDVhNzUyZTllYWM3N2M3NzgzZTIwNWNlMmM3ZGM0MGY2Y2E2NzcyNjBjOTQwNA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76ca991/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhOTkxOjE3ODkwODE2Njk0NTU6Y2RubGl2ZXR2LnR2OjRkYjBjOTJlOTBlMzkyMGQuMGQwMGQwZjRkMWVhYTIzMzNiOTg1ODlmOTJjMTE4MWMwMTNjZDM0MmE3ZGU1ZGJmZmUwMjY5ZGFjMmMyOGU5OQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsportsmax1cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc11/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzExOjE3ODkwODEwNjQyMzg6Y2RubGl2ZXR2LnR2OjExMzRiNjEwZjNmZGY5OGQuODI1MjUxZDIzYjEyZGI3MWZkZWU2OWU2NzMxMzc1OGU2ODcyMDYxMjYyYWYzMDQzM2I2ZDI1YjUzNzQ1NTllOQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc11/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzExOjE3ODkwODE2Njk3NDg6Y2RubGl2ZXR2LnR2OjVlYjhjNWI5NTU2MWY0MDIuMjYzYWJkMzA5ODIyZDUyNDNkMmFlNDczMzcxODhjOTZmODIxNmYyYjlhMDVkMjY5ODVlMzViMzE3ZDA1NTBkYw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trbeinsportsmax2cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc13/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzEzOjE3ODkwODEwNjQzOTg6Y2RubGl2ZXR2LnR2OmFhNzNhZmRhMjMxZGRhNjYuZGU0ZDNhMjk5MmMyM2IxMzAxMWI4NzkzZmJiNDgwZjZkZjA4YzA4ZjhlYWMwNDBmNjI3MDhjYjk2NTMzZDg4Zg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc13/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzEzOjE3ODkwODE2NzAwNTI6Y2RubGl2ZXR2LnR2OjlhZDhlOGZhM2ZlOTJjZDMuYTExZWYwY2VhYzhlNWM3OGI1M2U5NWMxYjUwZmQ2NGZjNjUwNTdlMzRiZGIxY2IwNjcxYmJmZDNlOGYzZDM4Mg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trssportcdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76caa87/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhYTg3OjE3ODkwODEwNjQ3MzI6Y2RubGl2ZXR2LnR2OmIzNjA4ZGRlOTQ0ODVlYjUuZTc4MTcyMGRiMDU4MDk5NDgyYTIwMmY0M2E2MTE0NDhjZGYxMWMyNzI0MjJjZmM0ZGEyMWJiNmRkN2I3ZTE0ZQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76caa87/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhYTg3OjE3ODkwODE2NzA1OTM6Y2RubGl2ZXR2LnR2OjA5MDE4OGMwODlkMWZkN2MuZGY2MDBhZjcyM2Y0ZWMxNjFjNjQxZmU1ZWUwYmMzMGUxZmY2MTI3NzIxYTM3MTk1ZDgzNzg1YzI0NTNmOTg0Mg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trssport2cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc31/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzMxOjE3ODkwODEwNjUwMTI6Y2RubGl2ZXR2LnR2OmU3YTk3YjRmN2NhZDg0YTEuYjJhN2FkNDJkNmEwMzQ3MmYwNTI1OGM2MTBjZWM2YmFkNWI4ZmY1MzFlODU0ZGFjYWIwZTcyN2JmODhiOGUyMw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc31/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzMxOjE3ODkwODE2NzA3MDI6Y2RubGl2ZXR2LnR2OjA3NTM4YmJkN2JlY2ViY2IuZTczNGY5NDUxMWU4MGM4ZTRiZjcyMmUzMTUxZTkyYTI1ODY2OGNmZDI3NjI1ZDI5NzgyYTFkZjZhNjJlOWQ5Mw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trtivibuspor1cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3b/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNiOjE3ODkwODEwNjUxMDQ6Y2RubGl2ZXR2LnR2OmM1Mjc1M2RiNjI4ZTNmNjkuNWUyMTNkZDA3MDQ2NTI1YzE4NGU4NjU2ZGI4ZmRlZDhkMTNhNWRkMGRhMzNiNGE2ZDczYTM2ZWRhMWU2ODg5Yg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3b/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNiOjE3ODkwODE2NzA5MjU6Y2RubGl2ZXR2LnR2OjkzN2YzMDFkN2E2MDE3NzQuNzA4ZTM1MTJkYTdlMDVkMmMwMGQ4OTc0N2ZmNmVlMGJkZTIyM2NiYTYxNWExNDljYmI5ZjhlZDNhYjhhZjI0OA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trtivibuspor2cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNkOjE3ODkwODEwNjU0MDU6Y2RubGl2ZXR2LnR2OjRhODFjNzNlZGU0MWEyZjAuNGZhZDczZjllZTllYjM5NzIwZWJhNzJlNWQ4ZjVhNzAwOWU5YmQxM2Y1NTYxYTJjZmE2ZDJiMGI2YmE0MmYzZg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNkOjE3ODkwODE2NzEwNDA6Y2RubGl2ZXR2LnR2OjI4MGY4ODViYWJmNjgxZmYuMWJkYzc0OGY0ODI3MDM0Mjc0ZDE1ZDk3M2Q2M2MzMDNmNDdhOTE5MzczMWU4NmU0MmVhYmYxNjQ2M2U0NmZiNg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trtivibuspor3cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNmOjE3ODkwODEwNjU0ODg6Y2RubGl2ZXR2LnR2OjYwMTJjM2JmYzA4M2I5NzMuZWQyNWE2MjU0MmJkYzMzNDk5YzM5M2Q0MWVhMTE1OGMwNmMyZjQ2ZDU3MzgzNTdjMWE0MWFiMzAxY2Y3NzA1Zg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNmOjE3ODkwODE2NzEzMDQ6Y2RubGl2ZXR2LnR2OjM1NmVjZTk3YjE2YjZhZDEuYjUyYmIzNjk2ZmMyNGY0MjIxNDgwNTdlNDg1YmM4OWU5NzNjOTA2YWM5MWM3MmRjNDE5NTM2NDA0MDkzOWRiMA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",trtivibuspor4cdn
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc40/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzQwOjE3ODkwODEwNjU4MjU6Y2RubGl2ZXR2LnR2OjNlNzM3MWIyYTFjMzc0MjUuOGJkNTMyMTRmNmQzODQ5YWM2MDU1MThlNDlhNDZkOGJkYzEzM2Y3NjIzNzAxYTViZDVjZjIxODM4YWY4MmU4Yg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc40/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzQwOjE3ODkwODE2NzEzOTc6Y2RubGl2ZXR2LnR2OjM5MmEwZGU5YzkwNDkxOWYuY2U1MTFlNDA2MjRjMmY0ZGMwZGU0ZGVjMjhkOTg2NTQ5MDZhNWUwYmEzZmJiOWRjNWY5YmNmNDVhMWY2N2M4Mw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 
 
@@ -681,7 +681,7 @@ https://vavoo.biz-az.workers.dev/play/9503946568377e1ba14c8.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",ÇİFTÇİ TV
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",YABAN TV
-https://yayin1.canlitv.fun/canlitv/yabantv.stream/playlist.m3u8?hash=9f7c4652217e377e60bae70993440877|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://yayin1.canlitv.fun/canlitv/yabantv.stream/playlist.m3u8?hash=8e8737006f97b367955083ec425fb714|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",KÖY TV
 https://streams.uzunmuhalefet.com/stream/7a1294e7-9fa8-4c3d-89b8-eb67e33bc2e6.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",TARIM TV
