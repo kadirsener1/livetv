@@ -9,8 +9,8 @@ CHANNELS_FILE = "channels.json"
 OUTPUT_FILE = "playlist.m3u"
 LIVETV_DIR = "streams"
 
-MAX_CONCURRENT_TASKS = 2 
-MAX_RETRIES = 2 
+MAX_CONCURRENT_TASKS = 1  # Sunucu tıklama işlemleri için kararlılık adına eşzamanlılığı 1-2 civarında tutmak iyidir
+MAX_RETRIES = 1 
 
 USER_AGENT_SUFFIX = "|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 
@@ -20,7 +20,6 @@ AD_DOMAINS = [
     "daisypath", "histats", "amung", "statcounter", "addthis", "sharethis"
 ]
 
-# Verdiğiniz bağlantı varsayılan olarak tanımlandı
 DEFAULT_CHANNELS = [
     {
         "name": "TV8 Turkey",
@@ -39,10 +38,6 @@ def sanitize_filename(name):
     return clean_name.strip().replace(" ", "_")
 
 def update_existing_m3u(file_path, results):
-    """
-    Mevcut M3U dosyasını bozmadan, sadece kanal ismine göre
-    yayın linklerini güncelleyen fonksiyon.
-    """
     new_links = {
         item["name"].strip().lower(): item["stream"].strip() 
         for item in results if item.get("stream")
@@ -54,7 +49,7 @@ def update_existing_m3u(file_path, results):
             for item in results:
                 f.write(f'#EXTINF:-1 tvg-logo="{item["logo"]}" group-title="{item["group"]}",{item["name"]}\n')
                 f.write(f"{item['stream']}\n\n")
-        print(f"[+] '{file_path}' dosyası oluşturuldu.")
+        print(f"[+] '{file_path}' oluşturuldu.")
         return
 
     with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -72,12 +67,9 @@ def update_existing_m3u(file_path, results):
                 channel_name = stripped.rsplit(",", 1)[1].strip().lower()
                 if channel_name in new_links:
                     pending_new_stream = new_links[channel_name]
-            
             updated_lines.append(line)
-
         elif stripped.startswith("#") or not stripped:
             updated_lines.append(line)
-
         else:
             if pending_new_stream:
                 updated_lines.append(pending_new_stream + "\n")
@@ -87,11 +79,9 @@ def update_existing_m3u(file_path, results):
 
     with open(file_path, "w", encoding="utf-8") as f:
         f.writelines(updated_lines)
-
     print(f"[+] '{file_path}' dosyası güncellendi.")
 
 async def scan_channel(context, channel, semaphore):
-    """Kanal için yeniden deneme mekanizması."""
     for attempt in range(1, MAX_RETRIES + 2):
         async with semaphore:
             try:
@@ -102,7 +92,7 @@ async def scan_channel(context, channel, semaphore):
                 print(f"  [!] Hata ({channel['name']} - Deneme {attempt}): {str(e)[:50]}")
             
             if attempt < MAX_RETRIES + 1:
-                await asyncio.sleep(2)
+                await asyncio.sleep(3)
     return None
 
 async def get_stream_link(context, channel, attempt):
@@ -142,7 +132,7 @@ async def get_stream_link(context, channel, attempt):
     page.on("response", lambda res: check_and_set_link(res.url, res.request.headers))
 
     try:
-        timeout_limit = 12000 if attempt == 1 else 18000
+        timeout_limit = 15000 if attempt == 1 else 20000
         
         await page.add_init_script("""
             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
@@ -150,51 +140,84 @@ async def get_stream_link(context, channel, attempt):
             window.onbeforeunload = function() { return null; };
         """)
 
-        await page.goto(target_url, wait_until="domcontentloaded", timeout=timeout_limit)
+        print(f"  [*] Sayfa yükleniyor: {channel['name']}")
+        await page.goto(target_url, wait_until="networkidle", timeout=timeout_limit)
         
-        # Sayfa içi iframe veya oynatıcı etkileşimi
+        # İlk başta otomatik başlaması için 5 saniye bekleyelim
         try:
-            await asyncio.wait_for(link_found_event.wait(), timeout=4.0)
+            await asyncio.wait_for(link_found_event.wait(), timeout=5.0)
         except asyncio.TimeoutError:
             pass
 
+        # Eğer link henüz bulunamadıysa sunucu butonlarını tarayalım
         if not link_found_event.is_set():
-            for frame in page.frames:
-                try:
-                    content = await frame.content()
-                    matches = re.findall(r'["\'](https?://[^"\']+\.m3u8[^"\']*)["\']', content)
-                    if matches:
-                        check_and_set_link(matches[0])
-                        stream_referer = frame.url
-                        break
-                    
-                    selectors = [
-                        "video", ".jw-video", "iframe", "button[class*='play']", 
-                        ".vjs-big-play-button", ".jw-display-icon-container", 
-                        "#player", "#play", ".play-btn", ".play"
-                    ]
-                    for sel in selectors:
-                        locator = frame.locator(sel).first
-                        if await locator.count() > 0:
-                            await locator.evaluate("el => el.click()")
-                            break
-                except Exception:
-                    continue
+            print(f"  [*] Otomatik yayın başlamadı. Sunucu butonları taranıyor...")
+            
+            # Ana sayfadaki ve iframe'lerdeki tıklanabilir alanları tarama fonksiyonu
+            async def find_and_click_servers(frame_or_page):
+                if link_found_event.is_set():
+                    return
+                
+                # Olası buton, link ve liste elemanlarını bul
+                locators = await frame_or_page.locator("button, a, li, span, div").all()
+                active_servers = []
 
+                for loc in locators:
+                    try:
+                        text = await loc.text_content()
+                        if not text:
+                            continue
+                        
+                        text_clean = text.strip().upper()
+                        
+                        # Sunucu isimlerini kontrol et
+                        server_names = ["AUTO", "MERCURY", "VENUS", "EARTH", "MARS", "JUPITER", "SATURN"]
+                        if any(srv in text_clean for srv in server_names):
+                            # Çevrimdışı (OFFLINE) olanları ele
+                            if "OFFLINE" not in text_clean:
+                                active_servers.append((text_clean, loc))
+                    except Exception:
+                        continue
+
+                # "AUTO" olanı en öne al, diğerlerini arkaya sırala
+                active_servers.sort(key=lambda x: 0 if "AUTO" in x[0] else 1)
+
+                for name, element in active_servers:
+                    if link_found_event.is_set():
+                        break
+                    print(f"    [>] Sunucu deneniyor: {name}")
+                    try:
+                        await element.scroll_into_view_if_needed()
+                        await element.click(timeout=3000)
+                        # Tıkladıktan sonra yayının yüklenmesi için bekle
+                        await asyncio.sleep(4.5)
+                    except Exception:
+                        pass
+
+            # Önce ana sayfada dene
+            await find_and_click_servers(page)
+
+            # Link hala yoksa iframe içlerindeki butonları dene
+            if not link_found_event.is_set():
+                for frame in page.frames:
+                    if frame != page.main_frame:
+                        await find_and_click_servers(frame)
+
+        # Son bir kez bekleyelim
         if not link_found_event.is_set():
             try:
-                await asyncio.wait_for(link_found_event.wait(), timeout=6.0)
+                await asyncio.wait_for(link_found_event.wait(), timeout=5.0)
             except asyncio.TimeoutError:
                 pass
 
-    except Exception:
+    except Exception as e:
         if attempt == (MAX_RETRIES + 1):
-            print(f"  [-] Link bulunamadı: {channel['name']}")
+            print(f"  [-] Sunuculardan link alınamadı: {channel['name']}")
     finally:
         await page.close()
 
     if found_link:
-        print(f"  [+] Yakalandı ({attempt}. Denemede): {channel['name']}")
+        print(f"  [+] BAŞARILI: {channel['name']} -> Link yakalandı.")
         full_stream_link = f"{found_link}{USER_AGENT_SUFFIX}"
         return {
             "name": channel.get("name", "Kanal"),
