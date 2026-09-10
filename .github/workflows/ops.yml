@@ -1,0 +1,54 @@
+name: Update Stream Links
+
+on:
+  schedule:
+    # Her 6 saatte bir otomatik çalışır (isteğe göre cron ayarı değiştirilebilir)
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # GitHub arayüzünden manuel tetikleme butonu sağlar
+
+# Repository'ye commit atabilmesi için gerekli yazma izinleri
+permissions:
+  contents: write
+
+jobs:
+  run-updater:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repoyu Klonla
+        uses: actions/checkout@v4
+
+      - name: Python Kurulumu
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Bağımlılıkları Yükle
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+
+      - name: Playwright Tarayıcılarını ve Sistem Paketlerini Kur
+        run: |
+          playwright install chromium --with-deps
+
+      - name: Python Betiğini Çalıştır
+        run: |
+          # Python dosyanızın adı farklıysa 'main.py' kısmını güncelleyin
+          python main.py
+
+      - name: Değişiklikleri Commit ve Push Et
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add -A
+          
+          # Yalnızca değişiklik varsa commit at
+          if git diff --staged --quiet; then
+            echo "Değişiklik tespit edilmedi, commit atılmadı."
+          else
+            git commit -m "Automated stream playlist update [skip ci]"
+            git push
+          fi
