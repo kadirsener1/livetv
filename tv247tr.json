@@ -91,13 +91,13 @@
        
     },
     {
-        "name": "S SPOR 1-CDN",
+        "name": "S SPORT 1-CDN",
         "group": "Spor",
         "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=S%20Sport&code=tr&user=cdnlivetv&plan=free"
         
     },
     {
-        "name": "S SPOR 2-CDN",
+        "name": "S SPORT 2-CDN",
         "group": "Spor",
         "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=S%20Sport%202&code=tr&user=cdnlivetv&plan=free"
         
