@@ -95,7 +95,7 @@ https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc08/playlist.m3u8?token=
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBkOjE3ODkwOTQzOTk5MTE6Y2RubGl2ZXR2LnR2OmE0Y2E5ZWY0NzE4ODVhM2QuMmJmY2VmZGMyZTA5MjBjNDAzM2UzOGE2OGNiNGFlOGUxOTJmOTMxNDgzYTVhN2Q1ZGE2NDI3MzkwY2VkN2NiNA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",BEIN SPORTS 4-CDN
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",BEIN SPORTS 5-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76ca991/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhOTkxOjE3ODkwOTQ0MDAwMDE6Y2RubGl2ZXR2LnR2OjE4NTc0NTQ3ZTdkYzdlYzkuZmYyYTBlZGJhMDU4MjBhYjNhOWIwZmEyOGM2ZGI3ZTQ3YzhhNjdhOTdjOTY4Nzk3YzdjMWU2MjUyMWU2ODI3NA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
@@ -517,6 +517,8 @@ https://trt.daioncdn.net/trtspor/master.m3u8?app=web&platform=trtspor
 https://tv-trtspor2.medya.trt.com.tr/master_1440p.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/UGbdQLv.png" group-title="TR Spor",beIN Sports Haber-tul
 https://trn03.tulix.tv/gt-beinsportshaber/index.m3u8?token=ae8ebfde63142e4716ab799a5aa7df6d
+#EXTINF:-1 tvg-logo="https://i.imgur.com/UGbdQLv.png" group-title="TR Spor",BEIN SPORTS HABER-CDN
+ff
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ZhkZzLf.png" group-title="TR Spor",A Spor
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
 #EXTINF:-1 tvg-logo="https://www.htspor.com/images/manifest/social-share-logo.png" group-title="TR Spor",HT Spor
