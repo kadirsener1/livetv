@@ -4,6 +4,8 @@ permissions:
   contents: write   # Repository'ye yazma/push izni
 
 on:
+schedule:
+    - cron: '0 */3 * * *'  # Her 2 saatte bir otomatik çalışır
     workflow_dispatch:       # Manuel çalıştırma butonu
 
 jobs:
