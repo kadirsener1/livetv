@@ -116,7 +116,7 @@ http://88.99.165.164:6878/ace/getstream?infohash=7fee896143ae89590d97793a0be7ad8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
 https://corestream.d72377a9ds0ec24.cfd//bein4/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-id="bein_sport" tvg-name="BeIN Sport 4" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-4-HD.png" group-title="Spor",BEIN SPORTS 4-ARDA
+#EXTINF:-1 tvg-id="bein_sport" tvg-name="BeIN Sport 4" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-4-HD.png" group-title="Spor",BEIN SPORTS 4-ZEUS
 https://zeus645423.cfd/b4/index.txt
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-4-HD.png" group-title="Spor",BEIN SPORTS 4-TVNOW
