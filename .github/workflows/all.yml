@@ -3,7 +3,7 @@ name: Tüm Linkleri Guncelle
 on:
   workflow_dispatch: # Manuel çalıştırmak için
   schedule:
-    - cron: '0 */2 * * *'  # Her 2 saatte bir otomatik çalışır
+    - cron: '0 */3 * * *'  # Her 2 saatte bir otomatik çalışır
 
 permissions:
   contents: write
