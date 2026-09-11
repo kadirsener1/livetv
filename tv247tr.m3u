@@ -41,7 +41,7 @@ http://88.99.165.164:6878/ace/getstream?infohash=071b49a1c52d304cae6300e2776022e
 
 
 
-#EXTINF:-1 tvg-id="bein-sports-2" tvg-name="BEIN SPORTS 2" group-title="Spor",BEIN SPORTS 2-ARDA
+#EXTINF:-1 tvg-logo="logo/beIN-SPORTS-2-HD.png" tvg-name="BEIN SPORTS 2" group-title="Spor",BEIN SPORTS 2-ARDA
 #EXTVLCOPT:http-referrer=https://www.atomsportv512.top
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
 https://corestream.d72377a9ds0ec24.cfd//bein2/tracks-v1a1/mono.m3u8
@@ -49,7 +49,7 @@ https://corestream.d72377a9ds0ec24.cfd//bein2/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor-Diğer",Spor Smart 2
 https://65.108.239.207/smart2/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",BEIN SPORTS 2-TVNOW
+#EXTINF:-1 tvg-logo="logo/beIN-SPORTS-2-HD.png" group-title="Spor",BEIN SPORTS 2-TVNOW
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MyIsInRzIjoxNzg5MDk5MzIwNTczfQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
