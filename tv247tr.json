@@ -19,25 +19,25 @@
     "url": "https://tvnow247.top/embed/bein-sports-1-turkey/"
 },
 {
-    "name": "trbeinsports2-tvnow",
+    "name": "BEIN SPORTS 2-TVNOW",
     "group": "Spor",
     "logo": "https://logo-adresi.com/logo.png",
     "url": "https://tvnow247.top/embed/bein-sports-2-turkey/"
 },
     {
-    "name": "trbeinsports3-tvnow",
+    "name": "BEIN SPORTS 3-TVNOW",
     "group": "Spor",
     "logo": "https://logo-adresi.com/logo.png",
     "url": "https://tvnow247.top/embed/bein-sports-3-turkey/"
 },
     {
-    "name": "trbeinsports4-tvnow",
+    "name": "BEIN SPORTS 4-TVNOW",
     "group": "Spor",
     "logo": "https://logo-adresi.com/logo.png",
     "url": "https://tvnow247.top/embed/bein-sports-4-turkey/"
 },
     {
-    "name": "trbeinsports5-tvnow",
+    "name": "BEIN SPORTS 5-TVNOW",
     "group": "Spor",
     "logo": "https://logo-adresi.com/logo.png",
     "url": "https://tvnow247.top/embed/bein-sports-5-turkey/"
@@ -49,37 +49,37 @@
        
     },
     {
-        "name": "trbeinsports2cdn",
+        "name": "BEIN SPORTS 2-CDN",
         "group": "Spor",
         "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%202&code=tr&user=cdnlivetv&plan=free"
    
     },
     {
-        "name": "trbeinsports3cdn",
+        "name": "BEIN SPORTS 3-CDN",
         "group": "Spor",
         "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%203&code=tr&user=cdnlivetv&plan=free"
         
     },
     {
-        "name": "trbeinsports4cdn",
+        "name": "BEIN SPORTS 4-CDN",
         "group": "Spor",
         "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%204&code=tr&user=cdnlivetv&plan=free"
         
     },
     {
-        "name": "trbeinsports5cdn",
+        "name": "BEIN SPORTS 5-CDN",
         "group": "Spor",
         "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%205&code=tr&user=cdnlivetv&plan=free"
         
     },
     {
-    "name": "trbeinsportsmax1cdn",
+    "name": "BEIN SPORTS 1 MAX-CDN",
         "group": "Spor",
     "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%20MAX%201&code=tr&user=cdnlivetv&plan=free"
     
   },
     {
-    "name": "trbeinsportsmax2cdn",
+    "name": "BEIN SPORTS 2 MAX-CDN",
         "group": "Spor",
     "url": "https://cdnlivetv.tv/api/v1/channels/player/?name=beIN%20Sports%20MAX%202&code=tr&user=cdnlivetv&plan=free"
     
