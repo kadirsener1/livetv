@@ -4,6 +4,8 @@ permissions:
   contents: write   # Push yapabilmesi için zorunlu yazma izni
 
 on:
+schedule:
+    - cron: '0 */3 * * *'  # Her 2 saatte bir otomatik çalışır
    workflow_dispatch:       # Manuel çalıştırma butonu
 
 jobs:
