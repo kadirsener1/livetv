@@ -2,7 +2,7 @@
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="İNFO",BİLGİLENDİRME
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/info.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="İNFO",test
-https://cdn.jsdelivr.net/npm/@swarmcloud/hls/p2p-engine.min.js|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://ds164.bluetier.top/COSMOTESPORT1/index.m3u8?token=Q09TTU9URVNQT1JUMXxub19jaGVja19pcHwxNzg5MTUzNzQ1.a93510cf25527efdd60147f7be32c81218015838159857b5a249b89e79d7ce99|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-ARDA
 #EXTVLCOPT:http-referrer=https://www.atomsportv513.top
