@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=8000000
-http://july.misekran.xyz:8080/live/Sanetgerstut4141/jkZtbf2cU2Fu/748242.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://cdn.jsdelivr.net/npm/@swarmcloud/hls/p2p-engine.min.js|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
