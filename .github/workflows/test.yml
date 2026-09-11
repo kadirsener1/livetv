@@ -1,4 +1,4 @@
-name: tv247 türkiye Link güncelle
+name: test Link güncelle
 
 on:
   workflow_dispatch: # Manuel çalıştırmak için
