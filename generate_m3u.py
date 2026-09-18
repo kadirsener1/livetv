@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 LiveLive24 NTV JSON to M3U Playlist Generator
-JSON içindeki tüm yayınları ve linkleri çözer, tek bir M3U dosyası oluşturur.
+ntv.json içindeki 'sources' yapısını okur, base64 linkleri çözer ve M3U yazar.
 """
 
 import json
@@ -11,7 +11,6 @@ import sys
 from datetime import datetime, timezone
 from urllib.parse import urlparse, parse_qs, unquote
 import urllib.request
-import urllib.error
 
 # ─── AYARLAR ───────────────────────────────────────────────
 SOURCE_URL = os.environ.get(
@@ -40,7 +39,7 @@ def fetch_json(url: str):
 
 
 def decode_stream_url(url: str) -> str:
-    """dlhd.html?url=<base64> veya şifreli parametrelerden gerçek m3u8 linkini çözer."""
+    """dlhd.html?url=<base64> linkini çözer."""
     if not url:
         return ""
     
@@ -61,7 +60,7 @@ def decode_stream_url(url: str) -> str:
         except Exception:
             pass
 
-    # 2. Doğrudan Base64 string verilmişse
+    # 2. Doğrudan Base64 string ise
     if url.startswith("aHR0c"):
         try:
             padding = 4 - len(url) % 4
@@ -77,7 +76,7 @@ def decode_stream_url(url: str) -> str:
 
 
 def build_m3u(data) -> tuple[str, int]:
-    """JSON içeriğini M3U formatına çevirir."""
+    """JSON içeriğini M3U formatına çevirir (Yeni 'sources' uyumlu)."""
     lines = [
         '#EXTM3U',
         f'<!-- Güncellenme Tarihi: {datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")} -->',
@@ -86,57 +85,45 @@ def build_m3u(data) -> tuple[str, int]:
 
     total_streams = 0
 
-    # JSON liste veya sözlük yapısını normalize et
-    items = []
-    if isinstance(data, list):
-        items = data
-    elif isinstance(data, dict):
-        for key, val in data.items():
-            if isinstance(val, list):
-                items.extend(val)
-            elif isinstance(val, dict):
-                items.append(val)
+    # Liste formatında veri geleceğini varsayıyoruz
+    items = data if isinstance(data, list) else []
 
     for item in items:
         if not isinstance(item, dict):
             continue
 
-        name = item.get("name") or item.get("title") or item.get("channel_name") or "Bilinmeyen Yayın"
-        group = item.get("playing") or item.get("category") or item.get("group") or "Genel"
+        # Ana Bilgiler
+        title = item.get("title") or item.get("name") or "Bilinmeyen Maç"
+        group = item.get("tournament") or item.get("category") or "Spor Etkinliği"
         logo = item.get("image") or item.get("logo") or DEFAULT_LOGO
-        item_id = str(item.get("match_id") or item.get("id") or "")
-        
-        # Streams dizisi varsa
-        streams = item.get("streams", [])
-        if streams and isinstance(streams, list):
-            for stream in streams:
-                if not isinstance(stream, dict):
+        item_id = str(item.get("id") or "")
+
+        # ⚠️ Yeni formatta 'sources' listesi kullanılır, eski formatta 'streams'
+        sources = item.get("sources") or item.get("streams") or []
+
+        if isinstance(sources, list) and len(sources) > 0:
+            for src in sources:
+                if not isinstance(src, dict):
                     continue
-                
-                raw_url = stream.get("url") or stream.get("stream_url") or ""
+
+                raw_url = src.get("url") or src.get("stream_url") or ""
                 if not raw_url:
                     continue
 
-                quality = stream.get("quality", "")
-                stream_name = stream.get("name", "")
-                
-                # İsimlendirme
-                if quality:
-                    channel_name = f"{name} [{quality}]"
-                elif stream_name:
-                    channel_name = f"{name} ({stream_name})"
-                else:
-                    channel_name = name
+                # Yayın İsmi (Örn: Stream 1 [en], Stream SD vb.)
+                stream_name = src.get("channelName") or src.get("name") or src.get("quality") or "Yayın"
+                channel_title = f"{title} ({stream_name})"
 
                 final_url = decode_stream_url(raw_url)
 
+                # M3U Satır formatı
                 extinf = (
                     f'#EXTINF:-1 '
                     f'tvg-id="{item_id}" '
-                    f'tvg-name="{channel_name}" '
+                    f'tvg-name="{channel_title}" '
                     f'tvg-logo="{logo}" '
                     f'group-title="{group}",'
-                    f'{channel_name}'
+                    f'{channel_title}'
                 )
 
                 lines.append(extinf)
@@ -144,39 +131,24 @@ def build_m3u(data) -> tuple[str, int]:
                 lines.append("")
                 total_streams += 1
 
-        # Doğrudan url varsa
-        elif item.get("url") or item.get("stream_url"):
-            raw_url = item.get("url") or item.get("stream_url")
-            final_url = decode_stream_url(raw_url)
-
-            extinf = (
-                f'#EXTINF:-1 '
-                f'tvg-id="{item_id}" '
-                f'tvg-name="{name}" '
-                f'tvg-logo="{logo}" '
-                f'group-title="{group}",'
-                f'{name}'
-            )
-
-            lines.append(extinf)
-            lines.append(final_url)
-            lines.append("")
-            total_streams += 1
-
     return "\n".join(lines), total_streams
 
 
 def main():
+    # 1. JSON'ı çek
     data = fetch_json(SOURCE_URL)
+    
+    # 2. M3U formatına dönüştür
     m3u_content, count = build_m3u(data)
 
+    # 3. Dosyayı kaydet
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     file_path = os.path.join(OUTPUT_DIR, OUTPUT_FILE)
 
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(m3u_content)
 
-    print(f"\n✅ Toplam {count} adet yayın M3U'ya eklendi.")
+    print(f"\n✅ Başarılı! Toplam {count} adet yayın M3U'ya eklendi.")
     print(f"💾 Dosya kaydedildi: {file_path}")
 
 
