@@ -1,128 +1,200 @@
 #EXTM3U
-<!-- Güncellenme Tarihi: 2026-09-18 21:45:42 UTC -->
+<!-- Güncellenme Tarihi: 2026-09-18 23:48:26 UTC -->
 
-#EXTINF:-1 tvg-id="FC_Nacional_Asuncion_vs_2_de_Mayo" tvg-name="FC Nacional Asuncion v. 2 de Mayo (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",FC Nacional Asuncion v. 2 de Mayo (Stream 1 [en])
-https://pullws-ac.yiom1.com/sport/QMflTO2MDN3UzXyAjM/playlist.m3u8?wsSecret=026214e414525941845451e6dcfe8fa8&wsABSTime=6AB2E191
+#EXTINF:-1 tvg-id="New_York_City_FC_vs_New_York_Red_Bulls" tvg-name="New York City FC v. New York Red Bulls (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",New York City FC v. New York Red Bulls (Stream 1 [en])
+https://pulltx.cqsycw.com/live/hd-en-6MvZ6BAjXDwv91fjF4.m3u8?txSecret=c255d428014c0fa2aead9a80e91fbc5c&txTime=6AB31304
 
-#EXTINF:-1 tvg-id="FC_Nacional_Asuncion_vs_2_de_Mayo" tvg-name="FC Nacional Asuncion v. 2 de Mayo (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",FC Nacional Asuncion v. 2 de Mayo (Stream 2 [en])
-https://pulltx.cqsycw.com/live/sd-6Mxip4yMjhbvttqY1U.m3u8?txSecret=46fec6b35f9fad710c57e9b7adc2f5a3&txTime=6AB23206
+#EXTINF:-1 tvg-id="New_York_City_FC_vs_New_York_Red_Bulls" tvg-name="New York City FC v. New York Red Bulls (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",New York City FC v. New York Red Bulls (Stream 2 [en])
+https://pullws-ac.yiom1.com/sport/QMfVDM1QTN0UzXyAjM/playlist.m3u8?wsSecret=1d1954e8372a3260b7ded19ee2220b19&wsABSTime=6AB30F44
 
-#EXTINF:-1 tvg-id="Central_Cordoba_SDE_vs_Defensa_Y_Justicia" tvg-name="Central Cordoba SDE v. Defensa Y Justicia (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Central Cordoba SDE v. Defensa Y Justicia (Stream 1 [en])
-https://pullws-ac.yiom1.com/sport/QMfJTN0MDN1UzXyAjM/playlist.m3u8?wsSecret=b8acd33764aed399145e1a10c30b3eff&wsABSTime=6AB2E191
+#EXTINF:-1 tvg-id="New_York_City_FC_vs_New_York_Red_Bulls" tvg-name="New York City FC v. New York Red Bulls (Stream 3 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",New York City FC v. New York Red Bulls (Stream 3 [en])
+https://pulltx.cqsycw.com/live/sd-6MvZ6BAjXDwv91fjF4.m3u8?txSecret=38f1bd403654ed59c4decf9c2d471e2b&txTime=6AB21B86
 
-#EXTINF:-1 tvg-id="Central_Cordoba_SDE_vs_Defensa_Y_Justicia" tvg-name="Central Cordoba SDE v. Defensa Y Justicia (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Central Cordoba SDE v. Defensa Y Justicia (Stream 2 [en])
-https://pulltx.cqsycw.com/live/sd-6MwdLb6GhYzzQyPZSE.m3u8?txSecret=9ba82cb4ee76ef503c8162a474dc127a&txTime=6AB23206
+#EXTINF:-1 tvg-id="Ceara_vs_Gremio_Novorizontino" tvg-name="Ceara v. Gremio Novorizontino (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Ceara v. Gremio Novorizontino (Stream 1 [en])
+https://pullws-ac.yiom1.com/sport/QMfBDOwMDN1UzXyAjM/playlist.m3u8?wsSecret=f6b68daee0f368294134937c04985b08&wsABSTime=6AB30F44
 
-#EXTINF:-1 tvg-id="Aguilas_Doradas_vs_Deportivo_Pereira" tvg-name="Aguilas Doradas v. Deportivo Pereira (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Aguilas Doradas v. Deportivo Pereira (Stream 1 [en])
-https://pullws-ac.yiom1.com/sport/QMfdzN0MDN1UzXyAjM/playlist.m3u8?wsSecret=87fad2dac91a9fbbc0e58b1ca78824f7&wsABSTime=6AB2E191
+#EXTINF:-1 tvg-id="Ceara_vs_Gremio_Novorizontino" tvg-name="Ceara v. Gremio Novorizontino (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Ceara v. Gremio Novorizontino (Stream 2 [en])
+https://pulltx.cqsycw.com/live/sd-6MvVNfQzJWa9qbcopJ.m3u8?txSecret=e0d71aa4558de9f63ca4d8e4f014c609&txTime=6AB21B86
 
-#EXTINF:-1 tvg-id="Aguilas_Doradas_vs_Deportivo_Pereira" tvg-name="Aguilas Doradas v. Deportivo Pereira (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Aguilas Doradas v. Deportivo Pereira (Stream 2 [en])
-https://pulltx.cqsycw.com/live/sd-6MweaVxxsyYZsyoh6N.m3u8?txSecret=afdf24cfcd28817986eb838560c0fdef&txTime=6AB23206
+#EXTINF:-1 tvg-id="Patriotas_FC_vs_Union_Magdalena" tvg-name="Patriotas FC v. Union Magdalena (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Patriotas FC v. Union Magdalena (Stream 1 [en])
+https://pullws-ac.yiom1.com/sport/QMflzNxETM2UzXyAjM/playlist.m3u8?wsSecret=d9789000ab20c830d57872bb8256348d&wsABSTime=6AB2F7D4
 
-#EXTINF:-1 tvg-id="Alianza_Atletico_Sullana_vs_Comerciantes_Unidos" tvg-name="Alianza Atletico Sullana v. Comerciantes Unidos (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Alianza Atletico Sullana v. Comerciantes Unidos (Stream 1 [en])
-https://pullws-ac.yiom1.com/sport/QMfdTOwMDN1UzXyAjM/playlist.m3u8?wsSecret=dc5587c6f3176d16a97dbdd32e56f3de&wsABSTime=6AB2DC32
+#EXTINF:-1 tvg-id="Independiente_Petrolero_vs_San_Antonio_Bulo_Bulo" tvg-name="Independiente Petrolero v. San Antonio Bulo Bulo (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Independiente Petrolero v. San Antonio Bulo Bulo (Stream 1 [en])
+https://pullws-ac.yiom1.com/sport/QMfZTMzcDO2UzXyAjM/playlist.m3u8?wsSecret=b2994bbb4bb8fdaa2e221f83ef988bf6&wsABSTime=6AB2F7D4
 
-#EXTINF:-1 tvg-id="Alianza_Atletico_Sullana_vs_Comerciantes_Unidos" tvg-name="Alianza Atletico Sullana v. Comerciantes Unidos (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Alianza Atletico Sullana v. Comerciantes Unidos (Stream 2 [en])
-https://pulltx.cqsycw.com/live/sd-6MwdpxeKqKvoVaxdA6.m3u8?txSecret=a6c98108f79c31e556fafa85a4485386&txTime=6AB23206
+#EXTINF:-1 tvg-id="Independiente_Petrolero_vs_San_Antonio_Bulo_Bulo" tvg-name="Independiente Petrolero v. San Antonio Bulo Bulo (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Independiente Petrolero v. San Antonio Bulo Bulo (Stream 2 [en])
+https://pulltx.cqsycw.com/live/sd-6MxiKR6sQFQc5Mr8ox.m3u8?txSecret=a33ecf1436d2d491ada133c02c07cd78&txTime=6AB21AD1
 
-#EXTINF:-1 tvg-id="Alianza_Atletico_vs_Comerciantes_Unidos" tvg-name="Alianza Atletico v. Comerciantes Unidos (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",Alianza Atletico v. Comerciantes Unidos (Stream 1 [en])
-https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4550665.m3u8?txSecret=f791bfb9a4c2a5aed9a8d37c2ee8037a&txTime=6AADC542
+#EXTINF:-1 tvg-id="DC_Power_Women_vs_Tampa_Bay_Sun_Women" tvg-name="DC Power Women v. Tampa Bay Sun Women (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",DC Power Women v. Tampa Bay Sun Women (Stream 1 [en])
+https://pullws-ac.yiom1.com/sport/QMfNTMwEjM4UzXyAjM/playlist.m3u8?wsSecret=6320e6dc62418572c7a6a0d5d458ae3e&wsABSTime=6AB2F7D4
 
-#EXTINF:-1 tvg-id="CA_Central_Cordoba_SE_vs_Defensa_y_Justicia" tvg-name="CA Central Cordoba SE v. Defensa y Justicia (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",CA Central Cordoba SE v. Defensa y Justicia (Stream 1 [en])
-https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4539764.m3u8?txSecret=a878dbd46505e96d6b2be96b4e48cabe&txTime=6AADC542
+#EXTINF:-1 tvg-id="Vila_Nova_vs_America_MG" tvg-name="Vila Nova v. America MG (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Vila Nova v. America MG (Stream 1 [en])
+https://pullws-ac.yiom1.com/sport/QMfNzNwMDN1UzXyAjM/playlist.m3u8?wsSecret=f8a6c3badf805a7524620697c9eea1f9&wsABSTime=6AB2F7D3
 
-#EXTINF:-1 tvg-id="Aguilas_Doradas_vs_CS_Deportivo_Pereira" tvg-name="Aguilas Doradas v. CS Deportivo Pereira (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",Aguilas Doradas v. CS Deportivo Pereira (Stream 1 [en])
-https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4569295.m3u8?txSecret=8f469061b18da5f61bd0b6f874a851a1&txTime=6AADC542
+#EXTINF:-1 tvg-id="Vila_Nova_vs_America_MG" tvg-name="Vila Nova v. America MG (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Vila Nova v. America MG (Stream 2 [en])
+https://pulltx.cqsycw.com/live/sd-6MvVNfQzJFBnkEqPk2.m3u8?txSecret=4820b7ed9c3d6597c1e4401c2e776ee2&txTime=6AB21A1E
 
-#EXTINF:-1 tvg-id="Utah_Jazz_vs_Orlando_Magic" tvg-name="Utah Jazz v. Orlando Magic (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Basketball",Utah Jazz v. Orlando Magic (Stream 1 [en])
+#EXTINF:-1 tvg-id="Vila_Nova_FC_GO_vs_America_FC_MG" tvg-name="Vila Nova FC GO v. America FC MG (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",Vila Nova FC GO v. America FC MG (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4494728.m3u8?txSecret=a4185f2804dc4d332ec67d8bcefd96d4&txTime=6AADE216
+
+#EXTINF:-1 tvg-id="Cincinnati_Reds_vs_Chicago_Cubs" tvg-name="Cincinnati Reds v. Chicago Cubs (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",Cincinnati Reds v. Chicago Cubs (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-6-5094686.m3u8?txSecret=1965e04c727d8c19b7d683bc53388730&txTime=6AADE21C
+
+#EXTINF:-1 tvg-id="Cristina_Bucsa_vs_Iva_Jovic" tvg-name="Cristina Bucsa v. Iva Jovic (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Tennis",Cristina Bucsa v. Iva Jovic (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-3-5344563.m3u8?txSecret=8a146cf4c587422def3e2ec0b176520b&txTime=6AADE21A
+
+#EXTINF:-1 tvg-id="Cristina_Bucsa_vs_Iva_Jovic" tvg-name="Cristina Bucsa v. Iva Jovic (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Tennis",Cristina Bucsa v. Iva Jovic (Stream 1 [en])
+https://pulltx.klmysrmyy.com/live/sd-6SjeQAR8prTqZtewfU.m3u8?txSecret=cc15f40e614d955713b7e1aced656609&txTime=6AB3038C
+
+#EXTINF:-1 tvg-id="Baltimore_Orioles_vs_Milwaukee_Brewers" tvg-name="Baltimore Orioles v. Milwaukee Brewers (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",Baltimore Orioles v. Milwaukee Brewers (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-6-5094688.m3u8?txSecret=b77910e692963c9153cc1baf22604f72&txTime=6AADE21C
+
+#EXTINF:-1 tvg-id="Tampa_Bay_Rays_vs_Boston_Red_Sox" tvg-name="Tampa Bay Rays v. Boston Red Sox (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",Tampa Bay Rays v. Boston Red Sox (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-6-5094691.m3u8?txSecret=f91648e348bab0849f7e2546b37e7468&txTime=6AADE21C
+
+#EXTINF:-1 tvg-id="Cleveland_Guardians_vs_Oakland_Athletics" tvg-name="Cleveland Guardians v. Oakland Athletics (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",Cleveland Guardians v. Oakland Athletics (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-6-5094689.m3u8?txSecret=08c7d332deccdbf1c13a715c2569a9fb&txTime=6AADE21C
+
+#EXTINF:-1 tvg-id="New_York_Mets_vs_Philadelphia_Phillies" tvg-name="New York Mets v. Philadelphia Phillies (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",New York Mets v. Philadelphia Phillies (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-6-5094690.m3u8?txSecret=a35ce8b476c446f929fec4d383ba906c&txTime=6AADE21C
+
+#EXTINF:-1 tvg-id="Houston_Rockets_vs_Phoenix_Suns" tvg-name="Houston Rockets v. Phoenix Suns (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Basketball",Houston Rockets v. Phoenix Suns (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/tg-03/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Bergamo_vs_Frosinone" tvg-name="Bergamo v. Frosinone (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Bergamo v. Frosinone (Stream 1 [en])
-https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/tg-06/playlist.m3u8
+#EXTINF:-1 tvg-id="Toronto_Tempo_w_vs_Indiana_Fever_w" tvg-name="Toronto Tempo (w) v. Indiana Fever (w) (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Toronto Tempo (w) v. Indiana Fever (w) (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/hd-en-2-3908974.m3u8?txSecret=833c08267d6b51612fde18a02969d7d2&txTime=6AADE219
 
-#EXTINF:-1 tvg-id="Arsenal_FC_vs_Southampton_FC" tvg-name="Arsenal FC v. Southampton FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Arsenal FC v. Southampton FC (Stream 1 [en])
-https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/tg-12/playlist.m3u8
+#EXTINF:-1 tvg-id="Toronto_Tempo_w_vs_Indiana_Fever_w" tvg-name="Toronto Tempo (w) v. Indiana Fever (w) (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Toronto Tempo (w) v. Indiana Fever (w) (Stream 2 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-2-3908974.m3u8?txSecret=f0eef2fbe9dd8032e0f0c1e8c8a3ad6a&txTime=6AADE219
 
-#EXTINF:-1 tvg-id="Virtus_Bologna_vs_Panathinaikos_Aktor_Athens" tvg-name="Virtus Bologna v. Panathinaikos Aktor Athens (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Basketball",Virtus Bologna v. Panathinaikos Aktor Athens (Stream 1 [en])
+#EXTINF:-1 tvg-id="Minnesota_Lynx_w_vs_New_York_Liberty_w" tvg-name="Minnesota Lynx (w) v. New York Liberty (w) (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Minnesota Lynx (w) v. New York Liberty (w) (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/hd-en-2-3908942.m3u8?txSecret=3d337565f4dc6a8ba205115cee961844&txTime=6AADE219
+
+#EXTINF:-1 tvg-id="Minnesota_Lynx_w_vs_New_York_Liberty_w" tvg-name="Minnesota Lynx (w) v. New York Liberty (w) (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Minnesota Lynx (w) v. New York Liberty (w) (Stream 2 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-2-3908942.m3u8?txSecret=797b1173a231ccd6676270b3dd5bbfe5&txTime=6AADE219
+
+#EXTINF:-1 tvg-id="Virtus_Bologna_vs_EA7_Armani_Milan" tvg-name="Virtus Bologna v. EA7 Armani Milan (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Basketball",Virtus Bologna v. EA7 Armani Milan (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-19/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Iran_vs_New_Zealand" tvg-name="Iran v. New Zealand (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Iran v. New Zealand (Stream 1 [en])
+#EXTINF:-1 tvg-id="Cape_Verde_vs_Saudi_Arabia" tvg-name="Cape Verde v. Saudi Arabia (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Cape Verde v. Saudi Arabia (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/tg-14/playlist.m3u8
 
-#EXTINF:-1 tvg-id="West_Ham_United_vs_Everton_FC" tvg-name="West Ham United v. Everton FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",West Ham United v. Everton FC (Stream 1 [en])
+#EXTINF:-1 tvg-id="Manchester_City_vs_Brighton__Hove_Albion_FC" tvg-name="Manchester City v. Brighton & Hove Albion FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Manchester City v. Brighton & Hove Albion FC (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/tg-05/playlist.m3u8
 
-#EXTINF:-1 tvg-id="FC_Nantes_vs_AS_Monaco" tvg-name="FC Nantes v. AS Monaco (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",FC Nantes v. AS Monaco (Stream 1 [en])
+#EXTINF:-1 tvg-id="AS_Monaco_vs_Olympique_Marseille" tvg-name="AS Monaco v. Olympique Marseille (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",AS Monaco v. Olympique Marseille (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-09/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Al_Shabab_vs_Al_Ittihad" tvg-name="Al Shabab v. Al Ittihad (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Al Shabab v. Al Ittihad (Stream 1 [en])
+#EXTINF:-1 tvg-id="Al_Khaleej_vs_Al_Fateh" tvg-name="Al Khaleej v. Al Fateh (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Al Khaleej v. Al Fateh (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/tg-10/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Changchun_Yatai_vs_Shanghai_Port_FC" tvg-name="Changchun Yatai v. Shanghai Port FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Changchun Yatai v. Shanghai Port FC (Stream 1 [en])
+#EXTINF:-1 tvg-id="Beijing_FC_vs_Tianjin_JMT_FC" tvg-name="Beijing FC v. Tianjin JMT FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Beijing FC v. Tianjin JMT FC (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/tg-11/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Velez_Sarsfield_vs_Independiente" tvg-name="Velez Sarsfield v. Independiente (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Velez Sarsfield v. Independiente (Stream 1 [en])
+#EXTINF:-1 tvg-id="Dep._Riestra_vs_CA_River_Plate" tvg-name="Dep. Riestra v. CA River Plate (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Dep. Riestra v. CA River Plate (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-23/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Gangwon_FC_vs_Suwon_FC" tvg-name="Gangwon FC v. Suwon FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Gangwon FC v. Suwon FC (Stream 1 [en])
+#EXTINF:-1 tvg-id="Daegu_FC_vs_Jeonbuk_Hyundai_Motors" tvg-name="Daegu FC v. Jeonbuk Hyundai Motors (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Daegu FC v. Jeonbuk Hyundai Motors (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-29/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Nacional_Asuncion_vs_CS_2_de_Mayo" tvg-name="Nacional Asuncion v. CS 2 de Mayo (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",Nacional Asuncion v. CS 2 de Mayo (Stream 1 [en])
-https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4631184.m3u8?txSecret=46ddf654edaba7ae835d3429a27a6cd9&txTime=6AADC542
+#EXTINF:-1 tvg-id="Ceara_SC_CE_vs_Gremio_Novorizontino_SP" tvg-name="Ceara SC CE v. Gremio Novorizontino SP (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",Ceara SC CE v. Gremio Novorizontino SP (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4494721.m3u8?txSecret=a0f8ddd7d3da67d117f6c1fef4d8241a&txTime=6AADE216
 
-#EXTINF:-1 tvg-id="Bologna_FC_vs_Inter" tvg-name="Bologna FC v. Inter (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Bologna FC v. Inter (Stream 1 [en])
+#EXTINF:-1 tvg-id="Atalanta_BC_vs_Girona_FC" tvg-name="Atalanta BC v. Girona FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Atalanta BC v. Girona FC (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/tg-01/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Genoa_CFC_vs_AC_Monza" tvg-name="Genoa CFC v. AC Monza (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Genoa CFC v. AC Monza (Stream 1 [en])
+#EXTINF:-1 tvg-id="Latium_vs_AS_Roma" tvg-name="Latium v. AS Roma (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Latium v. AS Roma (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-26/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Villarreal_CF_vs_Real_Sociedad" tvg-name="Villarreal CF v. Real Sociedad (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Villarreal CF v. Real Sociedad (Stream 1 [en])
+#EXTINF:-1 tvg-id="Valencia_CF_vs_Villarreal_CF" tvg-name="Valencia CF v. Villarreal CF (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Valencia CF v. Villarreal CF (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-05/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Shanghai_Shenhua_vs_Shandong_Taishan" tvg-name="Shanghai Shenhua v. Shandong Taishan (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Shanghai Shenhua v. Shandong Taishan (Stream 1 [en])
+#EXTINF:-1 tvg-id="Wuhan_Three_Towns_vs_Meizhou_Hakka_FC" tvg-name="Wuhan Three Towns v. Meizhou Hakka FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Wuhan Three Towns v. Meizhou Hakka FC (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/tg-07/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Stade_Brestois_29_vs_Stade_de_Reims" tvg-name="Stade Brestois 29 v. Stade de Reims (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Stade Brestois 29 v. Stade de Reims (Stream 1 [en])
+#EXTINF:-1 tvg-id="Montpellier_HSC_vs_Angers_SCO" tvg-name="Montpellier HSC v. Angers SCO (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Montpellier HSC v. Angers SCO (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-24/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Atlanta_Hawks_vs_Chicago_Bulls" tvg-name="Atlanta Hawks v. Chicago Bulls (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Basketball",Atlanta Hawks v. Chicago Bulls (Stream 1 [en])
+#EXTINF:-1 tvg-id="Chicago_White_Sox_vs_Detroit_Tigers" tvg-name="Chicago White Sox v. Detroit Tigers (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",Chicago White Sox v. Detroit Tigers (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-6-5094692.m3u8?txSecret=25ee359366464a2472285faaf4e273cd&txTime=6AADE21C
+
+#EXTINF:-1 tvg-id="Chicago_White_Sox_vs_Detroit_Tigers" tvg-name="Chicago White Sox v. Detroit Tigers (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",Chicago White Sox v. Detroit Tigers (Stream 1 [en])
+https://pulltx.klmysrmyy.com/live/sd-6SgJjPuuXV1m4Q6JkE.m3u8?txSecret=38f2897362d1f3327d5de77e7f52887d&txTime=6AB21B86
+
+#EXTINF:-1 tvg-id="Detroit_Pistons_vs_Atlanta_Hawks" tvg-name="Detroit Pistons v. Atlanta Hawks (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Basketball",Detroit Pistons v. Atlanta Hawks (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-02/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Phoenix_Mercury_vs_Dallas_Wings" tvg-name="Phoenix Mercury v. Dallas Wings (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Basketball",Phoenix Mercury v. Dallas Wings (Stream 1 [en])
+#EXTINF:-1 tvg-id="Phoenix_Mercury_vs_Los_Angeles_Sparks" tvg-name="Phoenix Mercury v. Los Angeles Sparks (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Basketball",Phoenix Mercury v. Los Angeles Sparks (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-03/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Switzerland_vs_Bosnia__Herzegovina" tvg-name="Switzerland v. Bosnia & Herzegovina (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Switzerland v. Bosnia & Herzegovina (Stream 1 [en])
-https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-27/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Ecuador_vs_Republic_of_Korea" tvg-name="Ecuador v. Republic of Korea (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Ecuador v. Republic of Korea (Stream 1 [en])
+#EXTINF:-1 tvg-id="DR_Congo_vs_Iraq" tvg-name="DR Congo v. Iraq (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",DR Congo v. Iraq (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-08/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Wolves_vs_AFC_Bournemouth" tvg-name="Wolves v. AFC Bournemouth (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Wolves v. AFC Bournemouth (Stream 1 [en])
+#EXTINF:-1 tvg-id="Switzerland_vs_Canada" tvg-name="Switzerland v. Canada (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Switzerland v. Canada (Stream 1 [en])
+https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-27/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Arsenal_FC_vs_AFC_Bournemouth" tvg-name="Arsenal FC v. AFC Bournemouth (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Arsenal FC v. AFC Bournemouth (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-01/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RB_Leipzig_vs_VfL_Wolfsburg" tvg-name="RB Leipzig v. VfL Wolfsburg (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",RB Leipzig v. VfL Wolfsburg (Stream 1 [en])
+#EXTINF:-1 tvg-id="VfB_Stuttgart_vs_MGladbach" tvg-name="VfB Stuttgart v. M'Gladbach (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",VfB Stuttgart v. M'Gladbach (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/tg-02/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Los_Angeles_FC_vs_Red_Bulls" tvg-name="Los Angeles FC v. Red Bulls (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Los Angeles FC v. Red Bulls (Stream 1 [en])
+#EXTINF:-1 tvg-id="Colorado_Rapids_vs_CF_Montral" tvg-name="Colorado Rapids v. CF Montréal (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Colorado Rapids v. CF Montréal (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-04/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Fulham_FC_vs_Brighton__Hove_Albion_FC" tvg-name="Fulham FC v. Brighton & Hove Albion FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Fulham FC v. Brighton & Hove Albion FC (Stream 1 [en])
+#EXTINF:-1 tvg-id="Wolverhampton_Wanderers_vs_Manchester_United_FC" tvg-name="Wolverhampton Wanderers v. Manchester United FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Wolverhampton Wanderers v. Manchester United FC (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-06/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Beijing_FC_vs_Qingdao_West_Coast" tvg-name="Beijing FC v. Qingdao West Coast (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Beijing FC v. Qingdao West Coast (Stream 1 [en])
+#EXTINF:-1 tvg-id="SZ_Peng_City_vs_Henan_FC" tvg-name="SZ Peng City v. Henan FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",SZ Peng City v. Henan FC (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-11/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Borussia_Dortmund_vs_TSG_Hoffenheim" tvg-name="Borussia Dortmund v. TSG Hoffenheim (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Borussia Dortmund v. TSG Hoffenheim (Stream 1 [en])
+#EXTINF:-1 tvg-id="Union_Berlin_vs_FC_St._Pauli" tvg-name="Union Berlin v. FC St. Pauli (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Union Berlin v. FC St. Pauli (Stream 1 [en])
 https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-17/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Sao_Jose_LDB_U22_vs_Minas_U22" tvg-name="Sao Jose LDB U22 v. Minas U22 (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Sao Jose LDB U22 v. Minas U22 (Stream 1 [en])
-https://pulltx.klmysrmyy.com/live/sd-6wXsHKZGNgJLfkBWuk.m3u8?txSecret=0466cf9401e75d6c7edf81c447ad5583&txTime=6AB2EE74
+#EXTINF:-1 tvg-id="Inter_vs_Monza" tvg-name="Inter v. Monza (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Inter v. Monza (Stream 1 [en])
+https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/tg-06/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Liam_Draxl_vs_Arthur_Rinderknech" tvg-name="Liam Draxl v. Arthur Rinderknech (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Tennis",Liam Draxl v. Arthur Rinderknech (Stream 1 [en])
-https://pullws-ai.yiom1.com/sport/TMfJTO5IjM4UzXzAjM/playlist.m3u8?wsSecret=9a1e01c252bb0a880d7141f3d9de13af&wsABSTime=6AB2F3EC
+#EXTINF:-1 tvg-id="Southampton_FC_vs_Everton_FC" tvg-name="Southampton FC v. Everton FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Southampton FC v. Everton FC (Stream 1 [en])
+https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/tg-12/playlist.m3u8
+
+#EXTINF:-1 tvg-id="WS_Wanderers_vs_Auckland_FC" tvg-name="WS Wanderers v. Auckland FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",WS Wanderers v. Auckland FC (Stream 1 [en])
+https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-14/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Nagoya_Grampus_vs_Yokohama_F_Marinos" tvg-name="Nagoya Grampus v. Yokohama F Marinos (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="E-Soccer",Nagoya Grampus v. Yokohama F Marinos (Stream 1 [en])
+https://livelive24.com/test.html?url=https://pull.wafrqa.com/live/gis-21/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Minnesota_Lynx_vs_New_York_LibertyW" tvg-name="Minnesota Lynx v. New York Liberty(W) (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Minnesota Lynx v. New York Liberty(W) (Stream 1 [en])
+https://pulltx.klmysrmyy.com/live/hd-en-6wXrJJBeg9XNMmcQEa.m3u8?txSecret=68aa065575a94fde651902f884f105e4&txTime=6AB3038C
+
+#EXTINF:-1 tvg-id="Toronto_Tempo_vs_Indiana_Fever" tvg-name="Toronto Tempo v. Indiana Fever (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Toronto Tempo v. Indiana Fever (Stream 1 [en])
+https://pulltx.klmysrmyy.com/live/hd-en-6wXrJJBeqvbLuYkqot.m3u8?txSecret=ecdaa5dd8c5044a69443ad55e687ec53&txTime=6AB3038C
+
+#EXTINF:-1 tvg-id="Corinthians_U22_vs_EC_Pinheiros_U22" tvg-name="Corinthians U22 v. EC Pinheiros U22 (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Corinthians U22 v. EC Pinheiros U22 (Stream 1 [en])
+https://pullws-ai.yiom1.com/sport/QMfJTM5IjM4UzXxAjM/playlist.m3u8?wsSecret=d5b047bb007f46f71f3b4688bc33cd30&wsABSTime=6AB3038D
+
+#EXTINF:-1 tvg-id="Verdirrojo_vs_Olimpia" tvg-name="Verdirrojo v. Olimpia (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Verdirrojo v. Olimpia (Stream 1 [en])
+https://pullws-ai.yiom1.com/sport/TMfdTO3UjM4UzXxAjM/playlist.m3u8?wsSecret=b645663893a2c5cc78876f492e4c2993&wsABSTime=6AB30912
 
 #EXTINF:-1 tvg-id="Ignacio_Buse_vs_Hernando_Jose_Escurra_Isnardi" tvg-name="Ignacio Buse v. Hernando Jose Escurra Isnardi (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Tennis",Ignacio Buse v. Hernando Jose Escurra Isnardi (Stream 1 [en])
 https://pullws-ai.yiom1.com/sport/TMflzNxMjM4UzXzAjM/playlist.m3u8?wsSecret=db19ccc9bc22f5e04faec8ebb2d8f760&wsABSTime=6AB2F3EC
 
-#EXTINF:-1 tvg-id="Mary_Stoiana_vs_Paula_Badosa" tvg-name="Mary Stoiana v. Paula Badosa (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Tennis",Mary Stoiana v. Paula Badosa (Stream 1 [en])
-https://pullws-ai.yiom1.com/sport/QMfhDMxMjM4UzXzAjM/playlist.m3u8?wsSecret=541b8d5d65026549674699278dcbe3e5&wsABSTime=6AB2A829
+#EXTINF:-1 tvg-id="Columbus_Express_vs_St_Paul_Saints" tvg-name="Columbus Express v. St Paul Saints (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",Columbus Express v. St Paul Saints (Stream 1 [en])
+https://pullws-ai.yiom1.com/sport/TMfJTO2QjM4UzX1AjM/playlist.m3u8?wsSecret=c9bc1970a8595aa225265197d888b5c1&wsABSTime=6AB30A94
+
+#EXTINF:-1 tvg-id="Worcester_Red_Sox_vs_Durham_Bulls" tvg-name="Worcester Red Sox v. Durham Bulls (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",Worcester Red Sox v. Durham Bulls (Stream 1 [en])
+https://pullws-ai.yiom1.com/sport/TMfVDO2QjM4UzX1AjM/playlist.m3u8?wsSecret=87be8f38a532326b03c9812b2613a529&wsABSTime=6AB306A3
+
+#EXTINF:-1 tvg-id="NY_Mets_vs_PHI_Phillies" tvg-name="NY Mets v. PHI Phillies (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",NY Mets v. PHI Phillies (Stream 1 [en])
+https://pulltx.klmysrmyy.com/live/sd-6SgJjPuuXQcoKSSUSS.m3u8?txSecret=d982eb150805d6bf6cd21d31ef8b5da2&txTime=6AB21CEE
+
+#EXTINF:-1 tvg-id="TB_Rays_vs_BOS_Red_Sox" tvg-name="TB Rays v. BOS Red Sox (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",TB Rays v. BOS Red Sox (Stream 1 [en])
+https://pulltx.klmysrmyy.com/live/sd-6SgJjPuuXNRKSxcZHY.m3u8?txSecret=813ab72c96fd081b4a2d67666191f0cc&txTime=6AB21B86
+
+#EXTINF:-1 tvg-id="Cleveland_Guardians_vs_OAK_Athletics" tvg-name="Cleveland Guardians v. OAK Athletics (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",Cleveland Guardians v. OAK Athletics (Stream 1 [en])
+https://pulltx.klmysrmyy.com/live/sd-6SgJjPuugmWVHwVqKt.m3u8?txSecret=8cde1bb40c3d2f509b11af5c4ff521eb&txTime=6AB21AD1
+
+#EXTINF:-1 tvg-id="Pittsburgh_Pirates_vs_Kansas_City_Royals" tvg-name="Pittsburgh Pirates v. Kansas City Royals (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",Pittsburgh Pirates v. Kansas City Royals (Stream 1 [en])
+https://pulltx.klmysrmyy.com/live/sd-6SgJjPuuhJHDUf4fUS.m3u8?txSecret=3a98330cc362f19fca8a566d8fa6e0a5&txTime=6AB21AD1
+
+#EXTINF:-1 tvg-id="CIN_Reds_vs_Chicago_Cubs" tvg-name="CIN Reds v. Chicago Cubs (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",CIN Reds v. Chicago Cubs (Stream 1 [en])
+https://pulltx.klmysrmyy.com/live/sd-6SgJjPuuhLUhM8tadL.m3u8?txSecret=ac89d340329cc14337c1d12ef534634c&txTime=6AB21AD1
