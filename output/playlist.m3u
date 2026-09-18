@@ -1,179 +1,215 @@
 #EXTM3U x-tvg-url=""
-<!-- Oluşturulma: 2026-09-18 18:46:48 UTC -->
+<!-- Güncellenme Tarihi: 2026-09-18 19:08:44 UTC -->
 
-#EXTINF:-1 tvg-id="2083460741217619970" tvg-name="🟡 YAKINDA Manchester City(w) vs Liverpool(w) [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="ENG FA WSL",🟡 YAKINDA Manchester City(w) vs Liverpool(w) [SD]
+#EXTINF:-1 tvg-id="2067902622772064258" tvg-name="🟡 [19:00] Brentford vs Chelsea [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ENG Premier League",🟡 [19:00] Brentford vs Chelsea [SD]
+https://pulltx.cqsycw.com/live/hd-en-6MwdqQhYV8PzjAx4UN.m3u8?txSecret=d99f752a3760fcc1423b286711c62b12&txTime=6AB287CE
+
+#EXTINF:-1 tvg-id="2067902622772064258" tvg-name="🟡 [19:00] Brentford vs Chelsea [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ENG Premier League",🟡 [19:00] Brentford vs Chelsea [SD]
+https://pullws-ac.yiom1.com/sport/wMfRTO2IDN1UzXyAjM/playlist.m3u8?wsSecret=307230436308047ad33c3006dc44cbfd&wsABSTime=6AB2CDA7
+
+#EXTINF:-1 tvg-id="2067902622772064258" tvg-name="🟡 [19:00] Brentford vs Chelsea [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ENG Premier League",🟡 [19:00] Brentford vs Chelsea [SD]
+https://pullws-ac.yiom1.com/sport/gMfRTO2IDN1UzXyAjM/playlist.m3u8?wsSecret=935463a3710246f96cd3a5597ce76a35&wsABSTime=6AB2CDA7
+
+#EXTINF:-1 tvg-id="2067902622772064258" tvg-name="🟡 [19:00] Brentford vs Chelsea [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ENG Premier League",🟡 [19:00] Brentford vs Chelsea [SD]
+https://pullws-ac.yiom1.com/sport/QMfRTO2IDN1UzXyAjM/playlist.m3u8?wsSecret=bfc078c53943593dce7617e537d3793a&wsABSTime=6AB2CA22
+
+#EXTINF:-1 tvg-id="2067902622772064258" tvg-name="🟡 [19:00] Brentford vs Chelsea [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ENG Premier League",🟡 [19:00] Brentford vs Chelsea [HD]
+https://pulltx.cqsycw.com/live/sd-6MwdqQhYV8PzjAx4UN.m3u8?txSecret=9c6438babb326cb0b4c50ad28418534b&txTime=6AB2871A
+
+#EXTINF:-1 tvg-id="2083460741217619970" tvg-name="🟡 [18:00] Manchester City(w) vs Liverpool(w) [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ENG FA WSL",🟡 [18:00] Manchester City(w) vs Liverpool(w) [SD]
 https://pullws-ac.yiom1.com/sport/QMfFDN3IDN2UzXyAjM/playlist.m3u8?wsSecret=a548384dd78cae9ff6a78ee268d20f3c&wsABSTime=6AB2BF96
 
-#EXTINF:-1 tvg-id="2083460741217619970" tvg-name="🟡 YAKINDA Manchester City(w) vs Liverpool(w) [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="ENG FA WSL",🟡 YAKINDA Manchester City(w) vs Liverpool(w) [HD]
+#EXTINF:-1 tvg-id="2083460741217619970" tvg-name="🟡 [18:00] Manchester City(w) vs Liverpool(w) [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ENG FA WSL",🟡 [18:00] Manchester City(w) vs Liverpool(w) [HD]
 https://pulltx.cqsycw.com/live/sd-6MxiZaLBFZSDpew5AE.m3u8?txSecret=a05d35fe5fefde0eb7aebb54d24c912c&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2064917582641754113" tvg-name="🟡 YAKINDA Monaco vs Lens [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 1",🟡 YAKINDA Monaco vs Lens [SD]
+#EXTINF:-1 tvg-id="2070403737551990786" tvg-name="🟡 [19:00] Bristol City vs Watford [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ENG EFL Championship",🟡 [19:00] Bristol City vs Watford [SD]
+https://pullws-ac.yiom1.com/sport/QMfNzN3IDN1UzXyAjM/playlist.m3u8?wsSecret=9cbedc641e134bee39641083bd4179de&wsABSTime=6AB2CED3
+
+#EXTINF:-1 tvg-id="2070403737551990786" tvg-name="🟡 [19:00] Bristol City vs Watford [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ENG EFL Championship",🟡 [19:00] Bristol City vs Watford [HD]
+https://pulltx.cqsycw.com/live/sd-6MweZwRE2r5TV2qRs4.m3u8?txSecret=6f3ec59521e7ad0b9c03ff7e3e5d43a2&txTime=6AB2547A
+
+#EXTINF:-1 tvg-id="2064917582641754113" tvg-name="🟡 [18:45] Monaco vs Lens [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 1",🟡 [18:45] Monaco vs Lens [SD]
 https://pulltx.cqsycw.com/live/hd-en-6MwdpxfnU86N5SiPNv.m3u8?txSecret=10b040e4b49ccdf15074275148036710&txTime=6AB28719
 
-#EXTINF:-1 tvg-id="2064917582641754113" tvg-name="🟡 YAKINDA Monaco vs Lens [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 1",🟡 YAKINDA Monaco vs Lens [HD]
+#EXTINF:-1 tvg-id="2064917582641754113" tvg-name="🟡 [18:45] Monaco vs Lens [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 1",🟡 [18:45] Monaco vs Lens [SD]
+https://pullws-ac.yiom1.com/sport/gMfBDO4IDN1UzXyAjM/playlist.m3u8?wsSecret=f788cd23f0a7bd08e306450a4cb0cd20&wsABSTime=6AB2CB4F
+
+#EXTINF:-1 tvg-id="2064917582641754113" tvg-name="🟡 [18:45] Monaco vs Lens [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 1",🟡 [18:45] Monaco vs Lens [SD]
+https://pullws-ac.yiom1.com/sport/QMfBDO4IDN1UzXyAjM/playlist.m3u8?wsSecret=80367ce5cd5891172e65b25986884135&wsABSTime=6AB2CA22
+
+#EXTINF:-1 tvg-id="2064917582641754113" tvg-name="🟡 [18:45] Monaco vs Lens [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 1",🟡 [18:45] Monaco vs Lens [HD]
 https://pulltx.cqsycw.com/live/sd-6MwdpxfnU86N5SiPNv.m3u8?txSecret=7a056a0e3adc1b497814664cfee4ce55&txTime=6AB28719
 
-#EXTINF:-1 tvg-id="2072617157448650754" tvg-name="🟡 YAKINDA Bayern Munich vs Union Berlin [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="GER Bundesliga",🟡 YAKINDA Bayern Munich vs Union Berlin [SD]
+#EXTINF:-1 tvg-id="2072056722173415426" tvg-name="🟡 [19:00] Espanyol vs Elche [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | SPA La Liga",🟡 [19:00] Espanyol vs Elche [SD]
+https://pulltx.cqsycw.com/live/hd-en-6MweaGxVNbPueN45X4.m3u8?txSecret=a710d1c6ca138b00804b8e0ffb475522&txTime=6AB287CE
+
+#EXTINF:-1 tvg-id="2072056722173415426" tvg-name="🟡 [19:00] Espanyol vs Elche [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | SPA La Liga",🟡 [19:00] Espanyol vs Elche [HD]
+https://pulltx.cqsycw.com/live/sd-6MweaGxVNbPueN45X4.m3u8?txSecret=972d55ebc4a7a5cc63eac07b60947ef4&txTime=6AB287CE
+
+#EXTINF:-1 tvg-id="2072617157448650754" tvg-name="🟡 [18:30] Bayern Munich vs Union Berlin [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | GER Bundesliga",🟡 [18:30] Bayern Munich vs Union Berlin [SD]
 https://pulltx.cqsycw.com/live/hd-en-6MweaDfzpMFadHvcFg.m3u8?txSecret=2e12dc2f91d1ae902694d00d14999511&txTime=6AB2C87D
 
-#EXTINF:-1 tvg-id="2072617157448650754" tvg-name="🟡 YAKINDA Bayern Munich vs Union Berlin [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="GER Bundesliga",🟡 YAKINDA Bayern Munich vs Union Berlin [SD]
+#EXTINF:-1 tvg-id="2072617157448650754" tvg-name="🟡 [18:30] Bayern Munich vs Union Berlin [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | GER Bundesliga",🟡 [18:30] Bayern Munich vs Union Berlin [SD]
 https://pullws-ac.yiom1.com/sport/QMfNjM2IDN1UzXyAjM/playlist.m3u8?wsSecret=4b19c5a49684886a8bda1fd176bfec45&wsABSTime=6AB2C69E
 
-#EXTINF:-1 tvg-id="2072617157448650754" tvg-name="🟡 YAKINDA Bayern Munich vs Union Berlin [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="GER Bundesliga",🟡 YAKINDA Bayern Munich vs Union Berlin [SD]
+#EXTINF:-1 tvg-id="2072617157448650754" tvg-name="🟡 [18:30] Bayern Munich vs Union Berlin [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | GER Bundesliga",🟡 [18:30] Bayern Munich vs Union Berlin [SD]
 https://pullws-ac.yiom1.com/sport/gMfNjM2IDN1UzXyAjM/playlist.m3u8?wsSecret=195ec12e9c76734fed71e2328b3618ca&wsABSTime=6AB2C7A1
 
-#EXTINF:-1 tvg-id="2072617157448650754" tvg-name="🟡 YAKINDA Bayern Munich vs Union Berlin [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="GER Bundesliga",🟡 YAKINDA Bayern Munich vs Union Berlin [HD]
+#EXTINF:-1 tvg-id="2072617157448650754" tvg-name="🟡 [18:30] Bayern Munich vs Union Berlin [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | GER Bundesliga",🟡 [18:30] Bayern Munich vs Union Berlin [HD]
 https://pulltx.cqsycw.com/live/sd-6MweaDfzpMFadHvcFg.m3u8?txSecret=9cf33d18cfb3c15a79d5ecf2f88d5d46&txTime=6AB2C87D
 
-#EXTINF:-1 tvg-id="2063110266649530369" tvg-name="🟡 YAKINDA Monza vs Sassuolo [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="ITA Serie A",🟡 YAKINDA Monza vs Sassuolo [SD]
+#EXTINF:-1 tvg-id="2063110266649530369" tvg-name="🟡 [18:45] Monza vs Sassuolo [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ITA Serie A",🟡 [18:45] Monza vs Sassuolo [SD]
 https://pulltx.cqsycw.com/live/hd-en-6Mwe5jZjDns6rTE8Hc.m3u8?txSecret=920a27915d6df2b04cc83f858f86bfcf&txTime=6AB28666
 
-#EXTINF:-1 tvg-id="2063110266649530369" tvg-name="🟡 YAKINDA Monza vs Sassuolo [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="ITA Serie A",🟡 YAKINDA Monza vs Sassuolo [HD]
+#EXTINF:-1 tvg-id="2063110266649530369" tvg-name="🟡 [18:45] Monza vs Sassuolo [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ITA Serie A",🟡 [18:45] Monza vs Sassuolo [SD]
+https://pullws-ac.yiom1.com/sport/gMfdTM0MDN1UzXyAjM/playlist.m3u8?wsSecret=ab8519c3d8df557819bb7ae72b4706a8&wsABSTime=6AB2CB4F
+
+#EXTINF:-1 tvg-id="2063110266649530369" tvg-name="🟡 [18:45] Monza vs Sassuolo [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ITA Serie A",🟡 [18:45] Monza vs Sassuolo [SD]
+https://pullws-ac.yiom1.com/sport/QMfdTM0MDN1UzXyAjM/playlist.m3u8?wsSecret=21984014dde686e096aae6362e955191&wsABSTime=6AB2CA22
+
+#EXTINF:-1 tvg-id="2063110266649530369" tvg-name="🟡 [18:45] Monza vs Sassuolo [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ITA Serie A",🟡 [18:45] Monza vs Sassuolo [HD]
 https://pulltx.cqsycw.com/live/sd-6Mwe5jZjDns6rTE8Hc.m3u8?txSecret=5e35d50484411ea4d8f4efc41c7e7453&txTime=6AB28666
 
-#EXTINF:-1 tvg-id="2067803052466921474" tvg-name="🟡 YAKINDA Queen's Park vs Ayr United [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="SCO Championship",🟡 YAKINDA Queen's Park vs Ayr United [SD]
+#EXTINF:-1 tvg-id="2067803052466921474" tvg-name="🟡 [18:30] Queen's Park vs Ayr United [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | SCO Championship",🟡 [18:30] Queen's Park vs Ayr United [SD]
 https://pullws-ac.yiom1.com/sport/QMfVTO3IDN1UzXyAjM/playlist.m3u8?wsSecret=fd2a3fff87b9d28b570085a389e4fbdd&wsABSTime=6AB2C7CA
 
-#EXTINF:-1 tvg-id="2067803052466921474" tvg-name="🟡 YAKINDA Queen's Park vs Ayr United [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="SCO Championship",🟡 YAKINDA Queen's Park vs Ayr United [HD]
+#EXTINF:-1 tvg-id="2067803052466921474" tvg-name="🟡 [18:30] Queen's Park vs Ayr United [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | SCO Championship",🟡 [18:30] Queen's Park vs Ayr United [HD]
 https://pulltx.cqsycw.com/live/sd-6Mwdq1v3Q1XM7M4Mm8.m3u8?txSecret=81b4ab8ae7340669dc1848fed2ffe8b5&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2067937940464300034" tvg-name="🟡 YAKINDA KAA Gent vs Standard Liege [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="BEL Pro League",🟡 YAKINDA KAA Gent vs Standard Liege [HD]
+#EXTINF:-1 tvg-id="2067937940464300034" tvg-name="🟡 [18:45] KAA Gent vs Standard Liege [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | BEL Pro League",🟡 [18:45] KAA Gent vs Standard Liege [SD]
+https://pullws-ac.yiom1.com/sport/QMfVDO2IDN1UzXyAjM/playlist.m3u8?wsSecret=11a50f3647a294a4e100f5f3ddb9b841&wsABSTime=6AB2C7C9
+
+#EXTINF:-1 tvg-id="2067937940464300034" tvg-name="🟡 [18:45] KAA Gent vs Standard Liege [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | BEL Pro League",🟡 [18:45] KAA Gent vs Standard Liege [HD]
 https://pulltx.cqsycw.com/live/sd-6MwdqQjkGhKE6Nf374.m3u8?txSecret=cd84bc3e02be176da53a8f1e6098d9f4&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2068907877051756545" tvg-name="🟡 YAKINDA Club Nxt vs Gent B [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="Challenger Pro League",🟡 YAKINDA Club Nxt vs Gent B [SD]
+#EXTINF:-1 tvg-id="2068907877051756545" tvg-name="🟡 [18:00] Club Nxt vs Gent B [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | Challenger Pro League",🟡 [18:00] Club Nxt vs Gent B [SD]
 https://pullws-ac.yiom1.com/sport/QMfNDO2IDN1UzXyAjM/playlist.m3u8?wsSecret=1bcf331eeaa2ce05908a6eceb4f127ab&wsABSTime=6AB2C0C2
 
-#EXTINF:-1 tvg-id="2068907877051756545" tvg-name="🟡 YAKINDA Club Nxt vs Gent B [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="Challenger Pro League",🟡 YAKINDA Club Nxt vs Gent B [HD]
+#EXTINF:-1 tvg-id="2068907877051756545" tvg-name="🟡 [18:00] Club Nxt vs Gent B [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | Challenger Pro League",🟡 [18:00] Club Nxt vs Gent B [HD]
 https://pulltx.cqsycw.com/live/sd-6Mwea3tHRq2ijdsYuL.m3u8?txSecret=b75efd2fd69b80c85e149d099f8c89bb&txTime=6AB2552E
 
-#EXTINF:-1 tvg-id="2068907877265666050" tvg-name="🟡 YAKINDA Francs Borains vs RSCA Futures [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="Challenger Pro League",🟡 YAKINDA Francs Borains vs RSCA Futures [SD]
+#EXTINF:-1 tvg-id="2068907877265666050" tvg-name="🟡 [18:00] Francs Borains vs RSCA Futures [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | Challenger Pro League",🟡 [18:00] Francs Borains vs RSCA Futures [SD]
 https://pullws-ac.yiom1.com/sport/QMfJDO2IDN1UzXyAjM/playlist.m3u8?wsSecret=4f3d702654bbc1d787e039a1593842a2&wsABSTime=6AB2C011
 
-#EXTINF:-1 tvg-id="2068907877265666050" tvg-name="🟡 YAKINDA Francs Borains vs RSCA Futures [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="Challenger Pro League",🟡 YAKINDA Francs Borains vs RSCA Futures [HD]
+#EXTINF:-1 tvg-id="2068907877265666050" tvg-name="🟡 [18:00] Francs Borains vs RSCA Futures [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | Challenger Pro League",🟡 [18:00] Francs Borains vs RSCA Futures [HD]
 https://pulltx.cqsycw.com/live/sd-6Mwea3tHRnqEsA3dkS.m3u8?txSecret=1567501b59c85cbf0db43fc3e2792ad8&txTime=6AB255E2
 
-#EXTINF:-1 tvg-id="2003488068134993922" tvg-name="🟡 YAKINDA Falkenberg vs Ostersunds FK [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="SWE Superettan",🟡 YAKINDA Falkenberg vs Ostersunds FK [SD]
-https://pullws-ac.yiom1.com/sport/QMfVTMyMDN1UzXyAjM/playlist.m3u8?wsSecret=4efd1f95e922039ea849406d8139104d&wsABSTime=6AAEAAC0
-
-#EXTINF:-1 tvg-id="2003488068134993922" tvg-name="🟡 YAKINDA Falkenberg vs Ostersunds FK [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="SWE Superettan",🟡 YAKINDA Falkenberg vs Ostersunds FK [HD]
-https://pulltx.cqsycw.com/live/sd-6MvZ6ZxxRjP1JWXH9Q.m3u8?txSecret=fae44c878bf6fb00587aa442adb50dbe&txTime=6AB2BA6D
-
-#EXTINF:-1 tvg-id="2065750172122607618" tvg-name="🟡 YAKINDA Groningen vs PEC Zwolle [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eredivisie",🟡 YAKINDA Groningen vs PEC Zwolle [SD]
+#EXTINF:-1 tvg-id="2065750172122607618" tvg-name="🟡 [18:00] Groningen vs PEC Zwolle [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eredivisie",🟡 [18:00] Groningen vs PEC Zwolle [SD]
 https://pullws-ac.yiom1.com/sport/QMfdjMwMDN1UzXyAjM/playlist.m3u8?wsSecret=83e843c04d696db666ca9446ae723ce5&wsABSTime=6AB2C1ED
 
-#EXTINF:-1 tvg-id="2065750172122607618" tvg-name="🟡 YAKINDA Groningen vs PEC Zwolle [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eredivisie",🟡 YAKINDA Groningen vs PEC Zwolle [HD]
+#EXTINF:-1 tvg-id="2065750172122607618" tvg-name="🟡 [18:00] Groningen vs PEC Zwolle [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eredivisie",🟡 [18:00] Groningen vs PEC Zwolle [HD]
 https://pulltx.cqsycw.com/live/sd-6Mwdpr5PPz1Qdawabp.m3u8?txSecret=7c4a63fdb8161c4ca5893fb3c468b74d&txTime=6AB2C22A
 
-#EXTINF:-1 tvg-id="2075521073717846017" tvg-name="🟡 YAKINDA Kasimpasa vs Konyaspor [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="TUR Super League",🟡 YAKINDA Kasimpasa vs Konyaspor [SD]
-https://pullws-ac.yiom1.com/sport/QMfFzMxcTN1UzXyAjM/playlist.m3u8?wsSecret=ffdffc24ae2f29b01db838fbc9026b71&wsABSTime=6AB2B3DD
-
-#EXTINF:-1 tvg-id="2075521073717846017" tvg-name="🟡 YAKINDA Kasimpasa vs Konyaspor [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="TUR Super League",🟡 YAKINDA Kasimpasa vs Konyaspor [HD]
-https://pulltx.cqsycw.com/live/sd-6Mwb6hHSK2Ctb6cFzW.m3u8?txSecret=9e185a8c2bc13b491d7c5fc483e9e7c2&txTime=6AB2309D
-
-#EXTINF:-1 tvg-id="2002654406796931073" tvg-name="🟡 YAKINDA Sarpsborg 08 vs KFUM Oslo [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NOR Eliteserien",🟡 YAKINDA Sarpsborg 08 vs KFUM Oslo [SD]
-https://pullws-ac.yiom1.com/sport/QMfZTN2QTN0UzXyAjM/playlist.m3u8?wsSecret=1ace2e727fcb610a3fcd6981f34b3635&wsABSTime=6AB2B3DD
-
-#EXTINF:-1 tvg-id="2002654406796931073" tvg-name="🟡 YAKINDA Sarpsborg 08 vs KFUM Oslo [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NOR Eliteserien",🟡 YAKINDA Sarpsborg 08 vs KFUM Oslo [HD]
-https://pulltx.cqsycw.com/live/sd-6MvZ6ERivhTi2BjKS6.m3u8?txSecret=c6ce92e9ca011b66bccdb8c1b72eb16e&txTime=6AB23152
-
-#EXTINF:-1 tvg-id="2066187047331000322" tvg-name="🟡 YAKINDA Lyngby vs Silkeborg [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="DEN Superliga",🟡 YAKINDA Lyngby vs Silkeborg [SD]
-https://pullws-ac.yiom1.com/sport/QMfBTOzMDN1UzXyAjM/playlist.m3u8?wsSecret=d238f2ca1297f25c0ca9704b1806cab1&wsABSTime=6AB2B200
-
-#EXTINF:-1 tvg-id="2066187047331000322" tvg-name="🟡 YAKINDA Lyngby vs Silkeborg [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="DEN Superliga",🟡 YAKINDA Lyngby vs Silkeborg [HD]
-https://pulltx.cqsycw.com/live/sd-6Mwdpnt5abJ6zofQNS.m3u8?txSecret=a9685522c5f97f19164adecb0ec665de&txTime=6AB2547A
-
-#EXTINF:-1 tvg-id="2067946147702206465" tvg-name="🟡 YAKINDA Wisla Krakow vs Slask Wroclaw [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="Ekstraklasa",🟡 YAKINDA Wisla Krakow vs Slask Wroclaw [SD]
+#EXTINF:-1 tvg-id="2067946147702206465" tvg-name="🟡 [18:30] Wisla Krakow vs Slask Wroclaw [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | Ekstraklasa",🟡 [18:30] Wisla Krakow vs Slask Wroclaw [SD]
 https://pullws-ac.yiom1.com/sport/QMfJDO5IDN1UzXyAjM/playlist.m3u8?wsSecret=7fc1339c143babf98b708b7e7989e2d9&wsABSTime=6AB2C7CA
 
-#EXTINF:-1 tvg-id="2067946147702206465" tvg-name="🟡 YAKINDA Wisla Krakow vs Slask Wroclaw [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="Ekstraklasa",🟡 YAKINDA Wisla Krakow vs Slask Wroclaw [HD]
+#EXTINF:-1 tvg-id="2067946147702206465" tvg-name="🟡 [18:30] Wisla Krakow vs Slask Wroclaw [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | Ekstraklasa",🟡 [18:30] Wisla Krakow vs Slask Wroclaw [HD]
 https://pulltx.cqsycw.com/live/sd-6MwdqMR6GdGuGc5GeS.m3u8?txSecret=2990557da85f7744f98824ce2f37191e&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2003046127412002818" tvg-name="🟡 YAKINDA Derry City vs Galway United [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="IRE Premier Division",🟡 YAKINDA Derry City vs Galway United [HD]
+#EXTINF:-1 tvg-id="2003046127315533826" tvg-name="🟡 [19:00] Bohemian vs Drogheda United [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | IRE Premier Division",🟡 [19:00] Bohemian vs Drogheda United [SD]
+https://pullws-ac.yiom1.com/sport/QMfhTO0QTN0UzXyAjM/playlist.m3u8?wsSecret=716c49006e011701e1c564bbf948a9c2&wsABSTime=6AB2C8F6
+
+#EXTINF:-1 tvg-id="2003046127315533826" tvg-name="🟡 [19:00] Bohemian vs Drogheda United [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | IRE Premier Division",🟡 [19:00] Bohemian vs Drogheda United [HD]
+https://pulltx.cqsycw.com/live/sd-6MvZ6ZvkdUu8Gfwoka.m3u8?txSecret=eef95c566c64d38b5f2d9fda524804b4&txTime=6AB23205
+
+#EXTINF:-1 tvg-id="2003046127604940802" tvg-name="🟡 [19:00] Shamrock Rovers vs Waterford United [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | IRE Premier Division",🟡 [19:00] Shamrock Rovers vs Waterford United [SD]
+https://pullws-ac.yiom1.com/sport/QMfRDM1QTN0UzXyAjM/playlist.m3u8?wsSecret=b2053d560d47baafda2a8e5e7ce5853d&wsABSTime=6AB2C8F6
+
+#EXTINF:-1 tvg-id="2003046127604940802" tvg-name="🟡 [19:00] Shamrock Rovers vs Waterford United [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | IRE Premier Division",🟡 [19:00] Shamrock Rovers vs Waterford United [HD]
+https://pulltx.cqsycw.com/live/sd-6MvZ6ZvkUCQQ38YHAv.m3u8?txSecret=7e45368e3d50a5ab4ddb8118a3658346&txTime=6AB23205
+
+#EXTINF:-1 tvg-id="2003046127412002818" tvg-name="🟡 [18:45] Derry City vs Galway United [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | IRE Premier Division",🟡 [18:45] Derry City vs Galway United [SD]
+https://pullws-ac.yiom1.com/sport/QMfdTO0QTN0UzXyAjM/playlist.m3u8?wsSecret=52b7b576c7b011db26e2daac789a5e8e&wsABSTime=6AB2C69F
+
+#EXTINF:-1 tvg-id="2003046127412002818" tvg-name="🟡 [18:45] Derry City vs Galway United [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | IRE Premier Division",🟡 [18:45] Derry City vs Galway United [HD]
 https://pulltx.cqsycw.com/live/sd-6MvZ6ZvkU81SJAtSs8.m3u8?txSecret=5941282eb893f4d631377b481f3cc753&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2003046127504277505" tvg-name="🟡 YAKINDA Dundalk vs Shelbourne [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="IRE Premier Division",🟡 YAKINDA Dundalk vs Shelbourne [HD]
+#EXTINF:-1 tvg-id="2003046127504277505" tvg-name="🟡 [18:45] Dundalk vs Shelbourne [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | IRE Premier Division",🟡 [18:45] Dundalk vs Shelbourne [SD]
+https://pullws-ac.yiom1.com/sport/QMfZTO0QTN0UzXyAjM/playlist.m3u8?wsSecret=4d9e5440323866c78b71baba79d654ae&wsABSTime=6AB2C7C9
+
+#EXTINF:-1 tvg-id="2003046127504277505" tvg-name="🟡 [18:45] Dundalk vs Shelbourne [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | IRE Premier Division",🟡 [18:45] Dundalk vs Shelbourne [HD]
 https://pulltx.cqsycw.com/live/sd-6MvZ6ZvkU5oxRh4XiE.m3u8?txSecret=1acc8d86a6dbee495e8b3d02ce7b8148&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2080495832165617665" tvg-name="🟡 YAKINDA Juve Stabia vs Cesena [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="ITA Serie B",🟡 YAKINDA Juve Stabia vs Cesena [SD]
+#EXTINF:-1 tvg-id="2080495832165617665" tvg-name="🟡 [18:30] Juve Stabia vs Cesena [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ITA Serie B",🟡 [18:30] Juve Stabia vs Cesena [SD]
 https://pullws-ac.yiom1.com/sport/QMfBjM3YDM2UzXyAjM/playlist.m3u8?wsSecret=3a61ab9d737522de273896303f185c8e&wsABSTime=6AB2C69E
 
-#EXTINF:-1 tvg-id="2080495832165617665" tvg-name="🟡 YAKINDA Juve Stabia vs Cesena [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="ITA Serie B",🟡 YAKINDA Juve Stabia vs Cesena [HD]
+#EXTINF:-1 tvg-id="2080495832165617665" tvg-name="🟡 [18:30] Juve Stabia vs Cesena [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ITA Serie B",🟡 [18:30] Juve Stabia vs Cesena [HD]
 https://pulltx.cqsycw.com/live/sd-6MwarbRkFPDBFokeYv.m3u8?txSecret=1ff9fd9593c85200a941deaaca601352&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2066185797168361473" tvg-name="🟡 YAKINDA Annecy vs Dijon [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 2",🟡 YAKINDA Annecy vs Dijon [SD]
+#EXTINF:-1 tvg-id="2066185797168361473" tvg-name="🟡 [18:00] Annecy vs Dijon [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 2",🟡 [18:00] Annecy vs Dijon [SD]
 https://pullws-ac.yiom1.com/sport/QMfJzN2IDN1UzXyAjM/playlist.m3u8?wsSecret=0af44f06dba00fdf879ea7d89e956c1e&wsABSTime=6AB2C0C2
 
-#EXTINF:-1 tvg-id="2066185797168361473" tvg-name="🟡 YAKINDA Annecy vs Dijon [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 2",🟡 YAKINDA Annecy vs Dijon [HD]
+#EXTINF:-1 tvg-id="2066185797168361473" tvg-name="🟡 [18:00] Annecy vs Dijon [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 2",🟡 [18:00] Annecy vs Dijon [HD]
 https://pulltx.cqsycw.com/live/sd-6MwdpnodVBQpkXL12N.m3u8?txSecret=470a46600b8b19cadfc355ed8eaebe9b&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2066185797478739969" tvg-name="🟡 YAKINDA Grenoble vs Clermont [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 2",🟡 YAKINDA Grenoble vs Clermont [SD]
+#EXTINF:-1 tvg-id="2066185797478739969" tvg-name="🟡 [18:00] Grenoble vs Clermont [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 2",🟡 [18:00] Grenoble vs Clermont [SD]
 https://pullws-ac.yiom1.com/sport/QMfBzN2IDN1UzXyAjM/playlist.m3u8?wsSecret=abbc18c4c22b26d4fcccb7ce416e6b93&wsABSTime=6AB2C0C3
 
-#EXTINF:-1 tvg-id="2066185797478739969" tvg-name="🟡 YAKINDA Grenoble vs Clermont [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 2",🟡 YAKINDA Grenoble vs Clermont [HD]
+#EXTINF:-1 tvg-id="2066185797478739969" tvg-name="🟡 [18:00] Grenoble vs Clermont [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 2",🟡 [18:00] Grenoble vs Clermont [HD]
 https://pulltx.cqsycw.com/live/sd-6MwdpnodKnKeuYSiz2.m3u8?txSecret=8926987a84320a76ac1bd6717226313c&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2066185797780729858" tvg-name="🟡 YAKINDA Stade Lavallois MFC vs Sochaux [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 2",🟡 YAKINDA Stade Lavallois MFC vs Sochaux [SD]
+#EXTINF:-1 tvg-id="2066185797780729858" tvg-name="🟡 [18:00] Stade Lavallois MFC vs Sochaux [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 2",🟡 [18:00] Stade Lavallois MFC vs Sochaux [SD]
 https://pullws-ac.yiom1.com/sport/QMfhjN2IDN1UzXyAjM/playlist.m3u8?wsSecret=e0122830155f2a2383bbd8098d1625b2&wsABSTime=6AB2C0C2
 
-#EXTINF:-1 tvg-id="2066185797780729858" tvg-name="🟡 YAKINDA Stade Lavallois MFC vs Sochaux [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 2",🟡 YAKINDA Stade Lavallois MFC vs Sochaux [HD]
+#EXTINF:-1 tvg-id="2066185797780729858" tvg-name="🟡 [18:00] Stade Lavallois MFC vs Sochaux [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 2",🟡 [18:00] Stade Lavallois MFC vs Sochaux [HD]
 https://pulltx.cqsycw.com/live/sd-6MwdpnodKriceW6ZHp.m3u8?txSecret=d04f267b8f30a1eeedb469ccd3aceeae&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2066185798086914049" tvg-name="🟡 YAKINDA Pau FC vs USL Dunkerque [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 2",🟡 YAKINDA Pau FC vs USL Dunkerque [SD]
+#EXTINF:-1 tvg-id="2066185798086914049" tvg-name="🟡 [18:00] Pau FC vs USL Dunkerque [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 2",🟡 [18:00] Pau FC vs USL Dunkerque [SD]
 https://pullws-ac.yiom1.com/sport/QMfZjN2IDN1UzXyAjM/playlist.m3u8?wsSecret=6b1aa18c55254837b0a0e430ccbcc9d6&wsABSTime=6AB2C0C2
 
-#EXTINF:-1 tvg-id="2066185798086914049" tvg-name="🟡 YAKINDA Pau FC vs USL Dunkerque [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 2",🟡 YAKINDA Pau FC vs USL Dunkerque [HD]
+#EXTINF:-1 tvg-id="2066185798086914049" tvg-name="🟡 [18:00] Pau FC vs USL Dunkerque [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 2",🟡 [18:00] Pau FC vs USL Dunkerque [HD]
 https://pulltx.cqsycw.com/live/sd-6MwdpnodKw7aPTkPbc.m3u8?txSecret=74b9bc111b776b85e59fd33840463795&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2066185798237908993" tvg-name="🟡 YAKINDA Reims vs Montpellier [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 2",🟡 YAKINDA Reims vs Montpellier [SD]
+#EXTINF:-1 tvg-id="2066185798237908993" tvg-name="🟡 [18:00] Reims vs Montpellier [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 2",🟡 [18:00] Reims vs Montpellier [SD]
 https://pullws-ac.yiom1.com/sport/QMfVjN2IDN1UzXyAjM/playlist.m3u8?wsSecret=7f13abfa9204e15c489d535f82349493&wsABSTime=6AB2C0C2
 
-#EXTINF:-1 tvg-id="2066185798237908993" tvg-name="🟡 YAKINDA Reims vs Montpellier [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 2",🟡 YAKINDA Reims vs Montpellier [HD]
+#EXTINF:-1 tvg-id="2066185798237908993" tvg-name="🟡 [18:00] Reims vs Montpellier [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 2",🟡 [18:00] Reims vs Montpellier [HD]
 https://pulltx.cqsycw.com/live/sd-6MwdpnodL3i1zuE94J.m3u8?txSecret=998875301f0bcd4dfaf355eb54c1a027&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2066185798384709634" tvg-name="🟡 YAKINDA Rodez AF vs Nancy [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 2",🟡 YAKINDA Rodez AF vs Nancy [SD]
+#EXTINF:-1 tvg-id="2066185798384709634" tvg-name="🟡 [18:00] Rodez AF vs Nancy [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 2",🟡 [18:00] Rodez AF vs Nancy [SD]
 https://pullws-ac.yiom1.com/sport/QMfRjN2IDN1UzXyAjM/playlist.m3u8?wsSecret=a96eb542a36d4bb07ab31173cb442e3b&wsABSTime=6AB2C1EE
 
-#EXTINF:-1 tvg-id="2066185798384709634" tvg-name="🟡 YAKINDA Rodez AF vs Nancy [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="FRA Ligue 2",🟡 YAKINDA Rodez AF vs Nancy [HD]
+#EXTINF:-1 tvg-id="2066185798384709634" tvg-name="🟡 [18:00] Rodez AF vs Nancy [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | FRA Ligue 2",🟡 [18:00] Rodez AF vs Nancy [HD]
 https://pulltx.cqsycw.com/live/sd-6MwdpnodL1WY8RQDuQ.m3u8?txSecret=e83026e9387105c142bf6ae875abe455&txTime=6AB23152
 
-#EXTINF:-1 tvg-id="2065749426668957698" tvg-name="🟡 YAKINDA Den Bosch vs Helmond Sport [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA Den Bosch vs Helmond Sport [SD]
-https://pullws-ac.yiom1.com/sport/QMfBDO2IDN1UzXyAjM/playlist.m3u8?wsSecret=c12fdfb491e5f34c94faccb6b0307d67&wsABSTime=6AB2C1ED
-
-#EXTINF:-1 tvg-id="2065749426543128577" tvg-name="🟡 YAKINDA Almere City FC vs Heracles Almelo [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA Almere City FC vs Heracles Almelo [SD]
+#EXTINF:-1 tvg-id="2065749426543128577" tvg-name="🟡 [18:00] Almere City FC vs Heracles Almelo [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] Almere City FC vs Heracles Almelo [SD]
 https://pullws-ac.yiom1.com/sport/QMfFDO2IDN1UzXyAjM/playlist.m3u8?wsSecret=f234f8b0e8ad808273596d99796b90a7&wsABSTime=6AB2C1ED
 
-#EXTINF:-1 tvg-id="2065749426543128577" tvg-name="🟡 YAKINDA Almere City FC vs Heracles Almelo [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA Almere City FC vs Heracles Almelo [HD]
+#EXTINF:-1 tvg-id="2065749426543128577" tvg-name="🟡 [18:00] Almere City FC vs Heracles Almelo [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] Almere City FC vs Heracles Almelo [HD]
 https://pulltx.cqsycw.com/live/sd-6MwdpuQpPxNqgyzL6r.m3u8?txSecret=003aeeaad6ce9c6c0de7ba12aaa1c68b&txTime=6AB2C4FB
 
-#EXTINF:-1 tvg-id="2065749426794786818" tvg-name="🟡 YAKINDA FC Eindhoven vs Emmen [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA FC Eindhoven vs Emmen [SD]
+#EXTINF:-1 tvg-id="2065749426668957698" tvg-name="🟡 [18:00] Den Bosch vs Helmond Sport [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] Den Bosch vs Helmond Sport [SD]
+https://pullws-ac.yiom1.com/sport/QMfBDO2IDN1UzXyAjM/playlist.m3u8?wsSecret=c12fdfb491e5f34c94faccb6b0307d67&wsABSTime=6AB2C1ED
+
+#EXTINF:-1 tvg-id="2065749426794786818" tvg-name="🟡 [18:00] FC Eindhoven vs Emmen [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] FC Eindhoven vs Emmen [SD]
 https://pullws-ac.yiom1.com/sport/QMflzN2IDN1UzXyAjM/playlist.m3u8?wsSecret=b9a8b9579aa232e449a45390beedf64e&wsABSTime=6AB2C1ED
 
-#EXTINF:-1 tvg-id="2065749426920615938" tvg-name="🟡 YAKINDA Ajax Amsterdam U21 vs Roda JC [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA Ajax Amsterdam U21 vs Roda JC [SD]
+#EXTINF:-1 tvg-id="2065749426920615938" tvg-name="🟡 [18:00] Ajax Amsterdam U21 vs Roda JC [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] Ajax Amsterdam U21 vs Roda JC [SD]
 https://pullws-ac.yiom1.com/sport/QMfhzN2IDN1UzXyAjM/playlist.m3u8?wsSecret=e18d35f485a1b9b0401a46fb6ad2c3c2&wsABSTime=6AB2C1ED
 
-#EXTINF:-1 tvg-id="2065749427042250754" tvg-name="🟡 YAKINDA Alkmaar Youth vs Volendam [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA Alkmaar Youth vs Volendam [SD]
+#EXTINF:-1 tvg-id="2065749427042250754" tvg-name="🟡 [18:00] Alkmaar Youth vs Volendam [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] Alkmaar Youth vs Volendam [SD]
 https://pullws-ac.yiom1.com/sport/QMfdzN2IDN1UzXyAjM/playlist.m3u8?wsSecret=62fd40ef7f0c0e259995516df055aada&wsABSTime=6AB2C1EE
 
-#EXTINF:-1 tvg-id="2065749427042250754" tvg-name="🟡 YAKINDA Alkmaar Youth vs Volendam [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA Alkmaar Youth vs Volendam [HD]
+#EXTINF:-1 tvg-id="2065749427042250754" tvg-name="🟡 [18:00] Alkmaar Youth vs Volendam [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] Alkmaar Youth vs Volendam [HD]
 https://pulltx.cqsycw.com/live/sd-6MwdpuQpE2WwfHYDux.m3u8?txSecret=c0deca4f394b233b46ea9bcd8c17fe4b&txTime=6AB2C9E5
 
-#EXTINF:-1 tvg-id="2065749427293908993" tvg-name="🟡 YAKINDA FC Oss vs Dordrecht [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA FC Oss vs Dordrecht [SD]
-https://pullws-ac.yiom1.com/sport/QMfVzN2IDN1UzXyAjM/playlist.m3u8?wsSecret=09a0ffc216e4b3581f6ccc3ce032b620&wsABSTime=6AB2C1ED
-
-#EXTINF:-1 tvg-id="2065749427293908993" tvg-name="🟡 YAKINDA FC Oss vs Dordrecht [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA FC Oss vs Dordrecht [HD]
-https://pulltx.cqsycw.com/live/sd-6MwdpuQpE6uuQFC4Dk.m3u8?txSecret=a96ce1448101d3d51a7edc5bf903cc1a&txTime=6AB2C4FB
-
-#EXTINF:-1 tvg-id="2065749427474264065" tvg-name="🟡 YAKINDA RKC Waalwijk vs MVV Maastricht [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA RKC Waalwijk vs MVV Maastricht [SD]
-https://pullws-ac.yiom1.com/sport/QMfRzN2IDN1UzXyAjM/playlist.m3u8?wsSecret=cd9c54455d2d18602ce494e8392235bf&wsABSTime=6AB2C1EE
-
-#EXTINF:-1 tvg-id="2065749427474264065" tvg-name="🟡 YAKINDA RKC Waalwijk vs MVV Maastricht [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA RKC Waalwijk vs MVV Maastricht [HD]
-https://pulltx.cqsycw.com/live/sd-6MwdpuQpEDWM1gfogS.m3u8?txSecret=ff7e4f9ee9be9605277b1914ded1393b&txTime=6AB2C4FB
-
-#EXTINF:-1 tvg-id="2065749427168079873" tvg-name="🟡 YAKINDA Utrecht Youth vs VVV Venlo [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA Utrecht Youth vs VVV Venlo [SD]
+#EXTINF:-1 tvg-id="2065749427168079873" tvg-name="🟡 [18:00] Utrecht Youth vs VVV Venlo [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] Utrecht Youth vs VVV Venlo [SD]
 https://pullws-ac.yiom1.com/sport/QMfZzN2IDN1UzXyAjM/playlist.m3u8?wsSecret=1ab1e06edf0aeb4d51d7f934c9e12d40&wsABSTime=6AB2C0C2
 
-#EXTINF:-1 tvg-id="2065749427168079873" tvg-name="🟡 YAKINDA Utrecht Youth vs VVV Venlo [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="NED Eerste Divisie",🟡 YAKINDA Utrecht Youth vs VVV Venlo [HD]
+#EXTINF:-1 tvg-id="2065749427168079873" tvg-name="🟡 [18:00] Utrecht Youth vs VVV Venlo [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] Utrecht Youth vs VVV Venlo [HD]
 https://pulltx.cqsycw.com/live/sd-6MwdpuQpE97PGj1yNe.m3u8?txSecret=3d74fad2d7c1047329c7cbacd8f508bd&txTime=6AB2C9E5
 
-#EXTINF:-1 tvg-id="2088808740855828481" tvg-name="🟡 YAKINDA Manchester United U21 vs Brentford U21 [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="ENG U21 Premier League",🟡 YAKINDA Manchester United U21 vs Brentford U21 [HD]
+#EXTINF:-1 tvg-id="2065749427293908993" tvg-name="🟡 [18:00] FC Oss vs Dordrecht [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] FC Oss vs Dordrecht [SD]
+https://pullws-ac.yiom1.com/sport/QMfVzN2IDN1UzXyAjM/playlist.m3u8?wsSecret=09a0ffc216e4b3581f6ccc3ce032b620&wsABSTime=6AB2C1ED
+
+#EXTINF:-1 tvg-id="2065749427293908993" tvg-name="🟡 [18:00] FC Oss vs Dordrecht [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] FC Oss vs Dordrecht [HD]
+https://pulltx.cqsycw.com/live/sd-6MwdpuQpE6uuQFC4Dk.m3u8?txSecret=a96ce1448101d3d51a7edc5bf903cc1a&txTime=6AB2C4FB
+
+#EXTINF:-1 tvg-id="2065749427474264065" tvg-name="🟡 [18:00] RKC Waalwijk vs MVV Maastricht [SD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] RKC Waalwijk vs MVV Maastricht [SD]
+https://pullws-ac.yiom1.com/sport/QMfRzN2IDN1UzXyAjM/playlist.m3u8?wsSecret=cd9c54455d2d18602ce494e8392235bf&wsABSTime=6AB2C1EE
+
+#EXTINF:-1 tvg-id="2065749427474264065" tvg-name="🟡 [18:00] RKC Waalwijk vs MVV Maastricht [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | NED Eerste Divisie",🟡 [18:00] RKC Waalwijk vs MVV Maastricht [HD]
+https://pulltx.cqsycw.com/live/sd-6MwdpuQpEDWM1gfogS.m3u8?txSecret=ff7e4f9ee9be9605277b1914ded1393b&txTime=6AB2C4FB
+
+#EXTINF:-1 tvg-id="2088808740855828481" tvg-name="🟡 [18:00] Manchester United U21 vs Brentford U21 [HD]" tvg-logo="https://livelive24.com/fav.png" tvg-language="en" group-title="🟡 YAKINDA | ENG U21 Premier League",🟡 [18:00] Manchester United U21 vs Brentford U21 [HD]
 https://pulltx.cqsycw.com/live/sd-6MxiKp1kggsKnsvDt2.m3u8?txSecret=731c1f36f60b9b7eb4233c45b1952b7e&txTime=6AB2C5AE
