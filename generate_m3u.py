@@ -1,197 +1,250 @@
 #!/usr/bin/env python3
 """
-LiveLive24 TV Kanalları M3U Generator
-tv.json dosyasındaki tüm kanalları ve yayınları tek bir M3U dosyasına dönüştürür.
+LiveLive24 TV & Stream Scraper & M3U Generator
+HTML sayfalarını tarar, iframe/JS kodlarını çözer, gerçek .m3u8 yayın linklerini yakalar.
 """
 
 import json
 import base64
 import os
+import re
 import sys
 from datetime import datetime, timezone
-from urllib.parse import urlparse, parse_qs, unquote
-import urllib.request
-import urllib.error
+from urllib.parse import urlparse, parse_qs, urljoin, unquote
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import requests
 
 # ─── AYARLAR ───────────────────────────────────────────────
 SOURCE_URL = os.environ.get("SOURCE_URL", "https://livelive24.com/tv.json")
 OUTPUT_DIR = os.environ.get("OUTPUT_DIR", "output")
 OUTPUT_FILE = os.environ.get("OUTPUT_FILE", "tv.m3u")
 DEFAULT_LOGO = "https://livelive24.com/fav.png"
+MAX_WORKERS = 15  # Sayfaları paralel tarama hızı (aynı anda 15 sayfa)
+TIMEOUT = 12
 # ────────────────────────────────────────────────────────────
 
+SESSION = requests.Session()
+SESSION.headers.update({
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Accept": "*/*",
+    "Accept-Language": "tr,en-US;q=0.9,en;q=0.8"
+})
 
-def fetch_json(url: str):
-    """tv.json dosyasını web sitesinden indirir."""
-    print(f"📡 Veri indiriliyor: {url}")
-    req = urllib.request.Request(url, headers={
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept": "application/json, text/plain, */*"
-    })
+
+def decode_base64_safely(s: str) -> str:
+    """Bozuk veya eksik paddingli Base64 metinleri çözer."""
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            return data
-    except Exception as e:
-        print(f"❌ Veri çekme hatası: {e}")
-        sys.exit(1)
-
-
-def decode_stream_url(url: str) -> str:
-    """
-    Link içindeki base64 kodlu stream URL'sini çözer.
-    Örn: dlhd.html?url=aHR0c... -> https://.../playlist.m3u8
-    """
-    if not url:
+        s_clean = s.strip()
+        padding = 4 - len(s_clean) % 4
+        if padding != 4:
+            s_clean += "=" * padding
+        decoded = base64.b64decode(s_clean).decode("utf-8", errors="ignore")
+        return decoded
+    except Exception:
         return ""
 
-    url = unquote(url.strip())
-    parsed = urlparse(url)
+
+def find_m3u8_in_text(text: str) -> str:
+    """Metin veya JS içindeki m3u8 linklerini regex ile bulur."""
+    # 1. Doğrudan m3u8 linki
+    m3u8_matches = re.findall(r'(https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*)', text)
+    if m3u8_matches:
+        return m3u8_matches[0]
+
+    # 2. Base64 içinde gizlenmiş m3u8
+    b64_matches = re.findall(r'(?:url=|source=|file=|atob\([\'"])([a-zA-Z0-9+/=]{30,})[\'"]?', text)
+    for b64 in b64_matches:
+        decoded = decode_base64_safely(b64)
+        if ".m3u8" in decoded or decoded.startswith("http"):
+            nested_m3u8 = find_m3u8_in_text(decoded)
+            if nested_m3u8:
+                return nested_m3u8
+            if decoded.startswith("http"):
+                return decoded
+
+    # 3. Clappr / JWPlayer kaynakları
+    js_source = re.findall(r'(?:source|file|src)\s*:\s*["\'](https?://[^"\']+)["\']', text, re.IGNORECASE)
+    for src in js_source:
+        if ".m3u8" in src or "live" in src or "stream" in src:
+            return src
+
+    return ""
+
+
+def scrape_stream_url(page_url: str, depth: int = 0, max_depth: int = 2) -> str:
+    """
+    Verilen HTML sayfasını ziyaret eder, iframe'leri takip eder ve asıl yayını bulur.
+    """
+    if not page_url or depth > max_depth:
+        return ""
+
+    page_url = unquote(page_url.strip())
+
+    # Eğer verilen link zaten doğrudan .m3u8 ise taramaya gerek yok
+    if ".m3u8" in page_url and not ("html" in page_url or "?" in page_url.split(".m3u8")[-1]):
+        return page_url
+
+    # dlhd.html?url=<base64> durumunu hızlıca çöz
+    parsed = urlparse(page_url)
     qs = parse_qs(parsed.query)
-
-    # ?url= parametresi kontrolü
     if "url" in qs:
-        b64_str = qs["url"][0]
-        try:
-            padding = 4 - len(b64_str) % 4
-            if padding != 4:
-                b64_str += "=" * padding
-            decoded = base64.b64decode(b64_str).decode("utf-8")
-            if decoded.startswith("http"):
-                return decoded
-        except Exception:
-            pass
+        decoded = decode_base64_safely(qs["url"][0])
+        if ".m3u8" in decoded:
+            return decoded
+        elif decoded.startswith("http"):
+            page_url = decoded
 
-    # Doğrudan base64 formatında gönderildiyse
-    if url.startswith("aHR0c"):
-        try:
-            padding = 4 - len(url) % 4
-            if padding != 4:
-                url += "=" * padding
-            decoded = base64.b64decode(url).decode("utf-8")
-            if decoded.startswith("http"):
-                return decoded
-        except Exception:
-            pass
+    try:
+        resp = SESSION.get(page_url, timeout=TIMEOUT, allow_redirects=True, headers={"Referer": page_url})
+        if resp.status_code != 200:
+            return ""
 
-    return url
+        html = resp.text
+
+        # Sayfa içeriğinde m3u8 var mı bak
+        found_stream = find_m3u8_in_text(html)
+        if found_stream:
+            return found_stream
+
+        # Sayfa içindeki <iframe> linklerini yakala ve içeri gir
+        iframes = re.findall(r'<iframe[^>]+src=["\']([^"\']+)["\']', html, re.IGNORECASE)
+        for iframe_src in iframes:
+            if iframe_src.startswith("//"):
+                iframe_src = "https:" + iframe_src
+            elif not iframe_src.startswith("http"):
+                iframe_src = urljoin(page_url, iframe_src)
+
+            # Reklam/sosyal medya iframelerini atla
+            if any(ad in iframe_src for ad in ["google", "facebook", "twitter", "ads", "chat", "disqus"]):
+                continue
+
+            stream = scrape_stream_url(iframe_src, depth=depth + 1, max_depth=max_depth)
+            if stream:
+                return stream
+
+    except Exception:
+        pass
+
+    return ""
 
 
-def process_channels(data) -> list:
-    """JSON yapısını düzleştirip normalize eder."""
-    channels = []
+def fetch_and_parse_json(url: str) -> list:
+    """JSON'dan kanal listesini çeker ve normalize eder."""
+    print(f"📡 JSON indiriliyor: {url}")
+    try:
+        r = SESSION.get(url, timeout=20)
+        data = r.json()
+    except Exception as e:
+        print(f"❌ JSON çekilemedi: {e}")
+        sys.exit(1)
 
-    # Eğer data liste ise
+    raw_items = []
     if isinstance(data, list):
-        items = data
-    # Eğer data dict ise (kategoriye göre grupluysa)
+        raw_items = data
     elif isinstance(data, dict):
-        items = []
-        for cat_name, val in data.items():
+        for cat, val in data.items():
             if isinstance(val, list):
                 for v in val:
-                    if isinstance(v, dict) and "category" not in v:
-                        v["category"] = cat_name
-                    items.append(v)
+                    if isinstance(v, dict):
+                        if "category" not in v:
+                            v["category"] = cat
+                        raw_items.append(v)
             elif isinstance(val, dict):
-                items.append(val)
-    else:
-        items = []
+                raw_items.append(val)
 
-    for item in items:
+    normalized_channels = []
+    for item in raw_items:
         if not isinstance(item, dict):
             continue
 
-        name = item.get("name") or item.get("channel_name") or item.get("title") or "Bilinmeyen Kanal"
-        logo = item.get("image") or item.get("logo") or item.get("icon") or DEFAULT_LOGO
-        category = item.get("category") or item.get("group") or item.get("country") or "Genel TV"
-        channel_id = str(item.get("id") or item.get("channel_id") or "")
+        name = item.get("name") or item.get("channel_name") or item.get("title") or "Kanal"
+        logo = item.get("image") or item.get("logo") or DEFAULT_LOGO
+        category = item.get("category") or item.get("playing") or item.get("group") or "Canlı TV"
+        channel_id = str(item.get("id") or item.get("match_id") or "")
 
-        # 1. Durum: 'streams' dizisi varsa
+        # 1. Streams listesi varsa
         if "streams" in item and isinstance(item["streams"], list):
-            for stream in item["streams"]:
-                if isinstance(stream, dict):
-                    raw_url = stream.get("url") or stream.get("stream_url") or ""
-                    quality = stream.get("quality", "")
-                    lang = stream.get("language", "tr")
-                    stream_name = stream.get("name", "")
-                    
-                    full_name = f"{name} [{quality}]" if quality else (f"{name} ({stream_name})" if stream_name else name)
-                    
-                    if raw_url:
-                        channels.append({
+            for st in item["streams"]:
+                if isinstance(st, dict):
+                    link = st.get("url") or st.get("link") or ""
+                    q = st.get("quality", "")
+                    st_name = f"{name} [{q}]" if q else name
+                    if link:
+                        normalized_channels.append({
                             "id": channel_id,
-                            "name": full_name,
+                            "name": st_name,
                             "logo": logo,
                             "category": category,
-                            "language": lang,
-                            "url": decode_stream_url(raw_url)
+                            "page_url": link
                         })
-
-        # 2. Durum: Doğrudan 'url' veya 'stream_url' varsa
-        direct_url = item.get("url") or item.get("stream_url") or item.get("link")
-        if direct_url and isinstance(direct_url, str):
-            channels.append({
+        # 2. Tekil sayfa/url linki varsa (Örn: page: "tv/cbsgoalzo.html" veya url: "...")
+        direct_link = item.get("url") or item.get("page") or item.get("stream_url")
+        if direct_link and isinstance(direct_link, str):
+            if not direct_link.startswith("http"):
+                direct_link = urljoin("https://livelive24.com/", direct_link)
+            normalized_channels.append({
                 "id": channel_id,
                 "name": name,
                 "logo": logo,
                 "category": category,
-                "language": item.get("language", "tr"),
-                "url": decode_stream_url(direct_url)
+                "page_url": direct_link
             })
 
-    return channels
+    return normalized_channels
 
 
-def build_m3u(channels: list) -> str:
-    """IPTV uyumlu M3U içeriği oluşturur."""
-    lines = [
-        '#EXTM3U',
-        f'<!-- Oluşturulma Tarihi: {datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")} -->',
-        ""
-    ]
-
-    for ch in channels:
-        url = ch.get("url", "")
-        if not url:
-            continue
-
-        extinf = (
-            f'#EXTINF:-1 '
-            f'tvg-id="{ch.get("id", "")}" '
-            f'tvg-name="{ch.get("name", "")}" '
-            f'tvg-logo="{ch.get("logo", "")}" '
-            f'tvg-language="{ch.get("language", "tr")}" '
-            f'group-title="{ch.get("category", "Genel")}",'
-            f'{ch.get("name", "")}'
-        )
-
-        lines.append(extinf)
-        lines.append(url)
-        lines.append("")
-
-    return "\n".join(lines)
+def process_channel_task(channel: dict) -> dict:
+    """Tek bir kanalın yayın linkini arayan iş parçacığı (worker)."""
+    page_url = channel["page_url"]
+    resolved_stream = scrape_stream_url(page_url)
+    channel["stream_url"] = resolved_stream
+    return channel
 
 
 def main():
-    # 1. JSON verisini çek
-    raw_data = fetch_json(SOURCE_URL)
+    channels = fetch_and_parse_json(SOURCE_URL)
+    print(f"🔍 Toplam {len(channels)} kanal tespit edildi. Yayın linkleri kazınıyor (Scraping)...")
 
-    # 2. Kanalları işle ve URL'leri çöz
-    channel_list = process_channels(raw_data)
-    print(f"✅ Toplam {len(channel_list)} adet yayın/kanal çözüldü.")
+    resolved_channels = []
+    # Çoklu iş parçacığı (Thread) ile sayfaları hızlıca tara
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = [executor.submit(process_channel_task, ch) for ch in channels]
+        for future in as_completed(futures):
+            res = future.result()
+            if res.get("stream_url"):
+                resolved_channels.append(res)
+                print(f"  [+] BULUNDU: {res['name']} -> {res['stream_url'][:60]}...")
+            else:
+                print(f"  [-] Bulunamadı: {res['name']}")
 
-    # 3. M3U formatına çevir
-    m3u_text = build_m3u(channel_list)
+    # M3U formatında birleştir
+    lines = [
+        '#EXTM3U',
+        f'<!-- Güncellenme Tarihi: {datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")} -->',
+        ""
+    ]
 
-    # 4. Dosyaya kaydet
+    for ch in resolved_channels:
+        extinf = (
+            f'#EXTINF:-1 '
+            f'tvg-id="{ch["id"]}" '
+            f'tvg-name="{ch["name"]}" '
+            f'tvg-logo="{ch["logo"]}" '
+            f'group-title="{ch["category"]}",'
+            f'{ch["name"]}'
+        )
+        lines.append(extinf)
+        lines.append(ch["stream_url"])
+        lines.append("")
+
+    # Dosyaya kaydet
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     file_path = os.path.join(OUTPUT_DIR, OUTPUT_FILE)
-
     with open(file_path, "w", encoding="utf-8") as f:
-        f.write(m3u_text)
+        f.write("\n".join(lines))
 
-    print(f"💾 M3U Dosyası Başarıyla Yazıldı: {file_path}")
+    print(f"\n🎉 TAMAMLANDI! {len(resolved_channels)}/{len(channels)} adet çalışan yayın M3U'ya yazıldı.")
+    print(f"📁 Dosya: {file_path}")
 
 
 if __name__ == "__main__":
