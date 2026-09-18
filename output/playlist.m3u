@@ -1,11 +1,14 @@
 #EXTM3U
-<!-- Güncellenme Tarihi: 2026-09-18 21:26:47 UTC -->
+<!-- Güncellenme Tarihi: 2026-09-18 21:31:02 UTC -->
 
 #EXTINF:-1 tvg-id="Real_Sport_Clube_vs_Academica_Coimbra" tvg-name="Real Sport Clube v. Academica Coimbra (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Real Sport Clube v. Academica Coimbra (Stream 1 [en])
 https://pullws-ac.yiom1.com/sport/QMfNTM2IDM4UzXyAjM/playlist.m3u8?wsSecret=13c9d8bb83ed67df0b43b30471f873cb&wsABSTime=6AB2D258
 
 #EXTINF:-1 tvg-id="Real_Sport_Clube_vs_Academica_Coimbra" tvg-name="Real Sport Clube v. Academica Coimbra (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Real Sport Clube v. Academica Coimbra (Stream 2 [en])
 https://pulltx.cqsycw.com/live/sd-6MxjZVvAdrP78hNeQv.m3u8?txSecret=98a49b7db37a1f4dbddbffae90a4384e&txTime=6AB255E2
+
+#EXTINF:-1 tvg-id="FC_Nacional_Asuncion_vs_2_de_Mayo" tvg-name="FC Nacional Asuncion v. 2 de Mayo (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",FC Nacional Asuncion v. 2 de Mayo (Stream 1 [en])
+https://pulltx.cqsycw.com/live/sd-6Mxip4yMjhbvttqY1U.m3u8?txSecret=46fec6b35f9fad710c57e9b7adc2f5a3&txTime=6AB23206
 
 #EXTINF:-1 tvg-id="Central_Cordoba_SDE_vs_Defensa_Y_Justicia" tvg-name="Central Cordoba SDE v. Defensa Y Justicia (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Central Cordoba SDE v. Defensa Y Justicia (Stream 1 [en])
 https://pullws-ac.yiom1.com/sport/QMfJTN0MDN1UzXyAjM/playlist.m3u8?wsSecret=b8acd33764aed399145e1a10c30b3eff&wsABSTime=6AB2E191
@@ -24,6 +27,15 @@ https://pullws-ac.yiom1.com/sport/QMfdTOwMDN1UzXyAjM/playlist.m3u8?wsSecret=dc55
 
 #EXTINF:-1 tvg-id="Alianza_Atletico_Sullana_vs_Comerciantes_Unidos" tvg-name="Alianza Atletico Sullana v. Comerciantes Unidos (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Alianza Atletico Sullana v. Comerciantes Unidos (Stream 2 [en])
 https://pulltx.cqsycw.com/live/sd-6MwdpxeKqKvoVaxdA6.m3u8?txSecret=a6c98108f79c31e556fafa85a4485386&txTime=6AB23206
+
+#EXTINF:-1 tvg-id="Alianza_Atletico_vs_Comerciantes_Unidos" tvg-name="Alianza Atletico v. Comerciantes Unidos (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",Alianza Atletico v. Comerciantes Unidos (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4550665.m3u8?txSecret=e0bdd537afab04aec22e679981fb7b64&txTime=6AADC1BE
+
+#EXTINF:-1 tvg-id="CA_Central_Cordoba_SE_vs_Defensa_y_Justicia" tvg-name="CA Central Cordoba SE v. Defensa y Justicia (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",CA Central Cordoba SE v. Defensa y Justicia (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4539764.m3u8?txSecret=893921089a832a5e6748e14adc12b254&txTime=6AADC1BE
+
+#EXTINF:-1 tvg-id="Aguilas_Doradas_vs_CS_Deportivo_Pereira" tvg-name="Aguilas Doradas v. CS Deportivo Pereira (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",Aguilas Doradas v. CS Deportivo Pereira (Stream 1 [en])
+https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4569295.m3u8?txSecret=318ba961bcdb90453a8b64ce6540b252&txTime=6AADC1BE
 
 #EXTINF:-1 tvg-id="Mary_Stoiana_vs_Paula_Badosa" tvg-name="Mary Stoiana v. Paula Badosa (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Tennis",Mary Stoiana v. Paula Badosa (Stream 1 [en])
 https://pullws-ai.yiom1.com/sport/QMfhDMxMjM4UzXzAjM/playlist.m3u8?wsSecret=541b8d5d65026549674699278dcbe3e5&wsABSTime=6AB2A829
