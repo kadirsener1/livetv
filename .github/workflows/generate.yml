@@ -1,14 +1,14 @@
-name: Generate Single M3U Playlist
+name: Generate M3U Playlist
 
 on:
-  # ⏰ Her 20 dakikada bir otomatik yeniler
+  # ⏰ Her 30 dakikada bir otomatik yeniler
   schedule:
-    - cron: "*/20 * * * *"
+    - cron: "*/30 * * * *"
 
-  # 🖱️ GitHub panelinden manuel çalıştırma
+  # 🖱️ Manuel başlatma butonu
   workflow_dispatch:
 
-  # 📦 Kod güncellendiğinde tetikleme
+  # 📦 Kod güncellendiğinde çalıştır
   push:
     branches: [main]
 
@@ -28,16 +28,16 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: ⚙️ Tek M3U Dosyasını Oluştur
+      - name: ⚙️ M3U Oluştur
         run: python generate_m3u.py
 
-      - name: 📤 GitHub'a Kaydet (Commit & Push)
+      - name: 📤 GitHub'a Push Et
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add output/playlist.m3u
           if git diff --cached --quiet; then
-            echo "ℹ️ Güncelleme yok, atlanıyor."
+            echo "ℹ️ Değişiklik yok, push atlandı."
           else
             git commit -m "🔄 M3U Güncellendi [$(date -u +'%d.%m.%Y %H:%M UTC')]"
             git push
