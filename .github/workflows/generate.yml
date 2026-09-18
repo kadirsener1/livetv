@@ -1,14 +1,10 @@
-name: Generate TV M3U Playlist
+name: Scrape Streams & Build M3U
 
 on:
-  # ⏰ Her 30 dakikada bir otomatik günceller
   schedule:
+    # ⏰ Her 30 dakikada bir otomatik çalışır
     - cron: "*/30 * * * *"
-
-  # 🖱️ Manuel olarak başlatmak için buton
-  workflow_dispatch:
-
-  # 📦 Kod güncellendiğinde otomatik çalıştır
+  workflow_dispatch: # 🖱️ Manuel başlatma butonu
   push:
     branches: [main]
 
@@ -16,29 +12,37 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  scrape-and-build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Depoyu Klonla
+      - name: 📥 Depoyu Çek
         uses: actions/checkout@v4
 
-      - name: 🐍 Python Kurulumu
+      - name: 🐍 Python 3.12 Kur
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: ⚙️ TV M3U Dosyasını Oluştur
+      - name: 📦 Gerekli Kütüphaneleri Yükle
+        run: |
+          pip install --no-cache-dir -r requirements.txt
+
+      - name: 🚀 Kazıma (Scraper) İşlemini Başlat ve M3U Oluştur
+        env:
+          SOURCE_URL: "https://livelive24.com/tv.json"
+          OUTPUT_DIR: "output"
+          OUTPUT_FILE: "tv.m3u"
         run: python generate_m3u.py
 
-      - name: 📤 GitHub'a Kaydet ve Push Et
+      - name: 📤 GitHub'a Otomatik Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add output/tv.m3u
           if git diff --cached --quiet; then
-            echo "ℹ️ Herhangi bir değişiklik yok, push atlandı."
+            echo "ℹ️ Yeni yayın linki değişikliği yok."
           else
-            git commit -m "🔄 TV M3U Güncellendi [$(date -u +'%d.%m.%Y %H:%M UTC')]"
+            git commit -m "🔄 TV Yayınları Güncellendi [$(date -u +'%d.%m.%Y %H:%M UTC')]"
             git push
           fi
