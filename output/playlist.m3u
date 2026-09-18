@@ -1,11 +1,5 @@
 #EXTM3U
-<!-- Güncellenme Tarihi: 2026-09-18 21:19:12 UTC -->
-
-#EXTINF:-1 tvg-id="Espanyol_vs_Elche" tvg-name="Espanyol v. Elche (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Espanyol v. Elche (Stream 1 [en])
-https://pulltx.cqsycw.com/live/hd-en-6MweaGxVNbPueN45X4.m3u8?txSecret=a710d1c6ca138b00804b8e0ffb475522&txTime=6AB287CE
-
-#EXTINF:-1 tvg-id="Espanyol_vs_Elche" tvg-name="Espanyol v. Elche (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Espanyol v. Elche (Stream 2 [en])
-https://pulltx.cqsycw.com/live/sd-6MweaGxVNbPueN45X4.m3u8?txSecret=972d55ebc4a7a5cc63eac07b60947ef4&txTime=6AB287CE
+<!-- Güncellenme Tarihi: 2026-09-18 21:26:47 UTC -->
 
 #EXTINF:-1 tvg-id="Real_Sport_Clube_vs_Academica_Coimbra" tvg-name="Real Sport Clube v. Academica Coimbra (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Real Sport Clube v. Academica Coimbra (Stream 1 [en])
 https://pullws-ac.yiom1.com/sport/QMfNTM2IDM4UzXyAjM/playlist.m3u8?wsSecret=13c9d8bb83ed67df0b43b30471f873cb&wsABSTime=6AB2D258
@@ -30,21 +24,6 @@ https://pullws-ac.yiom1.com/sport/QMfdTOwMDN1UzXyAjM/playlist.m3u8?wsSecret=dc55
 
 #EXTINF:-1 tvg-id="Alianza_Atletico_Sullana_vs_Comerciantes_Unidos" tvg-name="Alianza Atletico Sullana v. Comerciantes Unidos (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Alianza Atletico Sullana v. Comerciantes Unidos (Stream 2 [en])
 https://pulltx.cqsycw.com/live/sd-6MwdpxeKqKvoVaxdA6.m3u8?txSecret=a6c98108f79c31e556fafa85a4485386&txTime=6AB23206
-
-#EXTINF:-1 tvg-id="RCD_Espanyol_vs_Elche_CF" tvg-name="RCD Espanyol v. Elche CF (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",RCD Espanyol v. Elche CF (Stream 1 [en])
-https://livelive24.com/test.html?url=https://live.vivo155.com/live/hd-en-1-4565424.m3u8?txSecret=4ee3873d007a0409f381530b96d6a978&txTime=6AADBABE
-
-#EXTINF:-1 tvg-id="RCD_Espanyol_vs_Elche_CF" tvg-name="RCD Espanyol v. Elche CF (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",RCD Espanyol v. Elche CF (Stream 2 [en])
-https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4565424.m3u8?txSecret=70138a0d783715bda540e2aea8f46ba1&txTime=6AADBABE
-
-#EXTINF:-1 tvg-id="Alianza_Atletico_vs_Comerciantes_Unidos" tvg-name="Alianza Atletico v. Comerciantes Unidos (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",Alianza Atletico v. Comerciantes Unidos (Stream 1 [en])
-https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4550665.m3u8?txSecret=e910aee0653c2b328c5a38826070ce1a&txTime=6AADBABE
-
-#EXTINF:-1 tvg-id="UPAEP_W_vs_CETYS_W" tvg-name="UPAEP [W] v. CETYS [W] (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",UPAEP [W] v. CETYS [W] (Stream 1 [en])
-https://pulltx.klmysrmyy.com/live/sd-6wXsHKZGNDvaDzGX4z.m3u8?txSecret=8ef40d6e63c2517c374872830d79fe2c&txTime=6AB2EAF1
-
-#EXTINF:-1 tvg-id="Rinascita_Basket_Rimini_vs_Pesaro" tvg-name="Rinascita Basket Rimini v. Pesaro (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Rinascita Basket Rimini v. Pesaro (Stream 1 [en])
-https://pullws-ai.yiom1.com/sport/QMfNTM5IjM4UzXxAjM/playlist.m3u8?wsSecret=e8de15016fd88b2cff5fa19d86560dc2&wsABSTime=6AB29A0F
 
 #EXTINF:-1 tvg-id="Mary_Stoiana_vs_Paula_Badosa" tvg-name="Mary Stoiana v. Paula Badosa (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Tennis",Mary Stoiana v. Paula Badosa (Stream 1 [en])
 https://pullws-ai.yiom1.com/sport/QMfhDMxMjM4UzXzAjM/playlist.m3u8?wsSecret=541b8d5d65026549674699278dcbe3e5&wsABSTime=6AB2A829
