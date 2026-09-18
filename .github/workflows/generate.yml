@@ -1,14 +1,10 @@
-name: Generate M3U Playlist
+name: Generate NTV M3U Playlist
 
 on:
-  # ⏰ Her 30 dakikada bir otomatik yeniler
   schedule:
+    # ⏰ Her 30 dakikada bir otomatik günceller
     - cron: "*/30 * * * *"
-
-  # 🖱️ Manuel başlatma butonu
-  workflow_dispatch:
-
-  # 📦 Kod güncellendiğinde çalıştır
+  workflow_dispatch: # 🖱️ Manuel başlatma
   push:
     branches: [main]
 
@@ -20,18 +16,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Repo'yu Klonla
+      - name: 📥 Depoyu Klonla
         uses: actions/checkout@v4
 
-      - name: 🐍 Python Kurulumu
+      - name: 🐍 Python Kur
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: ⚙️ M3U Oluştur
+      - name: ⚙️ M3U Dosyasını Oluştur
+        env:
+          SOURCE_URL: "https://livelive24.com/test/ntv/ntv.json"
+          OUTPUT_DIR: "output"
+          OUTPUT_FILE: "playlist.m3u"
         run: python generate_m3u.py
 
-      - name: 📤 GitHub'a Push Et
+      - name: 📤 GitHub'a Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -39,6 +39,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "ℹ️ Değişiklik yok, push atlandı."
           else
-            git commit -m "🔄 M3U Güncellendi [$(date -u +'%d.%m.%Y %H:%M UTC')]"
+            git commit -m "🔄 NTV M3U Güncellendi [$(date -u +'%d.%m.%Y %H:%M UTC')]"
             git push
           fi
