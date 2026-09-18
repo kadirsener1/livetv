@@ -1,5 +1,5 @@
 #EXTM3U
-<!-- Güncellenme Tarihi: 2026-09-18 19:46:00 UTC -->
+<!-- Güncellenme Tarihi: 2026-09-18 19:46:29 UTC -->
 
 #EXTINF:-1 tvg-id="Brentford_vs_Chelsea" tvg-name="Brentford v. Chelsea (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Brentford v. Chelsea (Stream 1 [en])
 https://pulltx.cqsycw.com/live/hd-en-6MwdqQhYV8PzjAx4UN.m3u8?txSecret=d99f752a3760fcc1423b286711c62b12&txTime=6AB287CE
@@ -373,9 +373,6 @@ https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4556804.
 #EXTINF:-1 tvg-id="Alba_Berlin_vs_Niners_Chemnitz" tvg-name="Alba Berlin v. Niners Chemnitz (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Alba Berlin v. Niners Chemnitz (Stream 1 [en])
 https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-2-3936321.m3u8?txSecret=8f2afe139d08b26335b155b16fbcbff2&txTime=6AAD9629
 
-#EXTINF:-1 tvg-id="Alba_Berlin_vs_Niners_Chemnitz" tvg-name="Alba Berlin v. Niners Chemnitz (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Alba Berlin v. Niners Chemnitz (Stream 1 [en])
-https://pulltx.klmysrmyy.com/live/sd-6wXrYLk9NYqoKdTvbG.m3u8?txSecret=ccb3a4168cb6e4a604469ce0ba74e549&txTime=6AB28666
-
 #EXTINF:-1 tvg-id="Annecy_FC_vs_Dijon_FCO" tvg-name="Annecy FC v. Dijon FCO (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",Annecy FC v. Dijon FCO (Stream 1 [en])
 https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4553189.m3u8?txSecret=dca406c491c2e3a7f784adfa98261eb9&txTime=6AAD9626
 
@@ -411,21 +408,6 @@ https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4552948.
 
 #EXTINF:-1 tvg-id="FC_Winterthur_vs_FC_Aarau" tvg-name="FC Winterthur v. FC Aarau (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Soccer",FC Winterthur v. FC Aarau (Stream 1 [en])
 https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-1-4556807.m3u8?txSecret=0f26e9f29b09709179f61af28835feff&txTime=6AAD9626
-
-#EXTINF:-1 tvg-id="Pays_Salonais_vs_Maritime_Boulogne" tvg-name="Pays Salonais v. Maritime Boulogne (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Pays Salonais v. Maritime Boulogne (Stream 1 [en])
-https://pulltx.klmysrmyy.com/live/sd-6wXsHKZFs7uXoXnhGS.m3u8?txSecret=5996bb13a9d2fa74ed57ec1b938bb984&txTime=6AB2CD6A
-
-#EXTINF:-1 tvg-id="United_Woluwe_vs_Bent_Merkschoenen_Waregem" tvg-name="United Woluwe v. Bent Merkschoenen Waregem (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",United Woluwe v. Bent Merkschoenen Waregem (Stream 1 [en])
-https://pullws-ai.yiom1.com/sport/QMfBzM2AjM4UzXxAjM/playlist.m3u8?wsSecret=48c89f16f7a6e99ed5fa4ca1cfb8bca8&wsABSTime=6AB29A16
-
-#EXTINF:-1 tvg-id="Antwerp_Giants_B_vs_BC_Guco_Lier" tvg-name="Antwerp Giants B v. BC Guco Lier (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Antwerp Giants B v. BC Guco Lier (Stream 1 [en])
-https://pullws-ai.yiom1.com/sport/QMfFzM2AjM4UzXxAjM/playlist.m3u8?wsSecret=cd715835ac46e6e118807e8589b23d36&wsABSTime=6AB29A16
-
-#EXTINF:-1 tvg-id="Panathinaikos_vs_Jeunesse_Laique_de_Bourg-en-Bresse" tvg-name="Panathinaikos v. Jeunesse Laique de Bourg-en-Bresse (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Panathinaikos v. Jeunesse Laique de Bourg-en-Bresse (Stream 1 [en])
-https://pulltx.klmysrmyy.com/live/sd-6wXsHKZG3CZMK9YU4v.m3u8?txSecret=dadc89ec09c35e2b4f71db4ab7feb02b&txTime=6AB2C662
-
-#EXTINF:-1 tvg-id="Rinascita_Basket_Rimini_vs_Pesaro" tvg-name="Rinascita Basket Rimini v. Pesaro (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Basketball",Rinascita Basket Rimini v. Pesaro (Stream 1 [en])
-https://pullws-ai.yiom1.com/sport/QMfNTM5IjM4UzXxAjM/playlist.m3u8?wsSecret=e8de15016fd88b2cff5fa19d86560dc2&wsABSTime=6AB29A0F
 
 #EXTINF:-1 tvg-id="Anna_Blinkova_vs_Alina_Charaeva" tvg-name="Anna Blinkova v. Alina Charaeva (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Tennis",Anna Blinkova v. Alina Charaeva (Stream 1 [en])
 https://pullws-ai.yiom1.com/sport/QMfFDNyMjM4UzXzAjM/playlist.m3u8?wsSecret=f42a844f305bb2c7b94bac1f172a670d&wsABSTime=6AB2A829
