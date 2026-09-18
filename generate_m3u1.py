@@ -14,7 +14,7 @@ import urllib.request
 
 SOURCE_URL = os.environ.get(
     "SOURCE_URL",
-    "https://livelive24.com/test/processed_matches_prioritized.json"
+    "https://livelive24.com/test/ntv/ntv.json"
 )
 OUTPUT_DIR = os.environ.get("OUTPUT_DIR", "output")
 OUTPUT_FILE = os.environ.get("OUTPUT_FILE", "playlist.m3u")
