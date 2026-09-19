@@ -1,14 +1,14 @@
 #EXTM3U
-<!-- Güncellenme Tarihi: 2026-09-19 04:41:32 UTC -->
+<!-- Güncellenme Tarihi: 2026-09-19 04:44:02 UTC -->
+
+#EXTINF:-1 tvg-id="Monterreyw_vs_Club_Necaxaw" tvg-name="Monterrey(w) v. Club Necaxa(w) (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Monterrey(w) v. Club Necaxa(w) (Stream 1 [en])
+https://pulltx.cqsycw.com/live/sd-6MwarmBFBP2q54pdav.m3u8?txSecret=782c43e0f97dd412e5755ca3ede1a6c0&txTime=6AB32DBD
 
 #EXTINF:-1 tvg-id="FC_Juarez_vs_Tigres_UANL" tvg-name="FC Juarez v. Tigres UANL (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",FC Juarez v. Tigres UANL (Stream 1 [en])
 https://pullws-ac.yiom1.com/sport/QMfZTO2IDN1UzXyAjM/playlist.m3u8?wsSecret=6ef95e846d6d20caf5bce9ab0a8a9a7f&wsABSTime=6AB33F50
 
 #EXTINF:-1 tvg-id="FC_Juarez_vs_Tigres_UANL" tvg-name="FC Juarez v. Tigres UANL (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",FC Juarez v. Tigres UANL (Stream 2 [en])
 https://pulltx.cqsycw.com/live/sd-6MwdpntpE53L1J1DDG.m3u8?txSecret=10668f15a95cacb06ab004bf68157fb8&txTime=6AB32DBC
-
-#EXTINF:-1 tvg-id="Monterreyw_vs_Club_Necaxaw" tvg-name="Monterrey(w) v. Club Necaxa(w) (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Monterrey(w) v. Club Necaxa(w) (Stream 1 [en])
-https://pulltx.cqsycw.com/live/sd-6MwarmBFBP2q54pdav.m3u8?txSecret=782c43e0f97dd412e5755ca3ede1a6c0&txTime=6AB32DBD
 
 #EXTINF:-1 tvg-id="Atletico_La_Paz_vs_Correcaminos_UAT" tvg-name="Atletico La Paz v. Correcaminos UAT (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Atletico La Paz v. Correcaminos UAT (Stream 1 [en])
 https://pullws-ac.yiom1.com/sport/QMfFTM2IDN1UzXyAjM/playlist.m3u8?wsSecret=16d8cf6186d90638e1c0d6cc31ebf476&wsABSTime=6AB33F50
