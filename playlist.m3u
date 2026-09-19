@@ -1,6 +1,5 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Kanal_1" group-title="Yayinlar", Yayin 2
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",deneme
-#EXTVLCOPT:http-referrer=https://ntv.cx
+#EXTVLCOPT:http-referrer=https://cdnapp.viphunter.top
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
 https://643t8a.7odxv0l067ka.net:8443/hls/r47nr7k6lgdsd.m3u8?s=e9RwrLLofJdOxcQmpeVh3Q&e=1789815443|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
