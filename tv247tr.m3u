@@ -390,7 +390,7 @@ https://65.108.239.207/smart2/index.m3u8
 #EXTINF:-1 tvg-id="ssport" tvg-name="S Sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/azfgva3.png" group-title="Spor-Neon",S Sport 1
 https://zeus645423.cfd/s1/index.txt
 #EXTINF:-1 tvg-id="ssport" tvg-name="S Sport 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/bcnszq0.png" group-title="Spor-Neon",S Sport 2
-https://ronaldo.magnitude.workers.dev/?url=https://corestream.siteyaptim.live//s-sport2/tracks-v1a1/mono.m3u8
+https://zeus645423.cfd/s1/index.txt
 #EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor-Neon",Spor Smart 1
 https://zeus645423.cfd/smart1/index.txt
 #EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor-Neon",Spor Smart 2
@@ -2215,7 +2215,7 @@ https://stream.xradio.com.tr:8770/stream
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Abu Dhabi Sports 1 Premium-AE
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MDkiLCJ0cyI6MTc4OTg5NDM5ODg4NX0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://sportsbite.org/247/arenasport1premiumrs
 
 #EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Abu Dhabi Sports 1 UAE-AE
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
