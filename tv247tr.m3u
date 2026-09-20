@@ -2212,8 +2212,8 @@ https://stream.xradio.com.tr:8770/stream
 
 
 
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Abu Dhabi Sports 1 Premium-AE
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sports",Abu Dhabi Sports 1 Premium-AEm
+#EXTVLCOPT:http-referrer=https://sportsbite.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://sportsbite.org/247/arenasport1premiumrs
 
