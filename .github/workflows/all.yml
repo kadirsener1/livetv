@@ -84,7 +84,7 @@ jobs:
       - name: Run tv247ws Scraper & Save
         continue-on-error: true
         run: |
-          python tv247ws.py
+          python tv247ws111.py
           git add -A
           if ! git diff --cached --quiet; then
             git commit -m "tv247ws linkleri güncellendi [skip ci]"
