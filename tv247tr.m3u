@@ -4,6 +4,8 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/in
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",deneme2
 https://edge.matchora.pro/hls/913460/index.m3u8?t=OTEzNDYwfDE3OTAwMTkzODF8YjcxNzg1NGY3Mjk0M2MwM3w.ewqmxQA1RHGeuzD26sY9I2Ly1Kvw6ged6mvwHXulvRA
 
+#EXTINF:-1 tvg-name="Matchora TV" group-title="Canlı Maç",Matchora TV
+https://matchora.to/embed/channel/913460
 
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-ARDA
 #EXTVLCOPT:http-referrer=https://www.atomsportv513.top
