@@ -4,8 +4,22 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/in
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",deneme2
 https://edge.matchora.pro/hls/913460/index.m3u8?t=OTEzNDYwfDE3OTAwMTkzODF8YjcxNzg1NGY3Mjk0M2MwM3w.ewqmxQA1RHGeuzD26sY9I2Ly1Kvw6ged6mvwHXulvRA
 
-#EXTINF:-1 tvg-name="Matchora TV2" group-title="Canlı Maç",Matchora TV1
+#EXTINF:-1 tvg-name="beIN Sports 1" group-title="Canlı Maç",beIN Sports 1
 https://matchora.to/embed/channel/913460
+#EXTINF:-1 tvg-name="beIN Sports 2" group-title="Canlı Maç",beIN Sports 2
+https://matchora.to/embed/channel/913455
+
+#EXTINF:-1 group-title="Canlı Maç",beIN Sports 3
+https://matchora.to/embed/channel/913454
+#EXTINF:-1 group-title="Canlı Maç",beIN Sports 4
+https://matchora.to/embed/channel/913453
+#EXTINF:-1 group-title="Canlı Maç",beIN Sports 5
+https://matchora.to/embed/channel/1091502
+#EXTINF:-1 group-title="Canlı Maç",beIN Sports 5+
+https://matchora.to/embed/channel/1091501
+
+#EXTINF:-1 group-title="Canlı Maç",beIN Sports Haber
+https://matchora.to/embed/channel/913440
 
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-ARDA
 #EXTVLCOPT:http-referrer=https://www.atomsportv513.top
@@ -24,6 +38,7 @@ https://live.tv247.site/live/62/index.m3u8?v=1&e=1790065562&k=ccf36993ea265edb72
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3OTAwNDA2ODExMzA6Y2RubGl2ZXR2LnR2OmQ2MDg3MTE0OTE5OWE0MTUuNTgyNDg0NmZlNzE3MzNhMTgxZDliNTUzMjhiYTQ1MTYyOWI1Nzg5MmQ1MDQyNWE2NTU2ZWEwMThiNDRhZDg4MQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor" tvg-name="beIN Sports 1",BEIN SPORTS 1-BİT
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
