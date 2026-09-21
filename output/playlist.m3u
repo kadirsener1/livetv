@@ -1,5 +1,5 @@
 #EXTM3U
-<!-- Güncellenme Tarihi: 2026-09-21 12:39:37 UTC -->
+<!-- Güncellenme Tarihi: 2026-09-21 12:40:25 UTC -->
 
 #EXTINF:-1 tvg-id="Skala_1911_Stryi_vs_FC_Vilkhivtsi" tvg-name="Skala 1911 Stryi v. FC Vilkhivtsi (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Skala 1911 Stryi v. FC Vilkhivtsi (Stream 1 [en])
 https://pullws-ac.yiom1.com/sport/QMfdTNxETM2UzXyAjM/playlist.m3u8?wsSecret=6bcb1cc6da845c8c385ee3dacb3c78e5&wsABSTime=6AB66A40
@@ -40,26 +40,20 @@ https://pullws-ac.yiom1.com/sport/QMfBjMzYjM2UzXyAjM/playlist.m3u8?wsSecret=09b2
 #EXTINF:-1 tvg-id="Liaoning_Shengjing_Xinrui_vs_Yulin_Mobei_Miners" tvg-name="Liaoning Shengjing Xinrui v. Yulin Mobei Miners (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Liaoning Shengjing Xinrui v. Yulin Mobei Miners (Stream 2 [en])
 https://pulltx.cqsycw.com/live/sd-6MxiZgpicNxx4UH5G2.m3u8?txSecret=c67138a75f878e4d76ebf8255b372fa0&txTime=6AB65A87
 
+#EXTINF:-1 tvg-id="FC_Lochin_vs_Respublika_FA" tvg-name="FC Lochin v. Respublika FA (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",FC Lochin v. Respublika FA (Stream 1 [en])
+https://pulltx.cqsycw.com/live/sd-6MwdakEReaCpB4kE5c.m3u8?txSecret=3d1296f29b19f896760a1cfcdcfc4c76&txTime=6AB65CA2
+
 #EXTINF:-1 tvg-id="Pakhtakor_II_vs_Shurtan_Guzor" tvg-name="Pakhtakor II v. Shurtan Guzor (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Pakhtakor II v. Shurtan Guzor (Stream 1 [en])
 https://pullws-ac.yiom1.com/sport/QMfFDM1MDN1UzXyAjM/playlist.m3u8?wsSecret=56a45cd558f45339567e8b2d890dee2c&wsABSTime=6AB65653
 
 #EXTINF:-1 tvg-id="Pakhtakor_II_vs_Shurtan_Guzor" tvg-name="Pakhtakor II v. Shurtan Guzor (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Pakhtakor II v. Shurtan Guzor (Stream 2 [en])
 https://pulltx.cqsycw.com/live/sd-6MwdakEReebmv2Q4PQ.m3u8?txSecret=12e85627e71fa90e3615b3c22d700234&txTime=6AB65CA2
 
-#EXTINF:-1 tvg-id="FC_Lochin_vs_Respublika_FA" tvg-name="FC Lochin v. Respublika FA (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",FC Lochin v. Respublika FA (Stream 1 [en])
-https://pulltx.cqsycw.com/live/sd-6MwdakEReaCpB4kE5c.m3u8?txSecret=3d1296f29b19f896760a1cfcdcfc4c76&txTime=6AB65CA2
-
 #EXTINF:-1 tvg-id="Kudrivka-Nyva_U21_vs_Kolos_Kovalivka_U21" tvg-name="Kudrivka-Nyva U21 v. Kolos Kovalivka U21 (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Kudrivka-Nyva U21 v. Kolos Kovalivka U21 (Stream 1 [en])
 https://pullws-ac.yiom1.com/sport/QMfdDOxMTN2UzXyAjM/playlist.m3u8?wsSecret=9869f03d5bc9b014f9bcb388a06e3f5a&wsABSTime=6AB651A4
 
 #EXTINF:-1 tvg-id="Kudrivka-Nyva_U21_vs_Kolos_Kovalivka_U21" tvg-name="Kudrivka-Nyva U21 v. Kolos Kovalivka U21 (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Kudrivka-Nyva U21 v. Kolos Kovalivka U21 (Stream 2 [en])
 https://pulltx.cqsycw.com/live/sd-6Mxia8sCn4acG4z4cv.m3u8?txSecret=de39de41ec1f1af4ea8d9ebb8899b1fe&txTime=6AB633DB
-
-#EXTINF:-1 tvg-id="Vietnamw_vs_Thailandw" tvg-name="Vietnam(w) v. Thailand(w) (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Vietnam(w) v. Thailand(w) (Stream 1 [en])
-https://pulltx.cqsycw.com/live/sd-6MwarbMJevZ1x4bQPp.m3u8?txSecret=0aadcbb3d8a27b04dd44441cbe882eb5&txTime=6AB5E737
-
-#EXTINF:-1 tvg-id="Japanw_vs_Chinese_Taipeiw" tvg-name="Japan(w) v. Chinese Taipei(w) (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Japan(w) v. Chinese Taipei(w) (Stream 1 [en])
-https://pulltx.cqsycw.com/live/sd-6MwarbMJfGLLnP2emt.m3u8?txSecret=2685a67b88280b72028c13e1913ee428&txTime=6AB5E737
 
 #EXTINF:-1 tvg-id="Kyoka_Okamura_vs_Leylah_Annie_Fernandez" tvg-name="Kyoka Okamura v. Leylah Annie Fernandez (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Tennis",Kyoka Okamura v. Leylah Annie Fernandez (Stream 1 [en])
 https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-3-5358496.m3u8?txSecret=1ea4d5889d6011c90bdef92a94b367b1&txTime=6AB139DE
