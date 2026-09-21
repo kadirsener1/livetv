@@ -1,0 +1,593 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title></title><meta name="robots" content="noindex">
+<style>
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#000;overflow:hidden;color:#fff;
+  font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+
+.mp{position:relative;width:100%;aspect-ratio:16/9;background:#000;overflow:hidden;
+  border-radius:14px;border:1px solid var(--line,#272c35);font-family:inherit;--mpred:#e50914}
+.mp.fs{border-radius:0;border:0}
+.mp video{width:100%;height:100%;display:block;background:#000;object-fit:contain}
+.mp *{box-sizing:border-box}
+/* centre state */
+.mp .mp-c{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:12px;pointer-events:none;text-align:center;padding:20px}
+.mp .mp-sp{width:46px;height:46px;border:3px solid rgba(255,255,255,.18);border-top-color:var(--mpred);
+  border-radius:50%;animation:mpspin .9s linear infinite}
+@keyframes mpspin{to{transform:rotate(360deg)}}
+/* pre-match card: sport ball + fixture (or the brand mark) while the stream connects */
+.mp .mp-card{display:flex;flex-direction:column;align-items:center;gap:11px}
+.mp .mp-ball{width:46px;height:46px;color:#fff;opacity:.92;animation:mpspin 1.5s linear infinite}
+.mp .mp-ball[hidden]{display:none}
+.mp .mp-ball svg{width:100%;height:100%;display:block}
+.mp .mp-stat{display:flex;flex-direction:column;align-items:center;gap:10px}
+.mp .mp-stat:empty{display:none}
+.mp .mp-msg{color:#e8ecf1;font-size:14px;font-weight:600;text-shadow:0 1px 6px rgba(0,0,0,.9);max-width:80%}
+.mp .mp-msg.live{text-transform:uppercase;letter-spacing:1.5px;font-size:12px;font-weight:800}
+.mp .mp-msg.live::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;
+  background:var(--mpred);margin-right:8px;animation:mppulse 1.2s ease infinite;vertical-align:1px}
+@keyframes mppulse{0%,100%{opacity:.35}50%{opacity:1}}
+/* the score shout: manifest just landed, video is a beat away. One shot: pops in small, keeps
+   growing toward the viewer, then rushes at the screen and fades - ends invisible (forwards),
+   so a slow first buffer leaves just the ball, not a lingering joke. */
+.mp .mp-msg.shout{font-family:var(--disp,inherit);font-size:26px;font-weight:900;letter-spacing:1px;
+  text-transform:uppercase;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.9);
+  animation:mpshout 1.5s cubic-bezier(.3,.1,.4,1) forwards;will-change:transform,opacity}
+@keyframes mpshout{
+  0%{transform:scale(.35);opacity:0}
+  16%{transform:scale(1);opacity:1}
+  62%{transform:scale(1.18);opacity:1}
+  100%{transform:scale(1.9);opacity:0}}
+@media(prefers-reduced-motion:reduce){.mp .mp-ball,.mp .mp-msg.live::before,.mp .mp-msg.shout{animation:none}}
+/* phones: the player box is short, keep the card compact */
+@media(max-width:640px){
+  .mp .mp-card{gap:7px}
+  .mp .mp-ball{width:32px;height:32px}
+  .mp .mp-msg.live{font-size:10.5px;letter-spacing:1.2px}
+  .mp .mp-msg.shout{font-size:19px}
+}
+.mp .mp-sub{color:#98a1ae;font-size:12px;margin-top:-6px}
+.mp .mp-retry{pointer-events:auto;background:var(--mpred);color:#fff;border:0;border-radius:8px;
+  padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer;margin-top:4px}
+.mp .mp-big{pointer-events:auto;width:72px;height:72px;border-radius:50%;background:rgba(0,0,0,.55);
+  border:2px solid rgba(255,255,255,.85);display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:transform .15s,background .15s}
+.mp .mp-big:hover{transform:scale(1.07);background:rgba(0,0,0,.75)}
+.mp .mp-big svg{width:30px;height:30px;fill:#fff;margin-left:3px}
+/* gradient + controls */
+.mp .mp-bar{position:absolute;left:0;right:0;bottom:0;padding:34px 12px 10px;
+  background:linear-gradient(to top,rgba(0,0,0,.88),rgba(0,0,0,.45) 55%,transparent);
+  display:flex;align-items:center;gap:6px;opacity:0;transition:opacity .22s;pointer-events:none}
+.mp.show .mp-bar,.mp.paused .mp-bar{opacity:1;pointer-events:auto}
+.mp .mp-b{background:none;border:0;padding:7px;cursor:pointer;display:flex;align-items:center;
+  justify-content:center;border-radius:7px;flex:none}
+.mp .mp-b:hover{background:rgba(255,255,255,.14)}
+.mp .mp-b svg{width:20px;height:20px;fill:#fff}
+.mp .mp-b.lg svg{width:24px;height:24px}
+.mp .mp-live{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:800;letter-spacing:.6px;
+  color:#fff;background:none;border:0;cursor:pointer;padding:6px 9px;border-radius:7px}
+.mp .mp-live:hover{background:rgba(255,255,255,.14)}
+.mp .mp-live i{width:8px;height:8px;border-radius:50%;background:#8d95a3;display:block}
+.mp .mp-live.on i{background:var(--mpred);animation:mppulse 1.4s ease-in-out infinite}
+@keyframes mppulse{0%,100%{opacity:.45}50%{opacity:1}}
+.mp .mp-vol{display:flex;align-items:center}
+.mp .mp-vol input{width:0;opacity:0;transition:width .2s,opacity .2s;accent-color:var(--mpred);
+  height:3px;cursor:pointer;margin:0}
+.mp .mp-vol:hover input,.mp .mp-vol.open input{width:74px;opacity:1;margin:0 8px 0 2px}
+.mp .mp-gap{flex:1}
+.mp .mp-t{color:#c9d1da;font-size:12px;font-variant-numeric:tabular-nums;padding:0 4px;white-space:nowrap}
+/* menus */
+.mp .mp-menu{position:relative}
+.mp .mp-list{display:none;position:absolute;bottom:44px;right:0;background:rgba(14,17,21,.97);
+  border:1px solid #2b323c;border-radius:11px;padding:6px;min-width:190px;max-height:230px;overflow:auto;
+  box-shadow:0 12px 34px rgba(0,0,0,.55)}
+.mp .mp-menu.open .mp-list{display:block}
+.mp .mp-list h6{margin:2px 8px 6px;font-size:10px;letter-spacing:.7px;text-transform:uppercase;color:#7d8795}
+.mp .mp-list button{display:flex;align-items:center;gap:8px;width:100%;background:none;border:0;
+  color:#dfe4ea;font-size:13px;text-align:left;padding:8px 9px;border-radius:7px;cursor:pointer}
+.mp .mp-list button:hover{background:#1d222a}
+.mp .mp-list button.on{color:#fff;font-weight:700}
+.mp .mp-list button.on:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--mpred);flex:none}
+.mp .mp-list button:not(.on):before{content:"";width:6px;height:6px;flex:none}
+/* toast + gestures */
+.mp .mp-toast{position:absolute;top:14px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.72);
+  color:#fff;font-size:12px;font-weight:600;padding:7px 13px;border-radius:20px;opacity:0;
+  transition:opacity .25s;pointer-events:none}
+.mp .mp-toast.on{opacity:1}
+.mp .mp-embed{position:absolute;top:10px;right:12px;z-index:6;display:flex;align-items:center;gap:5px;
+  background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:999px;
+  padding:5px 11px;font:inherit;font-size:11.5px;font-weight:700;cursor:pointer;opacity:.75;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.mp .mp-embed:hover{opacity:1;border-color:rgba(255,255,255,.5)}
+@media(max-width:560px){.mp .mp-embed span{display:none}}
+.mp .mp-badge{position:absolute;top:12px;left:13px;font-size:12px;font-weight:800;color:#fff;opacity:.8;
+  text-shadow:0 1px 5px rgba(0,0,0,.9);text-decoration:none;z-index:3}
+.mp.hidecur{cursor:none}
+.mp .mp-unmute{position:absolute;top:14px;right:14px;z-index:6;background:rgba(0,0,0,.72);color:#fff;
+  border:1px solid rgba(255,255,255,.32);border-radius:22px;padding:8px 15px;font-size:13px;
+  font-weight:700;cursor:pointer}
+.mp .mp-unmute:hover{background:var(--mpred);border-color:var(--mpred)}
+@media(max-width:560px){.mp .mp-t{display:none}.mp .mp-list{min-width:160px}}
+
+/* fill the iframe exactly: no rounded corners or letterboxing inside someone else's page */
+.mp{height:100%;aspect-ratio:auto;border-radius:0;border:0}
+.msg{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  color:#8d95a3;text-align:center;padding:20px}
+.msg span{font-size:11px;opacity:.6}
+.chp{position:absolute;bottom:58px;right:12px;z-index:8}
+.chb{background:rgba(0,0,0,.66);color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:8px;
+  padding:6px 11px;font-size:12px;font-weight:700;cursor:pointer}
+.chl{display:none;position:absolute;bottom:38px;right:0;background:rgba(14,17,21,.97);
+  border:1px solid #2b323c;border-radius:10px;padding:6px;min-width:220px;max-height:220px;overflow:auto}
+.chp.open .chl{display:block}
+.chl button{display:block;width:100%;text-align:left;background:none;border:0;color:#dfe4ea;font-size:13px;
+  padding:7px 9px;border-radius:7px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chl button:hover{background:#1b1f26}.chl button.on{color:#fff;background:rgba(229,9,20,.22)}
+.chl button b{font-size:10px;color:#e50914;border:1px solid #e50914;border-radius:3px;padding:0 3px}
+.adov{position:absolute;left:50%;transform:translateX(-50%);bottom:70px;z-index:9;
+  background:rgba(0,0,0,.6);border-radius:8px;padding:4px}
+.adov .x{position:absolute;top:-9px;right:-9px;width:20px;height:20px;border-radius:50%;background:#000;
+  border:1px solid #444;color:#fff;font-size:13px;line-height:18px;text-align:center;cursor:pointer}
+.pre{position:absolute;inset:0;z-index:12;background:#000;display:flex;align-items:center;
+  justify-content:center;flex-direction:column;gap:14px}
+.pre button{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.3);
+  border-radius:8px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer}
+.pre button:disabled{opacity:.55;cursor:default}
+
+</style></head><body>
+<div class="mp" id="mp" tabindex="0">
+  <video id="v" playsinline preload="auto"></video>
+  <a class="mp-badge" id="mpbadge" href="https://matchora.to" target="_blank" rel="noopener">matchora</a>
+  
+  <div class="mp-c" id="mpc">
+    <div class="mp-card" id="mpcard" data-lines="Getting your seat…|Warming up the cameras…|Checking the floodlights…|Best seat in the house…"
+         data-shout="SHOWTIME!">
+      <div class="mp-ball" id="mpball"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" stroke-dasharray="40 16"/></svg></div>
+    </div>
+    <div class="mp-stat" id="mpstat"></div>
+  </div>
+  <div class="mp-toast" id="mptoast"></div>
+  <div class="mp-bar">
+    <button class="mp-b lg" id="mpplay" title="Play/Pause (k)"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+    <div class="mp-vol" id="mpvol">
+      <button class="mp-b" id="mpmute" title="Mute (m)"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.8-1-3.3-2.5-4v8c1.5-.7 2.5-2.2 2.5-4zM14 3.2v2.1c2.9.9 5 3.5 5 6.7s-2.1 5.8-5 6.7v2.1c4-1 7-4.5 7-8.8s-3-7.8-7-8.8z"/></svg></button>
+      <input type="range" id="mpvolr" min="0" max="1" step="0.05" value="1" aria-label="Volume">
+    </div>
+    <button class="mp-live" id="mplive" title="Jump to live"><i></i><span>LIVE</span></button>
+    <span class="mp-t" id="mpbehind"></span>
+    <span class="mp-gap"></span>
+    <div class="mp-menu" id="mpsetm">
+      <button class="mp-b" id="mpset" title="Settings"><svg viewBox="0 0 24 24"><path d="M19.4 13c.04-.32.06-.66.06-1s-.02-.68-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.42 2.18 14.2 2 13.94 2h-4c-.25 0-.47.18-.5.42l-.37 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.5 11c-.04.32-.07.67-.07 1s.02.68.07 1l-2.11 1.63c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.25.42.5.42h4c.25 0 .47-.18.5-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64L19.4 13zm-7.44 2.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/></svg></button>
+      <div class="mp-list" id="mpsetl"></div>
+    </div>
+    <button class="mp-b" id="mppip" title="Picture in picture"><svg viewBox="0 0 24 24"><path d="M19 11h-8v6h8v-6zm4 8V4.98C23 3.88 22.1 3 21 3H3c-1.1 0-2 .88-2 1.98V19c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2zm-2 .02H3V4.97h18v14.05z"/></svg></button>
+    <button class="mp-b" id="mpfs" title="Fullscreen (f)"><svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg></button>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.17/hls.min.js"></script>
+<script>
+(function(){
+  var CH="913322", AUTO=true, FX="";
+  // Multi-view: this player is tile SLOT of a grid - its own viewer identity server-side - and it
+  // may start muted (only one tile has sound). Q() is what every /api call carries.
+  var SLOT="", START_MUTED=false;
+  function Q(){ var q=[]; if(FX)q.push("fx="+encodeURIComponent(FX)); if(SLOT)q.push("slot="+SLOT); return q.length?"?"+q.join("&"):""; }
+  var $=function(id){return document.getElementById(id)};
+  var mp=$("mp"), v=$("v"), c=$("mpc"), toast=$("mptoast");
+  var card=$("mpcard"), ball=$("mpball"), stat=$("mpstat");
+  var hls=null, tries=0, cycles=0, hideT=null, live=true, destroyed=false;
+  var refreshT=null, refreshing=false, last403=0, codecT=null;
+  // Copies the origin called dead (black card / no output) that we already skipped: each is skipped
+  // once, so a row of dead copies ends on a real attempt instead of cycling.
+  var deadSeen={};
+  function chOf(a){ return new URLSearchParams(a.getAttribute("href").slice(1)).get("ch"); }
+  function nextCopy(){
+    // The match page lists the row's copies as ?ch= chips in the guide's order (lead, then its
+    // other qualities, then the next broadcaster): the first one after the current we haven't
+    // tried is the natural hand-over. Elsewhere (embed, channel browser) there is none.
+    var as=[].slice.call(document.querySelectorAll('.board.rev .chans a[href^="?ch="]'));
+    var i=-1; as.forEach(function(a,k){ if(i<0&&chOf(a)===CH)i=k; });
+    for(var k=i+1;k<as.length;k++){ var id=chOf(as[k]); if(id&&id!==CH&&!deadSeen[id]) return as[k]; }
+    return null;
+  }
+  // A copy somebody is already watching costs no new connection to join: the one to hand over to
+  // when the pool is full. The most-watched untried one, anywhere in the list.
+  function runningCopy(){
+    var as=[].slice.call(document.querySelectorAll('.board.rev .chans a[href^="?ch="]')), best=null, bw=0;
+    as.forEach(function(a){ var id=chOf(a), w=+(a.getAttribute("data-w")||0);
+      if(id&&id!==CH&&!deadSeen[id]&&w>bw){ best=a; bw=w; } });
+    return best;
+  }
+
+  // The loading card (sport ball + rotating stadium lines) stays up through every loading and
+  // error state; the ball only spins while actually connecting. Status text renders below it.
+  var rotT=null;
+  function rotate(m){
+    var L=card&&card.dataset.lines?card.dataset.lines.split("|").filter(Boolean):[];
+    if(!L.length)return;
+    var i=0;                    // sport-flavoured lines lead the list - always open on one
+    m.textContent=L[i];
+    rotT=setInterval(function(){ i=(i+1)%L.length; m.textContent=L[i]; },2500);
+  }
+  function show(t,sub,spin,retry){
+    if(rotT){clearInterval(rotT);rotT=null;}
+    stat.innerHTML="";
+    if(card)card.hidden=false;
+    if(ball)ball.hidden=!spin;
+    if(t){var m=document.createElement("div");m.className="mp-msg"+(spin?" live":"");m.textContent=t;stat.appendChild(m);
+      if(spin)rotate(m);}   // connecting: playful stadium lines instead of a fixed message
+    if(sub){var u=document.createElement("div");u.className="mp-sub";u.textContent=sub;stat.appendChild(u);}
+    if(retry){var b=document.createElement("button");b.className="mp-retry";b.textContent="Try again";
+      b.onclick=function(){tries=0;load();};stat.appendChild(b);}
+    c.style.display="flex";
+  }
+  // The finale: the manifest just arrived, video is a beat away - flash the sport's score shout.
+  function shout(){
+    if(!card||!card.dataset.shout){clear();return;}
+    if(rotT){clearInterval(rotT);rotT=null;}
+    stat.innerHTML="";
+    card.hidden=false; if(ball)ball.hidden=false;
+    var m=document.createElement("div");m.className="mp-msg shout";m.textContent=card.dataset.shout;
+    stat.appendChild(m); c.style.display="flex";
+  }
+  function clear(){ if(rotT){clearInterval(rotT);rotT=null;}
+    c.style.display="none"; stat.innerHTML=""; if(window.nprog) window.nprog(false); }
+  function bigPlay(){
+    if(card)card.hidden=true;
+    stat.innerHTML='<div class="mp-big"><svg viewBox=\"0 0 24 24\"><path d=\"M8 5v14l11-7z\"/></svg></div>';
+    stat.querySelector(".mp-big").onclick=function(){v.play()};
+    c.style.display="flex";
+  }
+  // Autoplay WITH SOUND is blocked by every browser unless the viewer has interacted with the page.
+  // Try it anyway, and on rejection fall back to MUTED autoplay plus an obvious unmute prompt - what
+  // every major streaming site does. Previously we just surrendered and showed a dead play button.
+  function tryPlay(){
+    v.muted=false;
+    var p=v.play();
+    if(!p||!p.catch)return;
+    p.catch(function(){
+      v.muted=true; paintVol();
+      v.play().then(unmutePrompt).catch(bigPlay);
+    });
+  }
+  function unmutePrompt(){
+    if(mp.querySelector(".mp-unmute"))return;
+    var b=document.createElement("button");
+    b.className="mp-unmute"; b.textContent="Tap for sound";
+    b.onclick=function(){ v.muted=false; paintVol(); b.remove(); };
+    mp.appendChild(b);
+    v.addEventListener("volumechange",function h(){
+      if(!v.muted){ b.remove(); v.removeEventListener("volumechange",h); } });
+  }
+  function say(t){ toast.textContent=t; toast.classList.add("on");
+    clearTimeout(toast._t); toast._t=setTimeout(function(){toast.classList.remove("on")},1100); }
+
+  // ── controls ──────────────────────────────────────────────────────────────
+  function poke(){ mp.classList.add("show"); mp.classList.remove("hidecur");
+    clearTimeout(hideT); hideT=setTimeout(function(){
+      if(!v.paused){mp.classList.remove("show");mp.classList.add("hidecur");}
+    },2600); }
+  mp.addEventListener("mousemove",poke); mp.addEventListener("touchstart",poke,{passive:true});
+  mp.addEventListener("mouseleave",function(){ if(!v.paused)mp.classList.remove("show"); });
+
+  $("mpplay").onclick=function(){ v.paused?v.play():v.pause(); };
+  v.addEventListener("play",function(){ mp.classList.remove("paused"); $("mpplay").innerHTML='<svg viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>'; clear(); poke(); });
+  v.addEventListener("pause",function(){ mp.classList.add("paused"); $("mpplay").innerHTML='<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>'; });
+  v.addEventListener("waiting",function(){ if(!v.paused) show("","",true,false); });
+  v.addEventListener("playing",function(){ clear(); tries=0; cycles=0; });
+
+  var vol=$("mpvolr"), mute=$("mpmute");
+  function paintVol(){ mute.innerHTML=(v.muted||!v.volume)?'<svg viewBox="0 0 24 24"><path d="M16.5 12c0-1.8-1-3.3-2.5-4v2.2l2.5 2.5v-.7zM19 12c0 .9-.2 1.8-.5 2.6l1.5 1.5c.6-1.2 1-2.6 1-4.1 0-4.3-3-7.8-7-8.8v2.1c2.9.9 5 3.5 5 6.7zM4.3 3L3 4.3 7.7 9H3v6h4l5 5v-6.7l4.3 4.3c-.7.5-1.4.9-2.3 1.1v2.1c1.4-.3 2.6-.9 3.7-1.7l2 2 1.3-1.3L4.3 3zM12 4L9.9 6.1 12 8.2V4z"/></svg>':'<svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.8-1-3.3-2.5-4v8c1.5-.7 2.5-2.2 2.5-4zM14 3.2v2.1c2.9.9 5 3.5 5 6.7s-2.1 5.8-5 6.7v2.1c4-1 7-4.5 7-8.8s-3-7.8-7-8.8z"/></svg>';
+    vol.value=v.muted?0:v.volume; }
+  vol.oninput=function(){ v.volume=+vol.value; v.muted=(+vol.value===0); paintVol(); };
+  mute.onclick=function(){ v.muted=!v.muted; paintVol(); say(v.muted?"Muted":"Unmuted"); };
+  v.addEventListener("volumechange",paintVol);
+
+  // Live state: we never speed up playback to catch up (Chrome's time-stretch makes audio robotic) -
+  // GO LIVE seeks instead.
+  var liveBtn=$("mplive"), behind=$("mpbehind");
+  liveBtn.onclick=function(){ goLive(); };
+  function goLive(){
+    if(hls&&hls.liveSyncPosition!=null&&isFinite(hls.liveSyncPosition)) v.currentTime=hls.liveSyncPosition;
+    else if(v.seekable&&v.seekable.length) v.currentTime=v.seekable.end(v.seekable.length-1);
+    v.play().catch(function(){}); say("Jumped to live");
+  }
+  setInterval(function(){
+    if(!hls||v.readyState<2)return;
+    var edge=(hls.liveSyncPosition!=null&&isFinite(hls.liveSyncPosition))?hls.liveSyncPosition
+             :(v.seekable&&v.seekable.length?v.seekable.end(v.seekable.length-1):v.currentTime);
+    var d=Math.max(0,edge-v.currentTime);
+    live=d<12;
+    liveBtn.classList.toggle("on",live);
+    behind.textContent=live?"":("-"+(d<60?Math.round(d)+"s":Math.floor(d/60)+"m"));
+  },1000);
+
+  // fullscreen / pip
+  // Safari: an iPhone has no element fullscreen at all - only the VIDEO can go full screen, through
+  // its own webkitEnterFullscreen (native controls; it exits on its own). Older desktop Safari has
+  // the element API under a webkit- prefix. One helper covers all of them, so the button, the
+  // double-tap and the "f" key are never dead.
+  function fsEl(){ return document.fullscreenElement||document.webkitFullscreenElement||null; }
+  function toggleFs(){
+    if(fsEl()){ try{ var p=(document.exitFullscreen||document.webkitExitFullscreen).call(document); if(p&&p.catch)p.catch(function(){}); }catch(e){} return; }
+    var req=mp.requestFullscreen||mp.webkitRequestFullscreen;
+    if(req){ try{ var q=req.call(mp); if(q&&q.catch)q.catch(function(){}); }catch(e){} return; }
+    if(v.webkitEnterFullscreen){ try{ v.webkitEnterFullscreen(); }catch(e){} }
+  }
+  function onFs(){
+    var on=!!fsEl(); mp.classList.toggle("fs",on);
+    $("mpfs").innerHTML=on?'<svg viewBox="0 0 24 24"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>':'<svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>';
+  }
+  $("mpfs").onclick=toggleFs;
+  document.addEventListener("fullscreenchange",onFs);
+  document.addEventListener("webkitfullscreenchange",onFs);
+  mp.addEventListener("dblclick",function(e){ if(e.target.closest(".mp-bar"))return; toggleFs(); });
+  var pip=$("mppip");
+  if(!document.pictureInPictureEnabled) pip.style.display="none";
+  pip.onclick=function(){ document.pictureInPictureElement?document.exitPictureInPicture()
+    :v.requestPictureInPicture&&v.requestPictureInPicture().catch(function(){}); };
+
+  // settings: audio tracks + quality (only what actually exists is listed)
+  var setm=$("mpsetm"), setl=$("mpsetl");
+  $("mpset").onclick=function(e){ e.stopPropagation(); setm.classList.toggle("open"); buildMenu(); };
+  document.addEventListener("click",function(){ setm.classList.remove("open"); });
+  setl.addEventListener("click",function(e){ e.stopPropagation(); });
+  function buildMenu(){
+    var h="";
+    if(hls&&hls.audioTracks&&hls.audioTracks.length>1){
+      h+='<h6>Audio</h6>';
+      hls.audioTracks.forEach(function(t,i){
+        var nm=t.name||t.lang||("Track "+(i+1));
+        h+='<button data-a="'+i+'" class="'+(i===hls.audioTrack?"on":"")+'">'+nm+'</button>';
+      });
+    }
+    if(hls&&hls.levels&&hls.levels.length>1){
+      h+='<h6>Quality</h6><button data-q="-1" class="'+(hls.autoLevelEnabled?"on":"")+'">Auto</button>';
+      hls.levels.forEach(function(l,i){
+        var nm=(l.height?l.height+"p":Math.round((l.bitrate||0)/1000)+"k");
+        h+='<button data-q="'+i+'" class="'+((!hls.autoLevelEnabled&&i===hls.currentLevel)?"on":"")+'">'+nm+'</button>';
+      });
+    }
+    if(!h) h='<h6>Playback</h6><button class="on">Source quality</button>';
+    // Report: this copy is the wrong match, or not playing. One tap: the vote goes to the origin
+    // (the crowd's verdict demotes/hides the copy for this match) and the player moves on to the
+    // next copy when the page lists one.
+    h+='<h6>Report</h6><button data-r="wrong">Wrong match</button><button data-r="dead">Not playing</button>';
+    setl.innerHTML=h;
+    setl.querySelectorAll("[data-r]").forEach(function(b){ b.onclick=function(){
+      var kind=b.dataset.r; setm.classList.remove("open");
+      var q=Q(); try{ fetch("/api/report/"+encodeURIComponent(CH)+(q?q+"&":"?")+"kind="+kind,{method:"POST",keepalive:true}); }catch(e){}
+      var alt=nextCopy();
+      if(alt){ deadSeen[CH]=1; say("Thanks - switching to the next channel"); alt.click(); }
+      else say("Thanks - reported");
+    }; });
+    setl.querySelectorAll("[data-a]").forEach(function(b){ b.onclick=function(){
+      hls.audioTrack=+b.dataset.a; say("Audio: "+b.textContent); buildMenu(); }; });
+    setl.querySelectorAll("[data-q]").forEach(function(b){ b.onclick=function(){
+      var q=+b.dataset.q; hls.currentLevel=q; say(q<0?"Quality: Auto":"Quality: "+b.textContent); buildMenu(); }; });
+  }
+
+  // keyboard
+  mp.addEventListener("keydown",function(e){
+    var k=e.key.toLowerCase();
+    if(k===" "||k==="k"){e.preventDefault(); v.paused?v.play():v.pause();}
+    else if(k==="f"){e.preventDefault(); $("mpfs").click();}
+    else if(k==="m"){e.preventDefault(); mute.click();}
+    else if(k==="l"){goLive();}
+    else if(k==="arrowup"){e.preventDefault(); v.volume=Math.min(1,v.volume+.1); say("Volume "+Math.round(v.volume*100)+"%");}
+    else if(k==="arrowdown"){e.preventDefault(); v.volume=Math.max(0,v.volume-.1); say("Volume "+Math.round(v.volume*100)+"%");}
+    poke();
+  });
+
+  // ── stream ────────────────────────────────────────────────────────────────
+  function attach(url,resume){
+    if(window.Hls&&Hls.isSupported()){
+      hls=new Hls({liveSyncDuration:30,liveMaxLatencyDuration:90,backBufferLength:60,
+        startFragPrefetch:true,   // fetch the first fragment alongside the playlist - first frame sooner
+                   maxBufferLength:60,fragLoadingMaxRetry:4,manifestLoadingMaxRetry:6,
+                   manifestLoadingRetryDelay:2000,
+                   // never rate-adjust to catch up: it stretches audio and sounds robotic
+                   maxLiveSyncPlaybackRate:1});
+      hls.loadSource(url); hls.attachMedia(v);
+      hls.on(Hls.Events.MANIFEST_PARSED,function(){ shout(); buildMenu(); codecGuard();
+        if(AUTO) tryPlay(); else bigPlay(); });
+      hls.on(Hls.Events.AUDIO_TRACKS_UPDATED,buildMenu);
+      hls.on(Hls.Events.LEVEL_SWITCHED,buildMenu);
+      hls.on(Hls.Events.FRAG_LOADED,function(){ if(!v.paused) clear(); if(frames()>0) clearTimeout(codecT); });
+      hls.on(Hls.Events.ERROR,function(_,d){
+        if(!d.fatal)return;
+        if(d.response&&d.response.code===403){
+          // Almost always the ~10-min IP-bound token expiring: re-prepare silently and keep playing.
+          // Only if a FRESH token also 403s within seconds is it a real network mismatch (dual-stack
+          // IPv4/IPv6, VPN) worth stopping for.
+          var now=Date.now();
+          if(now-last403<20000){
+            show("Playback blocked","This link was issued for a different network. Reload the page.",false,true);
+            try{hls.destroy();}catch(e){} hls=null; return;
+          }
+          last403=now;
+          try{hls.destroy();}catch(e){} hls=null;
+          refresh(); return;
+        }
+        if(d.type===Hls.ErrorTypes.NETWORK_ERROR){
+          if(++tries<25){ show("Going live","",true,false);
+            setTimeout(function(){ if(!destroyed) hls.startLoad(); },2000); }
+          else if(++cycles<6){
+            // Fifty seconds of reloads that keep failing: the channel is being restarted at the
+            // origin (a stalled source), not gone. Go back through /api/play and wait on "warming"
+            // exactly like a cold start, then attach the fresh URL - instead of declaring it dead.
+            tries=0; try{hls.destroy();}catch(e){} hls=null;
+            show("Going live","",true,false); refresh();
+          }
+          else { show("Stream unavailable","Try another channel.",false,true); try{hls.destroy();}catch(e){} hls=null; }
+        } else if(d.type===Hls.ErrorTypes.MEDIA_ERROR){ hls.recoverMediaError(); }
+        else { show("Playback failed","",false,true); hls.destroy(); }
+      });
+    } else if(v.canPlayType("application/vnd.apple.mpegurl")){
+      // Native HLS (Safari without Managed Media Source - older iPhones). Safari's own loader takes
+      // one URL, so a fresh token means a new src: resume if it was playing when the swap came.
+      v.src=url; if(AUTO||resume) tryPlay();
+      v.addEventListener("loadedmetadata",shout,{once:true});   // same finale as hls.js
+    } else { show("Your browser can't play this stream","",false,false); }
+  }
+  // Native HLS reports nothing but a bare "error" event - an expired token refused at the playlist,
+  // a channel hiccup - and would otherwise leave the spinner up for good. Treat it as hls.js treats
+  // a network error: fresh token, a few tries, then say so.
+  var nerr=0;
+  v.addEventListener("playing",function(){ nerr=0; });
+  v.addEventListener("error",function(){
+    if(hls||destroyed||!v.src)return;
+    if(++nerr>6){ show("Stream unavailable","Try another channel.",false,true); return; }
+    show("Going live","",true,false); setTimeout(refresh,1500);
+  });
+  // A cold channel needs ~12s (FFmpeg start -> first segments -> R2). Handing hls.js a URL that 404s
+  // lets IT decide when to retry, and its backoff (2s, 6s, 14s, 30s...) discovers the stream long
+  // after it actually went live. Poll readiness ourselves at a steady 2s and attach the moment it is
+  // there, so start time tracks the real one instead of a retry schedule.
+  // ── keep the IP-bound playback token alive ──────────────────────────────────
+  // The web token lives ~10 min. hls.js keeps reloading the playlist with that ONE token, so on
+  // expiry the edge 403s mid-watch. Re-prepare a fresh URL shortly before it dies and hand it to the
+  // SAME hls instance (no teardown) so playback never breaks - and reuse it to recover from a 403.
+  function schedule(sec){
+    clearTimeout(refreshT);
+    var s=(typeof sec==="number"&&sec>0)?sec:600;      // fall back to the 10-min web TTL
+    refreshT=setTimeout(refresh, Math.max(15,s-30)*1000);
+  }
+  function refresh(){
+    if(destroyed||refreshing)return;
+    refreshing=true;
+    fetch("/api/play/"+encodeURIComponent(CH)+Q(),{cache:"no-store"})
+      .then(function(r){return r.json()})
+      .then(function(d){
+        refreshing=false; if(destroyed)return;
+        if(d.url&&d.ready){ if(hls) hls.loadSource(d.url); else attach(d.url,!v.paused); schedule(d.expires_in); }
+        else setTimeout(refresh,4000);   // channel still warming - try again shortly
+      })
+      .catch(function(){ refreshing=false; if(!destroyed) setTimeout(refresh,4000); });
+  }
+  // ── unplayable-codec guard ──────────────────────────────────────────────────
+  // Origin copies video through, so an HEVC/H.265 feed loads but the browser can't decode it - it
+  // would buffer forever with no error. The guide already steers the web default to an H.264 copy;
+  // this is the safety net for a feed that slips through (unprobed, deep-linked ?ch=, HEVC-only).
+  function frames(){
+    try{ return v.getVideoPlaybackQuality ? (v.getVideoPlaybackQuality().totalVideoFrames||0)
+                                          : (v.webkitDecodedFrameCount||0); }catch(e){ return 0; }
+  }
+  function unsupported(){
+    clearTimeout(codecT);
+    show("Can\u2019t play this feed here","This channel's video isn't supported in the browser - open it in the app, or try another channel.",false,true);
+    if(hls){ try{hls.destroy();}catch(e){} hls=null; }
+  }
+  function codecGuard(){
+    clearTimeout(codecT);
+    try{   // fast path: every level uses a codec MSE can't decode (e.g. HEVC) -> stop now
+      if(hls&&hls.levels&&hls.levels.length&&window.MediaSource&&MediaSource.isTypeSupported){
+        var known=false, playable=false;
+        hls.levels.forEach(function(l){ if(l.videoCodec){ known=true;
+          if(MediaSource.isTypeSupported('video/mp4; codecs="'+l.videoCodec+'"')) playable=true; } });
+        if(known&&!playable){ unsupported(); return; }
+      }
+    }catch(e){}
+    // fallback: segments load but nothing ever decodes -> undecodable video (only while actually playing)
+    codecT=setTimeout(function(){
+      if(!destroyed&&hls&&!v.paused&&tries===0&&frames()===0) unsupported();
+    },12000);
+  }
+  function load(){
+    destroyed=false; clearTimeout(refreshT); clearTimeout(codecT);
+    if(hls){ try{hls.destroy();}catch(e){} hls=null; }
+    if(window.nprog) window.nprog(true);   // warming a channel is a load too - show the top bar
+    show("Going live","",true,false);
+    var t0=Date.now(), pn=0;
+    (function poll(){
+      if(destroyed)return;
+      fetch("/api/play/"+encodeURIComponent(CH)+Q(),{cache:"no-store"})
+        .then(function(r){return r.json()})
+        .then(function(d){
+          if(!d.url){ show("Channel unavailable",d.error||"",false,true); return; }
+          if(d.reason==="dead"&&!deadSeen[CH]){
+            // The origin looked at this copy's picture: black, or nothing at all. Hand over to the
+            // next copy before the viewer stares at a black screen; with nothing left to try, play
+            // it anyway (a fade to black at the wrong second is not a dead feed).
+            deadSeen[CH]=1;
+            var alt=nextCopy(); if(alt){ alt.click(); return; }
+          }
+          if(d.ready){ attach(d.url); schedule(d.expires_in); return; }
+          if(d.reason==="capacity"){
+            // Nothing can start a NEW channel right now. A copy that is already running can still
+            // be joined - go there. Otherwise say it plainly, without the plumbing.
+            if(!deadSeen[CH]){ deadSeen[CH]=1; var run=runningCopy(); if(run){ say("Switching to a live copy"); run.click(); return; } }
+            show("This channel is busy right now","Try another channel, or come back in a minute.",false,true);
+            return;
+          }
+          if(d.reason==="unknown"){ show("Channel not found","",false,false); return; }
+          if((Date.now()-t0)/1000>75){
+            // The origin normally calls a silent copy dead at 50s and we hand over above. If its
+            // verdict never came, hand over anyway: a viewer wants the match, not this copy.
+            if(!deadSeen[CH]){ deadSeen[CH]=1; var alt2=nextCopy(); if(alt2){ say("Channel not responding - switching"); alt2.click(); return; } }
+            show("Stream unavailable","This channel is not responding.",false,true); return; }
+          // No show() here: re-rendering the status every poll restarted the banter rotation, so it
+          // never advanced past its first line. The initial card is still up - just check again.
+          // Quick rechecks first (a stream often turns ready within a second or two of warming),
+          // easing off so a genuinely cold channel isn't hammered: 600ms, 1s, 1.4s ... capped 2.5s.
+          setTimeout(poll, Math.min(2500, 600+400*pn++));
+        })
+        .catch(function(){ show("Could not reach the server","",false,true); });
+    })();
+  }
+  // Leaving (close, navigate, switch channel): tell the server so the IPTV connection is released
+  // right now instead of after the idle timeout - with one connection per line, that 30s window
+  // meant the NEXT channel you clicked was always "busy" with the ghost of the previous one.
+  function leave(){ destroyed=true; clearTimeout(refreshT); clearTimeout(codecT); if(hls)try{hls.destroy();}catch(e){}
+    try{ navigator.sendBeacon("/api/leave/"+encodeURIComponent(CH)+(SLOT?"?slot="+SLOT:"")); }catch(e){} }
+  window.addEventListener("pagehide",leave);
+  window.addEventListener("beforeunload",leave);
+  // Back/forward cache: the browser restores the page with this script's state intact - hls torn
+  // down by leave(), the <video> still holding its last two seconds - and nothing restarted it,
+  // so the viewer saw that buffer loop until a token refresh finally reloaded. A restored page
+  // starts over like a fresh one.
+  window.addEventListener("pageshow",function(e){ if(e.persisted){ destroyed=false; tries=0; cycles=0; load(); } });
+  // Embed button (match pages pass the iframe src): copy the snippet, confirm via the toast.
+  var eb=$("mpembed");
+  if(eb) eb.onclick=function(e){ e.stopPropagation();
+    var code=eb.getAttribute("data-code")||"";
+    (navigator.clipboard&&navigator.clipboard.writeText?navigator.clipboard.writeText(code)
+      :Promise.reject()).then(function(){ say("Embed code copied"); },function(){
+        var t=document.createElement("textarea"); t.value=code; document.body.appendChild(t);
+        t.select(); try{document.execCommand("copy"); say("Embed code copied");}catch(x){}
+        t.remove(); });
+  };
+  // Inline channel switching (the /channels browser): swap the playing channel WITHOUT reloading
+  // the page. Releases the old IPTV connection first (leave), so the next channel isn't blocked by
+  // the previous one's ghost, then loads the new one and updates the on-player label.
+  window.mpSwitch=function(ch,label){
+    ch=String(ch); if(ch===CH&&!IDLE_)return;
+    if(CH)leave();                             // release old connection + tear down hls
+    CH=ch; tries=0; cycles=0; last403=0; IDLE_=false;
+    // Only the EMBED's badge (a link back to the site) shows text - the site player stays clean,
+    // no channel name over the video.
+    var bd=$("mpbadge");
+    if(bd&&bd.tagName==="A"){ if(label!=null){ bd.innerHTML=label; } bd.hidden=!(bd.textContent||"").trim(); }
+    load();
+  };
+  if(START_MUTED){ v.muted=true; }
+  paintVol();
+  // The parent page (our multi-view grid) steers this tile: sound on/off and channel switches.
+  // Same origin only - nobody else's page gets to drive the player.
+  window.addEventListener("message",function(e){
+    if(e.origin!==location.origin||!e.data||typeof e.data!=="object")return;
+    var d=e.data;
+    if(d.t==="mute"){ v.muted=true; paintVol(); }
+    else if(d.t==="unmute"){ v.muted=false; paintVol(); var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+    else if(d.t==="switch"&&d.id){ window.mpSwitch(String(d.id)); }
+  });
+  // Idle mode (the /channels browser): render the player but don't warm a stream until the viewer
+  // picks a channel - so a page visit never spends an IPTV connection on its own.
+  var IDLE_=false;
+  if(IDLE_){ show("Pick a channel to start watching","",false,false); }
+  else{ load(); }
+})();
+</script>
+
+
+</body></html>
