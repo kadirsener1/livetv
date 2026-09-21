@@ -1,11 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="İNFO",BİLGİLENDİRME
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/info.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",deneme1
-#EXTVLCOPT:http-referrer=https://matchora.to
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://edge.matchora.pro/hls/1905851/index.m3u8?t=MTkwNTg1MXwxNzkwMDE4NzQyfDdmM2IzYjg1ZDAzYmQyMDB8.M0ffEnNoFbYOFw2UDDgReVgtHF-sQ8NYelK-L2Wikvk|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",deneme2
+https://edge.matchora.pro/hls/913460/index.m3u8?t=OTEzNDYwfDE3OTAwMTkzODF8YjcxNzg1NGY3Mjk0M2MwM3w.ewqmxQA1RHGeuzD26sY9I2Ly1Kvw6ged6mvwHXulvRA
 
 
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-ARDA
