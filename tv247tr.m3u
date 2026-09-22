@@ -6,8 +6,8 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/in
 #EXTVLCOPT:http-referrer=https://matchora.to
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://matchora.to/embed/channel/913460
-#EXTINF:-1 tvg-logo="" group-title="ifra Sports",beIN Sports 2 - TR
-https://matchora.to/embed/channel/913455
+#EXTINF:-1 tvg-logo="" group-title="ifra Sports",beIN Sports 22 - TR
+https://matchora.to/embed/channel/913455|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="" group-title="ifra Sports",beIN Sports 3 - TR
 https://matchora.to/embed/channel/913454
 #EXTINF:-1 tvg-logo="" group-title="ifra Sports",beIN Sports 4 - TR
