@@ -1,5 +1,5 @@
 #EXTM3U
-<!-- Güncellenme Tarihi: 2026-09-22 09:02:49 UTC -->
+<!-- Güncellenme Tarihi: 2026-09-22 09:04:44 UTC -->
 
 #EXTINF:-1 tvg-id="Fortis_FC_vs_Fakirerpool_Young_Mens_Club" tvg-name="Fortis FC v. Fakirerpool Young Mens Club (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Fortis FC v. Fakirerpool Young Mens Club (Stream 1 [en])
 https://pulltx.cqsycw.com/live/sd-6MxjZL3zLFGU7DhJke.m3u8?txSecret=15db151fca779f130d7b18c253107345&txTime=6AB7882B
@@ -16,23 +16,17 @@ https://pullws-ac.yiom1.com/sport/QMfVTMzYjM2UzXyAjM/playlist.m3u8?wsSecret=36e8
 #EXTINF:-1 tvg-id="Guangdong_Chenxingjuli_vs_Sichuan_318" tvg-name="Guangdong Chenxingjuli v. Sichuan 318 (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Guangdong Chenxingjuli v. Sichuan 318 (Stream 2 [en])
 https://pulltx.cqsycw.com/live/sd-6MxiZgpibtPhkEYAGN.m3u8?txSecret=0df337a0f69556938fa6b5caf2e0c23c&txTime=6AB77B83
 
-#EXTINF:-1 tvg-id="Toin_University_Of_Yokohama_vs_Aries_Tokyo" tvg-name="Toin University Of Yokohama v. Aries Tokyo (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Toin University Of Yokohama v. Aries Tokyo (Stream 1 [en])
-https://pullws-ac.yiom1.com/sport/QMfVTOyMzM4UzXyAjM/playlist.m3u8?wsSecret=6b78e5ca447259c2cd92eaac6c0daa64&wsABSTime=6AB77FFC
-
-#EXTINF:-1 tvg-id="Toin_University_Of_Yokohama_vs_Aries_Tokyo" tvg-name="Toin University Of Yokohama v. Aries Tokyo (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Toin University Of Yokohama v. Aries Tokyo (Stream 2 [en])
-https://pulltx.cqsycw.com/live/sd-6MxjZiwR9SSiZnCaFp.m3u8?txSecret=8dd718038cf5ce2ee6c9c597ab280394&txTime=6AB77CEB
-
 #EXTINF:-1 tvg-id="Bangalore_City_vs_FC_United_Stars" tvg-name="Bangalore City v. FC United Stars (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Bangalore City v. FC United Stars (Stream 1 [en])
 https://pullws-ac.yiom1.com/sport/QMfZzMwgzM4UzXyAjM/playlist.m3u8?wsSecret=152b5bb41aac8cc0de66826c6d9fea68&wsABSTime=6AB77FFB
 
 #EXTINF:-1 tvg-id="Bangalore_City_vs_FC_United_Stars" tvg-name="Bangalore City v. FC United Stars (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Bangalore City v. FC United Stars (Stream 2 [en])
 https://pulltx.cqsycw.com/live/sd-6MxjZfevkNCgAozt7Q.m3u8?txSecret=ff2df9aba1e78326b1c40c00f563f598&txTime=6AB77C37
 
-#EXTINF:-1 tvg-id="Lanzhou_Longyuan_Athletic_U20_vs_Shijiazhuang_Gongfu_U20" tvg-name="Lanzhou Longyuan Athletic U20 v. Shijiazhuang Gongfu U20 (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Lanzhou Longyuan Athletic U20 v. Shijiazhuang Gongfu U20 (Stream 1 [en])
-https://pullws-ac.yiom1.com/sport/QMfdDM0MjM4UzXyAjM/playlist.m3u8?wsSecret=fff87023b1ea74af2b38b96d0501f7c5&wsABSTime=6AB77570
+#EXTINF:-1 tvg-id="Toin_University_Of_Yokohama_vs_Aries_Tokyo" tvg-name="Toin University Of Yokohama v. Aries Tokyo (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Toin University Of Yokohama v. Aries Tokyo (Stream 1 [en])
+https://pullws-ac.yiom1.com/sport/QMfVTOyMzM4UzXyAjM/playlist.m3u8?wsSecret=6b78e5ca447259c2cd92eaac6c0daa64&wsABSTime=6AB77FFC
 
-#EXTINF:-1 tvg-id="Lanzhou_Longyuan_Athletic_U20_vs_Shijiazhuang_Gongfu_U20" tvg-name="Lanzhou Longyuan Athletic U20 v. Shijiazhuang Gongfu U20 (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Lanzhou Longyuan Athletic U20 v. Shijiazhuang Gongfu U20 (Stream 2 [en])
-https://pulltx.cqsycw.com/live/sd-6MxjZL6DTVxmfvzyqG.m3u8?txSecret=8042a603cebee93a97d70b75277e98d4&txTime=6AB72183
+#EXTINF:-1 tvg-id="Toin_University_Of_Yokohama_vs_Aries_Tokyo" tvg-name="Toin University Of Yokohama v. Aries Tokyo (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Toin University Of Yokohama v. Aries Tokyo (Stream 2 [en])
+https://pulltx.cqsycw.com/live/sd-6MxjZiwR9SSiZnCaFp.m3u8?txSecret=8dd718038cf5ce2ee6c9c597ab280394&txTime=6AB77CEB
 
 #EXTINF:-1 tvg-id="Wenzhou_Yincai_U20_vs_Nantong_Zhiyun_U20" tvg-name="Wenzhou Yincai U20 v. Nantong Zhiyun U20 (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Wenzhou Yincai U20 v. Nantong Zhiyun U20 (Stream 1 [en])
 https://pullws-ac.yiom1.com/sport/QMfhDM0MjM4UzXyAjM/playlist.m3u8?wsSecret=d35da40ec9f1c1c41a55e90290a34eec&wsABSTime=6AB77570
@@ -40,14 +34,17 @@ https://pullws-ac.yiom1.com/sport/QMfhDM0MjM4UzXyAjM/playlist.m3u8?wsSecret=d35d
 #EXTINF:-1 tvg-id="Wenzhou_Yincai_U20_vs_Nantong_Zhiyun_U20" tvg-name="Wenzhou Yincai U20 v. Nantong Zhiyun U20 (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Wenzhou Yincai U20 v. Nantong Zhiyun U20 (Stream 2 [en])
 https://pulltx.cqsycw.com/live/sd-6MxjZL6DTcZDHNUjHx.m3u8?txSecret=8c8b4b957fad0043054a604075efadec&txTime=6AB72183
 
-#EXTINF:-1 tvg-id="Ningbo_FC_U20_vs_Jiangxi_Lushan_U20" tvg-name="Ningbo FC U20 v. Jiangxi Lushan U20 (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Ningbo FC U20 v. Jiangxi Lushan U20 (Stream 1 [en])
-https://pulltx.cqsycw.com/live/sd-6MxjZL6EdV4q4d751g.m3u8?txSecret=9415399996331356940497e14d9ce2ca&txTime=6AB72183
+#EXTINF:-1 tvg-id="Lanzhou_Longyuan_Athletic_U20_vs_Shijiazhuang_Gongfu_U20" tvg-name="Lanzhou Longyuan Athletic U20 v. Shijiazhuang Gongfu U20 (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Lanzhou Longyuan Athletic U20 v. Shijiazhuang Gongfu U20 (Stream 1 [en])
+https://pullws-ac.yiom1.com/sport/QMfdDM0MjM4UzXyAjM/playlist.m3u8?wsSecret=fff87023b1ea74af2b38b96d0501f7c5&wsABSTime=6AB77570
+
+#EXTINF:-1 tvg-id="Lanzhou_Longyuan_Athletic_U20_vs_Shijiazhuang_Gongfu_U20" tvg-name="Lanzhou Longyuan Athletic U20 v. Shijiazhuang Gongfu U20 (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Lanzhou Longyuan Athletic U20 v. Shijiazhuang Gongfu U20 (Stream 2 [en])
+https://pulltx.cqsycw.com/live/sd-6MxjZL6DTVxmfvzyqG.m3u8?txSecret=8042a603cebee93a97d70b75277e98d4&txTime=6AB72183
 
 #EXTINF:-1 tvg-id="Qingdao_West_Coast_U20_vs_Liaoning_Tieren_U20" tvg-name="Qingdao West Coast U20 v. Liaoning Tieren U20 (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Qingdao West Coast U20 v. Liaoning Tieren U20 (Stream 1 [en])
-https://pullws-ac.yiom1.com/sport/QMfJDM0MjM4UzXyAjM/playlist.m3u8?wsSecret=e6d96da7b9dbb1f34df0e3b27f6c13b9&wsABSTime=6AB76E3A
-
-#EXTINF:-1 tvg-id="Qingdao_West_Coast_U20_vs_Liaoning_Tieren_U20" tvg-name="Qingdao West Coast U20 v. Liaoning Tieren U20 (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Qingdao West Coast U20 v. Liaoning Tieren U20 (Stream 2 [en])
 https://pulltx.cqsycw.com/live/sd-6MxjZL6EdLGuahoQQ6.m3u8?txSecret=ba4b59187b9cb052102012c05478be46&txTime=6AB72183
+
+#EXTINF:-1 tvg-id="Ningbo_FC_U20_vs_Jiangxi_Lushan_U20" tvg-name="Ningbo FC U20 v. Jiangxi Lushan U20 (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Ningbo FC U20 v. Jiangxi Lushan U20 (Stream 1 [en])
+https://pulltx.cqsycw.com/live/sd-6MxjZL6EdV4q4d751g.m3u8?txSecret=9415399996331356940497e14d9ce2ca&txTime=6AB72183
 
 #EXTINF:-1 tvg-id="Hiroshima_Toyo_Carp_vs_Yomiuri_Giants" tvg-name="Hiroshima Toyo Carp v. Yomiuri Giants (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Baseball",Hiroshima Toyo Carp v. Yomiuri Giants (Stream 1 [en])
 https://livelive24.com/test.html?url=https://live.vivo155.com/live/sd-6-4993760.m3u8?txSecret=670b462957e43f9ff9f9aabd4780e6ef&txTime=6AB258C1
