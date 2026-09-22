@@ -4,6 +4,9 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/in
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",deneme2
 https://edge.matchora.pro/hls/913460/index.m3u8?t=OTEzNDYwfDE3OTAwMTkzODF8YjcxNzg1NGY3Mjk0M2MwM3w.ewqmxQA1RHGeuzD26sY9I2Ly1Kvw6ged6mvwHXulvRA
 
+#EXTINF:-1 group-title="Canlı Maç",TEST
+<iframe src="https://matchora.to/embed/channel/247677" width="100%" height="480" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+
 #EXTINF:-1 tvg-name="beIN Sports 1" group-title="Canlı Maç",beIN Sports 1
 https://matchora.to/embed/channel/913460
 #EXTINF:-1 tvg-name="beIN Sports 2" group-title="Canlı Maç",beIN Sports 2
