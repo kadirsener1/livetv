@@ -2,10 +2,10 @@
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="İNFO",BİLGİLENDİRME
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/info.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="ifra Sports",beIN Sports 222 - TR
+#EXTINF:-1 tvg-logo="" group-title="ifra Sports",beIN Sports 1 - TR
 #EXTVLCOPT:http-referrer=https://matchora.to
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-http://141.253.97.97:8080/live/913455.m3u8
+http://141.253.97.97:8080/live/913460.m3u8
 #EXTINF:-1 tvg-logo="" group-title="ifra Sports",beIN Sports 22 - TR
 https://matchora.to/embed/channel/913455|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="" group-title="ifra Sports",beIN Sports 3 - TR
