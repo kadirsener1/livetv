@@ -16,29 +16,29 @@ http://141.253.97.97:8080/live/cdnlive_beinsportshaber.m3u8?token=58b7919fcf1bfa
 #EXTNF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="ifra Sports",BEIN 1-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://141.253.97.97:8080/live/cdnlive_beinsports1.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062I
+http://141.253.97.97:8080/live/cdnlive_beinsports1.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062
 
 
 #EXTNF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="ifra Sports",BEIN 2-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://141.253.97.97:8080/live/cdnlive_beinsports2.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062I
+http://141.253.97.97:8080/live/cdnlive_beinsports2.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062
 
 #EXTNF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="ifra Sports",BEIN 3-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://141.253.97.97:8080/live/cdnlive_beinsports3.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062I
+http://141.253.97.97:8080/live/cdnlive_beinsports3.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062
 
 
 #EXTNF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="ifra Sports",BEIN 4-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://141.253.97.97:8080/live/cdnlive_beinsports4.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062I
+http://141.253.97.97:8080/live/cdnlive_beinsports4.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062
 
 #EXTNF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="ifra Sports",BEIN 5-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://141.253.97.97:8080/live/cdnlive_beinsports5.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062I
+http://141.253.97.97:8080/live/cdnlive_beinsports5.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="ifra Sports",trt SPORTS-TVNOW
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
@@ -50,6 +50,7 @@ http://141.253.97.97:8080/live/tvnow_trtspor.m3u8?token=58b7919fcf1bfa879292b783
 #EXTVLCOPT:http-referrer=https://matchora.to
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 http://141.253.97.97:8080/live/913460.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062
+
 #EXTINF:-1 tvg-logo="" group-title="ifra Sports",beIN Sports 2 - TR
 http://141.253.97.97:8080/live/913455.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062
 #EXTINF:-1 tvg-logo="" group-title="ifra Sports",beIN Sports 3 - TR
