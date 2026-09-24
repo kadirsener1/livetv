@@ -2,6 +2,10 @@
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="İNFO",BİLGİLENDİRME
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/info.m3u8
 
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="ifra Sports",BEIN haber-CDN
+#EXTVLCOPT:http-referrer=https://betmatiktv155.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+http://141.253.97.97:8080/live/1.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="ifra Sports",BEIN haber-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
@@ -125,7 +129,7 @@ https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor" tvg-name="beIN Sports 1",BEIN SPORTS 1-BİT
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-iframe:https://sportsbite.org/247/beinsports1tr
+https://sportsbite.org/247/beinsports1tr
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor", BEIN SPORTS 1-Mahsun
 #EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
