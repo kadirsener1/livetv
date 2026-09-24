@@ -48,7 +48,7 @@ http://141.253.97.97:8080/live/cdnlive_beinsportsmax2.m3u8?token=58b7919fcf1bfa8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="ifra Sports",trt SPORTS-TVNOW
 #EXTVLCOPT:http-referrer=https://tvnow247.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://141.253.97.97:8080/live/tvnow_trtspor.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062
+http://141.253.97.97:8080/live/tvnow_beinsports1.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062
 
 
 #EXTINF:-1 tvg-logo="" group-title="ifra Sports",beIN Sports 1 - TR
