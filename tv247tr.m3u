@@ -322,7 +322,7 @@ https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc40/playlist.m3u8?token=
 
 #EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor",Spor Smart 1-İP
 https://65.108.239.207/smart1/index.m3u8
-#EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor-Neon",Spor Smart 1-Z
+#EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor",Spor Smart 1-Z
 https://zeus645423.cfd/smart1/index.txt
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", SMART SPOR 1-Mahsun
 #EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
@@ -332,7 +332,7 @@ https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/
 
 #EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor",Spor Smart 2-İP
 https://65.108.239.207/smart2/index.m3u8
-#EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor-Neon",Spor Smart 2-Z
+#EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor",Spor Smart 2-Z
 https://zeus645423.cfd/smart2/index.txt
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", SMART SPOR 2-Mahsun
 #EXTVLCOPT:http-referrer=https://mahsunsports13.xyz/
