@@ -16,9 +16,9 @@ https://zeus645423.cfd/b1/index.txt
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MiIsInRzIjoxNzkwNzg4OTQyMzk1fQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-CDN
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3OTExNTE1Mjk1NjQ6Y2RubGl2ZXR2LnR2OmIwMTU3N2E0NTlhOTQ1YjcuMWEzODBhYWQxZThmMjc3YjY0MWIyMmRkMWViN2I5MmI4ZDg1ODllYWJkZjI2NWE3MGRiYmQxOGQzNDY5YWM2Zg
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor" tvg-name="beIN Sports 1",BEIN SPORTS 1-BİT
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
@@ -57,9 +57,9 @@ https://zeus645423.cfd/b2/index.txt
 https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MyIsInRzIjoxNzkwNzg4OTQyOTMyfQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" group-title="Spor",BEIN SPORTS 2-CDN
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc04/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA0OjE3OTExNDQ5MjMyOTU6Y2RubGl2ZXR2LnR2OjMwY2ZmZDA3MTBjMDU0MTEuNjgzN2YxNGRjMjAwOGE2YjFiOTcxZjkzNWJlNWMxNGVhNGYxOWY2ZWQ0YTZkMzgwYjk1MGExOTZiNzQ5NDM4MQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc04/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA0OjE3OTExNTE1Mjk0NjI6Y2RubGl2ZXR2LnR2OjJmNGM5YjM3YWQ3NDE0M2QuODA1MmFmZDdmNGY0MzhhNjgyMjI4Mjg2ZTQ3YWMwZGU5ODYwZmNmOGI4M2YzNTczNTY4N2E0YzljMjFkZmU4MQ
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" group-title="Spor" tvg-name="beIN Sports 2",BEIN SPORTS 2-BİT
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
