@@ -1,5 +1,5 @@
 #EXTM3U
-<!-- Güncellenme Tarihi: 2026-10-04 14:08:47 UTC -->
+<!-- Güncellenme Tarihi: 2026-10-04 14:09:42 UTC -->
 
 #EXTINF:-1 tvg-id="Kyrgyzstan_vs_Lebanon" tvg-name="Kyrgyzstan v. Lebanon (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Kyrgyzstan v. Lebanon (Stream 1 [en])
 https://pulltx.cqsycw.com/live/sd-6MxjJtbPWfi7dyJ3Fk.m3u8?txSecret=2c3058cf52004468b7ca52cc2311c316&txTime=6AC77D57
@@ -116,22 +116,31 @@ https://pullws-ac.yiom1.com/sport/gMfZTO0QDN1UzXyAjM/playlist.m3u8?wsSecret=3b40
 https://pulltx.cqsycw.com/live/202_5544496_1.m3u8?txSecret=97bdf3c11678b6e02d5e16eefa5aa536&txTime=6AC78F5A
 
 #EXTINF:-1 tvg-id="VVV_Venlo_vs_Roda_JC" tvg-name="VVV Venlo v. Roda JC (Stream 4 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",VVV Venlo v. Roda JC (Stream 4 [en])
+https://pulltx.cqsycw.com/live/202_5544496_2.m3u8?txSecret=242aca069b6aabeac3e68702f505faac&txTime=6AC79716
+
+#EXTINF:-1 tvg-id="VVV_Venlo_vs_Roda_JC" tvg-name="VVV Venlo v. Roda JC (Stream 5 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",VVV Venlo v. Roda JC (Stream 5 [en])
 https://pulltx.cqsycw.com/live/sd-6MwdpuQoE5sDujMzP8.m3u8?txSecret=021209a4a9de073e5abc76c13f973c04&txTime=6AC79051
 
 #EXTINF:-1 tvg-id="HNK_Vukovar_1991_vs_Dinamo_Zagreb" tvg-name="HNK Vukovar 1991 v. Dinamo Zagreb (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",HNK Vukovar 1991 v. Dinamo Zagreb (Stream 1 [en])
 https://pulltx.cqsycw.com/live/sd-6MxjZfgQtn1CysoSy4.m3u8?txSecret=965ecaeb89c1b86999aedf640c1ef1d0&txTime=6AC77E0A
 
 #EXTINF:-1 tvg-id="Slavia_Prague_C_vs_Povltava_FA" tvg-name="Slavia Prague C v. Povltava FA (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Slavia Prague C v. Povltava FA (Stream 1 [en])
+https://pullws-ac.yiom1.com/sport/QMfZjNyQDN1UzXyAjM/playlist.m3u8?wsSecret=520299f0eea9f4b4db5bda07727e255e&wsABSTime=6AC7A2AA
+
+#EXTINF:-1 tvg-id="Slavia_Prague_C_vs_Povltava_FA" tvg-name="Slavia Prague C v. Povltava FA (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Slavia Prague C v. Povltava FA (Stream 2 [en])
+https://pulltx.cqsycw.com/live/202_5544266_1.m3u8?txSecret=64a9ab32c784085a632c70bbea2bf02a&txTime=6AC7A292
+
+#EXTINF:-1 tvg-id="Slavia_Prague_C_vs_Povltava_FA" tvg-name="Slavia Prague C v. Povltava FA (Stream 3 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Slavia Prague C v. Povltava FA (Stream 3 [en])
 https://pulltx.cqsycw.com/live/sd-6MweKfi8zE5bJttBaW.m3u8?txSecret=c070cad6ca96a7d9bba7494414b88331&txTime=6AC77E0A
 
 #EXTINF:-1 tvg-id="Sokol_Brozany_vs_SK_Zapy" tvg-name="Sokol Brozany v. SK Zapy (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Sokol Brozany v. SK Zapy (Stream 1 [en])
 https://pulltx.cqsycw.com/live/sd-6MweKfjcJ6KaDPPnwg.m3u8?txSecret=a54c90ed96e91413dc7f1eda871b4a11&txTime=6AC77E0A
 
-#EXTINF:-1 tvg-id="FC_Zenit_Caslav_vs_Velke_Hamry" tvg-name="FC Zenit Caslav v. Velke Hamry (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",FC Zenit Caslav v. Velke Hamry (Stream 1 [en])
-https://pulltx.cqsycw.com/live/sd-6MweKfjcJ486LuZsnn.m3u8?txSecret=325c8b8af03814b82692f45e6403a160&txTime=6AC77E0A
-
 #EXTINF:-1 tvg-id="SK_Slovan_Varnsdorf_vs_Slovan_Liberec_II" tvg-name="SK Slovan Varnsdorf v. Slovan Liberec II (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",SK Slovan Varnsdorf v. Slovan Liberec II (Stream 1 [en])
 https://pulltx.cqsycw.com/live/sd-6MweKfjc88GCKD7mbt.m3u8?txSecret=79de7ade6d2563395fc5e40ddce29bf1&txTime=6AC77E0A
+
+#EXTINF:-1 tvg-id="FC_Zenit_Caslav_vs_Velke_Hamry" tvg-name="FC Zenit Caslav v. Velke Hamry (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",FC Zenit Caslav v. Velke Hamry (Stream 1 [en])
+https://pulltx.cqsycw.com/live/sd-6MweKfjcJ486LuZsnn.m3u8?txSecret=325c8b8af03814b82692f45e6403a160&txTime=6AC77E0A
 
 #EXTINF:-1 tvg-id="Rodina-2_vs_FK_Kaluga" tvg-name="Rodina-2 v. FK Kaluga (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Rodina-2 v. FK Kaluga (Stream 1 [en])
 https://pulltx.cqsycw.com/live/sd-6Mwb6vHvpsmzkz6wFC.m3u8?txSecret=55d6e04708a13073188227b9cfe5662e&txTime=6AC77EBF
@@ -226,19 +235,13 @@ https://pulltx.cqsycw.com/live/sd-6MvZ6ETwDbas2iscni.m3u8?txSecret=aecae9e7c1240
 #EXTINF:-1 tvg-id="Maharlika_vs_Philippine_Army_FC" tvg-name="Maharlika v. Philippine Army FC (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Maharlika v. Philippine Army FC (Stream 1 [en])
 https://pulltx.cqsycw.com/live/sd-6MxjZAJWZyAWbHwzpn.m3u8?txSecret=6b38ac91d5715a41fc1fe9ec3a57e3d0&txTime=6AC72D2E
 
-#EXTINF:-1 tvg-id="FC_Dinamo-Vologda_vs_Dinamo_Saint_Petersburg" tvg-name="FC Dinamo-Vologda v. Dinamo Saint Petersburg (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",FC Dinamo-Vologda v. Dinamo Saint Petersburg (Stream 1 [en])
-https://pulltx.cqsycw.com/live/sd-6MwdaaUBZaScMamXiN.m3u8?txSecret=b7c29742ec8f807134e0bb57109a5e8e&txTime=6AC77A85
-
 #EXTINF:-1 tvg-id="Luki_Energiya_vs_FC_Iskra_Smolensk" tvg-name="Luki Energiya v. FC Iskra Smolensk (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Luki Energiya v. FC Iskra Smolensk (Stream 1 [en])
 https://pulltx.cqsycw.com/live/sd-6MwdaaUBZeqa6YRN2A.m3u8?txSecret=f54aea00a5a3e2a4b1604f50c9beca31&txTime=6AC77A85
 
 #EXTINF:-1 tvg-id="Real_Sociedad_B_vs_Granada_CF" tvg-name="Real Sociedad B v. Granada CF (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Real Sociedad B v. Granada CF (Stream 1 [en])
-https://pullws-ac.yiom1.com/sport/gMfRzN1QDN1UzXyAjM/playlist.m3u8?wsSecret=eef4dfbc566b0c66ebaa712aa28ead70&wsABSTime=6AC78860
-
-#EXTINF:-1 tvg-id="Real_Sociedad_B_vs_Granada_CF" tvg-name="Real Sociedad B v. Granada CF (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Real Sociedad B v. Granada CF (Stream 2 [en])
 https://pulltx.cqsycw.com/live/202_5544574_2.m3u8?txSecret=2735f9b29568526075d8a1b76ada28dc&txTime=6AC78852
 
-#EXTINF:-1 tvg-id="Real_Sociedad_B_vs_Granada_CF" tvg-name="Real Sociedad B v. Granada CF (Stream 3 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Real Sociedad B v. Granada CF (Stream 3 [en])
+#EXTINF:-1 tvg-id="Real_Sociedad_B_vs_Granada_CF" tvg-name="Real Sociedad B v. Granada CF (Stream 2 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Sports Event",Real Sociedad B v. Granada CF (Stream 2 [en])
 https://pulltx.cqsycw.com/live/sd-6MweaAQzPkxB1h5Nn2.m3u8?txSecret=30444c3fadc60b4ecf4018e4b5d8e19a&txTime=6AC779D1
 
 #EXTINF:-1 tvg-id="Yuan_Sijun_vs_Wu_Yize" tvg-name="Yuan Sijun v. Wu Yize (Stream 1 [en])" tvg-logo="https://livelive24.com/fav.png" group-title="Snooker",Yuan Sijun v. Wu Yize (Stream 1 [en])
