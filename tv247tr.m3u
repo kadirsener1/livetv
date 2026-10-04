@@ -18,7 +18,7 @@ https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MiIsIn
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-
+https://
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor" tvg-name="beIN Sports 1",BEIN SPORTS 1-BİT
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
@@ -59,7 +59,7 @@ https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MyIsIn
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" group-title="Spor",BEIN SPORTS 2-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-
+https://
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" group-title="Spor" tvg-name="beIN Sports 2",BEIN SPORTS 2-BİT
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
