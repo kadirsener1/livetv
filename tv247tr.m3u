@@ -2261,22 +2261,12 @@ https://stream.xradio.com.tr:8770/stream
 
 
 
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",Arena-AEm
+#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="World Sport",Arena-Premium 1
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 https://sportsbite.org/247/arenasport1premiumrs
-#EXTINF:-1 tvg-logo="" group-title="World Sports",Kioene Padova -Superlega Serie A Maschile - IThttps://matchora.to/embed/channel/1273572
-#EXTINF:-1 tvg-logo="" group-title="World Sports",Super Sport 4 - ALhttps://matchora.to/embed/channel/1720117
-#EXTINF:-1 tvg-logo="" group-title="World Sports",Vancouver Canucks (NHL) - UShttps://matchora.to/embed/channel/836378
-#EXTINF:-1 tvg-logo="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1pt7gT.img" group-title="ULUSAL",Bein 1
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3OTEyMjA2NjE2MDY6Y2RubGl2ZXR2LnR2OjgwMTNhZmY4ODJiM2U4OGYuYWQ5ODdhZTgxOWMzOWM3NmY0MDQ2NDg2NjM1MTczNmZlMmZjNzgxOTMyZDM0NTY1ZWYzNDZhMDAzYmJiNzcyNw
-#EXTINF:-1 tvg-logo="" group-title="ULUSAL",bein 2
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc04/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA0OjE3OTEyMjA2NjE2MTE6Y2RubGl2ZXR2LnR2OjQ4M2ZhYmFiZWU2YjVjZGMuMjNhZDFlNzE3MDVkMTM0M2JlMGEwMzI1Mjg3ZDA5M2I4ZWZmNWEwYTk3YmNhNGY5ZDdiNmIyNDc1YjA4MTgyNg
-#EXTINF:-1 tvg-logo="" group-title="UK",uktntsports1
+
+#EXTINF:-1 tvg-logo="" group-title="World Sport",uktntsports1
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
 https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc344/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzQ0OjE3OTEyMjEwNTIxNzk6Y2RubGl2ZXR2LnR2Ojk4ODgzZWYyMTVkNzI0ODkuMmFhOTQ3MGFmZGQ4NTMzYjA2M2NhNzE4M2VjNTU0ZDliODc5NzRmNWY0ZjY4MDQ2NTQ4MDQzMjhhOWE3NjM0NA
