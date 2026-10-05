@@ -360,11 +360,11 @@ https://trt.daioncdn.net/trtspor/master.m3u8?app=web&platform=trtspor
 https://tv-trtspor2.medya.trt.com.tr/master_1440p.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/UGbdQLv.png" group-title="TR Spor",beIN Sports Haber-T
 https://trn03.tulix.tv/gt-beinsportshaber/index.m3u8?token=e6e924c0c4bad93c528d5e56a59b3aa7
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS HABER-CDN
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="TR Spor",BEIN SPORTS HABER-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
 https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBmOjE3OTEyMjEwNTIxNzc6Y2RubGl2ZXR2LnR2OjEyOWZlMjMyMWU0ZjFmNzIuN2Q5YWUxOTI1NzdjMzc3ZjI0MjQwN2FmZGI3ZDVmNjEzMmVkZTAwZDcyZjBmMDM0MWNkMzdmZmQ0MGE1YWNlNw
-#EXTINF:-1 group-title="Spor",beIN SPORTS HABER [TR]-ace
+#EXTINF:-1 group-title="TR Spor",beIN SPORTS HABER [TR]-ace
 http://88.99.165.164:6878/ace/getstream?infohash=22d5b3999d11a4f1bad9da8fdaa9034935fb2706&pid=237
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ZhkZzLf.png" group-title="TR Spor",A Spor
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
