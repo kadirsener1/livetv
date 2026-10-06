@@ -357,7 +357,7 @@ https://andro.evrenesoglu115.click/checklist/androstreamlivees2.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VWygoj9.png" group-title="TR Spor",TRT SPOR
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEyODQ2NTc0MTc6Y2RubGl2ZXR2LnR2Ojc2NmY2ZTNjOGIxMGQxZGYuMjZiZWQ0M2Q4ZDI4OThlZjE0ZjViZDJlNjMyNjRlNzRiNWFjZjUyNjIwYTAxMzQ0NDczNmQ2NTQ3N2M0MDlkOQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMDYyMjcwMTE6Y2RubGl2ZXR2LnR2OjQ0MTkxODhmNDBmMDVjMGIuZDUwNTYyN2FlNTE1NDdlMjA5OWYzY2I5ZTBmMzNhMDA1NjM1YWYyZmQ0YzJmOTU0NDY2YWMyYmQ1ZmFmZTNlZQ
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VWygoj9.png" group-title="TR Spor",TRT SPOR YILDIZ
 https://tv-trtspor2.medya.trt.com.tr/master_1440p.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/UGbdQLv.png" group-title="TR Spor",beIN Sports Haber-T
@@ -2200,7 +2200,7 @@ https://radio-trtradyo6.medya.trt.com.tr/master.m3u8
 #EXTINF:1 group-title="Radyolar",Trt Spor
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEyODQ2NTc0MTc6Y2RubGl2ZXR2LnR2Ojc2NmY2ZTNjOGIxMGQxZGYuMjZiZWQ0M2Q4ZDI4OThlZjE0ZjViZDJlNjMyNjRlNzRiNWFjZjUyNjIwYTAxMzQ0NDczNmQ2NTQ3N2M0MDlkOQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMDYyMjcwMTE6Y2RubGl2ZXR2LnR2OjQ0MTkxODhmNDBmMDVjMGIuZDUwNTYyN2FlNTE1NDdlMjA5OWYzY2I5ZTBmMzNhMDA1NjM1YWYyZmQ0YzJmOTU0NDY2YWMyYmQ1ZmFmZTNlZQ
 #EXTINF:1 group-title="Radyolar",TRT Trabzon
 https://radio-trttrabzon.medya.trt.com.tr/master.m3u8
 #EXTINF:1 group-title="Radyolar",TRT TSR
@@ -2283,3 +2283,35 @@ https://sportsbite.org/247/arenasport1premiumrs
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
 https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc344/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzQ0OjE3OTEyNDgyMzgxNjI6Y2RubGl2ZXR2LnR2OjRjMDY0M2JkMDMzYTZlYzAuOTY1ZWUxZWZhZjQyM2RmZWZlNDFiYzcyN2FkY2VkMThlMDRkNTk5YzhmMTg3NTNhMTcxOGJmOTI3ZWRjMGFjMw
+#EXTINF:-1 tvg-name="beIN Sports 1",beIN Sports 1
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMDYxODc4NTQ6Y2RubGl2ZXR2LnR2OjEwODA4OGI3MjliMGM0YmMuZmI5YzVmNzNmNDc1ZmQ4YTUxZTkwYmYyODk3OGJiZGJmOGZkN2E0OWQ2NGY2YzQ5ZTFmZmEzM2I0ZTdmMTQ0Ng
+#EXTINF:-1 tvg-name="beIN Sports 2",beIN Sports 2
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMDYxOTIwOTc6Y2RubGl2ZXR2LnR2OmQzNmJhNDg3ZDU4ZWViMDQuNzdkMzVmOTEyYTk5ZjE1YjJiNDEzNjVmMzExMGUwN2ZhNzhlNTk2YTViZDk3OGRlZmIyNjU4MTdiYzcxOGI1ZQ
+#EXTINF:-1 tvg-name="beIN Sports 3",beIN Sports 3
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMDYxOTYyMjQ6Y2RubGl2ZXR2LnR2OmY2ZWI0ZjlhMGNmZjFiMzYuMGQwOTc5ZjRmYzBmZmZmOWY2MGQwMWYxOGJlOTIxNGFhNmQwOTAxODVmYWM4ODQ3Yjg2NmMxNDY1NTRiMDNjYw
+#EXTINF:-1 tvg-name="beIN Sports 4",beIN Sports 4
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMDYyMDAzMzk6Y2RubGl2ZXR2LnR2OjljOTBiNTFhZTUzZjBiOTQuMDM4MWZlYzRkYzc4ZTcxMDc1YjEzNTU3YTNiYWNhYmJiMDUxMjYwMDc2OWEwNGQ0NWMwZmUwMTFiOTJhODBlYg
+#EXTINF:-1 tvg-name="beIN Sports 5",beIN Sports 5
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMDYyMDQ0NDU6Y2RubGl2ZXR2LnR2OmNmYTk3ZmRiY2RlNGEzZDAuYjc5ZjBhZmY0ZWM2OWZhOWZhZDFjMDEyMWZlMjBjOTViNjEwNTYxYjIzZDNkODY3ZWZkMTIzNzcxZDExNDgwYw
+#EXTINF:-1 tvg-name="beIN Sports Haber",beIN Sports Haber
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMDYyMDg2MjQ6Y2RubGl2ZXR2LnR2OmYyN2Y2MjcwZjdiNTM1OTMuOTg2NDU3ZGYxMGY3MTg3YmE0N2FlMDI1YzY5ZWFkYWI5ZTI1NjliZTM4MjU2NTg2MDZjODc0OTljYzQ5NDc5Zg
+#EXTINF:-1 tvg-name="S Sport 1",S Sport 1
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMDYyMTI2Njc6Y2RubGl2ZXR2LnR2OmYxM2E1MWIzN2VhMzI5MDQuODQzOGViODY0N2E0MWIwNDU4NzNiOWE3NzUxM2RiODVjZjY5NDA3NDhlM2Y3NzNlNTdkMTEzMTUyOTY4ZWY2Nw
+#EXTINF:-1 tvg-name="TiviBu Spor 1",TiviBu Spor 1
+#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMDYyMjI4OTc6Y2RubGl2ZXR2LnR2OjUzNWQxNDRmMTBjMjZkYWIuMzJiYTNkMjQ4YTM3N2Y0YzlhYjZkYmQ1MGFhNDE1NmY0YjA2ZjRiZjQ3ZDQ0ZjNjYzZkZGYwZWRlOTFmMTU4NA
