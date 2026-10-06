@@ -367,7 +367,7 @@ https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0f/playlist.m3u8?token=
 #EXTINF:-1 group-title="TR Spor",beIN SPORTS HABER [TR]-ace
 http://88.99.165.164:6878/ace/getstream?infohash=22d5b3999d11a4f1bad9da8fdaa9034935fb2706&pid=237
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ZhkZzLf.png" group-title="TR Spor",A Spor
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEyNjAxNjMyNTE6Y2RubGl2ZXR2LnR2OjA0MmQ2ODYzOGVkZjU4OGYuNTIyMTM0MTEzMmY4Yjc0N2NkNWEyNGZiZTI1MzQwZWU0NTMwZWRjYzY4YjhiNGVjMDM5MGFkNTZkMGZmYTBlZA
 #EXTINF:-1 tvg-id="a-spor" tvg-name="A SPOR" group-title="TR Spor",A SPOR-A
 #EXTVLCOPT:http-referrer=https://www.atomsportv516.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
@@ -966,7 +966,7 @@ https://trkvz-radyolar.ercdn.net/ahaberradyo/playlist.m3u8
 #EXTINF:1 group-title="Radyolar",a PARA
 https://trkvz-radyolar.ercdn.net/apararadyo/playlist.m3u8
 #EXTINF:1 group-title="Radyolar",A spor
-https://trkvz-radyolar.ercdn.net/asporradyo/chunklist.m3u8
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEyNjAxNjMyNTE6Y2RubGl2ZXR2LnR2OjA0MmQ2ODYzOGVkZjU4OGYuNTIyMTM0MTEzMmY4Yjc0N2NkNWEyNGZiZTI1MzQwZWU0NTMwZWRjYzY4YjhiNGVjMDM5MGFkNTZkMGZmYTBlZA
 #EXTINF:1 group-title="Radyolar",Abuzer FM
 http://live.radyotvonline.com:9030/;stream.nsv
 #EXTINF:1 group-title="Radyolar",AÇS Radyo
