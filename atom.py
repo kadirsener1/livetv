@@ -105,26 +105,25 @@ def get_all_possible_channels():
     # SADECE TV KANALLARI
     tv_channels = [
         # BEIN SPORTS
-        ("bein-sports-1", "BEIN SPORTS 1-ARDA"),
-        ("bein-sports-2", "BEIN SPORTS 2-ARDA"),
-        ("bein-sports-3", "BEIN SPORTS 3-ARDA"),
-        ("bein-sports-4", "BEIN SPORTS 4-ARDA"),
-        ("bein-sports-5", "BEIN SPORTS 5-ARDA"),
-        ("bein-sports-max-1", "BEIN SPORTS MAX 1-ARDA"),
-        ("bein-sports-max-2", "BEIN SPORTS MAX 2-ARDA"),
+        ("bein-sports-1", "BEIN SPORTS 1-A"),
+        ("bein-sports-2", "BEIN SPORTS 2-A"),
+        ("bein-sports-3", "BEIN SPORTS 3-A"),
+        ("bein-sports-4", "BEIN SPORTS 4-A"),
+        ("bein-sports-max-1", "BEIN SPORTS MAX 1-A"),
+        ("bein-sports-max-2", "BEIN SPORTS MAX 2-A"),
         # S SPORT
-        ("s-sport", "S SPORT-ARDA"),
-        ("s-sport-2", "S SPORT 2-ARDA"),
+        ("s-sport", "S SPORT-A"),
+        ("s-sport-2", "S SPORT 2-A"),
         # TİVİBU SPOR
-        ("tivibu-spor-1", "TİVİBU SPOR 1-ARDA"),
-        ("tivibu-spor-2", "TİVİBU SPOR 2-ARDA"),
-        ("tivibu-spor-3", "TİVİBU SPOR 3-ARDA"),
+        ("tivibu-spor-1", "TİVİBU SPOR 1-A"),
+        ("tivibu-spor-2", "TİVİBU SPOR 2-A"),
+        ("tivibu-spor-3", "TİVİBU SPOR 3-A"),
         # TRT
-        ("trt-spor", "TRT SPOR-ARDA"),
-        ("trt-yildiz", "TRT YILDIZ-ARDA"),
-        ("trt1", "TRT 1-ARDA"),
+        ("trt-spor", "TRT SPOR-A"),
+        ("trt-yildiz", "TRT YILDIZ-A"),
+        ("trt1", "TRT 1-A"),
         # DİĞER
-        ("a-spor", "A SPOR-ARDA"),
+        ("a-spor", "A SPOR-A"),
     ]
 
     for channel_id, name in tv_channels:
