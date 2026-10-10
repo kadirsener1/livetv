@@ -1,1 +1,14 @@
+name: Render Otomatik Deploy
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Render'ı Tetikle
+        run: |
+          curl -X GET "${{ secrets.RENDER_DEPLOY_HOOK }}"
