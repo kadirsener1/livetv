@@ -1,6 +1,9 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="İNFO",BİLGİLENDİRME
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/info.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="İNFO",test TV
+https://hls-restream-proxy-production.up.railway.app/channel/sky-sports-golf
 #EXTINF:-1 group-title="Spor",Futbol Tv
 https://iptv-proxy-app-nbsh.onrender.com/live/futbol_tv.m3u8
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-A
@@ -660,7 +663,7 @@ https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",YABAN TV
 https://yayin1.canlitv.fun/canlitv/yabantv.stream/playlist.m3u8?hash=03fae7e849990da1d7119f1649529e4b|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",KÖY TV
-https://streams.uzunmuhalefet.com/stream/7a1294e7-9fa8-4c3d-89b8-eb67e33bc2e6.m3u8
+https://hls-restream-proxy-production.up.railway.app/channel/koy-tv
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",TARIM TV
 http://141.253.97.97:8080/live/tarim.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",TOPRAK TV
