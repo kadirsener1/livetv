@@ -4,8 +4,10 @@ permissions:
   contents: write   # Repository'ye yazma/push izni
 
 on:
-
-    workflow_dispatch:       # Manuel çalıştırma butonu
+  workflow_dispatch: # Manuel çalıştırmak için
+  schedule:
+    - cron: '0 */3 * * *'  # Her 2 saatte bir otomatik çalışır
+    
 
 jobs:
   update-m3u:
