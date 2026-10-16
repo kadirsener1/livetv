@@ -12,7 +12,7 @@ LIVETV_DIR = "tv247tr"
 MAX_CONCURRENT_TASKS = 2 
 MAX_RETRIES = 2 
 
-USER_AGENT_SUFFIX = "|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+USER_AGENT_SUFFIX = ""
 
 AD_DOMAINS = [
     "doubleclick", "google-analytics", "googlesyndication", "adservice", 
