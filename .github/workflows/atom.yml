@@ -5,9 +5,7 @@ permissions:
 
 on:
   workflow_dispatch: # Manuel çalıştırmak için
-  schedule:
-    - cron: '0 */3 * * *'  # Her 2 saatte bir otomatik çalışır
-    
+
 
 jobs:
   update-m3u:
