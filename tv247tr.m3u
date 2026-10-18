@@ -32,8 +32,10 @@ https://andro.evrenesoglu157.click/checklist/androstreamlivebiraz1.m3u8
 https://andro.evrenesoglu157.click/checklist/androstreamlivebs1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-ACE
 http://88.99.165.164:6878/ace/getstream?infohash=071b49a1c52d304cae6300e2776022eec7ebe6cd&pid=238
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",Bein Sports 1 SD-Bigo
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",Bein Sports 1 SD
 https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/4.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",Bein Sports 1 SD-YEDEK
+https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/8.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" tvg-name="BEIN SPORTS 2" group-title="Spor",BEIN SPORTS 2-A
 #EXTVLCOPT:http-referrer=https://www.atomsportv516.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
@@ -82,8 +84,6 @@ https://sportsbite.org/247/beinsports3tr
 https://andro.evrenesoglu157.click/checklist/androstreamlivebs3.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="Spor", BEIN SPORTS 3-ACE
 http://88.99.165.164:6878/ace/getstream?infohash=7fee896143ae89590d97793a0be7ad8ec6fa4552&pid=240
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",Bein Sports 3 SD-Bigo
-https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/8.m3u8
 #EXTINF:-1 tvg-id="bein-sports-4" tvg-name="BEIN SPORTS 4" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-4-HD.png" group-title="Spor",BEIN SPORTS 4-A
 #EXTVLCOPT:http-referrer=https://www.atomsportv516.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
