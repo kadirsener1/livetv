@@ -668,7 +668,7 @@ http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/pl
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",ÇİFTÇİ TV
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",YABAN TV
-https://canlitv-deno-yhv25fgqwmx2.magnitude.deno.net/play/12044
+http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/178850393550c13d869fbf
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",KÖY TV
 https://hls-restream-proxy-production.up.railway.app/channel/koy-tv
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",TARIM TV
