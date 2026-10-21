@@ -1,8 +1,6 @@
 #EXTM3U
-
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="İNFO",BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
-
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",mach Tv4
 https://matchora-proxy.magnitude.workers.dev/play/913446
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",Spor Tv
@@ -2058,8 +2056,6 @@ https://stream.xradio.com.tr:8770/stream
 https://sportsbite.org/247/arenasport1premiumrs
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/bein-sports-us.png" group-title="World Sport",Bein Sports usa
 https://sportsbite.org/247/beinsportsus
-
-
 #EXTINF:-1 group-title="Vavoo",24 HABER HD+ SD
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3828793616b62b9cc5834c
 #EXTINF:-1 group-title="Vavoo",24 KITCHEN
@@ -4052,17 +4048,6 @@ https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-ipt
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2655157451b1786586fd0c
 #EXTINF:-1 group-title="Vavoo",ZONGULDAK KANAL Z
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1467834090ec77c1def93a
-
-
-
-
-
-
-
-
-
-
-
 #EXTINF:-1 group-title="Vavoo render",24 HABER HD+ SD
 https://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3828793616b62b9cc5834c
 #EXTINF:-1 group-title="Vavoo render",24 KITCHEN
@@ -6055,16 +6040,12 @@ https://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/p
 https://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2655157451b1786586fd0c
 #EXTINF:-1 group-title="Vavoo render",ZONGULDAK KANAL Z
 https://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1467834090ec77c1def93a
-
-
-
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports1.tr",BEIN SPOTS1 SD
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/143239535a2e3c23c1d16
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports1.tr",BEIN 1 FEED (720P)
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1363827223a1c98515d612
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports1.tr",BEIN 1 SD (360P)
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3692337241ec1b0872b06e
-#EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports1.tr",BEIN 1 SD (480P)
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports1.tr",BEIN SPORTS 1
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/300113394ceebba66c8ad
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports1.tr",BEIN SPORTS 1 (720P)
@@ -6121,12 +6102,10 @@ https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-ipt
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1872232768c7c65ceb9862
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports4.tr",BEIN SPORTS 4 UHD
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2938268353a63a37b4528e
-
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports5.tr",BEIN SPORTS 5 (MATCH TIME)
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/12304481920a92c9204dcd
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports5.tr",BEIN SPORTS 5 HD
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2737963486b4d9c437a945
-
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportshaber.tr",BEIN SPORTS HABER
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1197336000e1b7dd01506d
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportshaber.tr",BEIN SPORTS HABER
@@ -6151,7 +6130,6 @@ https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-ipt
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3407936242f95c33ae8820
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",BEIN SPORTS MAX 2 HD
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2212659820b109b476a4d3
-
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",S SPORT
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/21232735984a3f0b463d66
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",S SPORT
@@ -6202,7 +6180,6 @@ https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-ipt
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/568442751987b14d1ad00
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",TIVIBU SPOR 3 HD
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/100410240872b813d41c94
-
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",TIVIBUSPOR 3 FHD
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/21863899508f19a672f26d
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",TIVIBUSPOR 3 HD
@@ -6213,8 +6190,6 @@ https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-ipt
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3307062704472686916fe7
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",TIVIBU SPOR 5 HD
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/163038510f87c95f99d11
-
-
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",4K TR: SPOR SMART
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3159604752e1cba547bb
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",SMART SPOR 1
@@ -6237,12 +6212,6 @@ https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-ipt
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2228088973f56fff74c71f
 #EXTINF:-1 group-title="Vavoo Spor" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",SPOR SMART 2 HD
 https://vavoo.magnitude.workers.dev/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2726496671ea6fd3c6dc54
-
-
-
-
-
-
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports1.tr",BEIN SPOTS1 SD
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/143239535a2e3c23c1d16
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports1.tr",BEIN 1 FEED (720P)
@@ -6305,12 +6274,10 @@ http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/pl
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1872232768c7c65ceb9862
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports4.tr",BEIN SPORTS 4 UHD
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2938268353a63a37b4528e
-
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports5.tr",BEIN SPORTS 5 (MATCH TIME)
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/12304481920a92c9204dcd
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="BeinSports5.tr",BEIN SPORTS 5 HD
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2737963486b4d9c437a945
-
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportshaber.tr",BEIN SPORTS HABER
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1197336000e1b7dd01506d
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportshaber.tr",BEIN SPORTS HABER
@@ -6335,7 +6302,6 @@ http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/pl
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3407936242f95c33ae8820
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",BEIN SPORTS MAX 2 HD
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2212659820b109b476a4d3
-
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",S SPORT
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/21232735984a3f0b463d66
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",S SPORT
@@ -6386,7 +6352,6 @@ http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/pl
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/568442751987b14d1ad00
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",TIVIBU SPOR 3 HD
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/100410240872b813d41c94
-
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",TIVIBUSPOR 3 FHD
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/21863899508f19a672f26d
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",TIVIBUSPOR 3 HD
@@ -6397,8 +6362,6 @@ http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/pl
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3307062704472686916fe7
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",TIVIBU SPOR 5 HD
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/163038510f87c95f99d11
-
-
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",4K TR: SPOR SMART
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3159604752e1cba547bb
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",SMART SPOR 1
@@ -6421,3 +6384,5 @@ http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/pl
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2228088973f56fff74c71f
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",SPOR SMART 2 HD
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2726496671ea6fd3c6dc54
+#EXTINF:-1 group-title="Belgesel",DENEME
+https://tv-trtspor1.medya.trt.com.tr/master_1080.m3u8
