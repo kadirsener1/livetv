@@ -595,6 +595,8 @@ http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/pl
 https://tv-trtbelgesel.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/xTTxc9G3/Bein-gurme-removebg-preview.png" group-title="Belgesel",beIN GURME
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/361703541447c2d8cea904
+#EXTINF:-1 group-title="Belgesel",BEİN İZ
+http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/16912230784a73b11d66ed
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",ÇİFTÇİ TV
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",YABAN TV
@@ -617,8 +619,6 @@ https://bamusa-naturetime-emea-fra-rakuten.amagi.tv/playlist1080_pl.m3u8
 https://travelxp-travelxp-1-nz.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",BELGESEL TV
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/belgesel-tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",Fanatik Prime Ed Stafford
-https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikprimeEdStafford.m3u8
 #EXTINF:-1 tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/COCUKK/TRT.COCUK.png" group-title="Çocuk",Trt Çocuk
 https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="123" tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/COCUKK/TRT.DIYANET.COCUK.png" group-title="Çocuk",Trt Diyanet Çocuk
@@ -6374,3 +6374,5 @@ http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/pl
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2228088973f56fff74c71f
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",SPOR SMART 2 HD
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2726496671ea6fd3c6dc54
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",Fanatik Prime Ed Stafford
+https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikprimeEdStafford.m3u8
