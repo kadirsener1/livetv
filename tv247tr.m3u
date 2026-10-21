@@ -579,10 +579,10 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fa
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikprimebizimkiler.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Sinema",Fanatik Prime Avrupa Yakası
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikprimeavrupayakasi.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",NATIONAL GEOGRAPHIC WILD
-http://65.108.239.207/natgeowild/index.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",NATIONAL GEOGRAPHIC
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1960546091bcaf052d3800
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",NATIONAL GEOGRAPHIC WILD
+http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1519237116daf8e783a22b
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",ID-N
 http://65.108.239.207/discs/index.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",VİASAT HİSTORY
@@ -6378,3 +6378,5 @@ http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/pl
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikprimeEdStafford.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Çocuk",Fanatik Kids Şarkılar
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikkidsarkilar.m3u8
+#EXTINF:-1 group-title="Belgesel",Yeni Kanal
+https://
