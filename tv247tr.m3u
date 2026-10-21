@@ -5,8 +5,6 @@ https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
 
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",mach Tv4
 https://matchora-proxy.magnitude.workers.dev/play/913446
-#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",köy 
-https://koytv.magnitude.workers.dev
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",Spor Tv
 https://iptv-proxy-app-5wro.onrender.com/live/futbol_tv.m3u8
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-A
@@ -15,10 +13,6 @@ https://iptv-proxy-app-5wro.onrender.com/live/futbol_tv.m3u8
 https://ladyboy.ardatvgs.cfd//beintv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="bein_sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-ZEUS
 https://zeus645423.cfd/b1/index.txt
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-TVNOW
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MiIsInRzIjoxNzkyNTUwNzA5NzI1fQ
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
@@ -33,8 +27,6 @@ https://andro.evrenesoglu163.click/checklist/androstreamlivebiraz1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor", BEIN SPORTS 1-M2
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu163.click/checklist/androstreamlivebs1.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-ACE
-http://88.99.165.164:6878/ace/getstream?infohash=071b49a1c52d304cae6300e2776022eec7ebe6cd&pid=238
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",Bein Sports 1 SD
 https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/4.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",Bein Sports 1 SD-YEDEK
@@ -45,10 +37,6 @@ https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/
 https://ladyboy.ardatvgs.cfd//bein2/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="bein_sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" group-title="Spor",BEIN SPORTS 2-ZEUS
 https://zeus645423.cfd/b2/index.txt
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" group-title="Spor",BEIN SPORTS 2-TVNOW
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2MyIsInRzIjoxNzkyNTUwNzEyMDI3fQ
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" group-title="Spor",BEIN SPORTS 2-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
@@ -60,8 +48,6 @@ https://sportsbite.org/247/beinsports2tr
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" group-title="Spor", BEIN SPORTS 2-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu163.click/checklist/androstreamlivebs2.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" group-title="Spor",BEIN SPORTS 2-ACE
-http://88.99.165.164:6878/ace/getstream?infohash=36e9427b55dd3574f9f40eab30aef8e0f34f477e&pid=239
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",Bein Sports 2 SD-Bigo
 https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/7.m3u8
 #EXTINF:-1 tvg-name="BEIN SPORTS 3" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="Spor",BEIN SPORTS 3-A
@@ -70,10 +56,6 @@ https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/
 https://ladyboy.ardatvgs.cfd//bein3/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="bein_sport" tvg-name="BeIN Sport 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="Spor",BEIN SPORTS 3-ZEUS
 https://zeus645423.cfd/b3/index.txt
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="Spor",BEIN SPORTS 3-TVNOW
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NCIsInRzIjoxNzkyNTUwNzE0NTUxfQ
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="Spor",BEIN SPORTS 3-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
@@ -85,18 +67,12 @@ https://sportsbite.org/247/beinsports3tr
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="Spor", BEIN SPORTS 3-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu163.click/checklist/androstreamlivebs3.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="Spor", BEIN SPORTS 3-ACE
-http://88.99.165.164:6878/ace/getstream?infohash=7fee896143ae89590d97793a0be7ad8ec6fa4552&pid=240
 #EXTINF:-1 tvg-id="bein-sports-4" tvg-name="BEIN SPORTS 4" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-4-HD.png" group-title="Spor",BEIN SPORTS 4-A
 #EXTVLCOPT:http-referrer=https://www.atomsportv516.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
 https://ladyboy.ardatvgs.cfd//bein4/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="bein_sport" tvg-name="BeIN Sport 4" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-4-HD.png" group-title="Spor",BEIN SPORTS 4-ZEUS
 https://zeus645423.cfd/b4/index.txt
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-4-HD.png" group-title="Spor",BEIN SPORTS 4-TVNOW
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiI2NyIsInRzIjoxNzkyNTUwNzE0NzY4fQ
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-4-HD.png" group-title="Spor",BEIN SPORTS 4-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
@@ -108,18 +84,12 @@ https://sportsbite.org/247/beinsport4tr
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-4-HD.png" group-title="Spor", BEIN SPORTS 4-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu163.click/checklist/androstreamlivebs4.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-4-HD.png" group-title="Spor", BEIN SPORTS 4-ACE
-http://88.99.165.164:6878/ace/getstream?infohash=26c1fe91207fb2a1cfa6271970081d4c2009b6fa&pid=241
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-5-HD.png" tvg-name="BEIN SPORTS 5" group-title="Spor",BEIN SPORTS 5-A
 #EXTVLCOPT:http-referrer=https://www.atomsportv516.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
 https://ladyboy.yedektv.cfd//bein5/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-5-HD.png" group-title="Spor",BEIN SPORTS 5-ZEUS
 https://zeus645423.cfd/b5/index.txt
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-5-HD.png" group-title="Spor",BEIN SPORTS 5-TVNOW
-#EXTVLCOPT:http-referrer=https://tvnow247.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDEwIiwidHMiOjE3OTI1NTA3MTcyNDB9
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-5-HD.png" group-title="Spor",BEIN SPORTS 5-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
@@ -166,10 +136,6 @@ https://zeus645423.cfd/s1/index.txt
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", S SPORT 1-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu163.click/checklist/androstreamlivess1.m3u8
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",S SPORT-CDN
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2681d8192bb76caa87/playlist.m3u8?token=NmEyODhkMjY4MWQ4MTkyYmI3NmNhYTg3OjE3ODkwOTQ0MDA2NjU6Y2RubGl2ZXR2LnR2OmUxZmU3ZTFkZTljNzc5ODIuNmY3N2UyYTMxNjgwMDEzMzgyOTE4MTliOWQ1NzMzZWZhZTJjZWY1NzA1Y2M2NWQ3NzAwNTJkODUxNWZhNDM4Ng|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",S Sport 1 SD-Bigo
 https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/6.m3u8
 #EXTINF:-1 tvg-id="s-sport-2" tvg-name="S SPORT 2" group-title="Spor",S SPORT 2-A
@@ -181,10 +147,6 @@ https://zeus645423.cfd/s2/index.txt
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", S SPORT 2-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu163.click/checklist/androstreamlivess2.m3u8
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",S SPORT 2-CDN
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc31/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzMxOjE3OTI1NjUxMTc0NDY6Y2RubGl2ZXR2LnR2OjQyNjk5ODI3ZGZhYjdmMTQuYTM4MDVhZjcyNDE1NTY3YmQyOWYzNGUxZDg2ZjU1NDdhMTIwNmYwZWFlZmMwZDYwMWNhNGEyMmNjYzc4M2ZlYg
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",S Sport 2 SD-Bigo
 https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/9.m3u8
 #EXTINF:-1 tvg-id="tivibu_spor" tvg-name="Tivibu Spor" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/3/36/Tivibu_spor_logosu.jpg" group-title="Spor",Tivibu Spor-Z
@@ -199,10 +161,6 @@ https://zeus645423.cfd/tivibu1/index.txt
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TİVİBU SPOR 1-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu163.click/checklist/androstreamlivets1.m3u8
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",TİVİBU SPOR 1-CDN
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3b/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNiOjE3OTI1NjUxMTc2MjY6Y2RubGl2ZXR2LnR2OjQ3YjQyNTNlMjBhNjkyYzUuMmZiYTZjNDM1OTkxMjMzNzM3NjczNGIwZmRmODcwMmVkYmZhM2NlMjI1Y2E5ZTY0NWU0ZTQwZjI1ZmZjZGYxZA
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",Tivibu 2-İP
 https://65.108.239.207/t2/index.m3u8
 #EXTINF:-1 tvg-id="tivibu_spor" tvg-name="Tivibu Spor 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/3/36/Tivibu_spor_logosu.jpg" group-title="Spor",Tivibu Spor 2-Z
@@ -221,10 +179,6 @@ https://zeus645423.cfd/tivibu3/index.txt
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TİVİBU SPOR 3-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu163.click/checklist/androstreamlivets3.m3u8
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",TİVİBU SPOR 3-CDN
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc3f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzNmOjE3OTI1NjUxMTc5NTc6Y2RubGl2ZXR2LnR2OjI3ZTcwYTQ3YTA2MjRmNGYuMmUyMWRiOGMxYzY4ZDljZGJkNzdiZTJjYjg3ZTIzMTZiMWEzMmJjNDc4MjI1MTYwOTBlZTc2ZWVhOWRmZjY4MQ
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor",Tivibu 4-İP
 https://65.108.239.207/t4/index.m3u8
 #EXTINF:-1 tvg-id="tivibu_spor" tvg-name="Tivibu Spor 4" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/3/36/Tivibu_spor_logosu.jpg" group-title="Spor",Tivibu Spor 4-Z
@@ -232,10 +186,6 @@ https://zeus645423.cfd/tivibu4/index.txt
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", TİVİBU SPOR 4-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu163.click/checklist/androstreamlivets4.m3u8
-#EXTINF:-1 tvg-logo="https://logo-adresi.com/logo.png" group-title="Spor",TİVİBU SPOR 4-CDN
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc40/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzQwOjE3OTI1NjUxMTgwMzg6Y2RubGl2ZXR2LnR2OjI5NzNlNjYzMDMyNWNiZjMuZjg2OGM5YjZjYjE1NmQ3YmJmZWRjMWY2MmQzYmQzYTY1MjdhN2I1YzgyYjFlZDIyYjY3NjYwYjg1ZjAzNTNhNA
 #EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor",Spor Smart 1-İP
 https://65.108.239.207/smart1/index.m3u8
 #EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor",Spor Smart 1-Z
@@ -266,24 +216,12 @@ https://sportsbite.org/247/euro2tr
 #EXTINF:-1 tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/FR/SPORT/EUROSPORT.2.png" group-title="Spor", EURO SPORT 2-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu163.click/checklist/androstreamlivees2.m3u8
-#EXTINF:-1 tvg-logo="https://www.diaicon.xyz/wp-content/uploads/2024/12/trt-spor-hd.png" group-title="TR Spor",TRT SPOR
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMDYyMjcwMTE6Y2RubGl2ZXR2LnR2OjQ0MTkxODhmNDBmMDVjMGIuZDUwNTYyN2FlNTE1NDdlMjA5OWYzY2I5ZTBmMzNhMDA1NjM1YWYyZmQ0YzJmOTU0NDY2YWMyYmQ1ZmFmZTNlZQ
+#EXTINF:-1 tvg-logo="https://www.diaicon.xyz/wp-content/uploads/2024/12/trt-spor-hd.png" group-title="TR Spor",TRT SPOR*
+https://tv-trtspor1.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VWygoj9.png" group-title="TR Spor",TRT SPOR YILDIZ
 https://tv-trtspor2.medya.trt.com.tr/master_1440p.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/UGbdQLv.png" group-title="TR Spor",beIN Sports Haber-T
 https://trn03.tulix.tv/gt-beinsportshaber/index.m3u8?token=e6e924c0c4bad93c528d5e56a59b3aa7
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="TR Spor",BEIN SPORTS HABER-CDN
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0f/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBmOjE3OTI1NjUxMTcwODk6Y2RubGl2ZXR2LnR2OjRhNTAxYTQyZDdmMTc4MWUuYTkxMjRkNTk5MTdkNjEyMmY0ZjY4NTk4MTdiMTRiNzM5MTE2OTYxM2JiZDliYTE0MjViOTg3NmI1NzMzYjE5Zg
-#EXTINF:-1 group-title="TR Spor",beIN SPORTS HABER [TR]-ace
-http://88.99.165.164:6878/ace/getstream?infohash=22d5b3999d11a4f1bad9da8fdaa9034935fb2706&pid=237
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ZhkZzLf.png" group-title="TR Spor",A Spor
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEyODQ2NTgzNTI6Y2RubGl2ZXR2LnR2OmM3ZDdlODQwMTM3YWI4ODguNzFmOWI5OGQxNDgwYzkyNjg0NjgyZmZlNWMyOWJkZGIzNzNiMDI1Njk3NjFhZGExMzE4N2NjMzE1NTI1MjU2NA
 #EXTINF:-1 tvg-id="a-spor" tvg-name="A SPOR" group-title="TR Spor",A SPOR-A
 #EXTVLCOPT:http-referrer=https://www.atomsportv516.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
@@ -2118,42 +2056,6 @@ https://stream.xradio.com.tr:8770/stream
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 https://sportsbite.org/247/arenasport1premiumrs
-#EXTINF:-1 tvg-logo="" group-title="World Sport",uktntsports1
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc344/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzQ0OjE3OTEyNDgyMzgxNjI6Y2RubGl2ZXR2LnR2OjRjMDY0M2JkMDMzYTZlYzAuOTY1ZWUxZWZhZjQyM2RmZWZlNDFiYzcyN2FkY2VkMThlMDRkNTk5YzhmMTg3NTNhMTcxOGJmOTI3ZWRjMGFjMw
-#EXTINF:-1 tvg-name="beIN Sports 1",beIN Sports 1
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMTQxMDI3Njk6Y2RubGl2ZXR2LnR2Ojc4NjZkNDQ5N2Y3ZDlmYzguNGNiNjA4NDEwNjBiNjA4ZDRlMDExYzlhMDZlMzVlNDIxNzY4MzYwYmJiNGY2NDM0ZGU1MjBhNWU1YmI3Zjg4ZQ
-#EXTINF:-1 tvg-name="beIN Sports 2",beIN Sports 2
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMTQxMDcwMzg6Y2RubGl2ZXR2LnR2OjJhYTcyMWEyZDMwZTdjOTIuOTQ1N2NjY2JlYzQzY2Y2OTFjZjk3NGU1ZGIyYzZiZDA1ZDczODAyYjY3ZDliMzZjMjQ0ZDViMjEwYzE3NTYwZA
-#EXTINF:-1 tvg-name="beIN Sports 3",beIN Sports 3
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMTQxMTExNzU6Y2RubGl2ZXR2LnR2OmIwZWZlMTAxMTQzZjNmNjMuYmZlYmIwNDliMTExYWFhYmVjMzcwZGI4MjM1Nzg1YzUyOGQwNWNhYzI5ZTMwOTY4MzM0MTZkMDE4NmQ1OWE2NQ
-#EXTINF:-1 tvg-name="beIN Sports 4",beIN Sports 4
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMTQxMTUyNzI6Y2RubGl2ZXR2LnR2OjAyYzlmZjM4ZGE5MmJlYWIuN2U5MjY1M2E0M2Y1MmY4Y2I4OTdjMTc0OGM0MmI5NzdjMTIxNTg2YTk4YzgwNjI3ZTUzMTYzZWI0YTExMmVlZQ
-#EXTINF:-1 tvg-name="beIN Sports 5",beIN Sports 5
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMTQxMTk0NTQ6Y2RubGl2ZXR2LnR2OmZhNmM1ZjY1YmRkMDI3ODAuNzE2MWU2MzZhZmZjZWQyOWJmOTBiMGYxOGJjZGJlNWFhOGRjOGJhZjAwNjEwYTU0NWZmMTQwOTY3YmMxMTUyNw
-#EXTINF:-1 tvg-name="beIN Sports Haber",beIN Sports Haber
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMTQxMjM1Njk6Y2RubGl2ZXR2LnR2OmI1ZGU4YzQwMjlkM2EyNjkuYTU2NTViMDJjYjY4MjE1OWEwZWFkZjgzNDJhY2MwNGIxYmI3ZjJiZjlmNTUxMTUwOGE4YTE5YTE3Y2I0NjU4Ng
-#EXTINF:-1 tvg-name="S Sport 1",S Sport 1
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMTQxMjc2OTU6Y2RubGl2ZXR2LnR2OmNmN2I3YTcyZTA5YzVmNjIuNjY0ZTY0Y2JjZDQxODdhOGI3NDRmNmMwZTJiZDljMWI5ZjliY2M5MTk3NTJkOGRlZmI4Njg1YmUwOTg4YWY2NQ
-#EXTINF:-1 tvg-name="TiviBu Spor 1",TiviBu Spor 1
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb354/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzU0OjE3OTEzMDYyMjI4OTc6Y2RubGl2ZXR2LnR2OjUzNWQxNDRmMTBjMjZkYWIuMzJiYTNkMjQ4YTM3N2Y0YzlhYjZkYmQ1MGFhNDE1NmY0YjA2ZjRiZjQ3ZDQ0ZjNjYzZkZGYwZWRlOTFmMTU4NA
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/bein-sports-us.png" group-title="World Sport",Bein Sports usa
 https://sportsbite.org/247/beinsportsus
 
