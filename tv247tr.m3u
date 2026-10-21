@@ -583,10 +583,10 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fa
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikprimebizimkiler.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",Fanatik Prime Avrupa Yakası
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikprimeavrupayakasi.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",NATIONAL GEOGRAPHIC
-http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1960546091bcaf052d3800
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",NATIONAL GEOGRAPHIC WILD
 http://65.108.239.207/natgeowild/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",NATIONAL GEOGRAPHIC
+http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1960546091bcaf052d3800
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",DISCOVERY
 http://65.108.239.207/discovery/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",DISCOVERY-ip
