@@ -587,10 +587,6 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fa
 http://65.108.239.207/natgeowild/index.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",NATIONAL GEOGRAPHIC
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1960546091bcaf052d3800
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",DISCOVERY
-http://65.108.239.207/discovery/index.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",DISCOVERY-ip
-https://65.108.239.207/discovery/index.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",ID-N
 http://65.108.239.207/discs/index.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",VİASAT HİSTORY
@@ -599,8 +595,6 @@ http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/pl
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/17854799144cbb1c340ac1
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",TARİH TV
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3856957052050da882aa10
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",BBC EARTH
-http://65.108.239.207/bbc/index.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",TRT BELGESEL
 https://tv-trtbelgesel.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/xTTxc9G3/Bein-gurme-removebg-preview.png" group-title="Belgesel",beIN GURME
