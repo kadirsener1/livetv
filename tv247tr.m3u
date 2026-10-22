@@ -583,6 +583,8 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fa
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1960546091bcaf052d3800
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",NATIONAL GEOGRAPHIC WILD
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1324166169d75d5197aa7
+#EXTINF:-1 group-title="Belgesel",NATIONAL GEOGRAPHIC WILD 2
+https://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1519237116daf8e783a22b
 #EXTINF:-1 group-title="Belgesel",DİSCOVERY CHANNEL
 https://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/4017734592f45fd8456678
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",INVESTIGATION DISCOVERY
@@ -617,8 +619,6 @@ https://agro.fatihdemirsoy.com:8181/memfs/efe70a0b-aea8-48f3-bfda-72fff7f48a7b_o
 https://bamusa-naturetime-emea-fra-rakuten.amagi.tv/playlist1080_pl.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",TRAVELXP EN
 https://travelxp-travelxp-1-nz.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",BELGESEL TV
-https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/belgesel-tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/COCUKK/TRT.COCUK.png" group-title="Çocuk",Trt Çocuk
 https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="123" tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/TR/COCUKK/TRT.DIYANET.COCUK.png" group-title="Çocuk",Trt Diyanet Çocuk
@@ -6374,11 +6374,11 @@ http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/pl
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2228088973f56fff74c71f
 #EXTINF:-1 group-title="Vavoo spor render" tvg-logo="https://raw.githubusercontent.com/kadirsener1/logolar/refs/heads/master/kanallogolari/beIN-SPORTS-1-HD.png" tvg-id="beinsportsmax2.tr",SPOR SMART 2 HD
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2726496671ea6fd3c6dc54
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",Fanatik Prime Ed Stafford
-https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikprimeEdStafford.m3u8
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",BELGESEL TV
+https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/belgesel-tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Çocuk",Fanatik Kids Şarkılar
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikkidsarkilar.m3u8
-#EXTINF:-1 group-title="Belgesel",BOŞ
-http://162.212.179.32/akamaissh101/ssh101/cine7__safari/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",Fanatik Prime Ed Stafford
+https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikprimeEdStafford.m3u8
 #EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",BHA TV
 https://live.euromediacenter.com/bhatv/tracks-v1a1/mono.m3u8
