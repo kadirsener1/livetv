@@ -202,6 +202,8 @@ https://zeus645423.cfd/smart2/index.txt
 https://andro.evrenesoglu163.click/checklist/androstreamlivesm2.m3u8
 #EXTINF:-1 tvg-id="Eurosport 1" tvg-name="Eurosport 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/FR/SPORT/EUROSPORT.1.png" group-title="Spor",Eurosport 1-Z
 https://zeus645423.cfd/euro1/index.txt
+#EXTINF:-1 group-title="Spor",EUROSPORT 1-V
+https://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/41172279629184f8c9c408
 #EXTINF:-1 tvg-id="Eurosport 1" tvg-name="Eurosport 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/FR/SPORT/EUROSPORT.1.png" group-title="Spor",Eurosport 1-B
 https://sportsbite.org/247/euro1tr
 #EXTINF:-1 tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/FR/SPORT/EUROSPORT.1.png" group-title="Spor", EURO SPORT 1-M
@@ -209,11 +211,8 @@ https://sportsbite.org/247/euro1tr
 https://andro.evrenesoglu163.click/checklist/androstreamlivees1.m3u8
 #EXTINF:-1 tvg-id="Eurosport 2" tvg-name="Eurosport 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/FR/SPORT/EUROSPORT.2.png" group-title="Spor",Eurosport 2-Z
 https://zeus645423.cfd/euro2/index.txt
-#EXTINF:-1 tvg-id="Eurosport 2" tvg-name="Eurosport 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/FR/SPORT/EUROSPORT.2.png" group-title="Spor",Eurosport 2-B
-https://sportsbite.org/247/euro2tr
-#EXTINF:-1 tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/FR/SPORT/EUROSPORT.2.png" group-title="Spor", EURO SPORT 2-M
-#EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
-https://andro.evrenesoglu163.click/checklist/androstreamlivees2.m3u8
+#EXTINF:-1 group-title="Spor",EUROSPORT 2-V
+https://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/41172279629184f8c9c408
 #EXTINF:-1 tvg-logo="https://www.diaicon.xyz/wp-content/uploads/2024/12/trt-spor-hd.png" group-title="TR Spor",TRT SPOR*
 https://tv-trtspor1.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VWygoj9.png" group-title="TR Spor",TRT SPOR YILDIZ
@@ -6382,3 +6381,8 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fa
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikprimeEdStafford.m3u8
 #EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",BHA TV
 https://live.euromediacenter.com/bhatv/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="Eurosport 2" tvg-name="Eurosport 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/FR/SPORT/EUROSPORT.2.png" group-title="Spor",Eurosport 2-B
+https://sportsbite.org/247/euro2tr
+#EXTINF:-1 tvg-logo="http://bluelogo8991.duckdns.org:2095/LOGO.YENI/FR/SPORT/EUROSPORT.2.png" group-title="Spor", EURO SPORT 2-M
+#EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
+https://andro.evrenesoglu163.click/checklist/androstreamlivees2.m3u8
