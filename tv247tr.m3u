@@ -604,7 +604,7 @@ https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",YABAN TV
 http://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/178850393550c13d869fbf
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",KÖY TV
-https://hls-restream-proxy-production.up.railway.app/channel/koy-tv
+https://vavoorender.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/870320507489feac51e9a
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",TARIM TV
 http://141.253.97.97:8080/live/tarim.m3u8?token=58b7919fcf1bfa879292b783237b96c2aa7044788519211894102c3a0a3da062
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",TOPRAK TV
