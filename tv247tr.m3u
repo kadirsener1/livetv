@@ -2,15 +2,6 @@
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BİLGİ
-https://raw.githubusercontent.com/kadirsener1/247/refs/heads/main/cdnlive/trbeinsports1.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BİLGİ
-https://raw.githubusercontent.com/kadirsener1/247/refs/heads/main/cdnlive/trbeinsports2.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BİLGİ
-https://raw.githubusercontent.com/kadirsener1/247/refs/heads/main/cdnlive/trbeinsports3.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BİLGİ
-https://raw.githubusercontent.com/kadirsener1/247/refs/heads/main/cdnlive/trbeinsports4.m3u8
-
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",mach Tv4
 https://matchora-proxy.magnitude.workers.dev/play/913446
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",Spor Tv
@@ -24,7 +15,7 @@ https://zeus645423.cfd/b1/index.txt
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccbfe/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYmZlOjE3OTI2NjY2ODQwNTg6Y2RubGl2ZXR2LnR2OjYyM2Y3NzgzNjVjMzk4MTIuMTk5MTlhOTBjZWYxMGJmNDIwNTIzODJhOGQ2N2VkYTkxZTFmM2U4ODQ0NWI3MmVkOWQ3YTExNDU5ODczYjYwOQ
+https://raw.githubusercontent.com/kadirsener1/247/refs/heads/main/cdnlive/trbeinsports1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor" tvg-name="beIN Sports 1",BEIN SPORTS 1-BİT
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
@@ -48,7 +39,7 @@ https://zeus645423.cfd/b2/index.txt
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" group-title="Spor",BEIN SPORTS 2-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc04/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA0OjE3OTI2NjY2ODQzNjM6Y2RubGl2ZXR2LnR2OjYxYmVhZjE5YWM1MmYwYTkuYTdiYTNmM2U5NGMyNWVjNjFkNTc1MmFhOTg3NzIyN2U1MGViMWRkZTVlZTk3ZTQ1ZDA4MDk5MmE2MzFjNzkxNg
+https://raw.githubusercontent.com/kadirsener1/247/refs/heads/main/cdnlive/trbeinsports2.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" group-title="Spor" tvg-name="beIN Sports 2",BEIN SPORTS 2-BİT
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
@@ -67,7 +58,7 @@ https://zeus645423.cfd/b3/index.txt
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="Spor",BEIN SPORTS 3-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc08/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzA4OjE3OTI2NjY2ODQ2MTY6Y2RubGl2ZXR2LnR2OmYzMDRmZTQ0YzUxYjc2MDQuNTNlMmY3ZWJmNDJlYmE4OTRjMDM5MWE4MThiYThkMjZkYThhNzlmYTBkY2FlYTIwN2RkMzQ1OTk0ZjU3ZDc4Mg
+https://raw.githubusercontent.com/kadirsener1/247/refs/heads/main/cdnlive/trbeinsports3.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="Spor",BEIN SPORTS 3-BİT
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
@@ -84,7 +75,7 @@ https://zeus645423.cfd/b4/index.txt
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-4-HD.png" group-title="Spor",BEIN SPORTS 4-CDN
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2b81d8192bb76ccc0d/playlist.m3u8?token=NmEyODhkMmI4MWQ4MTkyYmI3NmNjYzBkOjE3OTI2NjY2ODQ4Njc6Y2RubGl2ZXR2LnR2OjkwN2E1MDkzMDQyODVjOGEuYjBmMzkyZDc0Y2M4NDlhNzg2OTk5YWEyNWM4MjE2ZTg4MDk2NGQzN2Q4YzRjYTQ0MTkxYjliNjA0ZjI1OWViNw
+https://raw.githubusercontent.com/kadirsener1/247/refs/heads/main/cdnlive/trbeinsports4.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-4-HD.png" group-title="Spor",BEIN SPORTS 4-BİT
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
