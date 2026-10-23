@@ -3,9 +3,9 @@
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",ATV1
 https://aktif-q65v.onrender.com/play/atv
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BEİN 1
+#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-V
 https://aktif-q65v.onrender.com/play/beinsport1
-#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",mach Tv5
+#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-MO
 https://matchora-proxy.magnitude.workers.dev/play/913446
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",Spor Tv
 https://iptv-proxy-app-5wro.onrender.com/live/futbol_tv.m3u8
@@ -31,7 +31,7 @@ https://andro.evrenesoglu163.click/checklist/androstreamlivebiraz1.m3u8
 https://andro.evrenesoglu163.click/checklist/androstreamlivebs1.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Spor",Bein Sports 1 SD
 https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/4.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Spor",Bein Sports 1 SD-YEDEK
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Spor",Bein Sports 1 SD-YDK
 https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/8.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" tvg-name="BEIN SPORTS 2" group-title="Spor",BEIN SPORTS 2-A
 #EXTVLCOPT:http-referrer=https://www.atomsportv516.top/
@@ -50,7 +50,7 @@ https://sportsbite.org/247/beinsports2tr
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-2-HD.png" group-title="Spor", BEIN SPORTS 2-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu163.click/checklist/androstreamlivebs2.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Spor",Bein Sports 2 SD-Bigo
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Spor",Bein Sports 2 SD
 https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/7.m3u8
 #EXTINF:-1 tvg-name="BEIN SPORTS 3" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-3-HD.png" group-title="Spor",BEIN SPORTS 3-A
 #EXTVLCOPT:http-referrer=https://www.atomsportv516.top/
@@ -142,7 +142,7 @@ https://andro.evrenesoglu163.click/checklist/androstreamlivess1.m3u8
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://raw.githubusercontent.com/kadirsener1/247/refs/heads/main/cdnlive/trssport.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Spor",S Sport 1 SD-Bigo
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Spor",S Sport 1 SD
 https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/6.m3u8
 #EXTINF:-1 tvg-id="s-sport-2" tvg-name="S SPORT 2" group-title="Spor",S SPORT 2-A
 #EXTVLCOPT:http-referrer=https://www.atomsportv516.top/
@@ -157,7 +157,7 @@ https://andro.evrenesoglu163.click/checklist/androstreamlivess2.m3u8
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://raw.githubusercontent.com/kadirsener1/247/refs/heads/main/cdnlive/trssport2.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Spor",S Sport 2 SD-Bigo
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Spor",S Sport 2 SD
 https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/9.m3u8
 #EXTINF:-1 tvg-id="tivibu_spor" tvg-name="Tivibu Spor" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/3/36/Tivibu_spor_logosu.jpg" group-title="Spor",Tivibu Spor-Z
 https://zeus645423.cfd/tivibu/index.txt
@@ -215,7 +215,7 @@ https://zeus645423.cfd/smart1/index.txt
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Spor", SMART SPOR 1-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu163.click/checklist/androstreamlivesm1.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Spor",Smart Spor SD-Bigo
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Spor",Smart Spor SD
 https://avva.magnitude.workers.dev/?url=https://yayinlarfidanafidanlaragaca.xyz/hls/10.m3u8
 #EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor",Spor Smart 2-İP
 https://65.108.239.207/smart2/index.m3u8
