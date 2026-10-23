@@ -611,7 +611,7 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fa
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikprimebizimkiler.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Sinema",Fanatik Prime Avrupa Yakası
 https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fanatikprimeavrupayakasi.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",NATIONAL GEOGRAPHIC-V
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",NATIONAL GEOGRAPHIC-V1
 https://aktif-q65v.onrender.com/play/natgeo
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",NATIONAL GEOGRAPHIC WILD-V
 https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1324166169d75d5197aa7
@@ -635,7 +635,7 @@ https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-i
 https://tv-trtbelgesel.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/xTTxc9G3/Bein-gurme-removebg-preview.png" group-title="Belgesel",beIN GURME-V
 https://aktif-q65v.onrender.com/play/gurme
-#EXTINF:-1 group-title="Belgesel",BEİN İZ-V1
+#EXTINF:-1 group-title="Belgesel",BEİN İZ-V
 https://aktif-q65v.onrender.com/play/beiniz
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",ÇİFTÇİ TV
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8
