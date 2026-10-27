@@ -4,7 +4,7 @@ import time
 import requests
 
 # AtomSporTV
-START_URL = "https://url24.link/AtomSporTV"
+START_URL = "https://ardaspor38.top"
 OUTPUT_FILE = "tv247tr.m3u"
 
 GREEN = "\033[92m"
