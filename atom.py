@@ -41,11 +41,11 @@ def get_base_domain():
                 print(f"Ana Domain: {base_domain}")
                 return base_domain
 
-        return "https://www.atomsportv480.top"
+        return "https://ardaspor38.top"
 
     except Exception as e:
         print(f"Domain hatası: {e}")
-        return "https://www.atomsportv512.top"
+        return "https://ardaspor38.top"
 
 
 def get_channel_m3u8(channel_id, base_domain):
