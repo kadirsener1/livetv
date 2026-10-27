@@ -337,6 +337,8 @@ https://aktif-nine.vercel.app/play/atv
 https://aktif-nine.vercel.app/play/atv2
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/HwxYC7.png" group-title="Ulusal",Show Tv
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwx7EZ.png" group-title="Ulusal",Star Tv
+http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/HwxrDR.png" group-title="Ulusal",Now Tv
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/HwxrDR.png" group-title="Ulusal",NOW FHD-V
