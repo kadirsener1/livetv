@@ -36,10 +36,11 @@ def get_base_domain():
         return START_URL
 
 
-def get_channel_m3u8(channel_id, base_domain):
+def get_channel_m3u8(channel_path, base_domain):
     """canli-mac endpoint'inden m3u8 linkini al"""
     try:
-        channel_url = f"{base_domain}/canli-mac/{channel_id}"
+        # channel_path zaten 'canli-mac/bein-sports-1' şeklinde geliyor
+        channel_url = f"{base_domain}/{channel_path}"
         response = requests.get(channel_url, headers=headers, timeout=10)
         html = response.text
 
@@ -85,40 +86,42 @@ def get_channel_m3u8(channel_id, base_domain):
 
 
 def get_all_possible_channels():
-    """TV kanallarını ve URL slug'larını oluştur"""
-    print("TV kanal ID'leri oluşturuluyor...")
+    """TV kanallarını ve canli-mac yollarını oluştur"""
+    print("TV kanal yolları oluşturuluyor...")
 
     channels = []
 
     tv_channels = [
         # BEIN SPORTS
-        ("bein-sports-1", "BEIN SPORTS 1"),
-        ("bein-sports-2", "BEIN SPORTS 2"),
-        ("bein-sports-3", "BEIN SPORTS 3"),
-        ("bein-sports-4", "BEIN SPORTS 4"),
-        ("bein-sports-max-1", "BEIN SPORTS MAX 1"),
-        ("bein-sports-max-2", "BEIN SPORTS MAX 2"),
+        ("canli-mac/bein-sports-1", "BEIN SPORTS 1"),
+        ("canli-mac/bein-sports-2", "BEIN SPORTS 2"),
+        ("canli-mac/bein-sports-3", "BEIN SPORTS 3"),
+        ("canli-mac/bein-sports-4", "BEIN SPORTS 4"),
+        ("canli-mac/bein-sports-max-1", "BEIN SPORTS MAX 1"),
+        ("canli-mac/bein-sports-max-2", "BEIN SPORTS MAX 2"),
         # S SPORT
-        ("s-sport-1", "S SPORT 1"),
-        ("s-sport-2", "S SPORT 2"),
+        ("canli-mac/s-sport-1", "S SPORT 1"),
+        ("canli-mac/s-sport-2", "S SPORT 2"),
         # TİVİBU SPOR
-        ("tivibu-spor-1", "TİVİBU SPOR 1"),
-        ("tivibu-spor-2", "TİVİBU SPOR 2"),
-        ("tivibu-spor-3", "TİVİBU SPOR 3"),
+        ("canli-mac/tivibu-spor-1", "TİVİBU SPOR 1"),
+        ("canli-mac/tivibu-spor-2", "TİVİBU SPOR 2"),
+        ("canli-mac/tivibu-spor-3", "TİVİBU SPOR 3"),
         # TRT
-        ("trt-spor", "TRT SPOR"),
-        ("trt-yildiz", "TRT YILDIZ"),
-        ("trt-1", "TRT 1"),
+        ("canli-mac/trt-spor", "TRT SPOR"),
+        ("canli-mac/trt-yildiz", "TRT YILDIZ"),
+        ("canli-mac/trt-1", "TRT 1"),
         # DİĞER
-        ("a-spor", "A SPOR"),
+        ("canli-mac/a-spor", "A SPOR"),
     ]
 
-    for channel_id, name in tv_channels:
+    for channel_path, name in tv_channels:
+        # tvg-id için path'in son kısmını (örn: bein-sports-1) alıyoruz
+        channel_id = channel_path.split("/")[-1]
         channels.append(
-            {'id': channel_id, 'name': name, 'group': 'Arda Spor'}
+            {'id': channel_id, 'path': channel_path, 'name': name, 'group': 'Arda Spor'}
         )
 
-    print(f"Toplam {len(channels)} TV kanal ID'si oluşturuldu")
+    print(f"Toplam {len(channels)} TV kanalı hazırlandı.")
     return channels
 
 
@@ -129,12 +132,12 @@ def test_channels(channels, base_domain):
     working_channels = []
 
     for i, channel in enumerate(channels):
-        channel_id = channel["id"]
+        channel_path = channel["path"]
         channel_name = channel["name"]
 
         print(f"{i+1:2d}. {channel_name}...", end=" ", flush=True)
 
-        m3u8_url = get_channel_m3u8(channel_id, base_domain)
+        m3u8_url = get_channel_m3u8(channel_path, base_domain)
 
         if m3u8_url:
             print(f"{GREEN}✓{RESET}")
@@ -214,7 +217,7 @@ def main():
     print("\n1. Ana domain bulunuyor...")
     base_domain = get_base_domain()
 
-    print("\n2. TV kanal ID'leri oluşturuluyor...")
+    print("\n2. TV kanal yolları oluşturuluyor...")
     all_channels = get_all_possible_channels()
 
     print("\n3. Kanallar test ediliyor...")
