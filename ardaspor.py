@@ -1,4 +1,5 @@
 import os
+import re
 import time
 from playwright.sync_api import sync_playwright
 
@@ -15,7 +16,6 @@ def get_channel_m3u8(channel_path):
     m3u8_url = None
     
     with sync_playwright() as p:
-        # Tarayıcılığı başlat ve referer başlığını doğru sözdizimiyle ver
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
@@ -23,25 +23,42 @@ def get_channel_m3u8(channel_path):
         )
         page = context.new_page()
 
-        # Sayfa yüklenirken geçen tüm istekleri dinle ve .m3u8 olanı yakala
+        # İstekleri dinle ve m3u8 içeren herhangi bir URL'yi yakala
         def intercept_request(request):
             nonlocal m3u8_url
-            if ".m3u8" in request.url:
-                m3u8_url = request.url
+            url = request.url
+            if "m3u8" in url or ".ts" in url or "stream" in url:
+                if not "traffmovie" in url:  # Reklam linklerini ele
+                    m3u8_url = url
 
         page.on("request", intercept_request)
 
         try:
             target_url = f"{START_URL}/{channel_path}"
-            page.goto(target_url, timeout=20000)
+            page.goto(target_url, timeout=25000)
             
-            # Oynatıcının yüklenmesi için 4-5 saniye bekle
-            page.wait_for_timeout(5000)
+            # Sayfa yüklendikten sonra oynatıcı alanına tıklama simülasyonu yap (oynatıcıyı tetiklemek için)
+            page.wait_for_timeout(3000)
+            try:
+                page.click("body", position={"x": 300, "y": 300}, timeout=2000)
+            except:
+                pass
 
-            # Eğer ağ isteğinde yakalanamadıysa sayfa kaynağında regex ile ara
+            # Oynatıcının yüklenmesi ve akışın başlaması için bekle
+            page.wait_for_timeout(6000)
+
+            # Eğer ağ isteğinde yakalanamadıysa sayfa içindeki iframe'leri ve kaynakları tara
+            if not m3u8_url:
+                for frame in page.frames:
+                    frame_content = frame.content()
+                    match = re.search(r'(https?://[^\s<>"]+?\.m3u8[^\s<>"]*)', frame_content)
+                    if match:
+                        m3u8_url = match.group(1).replace('\\', '')
+                        break
+
+            # Son çare olarak ana sayfa kaynağında regex ara
             if not m3u8_url:
                 content = page.content()
-                import re
                 match = re.search(r'(https?://[^\s<>"]+?\.m3u8[^\s<>"]*)', content)
                 if match:
                     m3u8_url = match.group(1).replace('\\', '')
@@ -173,7 +190,7 @@ def update_m3u(working_channels):
 
 
 def main():
-    print(f"{GREEN}ArdaSporTV M3U Güncelleyici (Playwright Engine){RESET}")
+    print(f"{GREEN}ArdaSporTV M3U Güncelleyici (Playwright Engine v2){RESET}")
     print("=" * 60)
 
     print("\n1. TV kanal yolları oluşturuluyor...")
