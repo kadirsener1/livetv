@@ -37,47 +37,65 @@ def get_base_domain():
 
 
 def get_channel_m3u8(channel_path, base_domain):
-    """canli-mac endpoint'inden m3u8 linkini al"""
+    """canli-mac endpoint'inden ve player scriptlerinden m3u8 linkini al"""
     try:
-        # channel_path zaten 'canli-mac/bein-sports-1' şeklinde geliyor
         channel_url = f"{base_domain}/{channel_path}"
-        response = requests.get(channel_url, headers=headers, timeout=10)
+        custom_headers = headers.copy()
+        custom_headers['Referer'] = base_domain
+        
+        response = requests.get(channel_url, headers=custom_headers, timeout=10)
         html = response.text
 
-        # 1. Sayfa kaynağında doğrudan .m3u8 linki arama
+        # 1. Doğrudan sayfa kaynağında .m3u8 linki arama
         m3u8_match = re.search(r'(https?://[^\s<>"]+?\.m3u8[^\s<>"]*)', html)
         if m3u8_match:
             return m3u8_match.group(1).replace('\\', '')
 
-        # 2. JSON veya player yapılandırma patternleri
+        # 2. Sayfa içindeki script dosyalarını (.js) bulup aralarında m3u8 veya fetch endpoint'i arayalım
+        script_srcs = re.findall(r'<script[^>]+src=["\'](.*?)["\']', html)
+        for src in script_srcs:
+            if not src.startswith('http'):
+                script_url = base_domain + ("/" if not src.startswith("/") else "") + src
+            else:
+                script_url = src
+            
+            try:
+                js_res = requests.get(script_url, headers=custom_headers, timeout=5)
+                js_match = re.search(r'(https?://[^\s<>"]+?\.m3u8[^\s<>"]*)', js_res.text)
+                if js_match:
+                    return js_match.group(1).replace('\\', '')
+            except:
+                continue
+
+        # 3. Sayfadaki yaygın player değişken kalıpları (source, file, url vb.)
         patterns = [
             r'"deismackanal"\s*:\s*"(.*?)"',
-            r'"(?:stream|url|source|file)"\s*:\s*"(.*?\.m3u8.*?)"',
+            r'"(?:stream|url|source|file|hls)"\s*:\s*"(.*?\.m3u8.*?)"',
             r'source\s*:\s*["\'](.*?)["\']',
-            r'file\s*:\s*["\'](.*?)["\']'
+            r'file\s*:\s*["\'](.*?)["\']',
+            r'src\s*:\s*["\'](.*?.m3u8.*?)["\']'
         ]
         
         for pattern in patterns:
-            match = re.search(pattern, html)
+            match = re.search(pattern, html, re.IGNORECASE)
             if match:
                 url_val = match.group(1).replace('\\', '')
                 if url_val.startswith('http'):
                     return url_val
 
-        # 3. İçeride fetch veya harici istek yapılıyorsa takip et
-        fetch_match = re.search(r'fetch\(\s*["\'](.*?)["\']', html)
-        if fetch_match:
-            fetch_url = fetch_match.group(1).strip()
+        # 4. Sayfa içerisindeki fetch veya ajax isteklerini yakala
+        fetch_matches = re.findall(r'fetch\(\s*["\'](.*?)["\']', html)
+        for fetch_url in fetch_matches:
             if not fetch_url.startswith('http'):
                 fetch_url = base_domain + ("/" if not fetch_url.startswith("/") else "") + fetch_url
             
-            custom_headers = headers.copy()
-            custom_headers['Referer'] = channel_url
-            res2 = requests.get(fetch_url, headers=custom_headers, timeout=10)
-            
-            m3u8_match2 = re.search(r'(https?://[^\s<>"]+?\.m3u8[^\s<>"]*)', res2.text)
-            if m3u8_match2:
-                return m3u8_match2.group(1).replace('\\', '')
+            try:
+                res2 = requests.get(fetch_url, headers=custom_headers, timeout=5)
+                m3u8_match2 = re.search(r'(https?://[^\s<>"]+?\.m3u8[^\s<>"]*)', res2.text)
+                if m3u8_match2:
+                    return m3u8_match2.group(1).replace('\\', '')
+            except:
+                continue
 
         return None
 
@@ -115,7 +133,6 @@ def get_all_possible_channels():
     ]
 
     for channel_path, name in tv_channels:
-        # tvg-id için path'in son kısmını (örn: bein-sports-1) alıyoruz
         channel_id = channel_path.split("/")[-1]
         channels.append(
             {'id': channel_id, 'path': channel_path, 'name': name, 'group': 'Arda Spor'}
