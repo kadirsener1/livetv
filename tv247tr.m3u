@@ -1,6 +1,12 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",TEST
+#EXT-STREAM-URL: https://vavoo1.magnitude.workers.dev/play/atv
+#EXT-STREAM-URL: https://vavoo2.magnitude2.workers.dev/play/atv
+#EXT-STREAM-URL: https://vavoo3.magnitude3.workers.dev/play/atv
+#EXT-STREAM-URL: https://vavoo4.ogrenci.workers.dev/play/atv
+
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN 1 FEED (720P)
 https://aktif-nine.vercel.app/play/bein1feed720p
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN 1 SD (360P)
