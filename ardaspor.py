@@ -10,16 +10,22 @@ OUTPUT_FILE = "ardaspor.m3u"
 GREEN = "\033[92m"
 RESET = "\033[0m"
 
+# Gerçek bir Windows Chrome tarayıcısının gönderdiği başlıklar (bot korumasını aşmak için)
 headers = {
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-    'Accept-Encoding': 'gzip, deflate',
-    'Accept-Language': 'tr-TR,tr;q=0.8',
-    'Connection': 'keep-alive',
-    'User-Agent': (
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-        'AppleWebKit/537.36 (KHTML, like Gecko) '
-        'Chrome/122.0.0.0 Safari/537.36'
-    ),
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
+    'Cache-Control': 'no-cache',
+    'Pragma': 'no-cache',
+    'Sec-Ch-Ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
+    'Sec-Ch-Ua-Mobile': '?0',
+    'Sec-Ch-Ua-Platform': '"Windows"',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'same-origin',
+    'Sec-Fetch-User': '?1',
+    'Upgrade-Insecure-Requests': '1',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
     'Referer': 'https://ardaspor38.top/',
 }
 
@@ -51,7 +57,7 @@ def get_channel_m3u8(channel_path, base_domain):
         if m3u8_match:
             return m3u8_match.group(1).replace('\\', '')
 
-        # 2. Sayfa içindeki script dosyalarını (.js) bulup aralarında m3u8 veya fetch endpoint'i arayalım
+        # 2. Sayfa içindeki script dosyalarını (.js) bulup aralarında .m3u8 arayalım
         script_srcs = re.findall(r'<script[^>]+src=["\'](.*?)["\']', html)
         for src in script_srcs:
             if not src.startswith('http'):
