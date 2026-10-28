@@ -15,11 +15,11 @@ def get_channel_m3u8(channel_path):
     m3u8_url = None
     
     with sync_playwright() as p:
-        # Tarayıcıyı başlat
+        # Tarayıcılığı başlat ve referer başlığını doğru sözdizimiyle ver
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            referer=START_URL
+            extra_http_headers={"Referer": START_URL}
         )
         page = context.new_page()
 
