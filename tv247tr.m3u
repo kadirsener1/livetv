@@ -3,10 +3,6 @@
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
 #EXTINF:-1 tvg-id="test1" tvg-name="TEST" tvg-logo="https://resmim.net" group-title="İNFO",TEST
 https://vavoo1.magnitude.workers.dev/play/atv
-#https://vavoo2.magnitude2.workers.dev/play/atv
-#https://vavoo3.magnitude3.workers.dev/play/atv
-#https://vavoo4.ogrenci.workers.dev/play/atv
-
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN 1 FEED (720P)
 https://aktif-nine.vercel.app/play/bein1feed720p
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN 1 SD (360P)
@@ -592,9 +588,11 @@ https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-i
 #EXTINF:-1 group-title="Belgesel",NATIONAL GEOGRAPHIC WILD 2-V
 https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1519237116daf8e783a22b
 #EXTINF:-1 group-title="Belgesel",DİSCOVERY CHANNEL-V
-https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/4017734592f45fd8456678
+https://aktif-nine.vercel.app/play/discovery
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",INVESTIGATION DISCOVERY
 http://65.108.239.207/discs/index.m3u8
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",INVESTIGATION DISCOVERY-V
+https://aktif-nine.vercel.app/play/id
 #EXTINF:-1 group-title="Belgesel",BBC EARTH-V
 https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2618455562938e9a0e0faf
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="Belgesel",VİASAT HİSTORY-V
