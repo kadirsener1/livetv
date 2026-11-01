@@ -42,13 +42,13 @@ def get_fresh_links():
 
 
 def update_playlist(link_map):
-    """Mevcut playlist.m3u dosyasındaki sadece linkleri güncelle"""
+    """Mevcut tv247tr.m3u dosyasındaki sadece linkleri güncelle"""
     try:
         with open(M3U_FILE, "r", encoding="utf-8") as f:
             lines = f.readlines()
     except FileNotFoundError:
         print(f"❌ {M3U_FILE} dosyası bulunamadı!")
-        print("Önce playlist.m3u dosyasını elle oluştur.")
+        print("Önce tv247tr.m3u dosyasını elle oluştur.")
         return False
 
     new_lines = []
