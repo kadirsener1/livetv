@@ -47,7 +47,7 @@ jobs:
           if [ -f playlist.m3u ]; then
             SATIR_SAYISI=$(wc -l < playlist.m3u)
             DOSYA_BOYUTU=$(du -h playlist.m3u | cut -f1)
-            echo " - **Durum:** ✅ \`playlist.m3u\` başarıyla kontrol edildi/güncellendi." >> $GITHUB_STEP_SUMMARY
+            echo " - **Durum:** ✅ \`tv247tr.m3u\` başarıyla kontrol edildi/güncellendi." >> $GITHUB_STEP_SUMMARY
             echo " - **Dosya Boyutu:** $DOSYA_BOYUTU" >> $GITHUB_STEP_SUMMARY
             echo " - **Toplam Satır Sayısı:** $SATIR_SAYISI" >> $GITHUB_STEP_SUMMARY
           else
