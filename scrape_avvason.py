@@ -33,8 +33,8 @@ def get_fresh_links():
         if name and url:
             link_map[name] = url
 
-            # URL'den slug çıkar (örn: avvaupdate.com/ssport1/index.m3u8 -> ssport1)
-            slug_match = re.search(r'avvaupdate\.com/([^/]+)/', url)
+            # URL'den slug çıkar (örn: avvaupdate.com/live/bein1/playlist.m3u8 -> bein1)
+            slug_match = re.search(r'/([^/]+)/[^/]*\.m3u8', url)
             if slug_match:
                 link_map[slug_match.group(1).lower()] = url
 
@@ -68,8 +68,8 @@ def update_playlist(link_map):
 
         # m3u8 link satırı - bunu güncelle
         elif "avvaupdate.com" in stripped and ".m3u8" in stripped:
-            # Eski linkten slug çıkar
-            slug_match = re.search(r'avvaupdate\.com/([^/]+)/', stripped)
+            # Eski linkten slug çıkar (örn: .../live/bein1/playlist.m3u8 -> bein1)
+            slug_match = re.search(r'/([^/]+)/[^/]*\.m3u8', stripped)
             old_slug = slug_match.group(1).lower() if slug_match else ""
 
             # Önce slug ile eşleştir, bulamazsa isimle dene
