@@ -11,7 +11,7 @@ HEADERS = {
     "Accept": "application/json"
 }
 
-M3U_FILE = "playlist.m3u"
+M3U_FILE = "tv247tr.m3u"
 
 
 def get_fresh_links():
