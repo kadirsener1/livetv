@@ -14,6 +14,11 @@ HEADERS = {
 M3U_FILE = "tv247tr.m3u"
 
 
+def normalize(name):
+    """Kanal ismini normalize et: küçük harf, sadece harf-rakam"""
+    return re.sub(r'[^a-z0-9]', '', name.lower())
+
+
 def get_fresh_links():
     """API'den güncel m3u8 linklerini çek"""
     try:
@@ -24,16 +29,17 @@ def get_fresh_links():
         print(f"❌ API hatası: {e}")
         return None
 
-    # Kanal adı -> güncel link eşleştirmesi
-    # Hem tam isim hem de URL'deki slug ile eşleştir
     link_map = {}
     for ch in channels:
-        name = ch.get("name", "").strip().upper()
+        name = ch.get("name", "").strip()
         url = ch.get("m3u8_url", "")
         if name and url:
-            link_map[name] = url
+            # 1. Orijinal isim (BÜYÜK HARF)
+            link_map[name.upper()] = url
+            # 2. Normalize edilmiş isim (boşluksuz, özel karaktersiz)
+            link_map[normalize(name)] = url
 
-            # URL'den slug çıkar (örn: avvaupdate.com/live/bein1/playlist.m3u8 -> bein1)
+            # 3. URL'den slug çıkar (örn: .../live/bein1/playlist.m3u8 -> bein1)
             slug_match = re.search(r'/([^/]+)/[^/]*\.m3u8', url)
             if slug_match:
                 link_map[slug_match.group(1).lower()] = url
@@ -60,37 +66,44 @@ def update_playlist(link_map):
 
         # #EXTINF satırından kanal adını al
         if stripped.startswith("#EXTINF"):
-            # Son virgülden sonrası kanal adı
             comma_pos = stripped.rfind(",")
             if comma_pos != -1:
-                current_channel_name = stripped[comma_pos + 1:].strip().upper()
+                current_channel_name = stripped[comma_pos + 1:].strip()
             new_lines.append(line)
 
         # m3u8 link satırı - bunu güncelle
         elif "avvaupdate.com" in stripped and ".m3u8" in stripped:
-            # Eski linkten slug çıkar (örn: .../live/bein1/playlist.m3u8 -> bein1)
+            # Eşleşme sırası:
+            # 1. Kanal ismi (BÜYÜK HARF) — EN GÜVENİLİR
+            # 2. Normalize edilmiş kanal ismi
+            # 3. URL'deki slug — SON ÇARE (bozuk URL'lerde yanlış olabilir)
+            norm_name = normalize(current_channel_name)
+            upper_name = current_channel_name.upper()
+
             slug_match = re.search(r'/([^/]+)/[^/]*\.m3u8', stripped)
             old_slug = slug_match.group(1).lower() if slug_match else ""
 
-            # Önce slug ile eşleştir, bulamazsa isimle dene
-            new_url = link_map.get(old_slug) or link_map.get(current_channel_name)
+            new_url = (
+                link_map.get(upper_name)
+                or link_map.get(norm_name)
+                or link_map.get(old_slug)
+            )
 
             if new_url:
-                # 1. Önce karakter düzenlemelerini (URL encode) yapıyoruz
+                # 1. Karakter düzenlemelerini (URL encode) yapıyoruz
                 new_url = new_url.replace("o=1&e", "o=1%26e")
                 new_url = new_url.replace("&", "%26")
-                
-                # 2. Düzenlenmiş linkin başına belirtilen worker adresini ekliyoruz
+
+                # 2. Worker adresini ekle
                 prefix = "https://avva.magnitude.workers.dev/?url="
                 new_url = prefix + new_url
 
                 new_lines.append(new_url + "\n")
                 updated += 1
-                print(f"✅ Güncellendi ve Öneklendi: {current_channel_name}")
+                print(f"✅ Güncellendi: {current_channel_name} (eşleşme: {upper_name if link_map.get(upper_name) else norm_name if link_map.get(norm_name) else old_slug})")
             else:
-                # Eşleşme bulunamazsa eski linki koru
                 new_lines.append(line)
-                print(f"⚠️ Eşleşme yok, eski link korundu: {current_channel_name}")
+                print(f"⚠️ Eşleşme yok, eski link korundu: {current_channel_name} (aranan: '{upper_name}', '{norm_name}', '{old_slug}')")
 
         # Güncelleme tarih satırını güncelle
         elif stripped.startswith("# Son Güncelleme:") or stripped.startswith("# Last Updated:"):
