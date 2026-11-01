@@ -34,7 +34,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add tv247tr.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Otomatik playlist.m3u güncellemesi: $(date +'%Y-%m-%d %H:%M:%S')" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Otomatik tv247tr.m3u güncellemesi: $(date +'%Y-%m-%d %H:%M:%S')" && git push)
 
       # --- EKLENEN BİLGİLENDİRME VE ÖZET ADIMI ---
       - name: İşlem Özetini Oluştur ve Bilgilendir
@@ -44,7 +44,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Çalışma Zamanı:** $(date +'%Y-%m-%d %H:%M:%S') (UTC)" >> $GITHUB_STEP_SUMMARY
           
-          if [ -f playlist.m3u ]; then
+          if [ -f tv247tr.m3u ]; then
             SATIR_SAYISI=$(wc -l < tv247tr.m3u)
             DOSYA_BOYUTU=$(du -h tv247tr.m3u | cut -f1)
             echo " - **Durum:** ✅ \`tv247tr.m3u\` başarıyla kontrol edildi/güncellendi." >> $GITHUB_STEP_SUMMARY
