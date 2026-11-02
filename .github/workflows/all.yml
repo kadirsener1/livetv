@@ -54,7 +54,20 @@ jobs:
             echo "tv247tr için değişiklik yok."
           fi
 
-      # --- 2. ATOM İŞLEMİ ---
+               # --- 2. ATOM İŞLEMİ ---
+      - name: Run avva Scraper & Save
+        continue-on-error: true
+        run: |
+          python scrape_avvason.py
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "avva linkleri güncellendi [skip ci]"
+            git push
+          else
+            echo "avva için değişiklik yok."
+          fi
+
+      # --- 3. ATOM İŞLEMİ ---
       - name: Run atom Scraper & Save
         continue-on-error: true
         run: |
@@ -67,7 +80,7 @@ jobs:
             echo "atom için değişiklik yok."
           fi
 
-      # --- 3. MAHSUN İŞLEMİ ---
+      # --- 4. MAHSUN İŞLEMİ ---
       - name: Run mahsun Scraper & Save
         continue-on-error: true
         run: |
@@ -80,7 +93,7 @@ jobs:
             echo "mahsun için değişiklik yok."
           fi
 
-      # --- 4. TV247WS İŞLEMİ ---
+      # --- 5. TV247WS İŞLEMİ ---
       - name: Run tv247ws Scraper & Save
         continue-on-error: true
         run: |
