@@ -19,6 +19,22 @@ CHANNELS_TO_UPDATE = [
         "name": "BEİN SPORTS 1-BS",  # tv247tr.m3u içerisindeki kanal adı
         "path": "/?channel=channel%3Atflix-MDJjNzUwY2JiYTUzYTZlZg"
     },
+{
+        "name": "BEİN SPORTS 2-BS",  # tv247tr.m3u içerisindeki kanal adı
+        "path": "?channel=channel%3Atflix-NjNlZmVjMzI1MGY3NzgyYg"
+    },
+    {
+        "name": "BEİN SPORTS 3-BS",  # tv247tr.m3u içerisindeki kanal adı
+        "path": "?channel=channel%3Atflix-MTA4MWJhNGE4MDFiMzFjZg"
+    },
+    {
+        "name": "BEİN SPORTS 4-BS",  # tv247tr.m3u içerisindeki kanal adı
+        "path": "?channel=channel%3Atflix-YzkwOWU3MzQ0ZjAxNmRjMA"
+    },
+    {
+        "name": "BEİN SPORTS 5-BS",  # tv247tr.m3u içerisindeki kanal adı
+        "path": "?channel=channel%3Atflix-Yjg5NTA1ZGE2M2YyYWZkYg"
+    },
     {
         "name": "Boss Sports -deneme",  # tv247tr.m3u içerisindeki diğer kanal adı
         "path": "/?channel=data-reality%3Azirve"
