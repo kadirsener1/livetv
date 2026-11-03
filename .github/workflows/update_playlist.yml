@@ -1,0 +1,36 @@
+name: boss Update IPTV Playlist
+
+on:
+  schedule:
+    # Her 30 dakikada bir otomatik çalıştır
+    - cron: '*/30 * * * *'
+  workflow_dispatch: # Elle tetikleme imkanı
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests
+
+      - name: Run Scraper Script
+        run: python scrape_boss.py
+
+      - name: Commit and Push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.io"
+          git add playlist.m3u
+          git diff --staged --quiet || git commit -m "Auto-update m3u8 playlist link [skip ci]"
+          git push
