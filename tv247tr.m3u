@@ -1,22 +1,11 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
-#EXTINF:-1 tvg-id="02c750cbba53a6ef" tvg-logo="https://tflix-document-channels.cloudvix001.workers.dev/logos/bein-sports-1-4k.png" group-title="Turkey",Bein Sports 1 TR2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-#EXTVLCOPT:http-reconnect=true
-https://elif.eromaxe.com/zeynep/bein1tr
-#EXTINF:-1 tvg-id="63efec3250f7782b" tvg-logo="https://tflix-document-channels.cloudvix001.workers.dev/logos/bein-sports-2-4k.png" group-title="Turkey",Bein Sports 2 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-#EXTVLCOPT:http-reconnect=true
-https://elif.eromaxe.com/zeynep/bein2tr
+
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 1-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 #EXTVLCOPT:http-reconnect=true
 https://avva.magnitude.workers.dev/?url=https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/7bfef59399655e106365c2b523b44d506901881165dd0690129f31258f9b50fa/1793739653/bein1tr.m3u8
 
