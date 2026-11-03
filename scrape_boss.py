@@ -64,7 +64,7 @@ CHANNELS_TO_UPDATE = [
         "path": "?channel=channel%3Atflix-ZGQ5MDRhZjM0NGUzNmE4ZA"
     },
     {
-        "name": "SPOR SMART -BS",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "name": "SPOR SMART-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
         "path": "?channel=channel%3Atflix-ZjRhZTVhYTY2NWViMWFhOQ"
     },
     {
@@ -72,7 +72,7 @@ CHANNELS_TO_UPDATE = [
         "path": "?channel=channel%3Atflix-N2NhZGU3M2NjNTlkOGY0Yw"
     },
     {
-        "name": "ATV -BS",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "name": "ATV-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
         "path": "?channel=channel%3Atflix-MDY0NDRjNTZkY2RmMWUwMg"
     }
     
