@@ -1,7 +1,6 @@
 import asyncio
 import concurrent.futures
 import os
-import re
 import requests
 from playwright.async_api import async_playwright
 
@@ -9,20 +8,19 @@ from playwright.async_api import async_playwright
 BASE_PREFIX = "https://bosssports"
 BASE_SUFFIX = ".com"
 START_NUM = 1000
-END_NUM = 1400
+END_NUM = 2000
 
 CACHE_FILE = "domain_cache.txt"
-OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı özel dosya adı
+OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı dosya adı
 
-# Takip edilecek kanallar ve M3U içindeki aranacak isimleri (tvg-name veya görünen ad)
-# Burada sadece linkini güncellemek istediğiniz kanal isimlerini ve site yollarını belirtirsiniz.
+# Güncellenecek kanallar ve M3U içindeki aranacak isimleri
 CHANNELS_TO_UPDATE = [
     {
-        "name": "BEİN SPORTS 1-BS",  # tv247tr.m3u içerisindeki tam kanal adı
+        "name": "Boss Sports - Tflix",  # tv247tr.m3u içerisindeki kanal adı
         "path": "/?channel=channel%3Atflix-MDJjNzUwY2JiYTUzYTZlZg"
     },
     {
-        "name": "BEİN SPORTS 2-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "name": "Boss Sports - Örnek Kanal 2",  # tv247tr.m3u içerisindeki diğer kanal adı
         "path": "/?channel=channel%3Aornek-kanal-kodu-2"
     }
 ]
@@ -87,7 +85,7 @@ async def main():
     if not active_base_url:
         return
 
-    # 1. Adım: Güncel m3u8 linklerini her kanal için ayrı ayrı topla
+    # 1. Adım: Güncel m3u8 linklerini bul
     updated_links = {}
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -105,9 +103,9 @@ async def main():
 
         await browser.close()
 
-    # 2. Adım: Mevcut tv247tr.m3u dosyasını oku ve SADECE ilgili kanalın altındaki linki güncelle
+    # 2. Adım: tv247tr.m3u dosyasını oku ve #EXTVLCOPT satırlarına dokunmadan linkleri güncelle
     if not os.path.exists(OUTPUT_FILE):
-        print(f"Hata: {OUTPUT_FILE} dosyası bulunamadı! Lütfen önce mevcut m3u dosyanızı repoya ekleyin.")
+        print(f"Hata: {OUTPUT_FILE} dosyası bulunamadı!")
         return
 
     with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
@@ -117,28 +115,35 @@ async def main():
     i = 0
     while i < len(lines):
         line = lines[i]
-        # Satırda kanal adı geçiyor mu kontrol et
         matched_channel = None
         for ch_name in updated_links.keys():
             if ch_name in line:
                 matched_channel = ch_name
                 break
 
-        if matched_channel and i + 1 < len(lines):
-            # Kanal adının bulunduğu satırı aynen ekle
+        if matched_channel:
+            # Kanal adının bulunduğu satırı ekle
             new_lines.append(line)
-            # Bir sonraki satır (eski link) yerine yeni güncel linki yaz ve eski link satırını atla
-            new_lines.append(f"{updated_links[matched_channel]}\n")
-            i += 2  # Eski link satırını geç
+            i += 1
+            
+            # Aradaki tüm ek satırları (#EXTVLCOPT vb.) bozmadan aynen kopyala
+            while i < len(lines) and lines[i].strip().startswith("#"):
+                new_lines.append(lines[i])
+                i += 1
+            
+            # Artık sırada eski akış linki var. Onu yeni link ile değiştir ve eskisini atla
+            if i < len(lines):
+                new_lines.append(f"{updated_links[matched_channel]}\n")
+                i += 1  # Eski link satırını geç
         else:
             new_lines.append(line)
             i += 1
 
-    # 3. Adım: Dosyayı aynı sıra ve yapıyı bozmadan kaydet
+    # 3. Adım: Dosyayı kaydet
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
     
-    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası sıralama ve diğer kanallar bozulmadan güncellendi.")
+    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası #EXTVLCOPT satırları korunarak güncellendi.")
 
 if __name__ == "__main__":
     asyncio.run(main())
