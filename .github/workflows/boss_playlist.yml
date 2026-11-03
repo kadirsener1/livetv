@@ -2,8 +2,9 @@ name: boss TV247TR Playlist & Cache
 
 on:
   schedule:
-    # Her 30 dakikada bir otomatik çalıştır
-    - cron: '*/30 * * * *'
+    # Her 1.5 saatte bir (gecikme yaşamadan güvenli çalışması için sabit saat dilimleri olarak) ayarlandı
+    - cron: '0 0,2,4,6,8,10,12,14,16,18,20,22 * * *'
+    - cron: '30 1,3,5,7,9,11,13,15,17,19,21,23 * * *'
   workflow_dispatch: # Elle tetikleme imkanı
 
 jobs:
@@ -37,7 +38,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.io"
           
-          # Sadece tv247tr.m3u ve domain_cache.txt dosyalarını stage'e ekle
+          # tv247tr.m3u ve domain_cache.txt dosyalarını stage'e ekle
           git add tv247tr.m3u domain_cache.txt
           
           # Eğer dosyalarda değişiklik olduysa commit at ve push'la
