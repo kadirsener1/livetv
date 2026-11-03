@@ -20,8 +20,8 @@ CHANNELS_TO_UPDATE = [
         "path": "/?channel=channel%3Atflix-MDJjNzUwY2JiYTUzYTZlZg"
     },
     {
-        "name": "Boss Sports - Örnek Kanal 2",  # tv247tr.m3u içerisindeki diğer kanal adı
-        "path": "/?channel=channel%3Aornek-kanal-kodu-2"
+        "name": "Boss Sports -deneme",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "path": "/?channel=data-reality%3Azirve"
     }
 ]
 
