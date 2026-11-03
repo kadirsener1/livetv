@@ -155,36 +155,84 @@ https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/exxen4/index.m3u8
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/exxen5/index.m3u8?o=1%26e=1793395277%26tk=55e60e47afe4b5212d42c6ad09d52d62
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN 1 FEED (720P)
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/bein1feed720p
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN 1 SD (360P)
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/bein1sd360p
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 1
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports1
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 1 (720P)
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports1720p
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 1 (720PFEED)
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports1720pfeed
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 1 [LIVE DURING EVENTS ONLY]
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports1liveduringeventsonly
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 1 +
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports1plus
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 1 50 FPS
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports150fps
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 1 FEED
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports1feed
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 1 H265
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports1h265
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 1 HD (TURKEY)
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports1hdturkey
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 720P FEED
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports720pfeed
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 8K FEED
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports8kfeed
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS FEED (OZEL FEED YAYIN)
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsportsfeedozelfeedyayin
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 4K FEED(KUTU)
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports4kfeedkutu
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor Vavoo",BEIN SPORTS 4K FEED(UYDU)
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beinsports4kfeeduydu
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://raw.githubusercontent.com/kadirsener1/livetv/main/logo/beIN-SPORTS-1-HD.png" group-title="Spor",BEIN SPORTS 1-MO
 https://matchora-proxy.magnitude.workers.dev/play/913446
@@ -484,9 +532,15 @@ https://tv-trt2.medya.trt.com.tr/master_1080.m3u8
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal",ATV
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal",ATV FHD-V
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal",ATV FHD-Vv
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/atv
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal",ATV FHD-V2
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/atv2
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/HwxYC7.png" group-title="Ulusal",Show Tv
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
