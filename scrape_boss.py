@@ -21,7 +21,7 @@ CHANNELS_TO_UPDATE = [
     },
     {
         "name": "Boss Sports -deneme",  # tv247tr.m3u içerisindeki diğer kanal adı
-        "path": /player.php?source=https%3A%2F%2Fwv0.zirvedesin249.cfd%2Fzirve%2Fmono.m3u8&lang=en"
+        "path": "/player.php?source=https%3A%2F%2Fwv0.zirvedesin249.cfd%2Fzirve%2Fmono.m3u8&lang=en"
     }
 ]
 
