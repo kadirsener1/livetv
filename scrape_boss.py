@@ -7,7 +7,7 @@ from playwright.async_api import async_playwright
 # Ortak domain yapılandırması
 BASE_PREFIX = "https://bosssports"
 BASE_SUFFIX = ".com"
-START_NUM = 1000
+START_NUM = 1074
 END_NUM = 2000
 
 CACHE_FILE = "domain_cache.txt"
