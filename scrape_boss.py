@@ -36,9 +36,46 @@ CHANNELS_TO_UPDATE = [
         "path": "?channel=channel%3Atflix-Yjg5NTA1ZGE2M2YyYWZkYg"
     },
     {
-        "name": "Boss Sports -deneme",  # tv247tr.m3u içerisindeki diğer kanal adı
-        "path": "/?channel=data-reality%3Azirve"
+        "name": "BEİN SPORTS MAX 1-BS",  # tv247tr.m3u içerisindeki kanal adı
+        "path": "?channel=channel%3Atflix-MzY1NGU3NzgyN2FjZTFmYQ"
+    },
+    {
+        "name": "BEİN SPORTS MAX 2-BS",  # tv247tr.m3u içerisindeki kanal adı
+        "path": "?channel=channel%3Atflix-ZDdkZjZiNWZlNjdlMzIxMQ"
+    },
+    {
+        "name": "BEİN SPORTS HABER-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "path": "?channel=channel%3Atflix-NTRmYzI4ZjMzMmZhZDc0Mg"
+    },
+    {
+        "name": "S SPORT-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "path": "?channel=channel%3Atflix-NzI0NmY4MjdlOGI4YWQzNw"
+    },
+    {
+        "name": "S SPORT 2-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "path": "?channel=channel%3Atflix-NzM1ZmIxZDU3MWI0ZWJmNA"
+    },
+    {
+        "name": "EUROSPORT 1-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "path": "?channel=channel%3Atflix-NDVlOWE1YmNmYzc2NTI5NA"
+    },
+    {
+        "name": "EUROSPORT 2-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "path": "?channel=channel%3Atflix-ZGQ5MDRhZjM0NGUzNmE4ZA"
+    },
+    {
+        "name": "SPOR SMART -BS",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "path": "?channel=channel%3Atflix-ZjRhZTVhYTY2NWViMWFhOQ"
+    },
+    {
+        "name": "SPOR SMART 2-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "path": "?channel=channel%3Atflix-N2NhZGU3M2NjNTlkOGY0Yw"
+    },
+    {
+        "name": "ATV -BS",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "path": "?channel=channel%3Atflix-MDY0NDRjNTZkY2RmMWUwMg"
     }
+    
 ]
 
 def test_url_is_active(url):
