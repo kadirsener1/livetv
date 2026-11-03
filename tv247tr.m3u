@@ -44,6 +44,12 @@ https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osld
 #EXTVLCOPT:live-caching=10000
 #EXTVLCOPT:http-reconnect=true
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/e1b82a66ba57d9f5caf7c2803dee5aa84aada5bc32cd3f47c178ee0b1161d1cb/1793730715/beinmax2tr.m3u8
+#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS HABER-BS-avva
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
+https://avva.magnitude.workers.dev/?url=https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/fa4800d0691e19996333e82227e587a81b398392e33896dd05eb2a6fd62cf827/1793730721/beinhabertr.m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS HABER-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=10000
