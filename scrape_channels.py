@@ -3,9 +3,10 @@ import os
 import requests
 from playwright.async_api import async_playwright
 
-OUTPUT_FILE = "playlist.m3u"  # Çıktının yazılacağı dosya adı güncellendi
+OUTPUT_FILE = "playlist.m3u"
 API_URL = "https://tflix-document-channels.cloudvix001.workers.dev/api/channels"
 PROXY_PREFIX = "https://avva.magnitude.workers.dev/?url="
+CONCURRENCY_LIMIT = 4  # Aynı anda taranacak kanal sayısı (İstediğiniz gibi artırabilirsiniz)
 
 def fetch_channels_from_api():
     try:
@@ -26,7 +27,8 @@ def fetch_channels_from_api():
         print(f"API'den kanal listesi alınırken hata oluştu: {e}")
     return []
 
-async def get_stream_url(page, full_url):
+async def get_stream_url(browser, ch):
+    page = await browser.new_page()
     stream_url = None
 
     def handle_request(request):
@@ -37,14 +39,14 @@ async def get_stream_url(page, full_url):
     page.on("request", handle_request)
 
     try:
-        print(f"Yükleniyor: {full_url}")
-        await page.goto(full_url, timeout=45000)
-        await page.wait_for_timeout(6000)
+        print(f"Taranıyor: {ch['name']} ({ch['url']})")
+        await page.goto(ch['url'], timeout=45000)
+        await page.wait_for_timeout(5000)  # Bekleme süresi optimize edildi
     except Exception as e:
-        print(f"Yükleme hatası: {e}")
+        print(f"Yükleme hatası ({ch['name']}): {e}")
 
-    page.remove_listener("request", handle_request)
-    return stream_url
+    await page.close()
+    return ch['name'], stream_url
 
 async def main():
     channels_to_update = fetch_channels_from_api()
@@ -52,27 +54,31 @@ async def main():
         print("Taranacak kanal bulunamadı!")
         return
 
-    # 1. Adım: Güncel m3u8 linklerini bul ve Worker proxy ekle
     updated_links = {}
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
-        page = await browser.new_page()
+        
+        # Kanalları belirlenen limit kadar gruplar halinde paralel tarat
+        semaphore = asyncio.Semaphore(CONCURRENCY_LIMIT)
 
-        for ch in channels_to_update:
-            full_url = ch['url']
-            print(f"\nTaranıyor: {ch['name']} ({full_url})")
-            stream_url = await get_stream_url(page, full_url)
-            if stream_url:
-                print(f" Başarılı! Link alındı.")
-                updated_links[ch['name']] = stream_url
+        async def sem_task(ch):
+            async with semaphore:
+                return await get_stream_url(browser, ch)
+
+        tasks = [sem_task(ch) for ch in channels_to_update]
+        results = await asyncio.gather(*tasks)
+
+        for name, link in results:
+            if link:
+                print(f" Başarılı! {name} linki alındı.")
+                updated_links[name] = link
             else:
-                print(f" Link alınamadı, eski link korunacak.")
+                print(f" {name} için link alınamadı.")
 
         await browser.close()
 
-    # 2. Adım: playlist.m3u dosyasını oku ve EXTVLCOPT satırlarını koruyarak güncelle
+    # Dosya güncelleme adımı
     if not os.path.exists(OUTPUT_FILE):
-        print(f"Hata: {OUTPUT_FILE} dosyası bulunamadı! Yeni dosya oluşturuluyor...")
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
 
@@ -92,13 +98,9 @@ async def main():
         if matched_channel:
             new_lines.append(line)
             i += 1
-            
-            # Aradaki tüm ek satırları (#EXTVLCOPT vb.) bozmadan aynen kopyala
             while i < len(lines) and lines[i].strip().startswith("#"):
                 new_lines.append(lines[i])
                 i += 1
-            
-            # Eski akış linkini atla, yeni proxy'li linki yaz
             if i < len(lines):
                 new_lines.append(f"{updated_links[matched_channel]}\n")
                 i += 1
@@ -106,7 +108,6 @@ async def main():
             new_lines.append(line)
             i += 1
 
-    # Eğer listede hiç olmayan yeni kanallar varsa dosyanın sonuna ekle
     existing_content = "".join(new_lines)
     for ch_name, link in updated_links.items():
         if ch_name not in existing_content:
@@ -116,11 +117,10 @@ async def main():
             new_lines.append("#EXTVLCOPT:live-caching=5000\n")
             new_lines.append(f"{link}\n")
 
-    # 3. Adım: Dosyayı kaydet
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
     
-    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası güncellendi.")
+    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası hızlı tarama ile güncellendi.")
 
 if __name__ == "__main__":
     asyncio.run(main())
