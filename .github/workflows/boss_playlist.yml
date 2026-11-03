@@ -1,4 +1,4 @@
-name: boss IPTV Playlist & Cache
+name: boss TV247TR Playlist & Cache
 
 on:
   schedule:
@@ -10,7 +10,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Repoya yazma izni (commit/push için şart)
+      contents: write # Repoya yazma izni (commit/push için zorunludur)
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -37,9 +37,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.io"
           
-          # playlist.m3u ve domain_cache.txt dosyalarını stage'e ekle
-          git add playlist.m3u domain_cache.txt
+          # Sadece tv247tr.m3u ve domain_cache.txt dosyalarını stage'e ekle
+          git add tv247tr.m3u domain_cache.txt
           
           # Eğer dosyalarda değişiklik olduysa commit at ve push'la
-          git diff --staged --quiet || git commit -m "Auto-update playlist and domain cache [skip ci]"
+          git diff --staged --quiet || git commit -m "Auto-update tv247tr playlist and domain cache [skip ci]"
           git push
