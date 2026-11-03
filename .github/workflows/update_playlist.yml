@@ -1,4 +1,4 @@
-name: boss Update IPTV Playlist
+name: Update IPTV Playlist via Playwright
 
 on:
   schedule:
@@ -22,7 +22,12 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install requests
+          python -m pip install --upgrade pip
+          pip install playwright
+
+      - name: Install Playwright Browsers
+        run: |
+          playwright install chromium
 
       - name: Run Scraper Script
         run: python scrape_boss.py
@@ -32,5 +37,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.io"
           git add playlist.m3u
-          git diff --staged --quiet || git commit -m "Auto-update m3u8 playlist link [skip ci]"
+          git diff --staged --quiet || git commit -m "Auto-update m3u8 playlist link via Playwright [skip ci]"
           git push
