@@ -1,41 +1,41 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BEİN SPORTS 1-BS
+#EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BEİN SPORTS 1-BS3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/f06c8522275dbb8334ce1609e054db15dcc45e3050b3d42904ee5bf07b7034c9/1793716414/bein1tr.m3u8
 
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BEİN SPORTS 2-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/a31009c28859f2559ab846afd8e3c13db44e31aa15c3ed4951a7d764f5be3a41/1793716419/bein2tr.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BEİN SPORTS 3-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/a195d4343aef30a988b7ba05aaa8a31a11cb54f580b60f6e0708e47924776e99/1793716426/bein3tr.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BEİN SPORTS 4-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/2b0f686dcad7d1e419b0ace5522d5f3085fae7090a86abfe8a3f7bd4d432029a/1793716432/bein4tr.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BEİN SPORTS 5-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/fbbb35fcefb17a0cd581897511effc730d647aa0ff0d62a03d4a04b58a729fd7/1793716438/bein5tr.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BEİN SPORTS MAX 1-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/667827b1cdfb8e45669cb44932da0e0e541274ad219ac8f1d6d2aaf49de803f7/1793716444/beinmax1tr.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BEİN SPORTS MAX 2-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/d46507d242d0996ead5e75492c79a6d9db4304cb9894fa69b0c5b6bf43c2331e/1793716450/beinmax2tr.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",BEİN SPORTS HABER-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
@@ -43,25 +43,39 @@ https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osld
 #EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/6d94e981492030b040eee2fc9a2f6fc0bab26256adf654e09f7a272e4902978b/1793716456/beinhabertr.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",S SPORT-BS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/f635f96deb19941958900cadd1f3e1dab8b5e62db78d8876d6c6602010333548/1793716462/ssport1tr.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",S SPORT 2-BS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/e390b606603337e258bcce32f6fca829468f135d209f4b619ce7c37a6475d32b/1793716469/ssport2tr.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",EUROSPORT 1-BS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/b2f67a786264bd2ff0d43dbceb20d1a7150d118fcf72e2bbfb9d4c1d780d6990/1793716475/eruosport1.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",EUROSPORT 2-BS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/3e2a82800e4ea576af30d51dd189533c2c514742193719729347df6fb353ab9b/1793716481/eruosport2.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",SPOR SMART-BS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/680fafd83c89c1db4f350d1f727d65dd8d9cda8874c088d9f6136281d7149635/1793716487/sportsmart.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",SPOR SMART 2-BS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/79813b9babc7d5ce5aba807a4df6ffe850b56a967d386d0d8947ed3a37d3f8ee/1793716493/sportsmart2.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/i/bg-2.HTXgrZ" group-title="İNFO",ATV-BS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/bb2e5d706dab19855068ad8f5e21fab5e20c3dec6ece917088498ca730ad7a12/1793716499/atv.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",beIN SPORTS 1 HD
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/bein1/playlist.m3u8?o=1%26e=1793715826%26tk=55222957d57e1a90cfef27c4e728092f
