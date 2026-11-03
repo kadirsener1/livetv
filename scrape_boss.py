@@ -1,6 +1,7 @@
 import asyncio
 import concurrent.futures
 import os
+import re
 import requests
 from playwright.async_api import async_playwright
 
@@ -8,27 +9,25 @@ from playwright.async_api import async_playwright
 BASE_PREFIX = "https://bosssports"
 BASE_SUFFIX = ".com"
 START_NUM = 1000
-END_NUM = 2000
+END_NUM = 1400
 
 CACHE_FILE = "domain_cache.txt"
-OUTPUT_FILE = "playlist.m3u"
+OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı özel dosya adı
 
-# Kanalların yolları (path) ve isimleri
-CHANNELS = [
+# Takip edilecek kanallar ve M3U içindeki aranacak isimleri (tvg-name veya görünen ad)
+# Burada sadece linkini güncellemek istediğiniz kanal isimlerini ve site yollarını belirtirsiniz.
+CHANNELS_TO_UPDATE = [
     {
-        "name": "Boss Sports - Tflix",
-        "path": "/?channel=channel%3Atflix-MDJjNzUwY2JiYTUzYTZlZg",
-        "group": "Spor Kanalları"
+        "name": "BEİN SPORTS 1-BS",  # tv247tr.m3u içerisindeki tam kanal adı
+        "path": "/?channel=channel%3Atflix-MDJjNzUwY2JiYTUzYTZlZg"
     },
     {
-        "name": "Boss Sports - Örnek Kanal 2",
-        "path": "/?channel=channel%3Aornek-kanal-kodu-2",
-        "group": "Spor Kanalları"
+        "name": "BEİN SPORTS 2-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
+        "path": "/?channel=channel%3Aornek-kanal-kodu-2"
     }
 ]
 
 def test_url_is_active(url):
-    """Verilen tam URL veya ana domain'in çalışıp çalışmadığını test eder"""
     try:
         response = requests.head(url, timeout=2.0, allow_redirects=True)
         return response.status_code < 400
@@ -36,41 +35,26 @@ def test_url_is_active(url):
         return False
 
 def check_single_domain_num(num):
-    """Numaraya göre domain adresini test eder"""
     url = f"{BASE_PREFIX}{num}{BASE_SUFFIX}"
     if test_url_is_active(url):
         return url
     return None
 
 def get_active_base_domain(max_workers=50):
-    """
-    Önce cache dosyasını kontrol eder. Cache'teki domain çalışıyorsa tarama yapmaz.
-    Çalışmıyorsa geniş aralığı multi-threading ile tarayıp yeni domain'i bulur ve kaydeder.
-    """
-    # 1. Adım: Cache kontrolü
     if os.path.exists(CACHE_FILE):
         with open(CACHE_FILE, "r", encoding="utf-8") as f:
             cached_url = f.read().strip()
-            if cached_url:
-                print(f"Cache'ten domain okunuyor: {cached_url}")
-                # Hızlıca cache'teki domain'in hala aktif olup olmadığını test et
-                if test_url_is_active(cached_url):
-                    print("Cache'teki domain aktif, tarama atlandı!")
-                    return cached_url
-                else:
-                    print("Cache'teki domain süresi dolmuş/kapanmış, yeniden taranıyor...")
+            if cached_url and test_url_is_active(cached_url):
+                print(f"Cache'teki domain aktif: {cached_url}")
+                return cached_url
 
-    # 2. Adım: Cache geçersizse multi-threading ile baştan tara
     print(f"Güncel ana domain aranıyor ({START_NUM}-{END_NUM} aralığı taranıyor)...")
-    
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = {executor.submit(check_single_domain_num, num): num for num in range(START_NUM, END_NUM)}
-        
         for future in concurrent.futures.as_completed(futures):
             result = future.result()
             if result:
-                print(f" Yeni aktif ana domain bulundu: {result}")
-                # Bulunan yeni domain'i cache dosyasına kaydet
+                print(f"Yeni aktif ana domain bulundu: {result}")
                 with open(CACHE_FILE, "w", encoding="utf-8") as f:
                     f.write(result)
                 return result
@@ -79,7 +63,6 @@ def get_active_base_domain(max_workers=50):
     return None
 
 async def get_stream_url(page, full_url):
-    """Playwright ile açılan sayfadan m3u8 akış adresini yakalar"""
     stream_url = None
 
     def handle_request(request):
@@ -100,40 +83,62 @@ async def get_stream_url(page, full_url):
     return stream_url
 
 async def main():
-    # 1. Adım: Önbellekli veya taramalı aktif domain'i al
     active_base_url = get_active_base_domain()
-    
     if not active_base_url:
         return
 
-    m3u_lines = ["#EXTM3U\n"]
-
-    # 2. Adım: Bulunan domain ile kanalları sırayla tarayıp m3u8 linklerini al
+    # 1. Adım: Güncel m3u8 linklerini her kanal için ayrı ayrı topla
+    updated_links = {}
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
 
-        for channel in CHANNELS:
-            full_url = f"{active_base_url}{channel['path']}"
-            print(f"\nİşleniyor: {channel['name']} ({full_url})")
-            
+        for ch in CHANNELS_TO_UPDATE:
+            full_url = f"{active_base_url}{ch['path']}"
+            print(f"\nTaranıyor: {ch['name']} ({full_url})")
             stream_url = await get_stream_url(page, full_url)
-
             if stream_url:
-                print(f" Başarılı! m3u8 linki alındı.")
-                extinf = f'#EXTINF:-1 tvg-name="{channel["name"]}" group-title="{channel["group"]}", {channel["name"]}\n'
-                m3u_lines.append(extinf)
-                m3u_lines.append(f"{stream_url}\n")
+                print(f" Başarılı! Link alındı.")
+                updated_links[ch['name']] = stream_url
             else:
-                print(f" Akış adresi yakalanamadı: {channel['name']}")
+                print(f" Link alınamadı, eski link korunacak.")
 
         await browser.close()
 
-    # 3. Adım: Sonuçları playlist.m3u dosyasına yaz
+    # 2. Adım: Mevcut tv247tr.m3u dosyasını oku ve SADECE ilgili kanalın altındaki linki güncelle
+    if not os.path.exists(OUTPUT_FILE):
+        print(f"Hata: {OUTPUT_FILE} dosyası bulunamadı! Lütfen önce mevcut m3u dosyanızı repoya ekleyin.")
+        return
+
+    with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+
+    new_lines = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        # Satırda kanal adı geçiyor mu kontrol et
+        matched_channel = None
+        for ch_name in updated_links.keys():
+            if ch_name in line:
+                matched_channel = ch_name
+                break
+
+        if matched_channel and i + 1 < len(lines):
+            # Kanal adının bulunduğu satırı aynen ekle
+            new_lines.append(line)
+            # Bir sonraki satır (eski link) yerine yeni güncel linki yaz ve eski link satırını atla
+            new_lines.append(f"{updated_links[matched_channel]}\n")
+            i += 2  # Eski link satırını geç
+        else:
+            new_lines.append(line)
+            i += 1
+
+    # 3. Adım: Dosyayı aynı sıra ve yapıyı bozmadan kaydet
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.writelines(m3u_lines)
+        f.writelines(new_lines)
     
-    print(f"\nTüm işlemler tamamlandı! {OUTPUT_FILE} güncellendi.")
+    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası sıralama ve diğer kanallar bozulmadan güncellendi.")
 
 if __name__ == "__main__":
     asyncio.run(main())
