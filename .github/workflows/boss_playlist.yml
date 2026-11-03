@@ -1,16 +1,17 @@
-name: Update TV247TR Playlist & Cache
+name: boss TV247TR Playlist & Cache
 
 on:
   schedule:
+    # Her 1.5 saatte bir (gecikme yaşamadan güvenli çalışması için sabit saat dilimleri olarak) ayarlandı
     - cron: '0 0,2,4,6,8,10,12,14,16,18,20,22 * * *'
     - cron: '30 1,3,5,7,9,11,13,15,17,19,21,23 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # Elle tetikleme imkanı
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Repoya yazma izni (commit/push için zorunludur)
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -36,46 +37,10 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.io"
+
+          # tv247tr.m3u ve domain_cache.txt dosyalarını stage'e ekle
           git add tv247tr.m3u domain_cache.txt
-          git diff --staged --quiet || git commit -m "Auto-update tv247tr playlist and domain cache [skip ci]"
-          git pushname: Update TV247TR Playlist & Cache
 
-on:
-  schedule:
-    - cron: '0 0,2,4,6,8,10,12,14,16,18,20,22 * * *'
-    - cron: '30 1,3,5,7,9,11,13,15,17,19,21,23 * * *'
-  workflow_dispatch:
-
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      - name: Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests playwright
-
-      - name: Install Playwright Browsers
-        run: |
-          playwright install chromium
-
-      - name: Run Scraper Script
-        run: python scrape_boss.py
-
-      - name: Commit and Push if changed
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.io"
-          git add tv247tr.m3u domain_cache.txt
+          # Eğer dosyalarda değişiklik olduysa commit at ve push'la
           git diff --staged --quiet || git commit -m "Auto-update tv247tr playlist and domain cache [skip ci]"
           git push
