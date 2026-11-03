@@ -17,7 +17,7 @@ OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı dosya adı
 CHANNELS_TO_UPDATE = [
     {
         "name": "GÜNÜN MAÇI",  # tv247tr.m3u içerisindeki kanal adı
-        "path": "/?match=uefa-sampiyonlar-ligi-galatasaray-vs-stuttgard-ii-767726833"
+        "path": "?channel=channel%3Abein-sports-3"
     },
     {
         "name": "BEİN SPORTS 1-BS",  # tv247tr.m3u içerisindeki kanal adı
