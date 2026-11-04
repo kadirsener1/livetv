@@ -17,7 +17,7 @@ OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı dosya adı
 CHANNELS_TO_UPDATE = [
     {
         "name": "BEİN SPORTS 1-BS",  # tv247tr.m3u içerisindeki kanal adı
-        "path": "?channel=channel%3Atflix-MDJjNzUwY2JiYTUzYTZlZg"
+        "path": "/?channel=channel%3Atflix-MDJjNzUwY2JiYTUzYTZlZg"
     },
     {
         "name": "BEİN SPORTS 2-BS",  # tv247tr.m3u içerisindeki kanal adı
