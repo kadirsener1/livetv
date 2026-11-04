@@ -827,7 +827,10 @@ https://aktif-q65v.onrender.com/play/viasathistory
 #EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/lovenature
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",TARİH TV-V
-https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3856957052050da882aa10
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
+https://aktif-q65v.onrender.com/play/tarihtv
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",TRT BELGESEL
 https://tv-trtbelgesel.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/xTTxc9G3/Bein-gurme-removebg-preview.png" group-title="Belgesel",beIN GURME-V
