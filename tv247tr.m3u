@@ -822,9 +822,10 @@ https://aktif-q65v.onrender.com/play/bbcearth
 #EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/viasathistory
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",LOVE NATURE-V
-https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/259380083927b83aced3e1
-#EXTINF:-1 tvg-logo="" group-title="Belgesel",LOVE NATURE 2-V
-https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3578706863eeeea821418e
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
+https://aktif-q65v.onrender.com/play/lovenature
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",TARİH TV-V
 https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/3856957052050da882aa10
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",TRT BELGESEL
