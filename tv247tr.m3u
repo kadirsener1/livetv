@@ -834,16 +834,31 @@ https://aktif-q65v.onrender.com/play/tarihtv
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",TRT BELGESEL
 https://tv-trtbelgesel.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/xTTxc9G3/Bein-gurme-removebg-preview.png" group-title="Belgesel",beIN GURME-V
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/gurme
 #EXTINF:-1 group-title="Belgesel",BEİN İZ-V
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/beiniz
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",ÇİFTÇİ TV
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",YABAN TV-V
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/yabantv
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",KÖY TV-V
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/koytv
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",TARIM TV
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/tarımtv
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",TOPRAK TV
 https://streams.uzunmuhalefet.com/stream/54fd8806-0142-4839-930e-aa1d662ad866.m3u8
@@ -862,8 +877,14 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
 #EXTINF:-1 tvg-id="127" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/51d3a383-2842-4a4c-b622-20f09b309973.png" group-title="Çocuk",Disney Junior
 https://saran-live.ercdn.net/disneyjunior/index.m3u8
 #EXTINF:-1 tvg-id="minikago" tvg-logo="https://img.dsmartgo.com.tr/content/I/WS/13404/Thumbnail.png" tvg-name="Minika Go" group-title="Çocuk",Cartoonito
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/11743931b356e8661a4d
 #EXTINF:-1 tvg-id="minikago" tvg-logo="https://img.dsmartgo.com.tr/content/I/WS/13404/Thumbnail.png" tvg-name="Minika Go" group-title="Çocuk",Anigo Zorex Tv
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2046583925cdbd476d8733
 #EXTINF:-1 tvg-id="minikago" tvg-logo="https://img.dsmartgo.com.tr/content/I/WS/13404/Thumbnail.png" tvg-name="Minika Go" group-title="Çocuk",Çocuk Smart
 http://88.99.165.164:6878/ace/getstream?infohash=0422e97375b37af02329a2d80e6ec54866fa233f&pid=1142
