@@ -532,7 +532,7 @@ https://tv-trt2.medya.trt.com.tr/master_1080.m3u8
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal",ATV
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal",ATV FHD-Vv
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal",ATV FHD-V
 #EXTVLCOPT:network-caching=10000
 #EXTVLCOPT:live-caching=10000
 #EXTVLCOPT:http-reconnect=true
@@ -802,15 +802,25 @@ https://aktif-q65v.onrender.com/play/natgeowild
 #EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/discovery
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",INVESTIGATION DISCOVERY
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 http://65.108.239.207/discs/index.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",INVESTIGATION DISCOVERY-V
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/id
 #EXTINF:-1 group-title="Belgesel",BBC EARTH-V
-https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/2618455562938e9a0e0faf
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
+https://aktif-q65v.onrender.com/play/bbcearth
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",VİASAT HİSTORY-V
-https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1165670263945583e36e19
-#EXTINF:-1 group-title="Belgesel",VİASAT HİSTORY-V2
-https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/1335130209de4b92f31496
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
+https://aktif-q65v.onrender.com/play/viasathistory
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",LOVE NATURE-V
 https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-iptv/play/259380083927b83aced3e1
 #EXTINF:-1 tvg-logo="" group-title="Belgesel",LOVE NATURE 2-V
