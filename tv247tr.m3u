@@ -49,12 +49,6 @@ https://bosstvxproxy.magnitude.workers.dev/beinmax2tr
 #EXTVLCOPT:network-caching=10000
 #EXTVLCOPT:live-caching=10000
 #EXTVLCOPT:http-reconnect=true
-https://bosstvxproxy.magnitude.workers.dev/beinmax1tr
-#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS HABER-BS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=10000
-#EXTVLCOPT:live-caching=10000
-#EXTVLCOPT:http-reconnect=true
 https://bosstvxproxy.magnitude.workers.dev/beinhabertr
 #EXTINF:-1 tvg-logo="" group-title="İNFO",S SPORT-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
