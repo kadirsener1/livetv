@@ -86,12 +86,7 @@ https://bosstvxproxy.magnitude.workers.dev/sportsmart
 #EXTVLCOPT:live-caching=10000
 #EXTVLCOPT:http-reconnect=true
 https://bosstvxproxy.magnitude.workers.dev/sportsmart2
-#EXTINF:-1 tvg-logo="" group-title="İNFO",ATV-BS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=10000
-#EXTVLCOPT:live-caching=10000
-#EXTVLCOPT:http-reconnect=true
-https://bosstvxproxy.magnitude.workers.dev/atv
+
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",beIN SPORTS 1 HD
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/bein1/playlist.m3u8?o=1%26e=1793876417%26tk=73568eababa4227de14f7dec1cc2d9d9
@@ -542,6 +537,12 @@ https://aktif-q65v.onrender.com/play/atv
 #EXTVLCOPT:live-caching=10000
 #EXTVLCOPT:http-reconnect=true
 https://aktif-q65v.onrender.com/play/atv2
+#EXTINF:-1 tvg-logo="" group-title="İNFO",ATV-BS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=10000
+#EXTVLCOPT:live-caching=10000
+#EXTVLCOPT:http-reconnect=true
+https://bosstvxproxy.magnitude.workers.dev/atv
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/HwxYC7.png" group-title="Ulusal",Show Tv
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwx7EZ.png" group-title="Ulusal",Star Tv
