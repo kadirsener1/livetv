@@ -7,11 +7,8 @@ https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
 #EXTVLCOPT:http-reconnect=true
 https://bosstvxproxy.magnitude.workers.dev/bein1tr
 
-#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 1-BS no csche test
+#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 3-BS düz
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=10000
-#EXTVLCOPT:live-caching=10000
-#EXTVLCOPT:http-reconnect=true
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/802dac7bb20d09bcab4562ea69529f97a830622d46ab755809e33aa685e3f679/1794084253/bein3tr.m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 2-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
