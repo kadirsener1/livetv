@@ -64,9 +64,6 @@ def get_all_channels():
         ("bein-sports-max-2", "BEIN SPORTS MAX 2-A"),
         ("s-sport", "S SPORT-A"),
         ("s-sport-2", "S SPORT 2-A"),
-        ("trt-spor", "TRT SPOR-A"),
-        ("trt-yildiz", "TRT YILDIZ-A"),
-        ("trt1", "TRT 1-A"),
         ("a-spor", "A SPOR-A"),
     ]
 
