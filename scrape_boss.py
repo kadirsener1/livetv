@@ -118,9 +118,8 @@ async def get_stream_url(page, full_url):
     def handle_request(request):
         nonlocal stream_url
         if ".m3u8" in request.url and not stream_url:
-            # Bulunan ham m3u8 linkinin başına Cloudflare Worker proxy ön eki ekleniyor
-            proxy_prefix = "https://avva.magnitude.workers.dev/?url="
-            stream_url = f"{proxy_prefix}{request.url}"
+            # AVVA proxy ön eki kaldırıldı, yakalanan ham m3u8 adresi doğrudan atanıyor
+            stream_url = request.url
 
     page.on("request", handle_request)
 
@@ -150,7 +149,7 @@ async def main():
             print(f"\nTaranıyor: {ch['name']} ({full_url})")
             stream_url = await get_stream_url(page, full_url)
             if stream_url:
-                print(f" Başarılı! Link alındı ve Worker eklendi.")
+                print(f" Başarılı! Doğrudan .m3u8 linki alındı.")
                 updated_links[ch['name']] = stream_url
             else:
                 print(f" Link alınamadı, eski link korunacak.")
