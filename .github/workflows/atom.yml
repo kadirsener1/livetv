@@ -3,6 +3,8 @@ name: Atom M3U Güncelleyici
 permissions:
   contents: write   # Repository'ye yazma/push izni
 
+  workflow_dispatch: # Manuel çalıştırmak için
+
 jobs:
   update-m3u:
     runs-on: ubuntu-latest
