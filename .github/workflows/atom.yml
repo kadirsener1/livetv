@@ -1,10 +1,7 @@
 name: Atom M3U Güncelleyici
 
-permissions:
-  contents: write   # Repository'ye yazma/push izni
-
- on:
-  workflow_dispatch:
+on:
+  workflow_dispatch: # Sadece dışarıdan gelen (Cloudflare / Manuel) tetiklemeleri kabul eder
 
 jobs:
   update-m3u:
