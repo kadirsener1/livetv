@@ -2,14 +2,10 @@
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 1-BS no csche
+#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 1-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTVLCOPT:http-reconnect=true
 https://avva.magnitude.workers.dev/?url=https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/c6e4ac93d86bdf26a9079b6c92327285cb38fd064797b324605caf71d8a0aa64/1794084860/bein1tr.m3u8
-
-#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 3-BS düz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://avva.magnitude.workers.dev/?url=https://bosssports1076.com/player.php?source=https%3A%2F%2F1.vanusmakitakosux7.cfd%2Fstream%2F20908455.m3u8%3Fkid%3Dcust_8094%26stream%3D20908455%26expires%3D1794087622%26sign%3D3d0daef468c5825fb10f9607ab3101d02adbbdb18225df22daa0a3485c0dccd3&lang=en
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 2-BS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=10000
