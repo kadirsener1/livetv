@@ -1,8 +1,9 @@
 import os
+import re
 import time
 from playwright.sync_api import sync_playwright
 
-START_URL = "https://url24.link/AtomSporTV"
+# AtomSporTV
 OUTPUT_FILE = "tv247tr.m3u"
 
 GREEN = "\033[92m"
@@ -10,19 +11,26 @@ RESET = "\033[0m"
 
 def get_channel_m3u8_with_browser(channel_id):
     """Playwright kullanarak tarayıcı tabanlı m3u8 / stream linkini yakala"""
-    target_url = f"https://www.atomsportv520.top/matches?id={channel_id}"
+    # Güncel ana domain (Gerekirse tarayıcıdan kontrol edip güncelleyebilirsiniz)
+    base_domain = "https://www.atomsportv520.top"
+    target_url = f"{base_domain}/matches?id={channel_id}"
     captured_url = None
 
     with sync_playwright() as p:
-        # Tarayıcıyı arka planda (headless) başlat
         browser = p.chromium.launch(headless=True)
+        
+        # Referer ve User-Agent ayarları context düzeyinde yapılandırıldı
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            referer="https://url24.link/"
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
         )
+        context.set_extra_http_headers({
+            "Referer": "https://url24.link/",
+            "Origin": base_domain
+        })
+        
         page = context.new_page()
 
-        # Ağ isteklerini dinle ve .m3u8 uzantılı adresleri yakala
+        # Ağ isteklerini dinle ve .m3u8 veya manifest uzantılı yayınları yakala
         def handle_request(request):
             nonlocal captured_url
             if ".m3u8" in request.url or "manifest" in request.url:
@@ -32,28 +40,26 @@ def get_channel_m3u8_with_browser(channel_id):
         page.on("request", handle_request)
 
         try:
-            print(f"Yükleniyor: {target_url}")
             page.goto(target_url, timeout=15000)
-            
-            # Sayfanın ve oynatıcının yüklenmesi için kısa bir bekleme
+            # Sayfanın yüklenmesi ve oynatıcının tetiklenmesi için kısa bekleme
             page.wait_for_timeout(4000)
             
-            # Eğer ağ isteğinde yakalanamadıysa sayfa kaynağındaki scriptlerde ara
+            # Eğer isteklerde doğrudan yakalanamadıysa sayfa kaynağındaki script/HTML'i tara
             if not captured_url:
                 content = page.content()
-                import re
                 match = re.search(r'(https?://[^\s\'"]+?\.m3u8[^\s\'"]*)', content)
                 if match:
                     captured_url = match.group(1).replace('\\', '')
 
         except Exception as e:
-            print(f"Hata oluştu ({channel_id}): {e}")
+            pass
         finally:
             browser.close()
 
         return captured_url
 
 def get_all_channels():
+    """Sadece TV kanallarının ID ve isim listesi"""
     return [
         ("bein-sports-1", "BEIN SPORTS 1-A"),
         ("bein-sports-2", "BEIN SPORTS 2-A"),
@@ -79,14 +85,16 @@ def main():
     channels = get_all_channels()
     working_channels = []
 
-    for cid, name in channels:
-        print(f"Taranıyor: {name}...", end=" ", flush=True)
+    print(f"\n{len(channels)} kanal taranıyor...")
+    for i, (cid, name) in enumerate(channels):
+        print(f"{i+1:2d}. {name}...", end=" ", flush=True)
         url = get_channel_m3u8_with_browser(cid)
         if url:
             print(f"{GREEN}✓ Bulundu{RESET}")
             working_channels.append({"id": cid, "name": name, "url": url})
         else:
             print("✗ Bulunamadı")
+        time.sleep(0.3)
 
     if not working_channels:
         print("\n❌ Hiçbir kanal linki yakalanamadı.")
