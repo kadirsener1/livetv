@@ -2,32 +2,32 @@
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 1-BS t
+#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 1-BS
 https://elif.eromaxe.com/zeynep/bein1tr?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 2-BS
-https://elif.eromaxe.com/zeynep/bein2tr?format
+https://elif.eromaxe.com/zeynep/bein2tr?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 3-BS
-https://elif.eromaxe.com/zeynep/bein3tr?format
+https://elif.eromaxe.com/zeynep/bein3tr?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 4-BS
-https://elif.eromaxe.com/zeynep/bein4tr?format
+https://elif.eromaxe.com/zeynep/bein4tr?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 5-BS
-https://elif.eromaxe.com/zeynep/bein5tr?format
+https://elif.eromaxe.com/zeynep/bein5tr?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS MAX 1-BS
-https://bosstvproxy.magnitudetvb1.workers.dev/beinmax1tr
+https://elif.eromaxe.com/zeynep/beinmax1tr?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS MAX 2-BS
-https://bosstvproxy.magnitudetvb1.workers.dev/beinmax2tr
+https://elif.eromaxe.com/zeynep/beinmax2tr?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",S SPORT-BS
-https://bosstvproxy.magnitudetvb1.workers.dev/ssport1tr
+https://elif.eromaxe.com/zeynep/ssport1tr?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",S SPORT 2-BS
-https://bosstvproxy.magnitudetvb1.workers.dev/ssport2tr
+https://elif.eromaxe.com/zeynep/ssport2tr?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",EUROSPORT 1-BS
-https://bosstvproxy.magnitudetvb1.workers.dev/eruosport1
+https://elif.eromaxe.com/zeynep/eruosport1?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",EUROSPORT 2-BS
-https://bosstvproxy.magnitudetvb1.workers.dev/eruosport2
+https://elif.eromaxe.com/zeynep/eruosport2?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",SPOR SMART-BS
-https://bosstvproxy.magnitudetvb1.workers.dev/sportsmart
+https://elif.eromaxe.com/zeynep/sportsmart?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",SPOR SMART 2-BS
-https://bosstvproxy.magnitudetvb1.workers.dev/sportsmart
+https://elif.eromaxe.com/zeynep/sportsmart?format=m3u8
 
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",beIN SPORTS 1 HD
@@ -298,9 +298,9 @@ https://tv-trtspor1.medya.trt.com.tr/master_1080.m3u8
 https://tv-trtspor2.medya.trt.com.tr/master_1440p.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/UGbdQLv.png" group-title="TR Spor",BEİN SPORTS HABER-BS
-https://bosstvproxy.magnitudetvb1.workers.dev/beinhabertr
+https://elif.eromaxe.com/zeynep/beinhabertr?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="TR Spor",A SPOR-BS
-https://bosstvproxy.magnitudetvb1.workers.dev/asport
+https://elif.eromaxe.com/zeynep/asport?format=m3u8
 #EXTINF:-1 tvg-id="a-spor" tvg-name="A SPOR-A" group-title="Spor",A SPOR-A
 https://css.d6e3eds5e065t5.help//aspor/tracks-v1a1/mono.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
@@ -418,7 +418,7 @@ https://aktif-q65v.onrender.com/play/atv
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal",ATV FHD-V2
 https://aktif-q65v.onrender.com/play/atv2
 #EXTINF:-1 tvg-logo="" group-title="Ulusal",ATV-BS
-https://bosstvproxy.magnitudetvb1.workers.dev/atv
+https://elif.eromaxe.com/zeynep/atv?format=m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/HwxYC7.png" group-title="Ulusal",Show Tv
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwx7EZ.png" group-title="Ulusal",Star Tv
