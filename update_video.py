@@ -23,7 +23,7 @@ now = datetime.now().strftime("%d.%m.%Y - %H:%M")
 # 3. Arkaplan Resmini Aç ve Yazıları Ekle
 try:
   img = Image.open("bg.JPG").convert("RGB")
-  img = img.resize((1280, 720))  # 720p HD standart boyut
+  img = img.resize((1280, 720))
 except Exception as e:
   print(f"bg.JPG yüklenemedi: {e}")
   img = Image.new("RGB", (1280, 720), color=(15, 15, 15))
@@ -64,21 +64,20 @@ for _ in range(total_frames):
 
 video.release()
 
-# 5. TiviMate İçin Otomatik .m3u8 Çalma Listesi Oluştur
+# 5. TiviMate İçin Otomatik .m3u8 Çalma Listesi Oluştur (livetv deposuna göre)
 m3u8_content = f"""#EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-TARGETDURATION:5
 #EXT-X-MEDIA-SEQUENCE:1
 #EXTINF:5.0,
-https://raw.githubusercontent.com/kadirsener1/tvmyeni/main/bilgi.mp4
+https://raw.githubusercontent.com/kadirsener1/livetv/main/bilgi.mp4
 #EXTINF:5.0,
-https://raw.githubusercontent.com/kadirsener1/tvmyeni/main/bilgi.mp4
+https://raw.githubusercontent.com/kadirsener1/livetv/main/bilgi.mp4
 """
 
 with open("bilgi.m3u8", "w", encoding="utf-8") as f:
   f.write(m3u8_content)
 
 print(
-    f"Başarıyla güncellendi! Kanal Sayısı: {channel_count}, Zaman: {now} (mp4"
-    " ve m3u8 oluşturuldu)"
+    f"Başarıyla güncellendi! Kanal Sayısı: {channel_count}, Zaman: {now}"
 )
