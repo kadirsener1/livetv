@@ -1,35 +1,32 @@
 #EXTM3U
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="BİLGİLENDİRME", 000 - BİLGİ KANALI
-https://raw.githubusercontent.com/kadirsener1/livetv/main/bilgi.m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 1-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 1-BS
 https://elif.eromaxe.com/zeynep/bein1tr?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 2-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 2-BS
 https://elif.eromaxe.com/zeynep/bein2tr?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 3-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 3-BS
 https://elif.eromaxe.com/zeynep/bein3tr?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 4-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 4-BS
 https://elif.eromaxe.com/zeynep/bein4tr?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS 5-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 5-BS
 https://elif.eromaxe.com/zeynep/bein5tr?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS MAX 1-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS MAX 1-BS
 https://elif.eromaxe.com/zeynep/beinmax1tr?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="İNFO",BEİN SPORTS MAX 2-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS MAX 2-BS
 https://elif.eromaxe.com/zeynep/beinmax2tr?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="İNFO",S SPORT-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",S SPORT-BS
 https://elif.eromaxe.com/zeynep/ssport1tr?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="İNFO",S SPORT 2-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",S SPORT 2-BS
 https://elif.eromaxe.com/zeynep/ssport2tr?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="İNFO",EUROSPORT 1-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",EUROSPORT 1-BS
 https://elif.eromaxe.com/zeynep/eruosport1?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="İNFO",EUROSPORT 2-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",EUROSPORT 2-BS
 https://elif.eromaxe.com/zeynep/eruosport2?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="İNFO",SPOR SMART-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",SPOR SMART-BS
 https://elif.eromaxe.com/zeynep/sportsmart?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="İNFO",SPOR SMART 2-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",SPOR SMART 2-BS
 https://elif.eromaxe.com/zeynep/sportsmart?format=m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",beIN SPORTS 1 HD
