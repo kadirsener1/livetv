@@ -1,8 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:5
-#EXT-X-MEDIA-SEQUENCE:1
-#EXTINF:5.0,
-https://raw.githubusercontent.com/kadirsener1/livetv/main/bilgi.mp4
-#EXTINF:5.0,
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
 https://raw.githubusercontent.com/kadirsener1/livetv/main/bilgi.mp4
