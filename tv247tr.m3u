@@ -1,6 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="BİLGİLENDİRME", 000 - BİLGİ KANALI
-https://bilgi.magnitude.workers.dev
+#EXTINF:-1 tvg-id="bilgi" tvg-name="BILGILENDIRME" tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="BILGI KANALI",000 - BILGILENDIRME VE KANAL DURUMU
+https://icecast.gomix.me/listen/radio/live.mp3
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="BİLGİLENDİRME", 000 - BİLGİ KANALI m3u8
 https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/output/info.m3u8
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BİLGİ
