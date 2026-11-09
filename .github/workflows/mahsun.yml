@@ -1,11 +1,6 @@
 name: Mahsun Update List
-
-permissions:
-  contents: write   # Push yapabilmesi için zorunlu yazma izni
-
 on:
-
-   workflow_dispatch:       # Manuel çalıştırma butonu
+  workflow_dispatch: # Sadece dışarıdan gelen (Cloudflare / Manuel) tetiklemeleri kabul eder
 
 jobs:
   build:
