@@ -33,14 +33,6 @@ CHANNELS_TO_UPDATE = [
     {
         "name": "BEİN SPORTS 5-TV",  # tv247tr.m3u içerisindeki kanal adı
         "path": "embed-r4/bein-sports-5-turkey"
-    },
-    {
-        "name": "ATV-TV",  # tv247tr.m3u içerisindeki kanal adı
-        "path": "embed-r4/atv-turkey"
-    },
-    {
-        "name": "NOW-TV",  # tv247tr.m3u içerisindeki kanal adı
-        "path": "embed-r4/now-tv-turkey"
     }
 ]
 
