@@ -131,7 +131,7 @@ https://aktif-q65v.onrender.com/play/beinsports4kfeeduydu
 https://matchora-proxy.magnitude.workers.dev/play/913446
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor",Spor Tv
 https://app-kuc5.onrender.com/live/futbol_tv.m3u8
-#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1-A" tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor",BEIN SPORTS 1-A
+#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1-A" group-title="Spor",BEIN SPORTS 1-A
 https://css.d6e3eds5e065t5.help//b1/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="beIN Sports 1" tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor",BEIN SPORTS 1-B
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
@@ -196,7 +196,7 @@ https://zeus645423.cfd/b1max/index.txt
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3lVik.png" group-title="Spor", BEIN SPORTS MAX 1-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu235.click/checklist/androstreamlivebsm1.m3u8
-#EXTINF:-1 tvg-id="bein-sports-max-2" tvg-name="BEIN SPORTS MAX 2-A" tvg-logo="https://resmim.net/cdn/2026/11/10/H3l6GF.png"  group-title="Spor",BEIN SPORTS MAX 2-A
+#EXTINF:-1 tvg-id="bein-sports-max-2" tvg-name="BEIN SPORTS MAX 2-A" group-title="Spor",BEIN SPORTS MAX 2-A
 https://css.d6e3eds5e065t5.help//bm2/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="BeIN Sport MAX 2" tvg-logo="https://resmim.net/cdn/2026/11/10/H3l6GF.png" group-title="Spor",BEIN SPORTS MAX 2-Z
 https://zeus645423.cfd/b2max/index.txt
