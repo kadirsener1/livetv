@@ -1,4 +1,4 @@
-name: boss TV247TR Playlist & Cache
+name: Tvnow playlist
 
 on:
   workflow_dispatch: # Sadece dışarıdan gelen (Cloudflare / Manuel) tetiklemeleri kabul eder
