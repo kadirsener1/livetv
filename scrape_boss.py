@@ -5,19 +5,18 @@ import requests
 from playwright.async_api import async_playwright
 
 # Ortak domain yapılandırması
-BASE_PREFIX = "https://bosssports"
+BASE_PREFIX = "https://tvnow247.top/"
 BASE_SUFFIX = ".com"
-START_NUM = 1074
-END_NUM = 2000
 
-CACHE_FILE = "domain_cache.txt"
-OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı dosya adı
+
+
+OUTPUT_FILE = "test.m3u"  # Çıktının yazılacağı dosya adı
 
 # Güncellenecek kanallar ve M3U içindeki aranacak isimleri
 CHANNELS_TO_UPDATE = [
     {
         "name": "BEİN SPORTS 1-BS",  # tv247tr.m3u içerisindeki kanal adı
-        "path": "/?channel=channel%3Atflix-MDJjNzUwY2JiYTUzYTZlZg"
+        "path": "embed-r4/https://tvnow247.top/embed-r4/"
     },
     {
         "name": "BEİN SPORTS 2-BS",  # tv247tr.m3u içerisindeki kanal adı
@@ -156,7 +155,7 @@ async def main():
 
         await browser.close()
 
-    # 2. Adım: tv247tr.m3u dosyasını oku ve #EXTVLCOPT satırlarına dokunmadan linkleri güncelle
+    # 2. Adım: test.m3u dosyasını oku ve #EXTVLCOPT satırlarına dokunmadan linkleri güncelle
     if not os.path.exists(OUTPUT_FILE):
         print(f"Hata: {OUTPUT_FILE} dosyası bulunamadı!")
         return
