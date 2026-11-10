@@ -10,7 +10,7 @@ BASE_SUFFIX = ".com"
 START_NUM = 1074
 END_NUM = 2000
 
-CACHE_FILE = "domain_cache.txt"
+CACHE_FILE = "domain_cache1.txt"
 OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı dosya adı
 
 # Güncellenecek kanallar ve M3U içindeki aranacak isimleri
