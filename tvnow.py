@@ -19,7 +19,7 @@ CHANNELS_TO_UPDATE = [
         "path": "embed-r4/bein-sports-1-turkey"
     },
     {
-        "name": "BEİN SPORTS 12-TV",  # tv247tr.m3u içerisindeki kanal adı
+        "name": "BEİN SPORTS 2-TV",  # tv247tr.m3u içerisindeki kanal adı
         "path": "embed-r4/bein-sports-2-turkey"
     },
     {
