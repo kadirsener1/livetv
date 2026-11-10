@@ -33,6 +33,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.io"
-          git add test.m3u
+          git add test.m3u domain_cache.txt
           git diff --staged --quiet || git commit -m "Auto-update tv247tr playlist and domain cache [skip ci]"
           git push
