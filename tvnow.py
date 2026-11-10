@@ -15,8 +15,24 @@ OUTPUT_FILE = "test.m3u"  # Çıktının yazılacağı dosya adı
 # Güncellenecek kanallar ve M3U içindeki aranacak isimleri
 CHANNELS_TO_UPDATE = [
     {
-        "name": "BEİN SPORTS 1-BS",  # tv247tr.m3u içerisindeki kanal adı
+        "name": "BEİN SPORTS 1-TV",  # tv247tr.m3u içerisindeki kanal adı
         "path": "embed-r4/bein-sports-1-turkey"
+    },
+    {
+        "name": "BEİN SPORTS 12-TV",  # tv247tr.m3u içerisindeki kanal adı
+        "path": "embed-r4/bein-sports-2-turkey"
+    },
+    {
+        "name": "BEİN SPORTS 3-TV",  # tv247tr.m3u içerisindeki kanal adı
+        "path": "embed-r4/bein-sports-3-turkey"
+    },
+    {
+        "name": "BEİN SPORTS 4-TV",  # tv247tr.m3u içerisindeki kanal adı
+        "path": "embed-r4/bein-sports-4-turkey"
+    },
+    {
+        "name": "BEİN SPORTS 5-TV",  # tv247tr.m3u içerisindeki kanal adı
+        "path": "embed-r4/bein-sports-5-turkey"
     }
 ]
 
