@@ -5,7 +5,7 @@ import requests
 from playwright.async_api import async_playwright
 
 # Ortak domain yapılandırması
-BASE_PREFIX = "https://tvnow247.top/"
+BASE_PREFIX = ""
 BASE_SUFFIX = ".com"
 
 
@@ -16,63 +16,7 @@ OUTPUT_FILE = "test.m3u"  # Çıktının yazılacağı dosya adı
 CHANNELS_TO_UPDATE = [
     {
         "name": "BEİN SPORTS 1-BS",  # tv247tr.m3u içerisindeki kanal adı
-        "path": "embed-r4/https://tvnow247.top/embed-r4/"
-    },
-    {
-        "name": "BEİN SPORTS 2-BS",  # tv247tr.m3u içerisindeki kanal adı
-        "path": "?channel=channel%3Atflix-NjNlZmVjMzI1MGY3NzgyYg"
-    },
-    {
-        "name": "BEİN SPORTS 3-BS",  # tv247tr.m3u içerisindeki kanal adı
-        "path": "?channel=channel%3Atflix-MTA4MWJhNGE4MDFiMzFjZg"
-    },
-    {
-        "name": "BEİN SPORTS 4-BS",  # tv247tr.m3u içerisindeki kanal adı
-        "path": "?channel=channel%3Atflix-YzkwOWU3MzQ0ZjAxNmRjMA"
-    },
-    {
-        "name": "BEİN SPORTS 5-BS",  # tv247tr.m3u içerisindeki kanal adı
-        "path": "?channel=channel%3Atflix-Yjg5NTA1ZGE2M2YyYWZkYg"
-    },
-    {
-        "name": "BEİN SPORTS MAX 1-BS",  # tv247tr.m3u içerisindeki kanal adı
-        "path": "?channel=channel%3Atflix-MzY1NGU3NzgyN2FjZTFmYQ"
-    },
-    {
-        "name": "BEİN SPORTS MAX 2-BS",  # tv247tr.m3u içerisindeki kanal adı
-        "path": "?channel=channel%3Atflix-ZDdkZjZiNWZlNjdlMzIxMQ"
-    },
-    {
-        "name": "BEİN SPORTS HABER-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
-        "path": "?channel=channel%3Atflix-NTRmYzI4ZjMzMmZhZDc0Mg"
-    },
-    {
-        "name": "S SPORT-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
-        "path": "?channel=channel%3Atflix-NzI0NmY4MjdlOGI4YWQzNw"
-    },
-    {
-        "name": "S SPORT 2-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
-        "path": "?channel=channel%3Atflix-NzM1ZmIxZDU3MWI0ZWJmNA"
-    },
-    {
-        "name": "EUROSPORT 1-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
-        "path": "?channel=channel%3Atflix-NDVlOWE1YmNmYzc2NTI5NA"
-    },
-    {
-        "name": "EUROSPORT 2-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
-        "path": "?channel=channel%3Atflix-ZGQ5MDRhZjM0NGUzNmE4ZA"
-    },
-    {
-        "name": "SPOR SMART-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
-        "path": "?channel=channel%3Atflix-ZjRhZTVhYTY2NWViMWFhOQ"
-    },
-    {
-        "name": "SPOR SMART 2-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
-        "path": "?channel=channel%3Atflix-N2NhZGU3M2NjNTlkOGY0Yw"
-    },
-    {
-        "name": "ATV-BS",  # tv247tr.m3u içerisindeki diğer kanal adı
-        "path": "?channel=channel%3Atflix-MDY0NDRjNTZkY2RmMWUwMg"
+        "path": "embed-r4/bein-sports-1-turkey"
     }
 ]
 
