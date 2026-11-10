@@ -9,7 +9,7 @@ BASE_PREFIX = "https://tvnow247.top/"
 BASE_SUFFIX = ".com"
 
 
-
+CACHE_FILE = "domain_cache.txt"
 OUTPUT_FILE = "test.m3u"  # Çıktının yazılacağı dosya adı
 
 # Güncellenecek kanallar ve M3U içindeki aranacak isimleri
