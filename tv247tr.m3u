@@ -15,7 +15,8 @@ https://live.tvnow247.today/live/1010/index.m3u8?v=1&e=1794574896&k=80f09d1902e5
 
 #EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 1-BS
 https://elif.eromaxe.com/zeynep/bein1tr?format=m3u8
-#EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 2-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 2-BSs
+#EXTVLCOPT:http-referrer=https://bosssports1074.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
 https://elif.eromaxe.com/zeynep/bein2tr?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 3-BS
