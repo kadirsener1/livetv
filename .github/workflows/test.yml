@@ -1,4 +1,4 @@
-name: Tvnow playlist
+name: Test playlist
 
 on:
   workflow_dispatch: # Sadece dışarıdan gelen (Cloudflare / Manuel) tetiklemeleri kabul eder
