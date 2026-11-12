@@ -1,7 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 1-TV
 https://live.tvnow247.today/live/62/index.m3u8?v=1&e=1794596474&k=ce334f64019d3d89faa22d6429383af2&src=r2
 #EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 2-TVs
@@ -14,7 +13,6 @@ https://live.tvnow247.today/live/64/index.m3u8?v=1&e=1794596486&k=e21b51b146c00f
 https://live.tvnow247.today/live/67/index.m3u8?v=1&e=1794596492&k=9f0ba1772e01b9b7fb5d1c18ac7170b3&src=r2
 #EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 5-TV
 https://live.tvnow247.today/live/1010/index.m3u8?v=1&e=1794596498&k=aebbdbc17374d80598b0b6ab6e22bb3a&src=r2
-
 #EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 1-BS
 https://elif.eromaxe.com/zeynep/bein1tr?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 2-BS
@@ -41,7 +39,6 @@ https://elif.eromaxe.com/zeynep/eruosport2?format=m3u8
 https://elif.eromaxe.com/zeynep/sportsmart?format=m3u8
 #EXTINF:-1 tvg-logo="" group-title="Spor-BS",SPOR SMART 2-BS
 https://elif.eromaxe.com/zeynep/sportsmart?format=m3u8
-
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor-Avva",beIN SPORTS 1 HD
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/bein1/playlist.m3u8?o=1%26e=1794517301%26tk=dd57a87834a80e40cdc303189534b840
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3ltQ8.png" group-title="Spor-Avva",beIN SPORTS 2 HD
@@ -96,7 +93,6 @@ https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/exxen3/index.m3u8
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/exxen4/index.m3u8?o=1%26e=1793395277%26tk=55e60e47afe4b5212d42c6ad09d52d62
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",EXXEN 5
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/exxen5/index.m3u8?o=1%26e=1793395277%26tk=55e60e47afe4b5212d42c6ad09d52d62
-
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor Vavoo",BEIN 1 FEED (720P)
 https://aktif-q65v.onrender.com/play/bein1feed720p
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor Vavoo",BEIN 1 SD (360P)
@@ -397,7 +393,6 @@ https://tv-trt1.medya.trt.com.tr/master_1440.m3u8
 https://tv-trt1.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/HwtvL2.png" group-title="Ulusal",TRT 1 HD
 https://tv-trt1.medya.trt.com.tr/master_720.m3u8
-
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwt218.png" group-title="Ulusal",TRT 2
 https://tv-trt2.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwxg3Q.png" group-title="Ulusal",Kanal D
@@ -420,7 +415,6 @@ https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
 https://aktif-q65v.onrender.com/play/now
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/HwxrDR.png" group-title="Ulusal",NOW FHD-V2
 https://aktif-q65v.onrender.com/play/now2
-
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/29/HCY8Hy.png" group-title="Ulusal",Tv 8
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=7uwoyq6usvp2&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=2
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/29/HCYk8R.png" group-title="Ulusal",TV 8.5
@@ -711,6 +705,8 @@ https://vavoorender-vuzs.onrender.com/manifest.m3u8?url=https://vavoo.to/vavoo-i
 http://88.99.165.164:6878/ace/getstream?infohash=0422e97375b37af02329a2d80e6ec54866fa233f&pid=1142
 #EXTINF:-1 tvg-id="126" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/2442b7b7-04da-41c1-a7ca-03466853040e.png" group-title="Çocuk",Baby Tv
 https://saran-live.ercdn.net/babytv/index.m3u8
+#EXTINF:-1 tvg-id="126" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/2442b7b7-04da-41c1-a7ca-03466853040e.png" group-title="Çocuk",Spacetoon
+https://live-tr-next.spacetoongo.com/ST_TR_NEXT/hls/h7qefeiwfbjn1.m3u8
 #EXTINF:-1 tvg-id="137" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/47fcca43-c2ac-4ab8-ae92-2b007655be9f.png" group-title="Çocuk",TRT Eba TV
 https://tv-e-okul01.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="137" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20210421003212.png" group-title="Çocuk",Cartoon Network
@@ -2132,6 +2128,5 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fa
 https://sportsbite.org/247/arenasport1premiumrs
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/bein-sports-us.png" group-title="World Sport",Bein Sports usa
 https://sportsbite.org/247/beinsportsus
-
 #EXTINF:-1 tvg-id="trt-spor" tvg-name="TRT SPOR-A" group-title="Spor",TRT SPOR-A
 https://css.d6e3eds5e065t5.help//trtspor/tracks-v1a1/mono.m3u8
