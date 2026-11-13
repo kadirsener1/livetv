@@ -9,6 +9,9 @@ https://yayin1.canlitv.fun/canlitv/koytv.stream/playlist.m3u8?hash=90b3109416a80
 #Referer: https://www.cnnturk.com/
 #Origin: https://www.cnnturk.com
 https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/track_4_1000/playlist.m3u8?&live=true&app=com.cnnturk&st=xPxCBVOfvaRsHHsPJpPsBA&e=1794583815
+
+#EXTINF:-1 tvg-logo="" group-title="Spor-TV",Test-TV3
+https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/track_4_1000/playlist.m3u8?&live=true&app=com.cnnturk&st=xPxCBVOfvaRsHHsPJpPsBA&e=1794583815|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Referer=https://www.cnnturk.com/&Origin=https://www.cnnturk.com
 #EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 1-TV
 https://live.tvnow247.today/live/62/index.m3u8?v=1&e=1794639673&k=3b71dd5db98625d44626e58eac9b8ed5&src=r2
 #EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 2-TV
