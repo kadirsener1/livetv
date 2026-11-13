@@ -12,7 +12,7 @@ CHANNELS_TO_UPDATE = [
     },
     {
         "name": "Koy Tv",  # tv247tr.m3u içerisindeki kanal adı
-        "url": "https://koytv.com/tv-programlari/koy-tv-canli-yayin/"
+        "url": "https://www.canlitv.diy/embed/?id=12013"
     }
 ]
 
