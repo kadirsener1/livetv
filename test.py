@@ -8,7 +8,7 @@ OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı dosya adı
 CHANNELS_TO_UPDATE = [
     {
         "name": "Koy Tv",  # tv247tr.m3u içerisindeki kanal adı
-        "url": "https://www.canlitv.diy/embed/?id=12013"
+        "url": "https://trend8.st/live-tv?ch=beinsports1-tr"
     }
 ]
 
