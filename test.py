@@ -8,7 +8,7 @@ OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı dosya adı
 CHANNELS_TO_UPDATE = [
     {
         "name": "Test-TV",  # tv247tr.m3u içerisindeki kanal adı
-        "url": "https://tvgarden.world/tv/tr/dnDnH0o46ue2tm"
+        "url": "https://www.cnnturk.com/canli-yayin"
     }
 ]
 
