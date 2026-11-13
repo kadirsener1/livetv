@@ -2,6 +2,8 @@
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="" group-title="Spor-TV",Koy Tv
+https://live.duhnet.tv/
 #EXTINF:-1 tvg-logo="" group-title="Spor-TV",Test-TVcnn
 #EXTVLCOPT:http-referrer=https://www.cnnturk.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
