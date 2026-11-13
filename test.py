@@ -9,6 +9,10 @@ CHANNELS_TO_UPDATE = [
     {
         "name": "Test-TV",  # tv247tr.m3u içerisindeki kanal adı
         "url": "https://www.cnnturk.com/canli-yayin"
+    },
+    {
+        "name": "Koy Tv",  # tv247tr.m3u içerisindeki kanal adı
+        "url": "https://koytv.com/tv-programlari/koy-tv-canli-yayin/"
     }
 ]
 
