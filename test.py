@@ -7,10 +7,6 @@ OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı dosya adı
 # Güncellenecek kanallar ve doğrudan taranacak tam linkler
 CHANNELS_TO_UPDATE = [
     {
-        "name": "Test-TV",  # tv247tr.m3u içerisindeki kanal adı
-        "url": "https://www.cnnturk.com/canli-yayin"
-    },
-    {
         "name": "Koy Tv",  # tv247tr.m3u içerisindeki kanal adı
         "url": "https://www.canlitv.diy/embed/?id=12013"
     }
