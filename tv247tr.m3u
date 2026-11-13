@@ -6,9 +6,7 @@ https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
 https://live.tvnow247.today/
 #EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 1-TV
 https://live.tvnow247.today/live/62/index.m3u8?v=1&e=1794639673&k=3b71dd5db98625d44626e58eac9b8ed5&src=r2
-#EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 2-TVs
-#EXTVLCOPT:http-referrer=https://bosssports1074.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 2-TV
 https://live.tvnow247.today/live/63/index.m3u8?v=1&e=1794639679&k=2266bc93403e0075a7487ddf84f0ba8d&src=r2
 #EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 3-TV
 https://live.tvnow247.today/live/64/index.m3u8?v=1&e=1794639685&k=3af74ec1de7e4b465d6160b22fe05634&src=r2
