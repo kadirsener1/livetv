@@ -129,7 +129,7 @@ https://matchora-proxy.magnitude.workers.dev/play/913446
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor",Spor Tv
 https://app-kuc5.onrender.com/live/futbol_tv.m3u8
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1-A" group-title="Spor",BEIN SPORTS 1-A
-https://css.d6e3eds5e065t5.help//b1/tracks-v1a1/mono.m3u8
+https://css.d6e3eds5e065t5.help//hls/b1.m3u8
 #EXTINF:-1 tvg-name="beIN Sports 1" tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor",BEIN SPORTS 1-B
 #EXTVLCOPT:http-referrer=https://sportsbite.org//
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
