@@ -49,7 +49,7 @@ jobs:
             echo "tvmow için değişiklik yok."
           fi
 
-               # --- 2. ATOM İŞLEMİ ---
+               # --- 2. Avva İŞLEMİ ---
       - name: Run avva Scraper & Save
         continue-on-error: true
         run: |
@@ -88,15 +88,15 @@ jobs:
             echo "mahsun için değişiklik yok."
           fi
 
-      # --- 5. TV247WS İŞLEMİ ---
-      - name: Run tv247ws Scraper & Save
+      # --- 5. Bosstv İŞLEMİ ---
+      - name: Run bosstv Scraper & Save
         continue-on-error: true
         run: |
-          python tv247ws111.py
+          python bosstv.py
           git add -A
           if ! git diff --cached --quiet; then
             git commit -m "tv247ws linkleri güncellendi [skip ci]"
             git push
           else
-            echo "tv247ws için değişiklik yok."
+            echo "bısstv için değişiklik yok."
           fi
