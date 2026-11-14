@@ -2,16 +2,6 @@
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Spor-TV",Koy Tv
-https://yayin1.canlitv.fun/canlitv/koytv.stream/playlist.m3u8?hash=90b3109416a80663a096cd3f99f0e5f8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Referer=https://koytv.com/
-#EXTINF:-1 tvg-logo="" group-title="Spor-TV",Test-TV2
-#User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#Referer: https://www.cnnturk.com/
-#Origin: https://www.cnnturk.com
-https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/track_4_1000/playlist.m3u8?&live=true&app=com.cnnturk&st=xPxCBVOfvaRsHHsPJpPsBA&e=1794583815
-
-#EXTINF:-1 tvg-logo="" group-title="Spor-TV",Test-TV3
-https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/track_4_1000/playlist.m3u8?&live=true&app=com.cnnturk&st=xPxCBVOfvaRsHHsPJpPsBA&e=1794583815|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Referer=https://www.cnnturk.com/&Origin=https://www.cnnturk.com
 #EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 1-TV
 https://live.tvnow247.today/live/62/index.m3u8?v=1&e=1794639673&k=3b71dd5db98625d44626e58eac9b8ed5&src=r2
 #EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 2-TV
@@ -22,7 +12,7 @@ https://live.tvnow247.today/live/64/index.m3u8?v=1&e=1794697277&k=dd899f48f2ad0b
 https://live.tvnow247.today/live/67/index.m3u8?v=1&e=1794697284&k=97d0ab5d362109e4262776a604ca8d8d&src=r2
 #EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 5-TV
 https://live.tvnow247.today/live/1010/index.m3u8?v=1&e=1794697290&k=3ee5f10771cc6fd465e77459d139cc3b&src=r2
-#EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 1-BS
+#EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 1-BS1
 https://elif.eromaxe.com/zeynep/bein1tr?format=m3u8|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTINF:-1 tvg-logo="" group-title="Spor-BS",BEİN SPORTS 2-BS
 https://elif.eromaxe.com/zeynep/bein2tr?format=m3u8
