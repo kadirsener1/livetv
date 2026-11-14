@@ -98,5 +98,5 @@ jobs:
             git commit -m "tv247ws linkleri güncellendi [skip ci]"
             git push
           else
-            echo "bısstv için değişiklik yok."
+            echo "bosstv için değişiklik yok."
           fi
