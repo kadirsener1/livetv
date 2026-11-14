@@ -119,7 +119,7 @@ async def get_stream_url(page, full_url):
         nonlocal stream_url
         if ".m3u8" in request.url and not stream_url:
             # Bulunan ham m3u8 linkinin başına Cloudflare Worker proxy ön eki ekleniyor
-            proxy_prefix = "https://avva.magnitude.workers.dev/?url="
+            proxy_prefix = ""
             stream_url = f"{proxy_prefix}{request.url}"
 
     page.on("request", handle_request)
