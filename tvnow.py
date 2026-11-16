@@ -2,11 +2,12 @@ import asyncio
 import os
 from playwright.async_api import async_playwright
 
-# Doğrudan güncel domaini buraya sabitliyoruz
+# Doğrudan güncel domain buraya sabitlendi
 ACTIVE_BASE_URL = "https://tvnow247.top/"
 
-OUTPUT_FILE = "tv247tr.m3u"
+OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı dosya adı
 
+# Güncellenecek kanallar ve M3U içindeki aranacak isimleri
 CHANNELS_TO_UPDATE = [
     {
         "name": "BEİN SPORTS 1-TV",
@@ -99,7 +100,7 @@ async def main():
             
             if i < len(lines):
                 new_lines.append(f"{updated_links[matched_channel]}\n")
-                i += 1
+                i += 1  # Eski link satırını geç
         else:
             new_lines.append(line)
             i += 1
