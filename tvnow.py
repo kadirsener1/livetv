@@ -1,11 +1,13 @@
 import asyncio
 import os
+import re
 from playwright.async_api import async_playwright
 
 # Doğrudan güncel domain buraya sabitlendi
 ACTIVE_BASE_URL = "https://tvnow247.top/"
 
 OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı dosya adı
+OUTPUT_DIR = "tvnow"         # Ayrı m3u8 dosyalarının kaydedileceği klasör
 
 # Güncellenecek kanallar ve M3U içindeki aranacak isimleri
 CHANNELS_TO_UPDATE = [
@@ -31,6 +33,10 @@ CHANNELS_TO_UPDATE = [
     }
 ]
 
+def sanitize_filename(name):
+    # Dosya adında sorun çıkarabilecek karakterleri temizle
+    return re.sub(r'[\\/*?:"<>|]', "", name).strip()
+
 async def get_stream_url(page, full_url):
     stream_url = None
 
@@ -54,16 +60,20 @@ async def get_stream_url(page, full_url):
 async def main():
     print(f"Kullanılan Ana Domain: {ACTIVE_BASE_URL}")
 
-    # 1. Adım: Güncel m3u8 linklerini bul
+    # 1. Adım: Güncel m3u8 linklerini bul (Her kanal için ayrı sayfa açılacak şekilde güncellendi)
     updated_links = {}
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
-        page = await browser.new_page()
 
         for ch in CHANNELS_TO_UPDATE:
             full_url = f"{ACTIVE_BASE_URL}{ch['path']}"
             print(f"\nTaranıyor: {ch['name']} ({full_url})")
+            
+            # Her kanal için yepyeni ve temiz bir sayfa açılıyor
+            page = await browser.new_page()
             stream_url = await get_stream_url(page, full_url)
+            await page.close()  # İşlemi biten sayfa kapatılıyor
+
             if stream_url:
                 print(" Başarılı! Doğrudan .m3u8 linki alındı.")
                 updated_links[ch['name']] = stream_url
@@ -72,7 +82,19 @@ async def main():
 
         await browser.close()
 
-    # 2. Adım: tv247tr.m3u dosyasını oku ve linkleri güncelle
+    # 2. Adım: tvnow klasörünü otomatik oluştur ve her kanal için ayrı m3u8 dosyası kaydet
+    if updated_links:
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        for ch_name, stream_url in updated_links.items():
+            safe_name = sanitize_filename(ch_name)
+            file_path = os.path.join(OUTPUT_DIR, f"{safe_name}.m3u8")
+            
+            m3u_content = f"#EXTM3U\n#EXTINF:-1,{ch_name}\n{stream_url}\n"
+            with open(file_path, "w", encoding="utf-8") as f:
+                f.write(m3u_content)
+            print(f"Ayrı dosya oluşturuldu: {file_path}")
+
+    # 3. Adım: tv247tr.m3u dosyasını oku ve #EXTVLCOPT satırlarına dokunmadan linkleri güncelle
     if not os.path.exists(OUTPUT_FILE):
         print(f"Hata: {OUTPUT_FILE} dosyası bulunamadı!")
         return
@@ -105,11 +127,11 @@ async def main():
             new_lines.append(line)
             i += 1
 
-    # 3. Adım: Dosyayı kaydet
+    # 4. Adım: Dosyayı kaydet
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
     
-    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası güncellendi.")
+    print(f"\nİşlem tamam! {OUTPUT_FILE} ve {OUTPUT_DIR}/ klasöründeki dosyalar güncellendi.")
 
 if __name__ == "__main__":
     asyncio.run(main())
