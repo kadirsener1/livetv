@@ -3,38 +3,19 @@ import os
 import re
 from playwright.async_api import async_playwright
 
-# Doğrudan güncel domain buraya sabitlendi
 ACTIVE_BASE_URL = "https://tvnow247.top/"
+OUTPUT_FILE = "tv247tr.m3u"
+OUTPUT_DIR = "tvnow"
 
-OUTPUT_FILE = "tv247tr.m3u"  # Ana M3U dosyası adı
-OUTPUT_DIR = "tvnow"         # Ayrı m3u8 dosyalarının kaydedileceği klasör
-
-# Güncellenecek kanallar ve M3U içindeki aranacak isimleri
 CHANNELS_TO_UPDATE = [
-    {
-        "name": "BEİN SPORTS 1-TV",
-        "path": "embed-r4/bein-sports-1-turkey"
-    },
-    {
-        "name": "BEİN SPORTS 2-TV",
-        "path": "embed-r4/bein-sports-2-turkey"
-    },
-    {
-        "name": "BEİN SPORTS 3-TV",
-        "path": "embed-r4/bein-sports-3-turkey"
-    },
-    {
-        "name": "BEİN SPORTS 4-TV",
-        "path": "embed-r4/bein-sports-4-turkey"
-    },
-    {
-        "name": "BEİN SPORTS 5-TV",
-        "path": "embed-r4/bein-sports-5-turkey"
-    }
+    {"name": "BEİN SPORTS 1-TV", "path": "embed-r4/bein-sports-1-turkey"},
+    {"name": "BEİN SPORTS 2-TV", "path": "embed-r4/bein-sports-2-turkey"},
+    {"name": "BEİN SPORTS 3-TV", "path": "embed-r4/bein-sports-3-turkey"},
+    {"name": "BEİN SPORTS 4-TV", "path": "embed-r4/bein-sports-4-turkey"},
+    {"name": "BEİN SPORTS 5-TV", "path": "embed-r4/bein-sports-5-turkey"}
 ]
 
 def sanitize_filename(name):
-    # Dosya adında sorun çıkarabilecek karakterleri temizle
     return re.sub(r'[\\/*?:"<>|]', "", name).strip()
 
 async def get_stream_url(page, full_url):
@@ -42,15 +23,20 @@ async def get_stream_url(page, full_url):
 
     def handle_request(request):
         nonlocal stream_url
-        if ".m3u8" in request.url and not stream_url:
+        # m3u8 veya stream ile ilgili anahtar kelimeleri yakala
+        if (".m3u8" in request.url or "m3u8" in request.url) and not stream_url:
             stream_url = request.url
+            print(f" Yakalanan link: {stream_url}")
 
     page.on("request", handle_request)
 
     try:
         print(f"Yükleniyor: {full_url}")
-        await page.goto(full_url, timeout=45000)
-        await page.wait_for_timeout(6000)
+        # Sayfanın tam yüklenmesini beklemek yerine 'domcontentloaded' kullanıp biraz bekleyelim
+        await page.goto(full_url, timeout=60000, wait_until="domcontentloaded")
+        
+        # Sayfa içi oynatıcıya tıklama simülasyonu veya ek bekleme gerekebilir
+        await page.wait_for_timeout(8000)
     except Exception as e:
         print(f"Yükleme hatası: {e}")
 
@@ -60,11 +46,23 @@ async def get_stream_url(page, full_url):
 async def main():
     print(f"Kullanılan Ana Domain: {ACTIVE_BASE_URL}")
 
-    # 1. Adım: Güncel m3u8 linklerini bul
     updated_links = {}
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        page = await browser.new_page()
+        # Bot korumalarını atlatmak için ek tarayıcı argümanları ekledik
+        browser = await p.chromium.launch(
+            headless=True,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-setuid-sandbox"
+            ]
+        )
+        
+        context = await browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            viewport={"width": 1280, "height": 720}
+        )
+        page = await context.new_page()
 
         for ch in CHANNELS_TO_UPDATE:
             full_url = f"{ACTIVE_BASE_URL}{ch['path']}"
@@ -78,19 +76,16 @@ async def main():
 
         await browser.close()
 
-    # 2. Adım: tvnow klasörünü otomatik oluştur ve her kanal için ayrı m3u8 dosyası kaydet
     if updated_links:
         os.makedirs(OUTPUT_DIR, exist_ok=True)
         for ch_name, stream_url in updated_links.items():
             safe_name = sanitize_filename(ch_name)
             file_path = os.path.join(OUTPUT_DIR, f"{safe_name}.m3u8")
-            
             m3u_content = f"#EXTM3U\n#EXTINF:-1,{ch_name}\n{stream_url}\n"
             with open(file_path, "w", encoding="utf-8") as f:
                 f.write(m3u_content)
             print(f"Ayrı dosya oluşturuldu: {file_path}")
 
-    # 3. Adım: Ana tv247tr.m3u dosyasını oku ve linkleri güncelle
     if not os.path.exists(OUTPUT_FILE):
         print(f"Hata: {OUTPUT_FILE} dosyası bulunamadı!")
         return
@@ -118,12 +113,11 @@ async def main():
             
             if i < len(lines):
                 new_lines.append(f"{updated_links[matched_channel]}\n")
-                i += 1  # Eski link satırını geç
+                i += 1
         else:
             new_lines.append(line)
             i += 1
 
-    # 4. Adım: Ana dosyayı kaydet
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
     
