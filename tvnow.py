@@ -1,75 +1,34 @@
 import asyncio
-import concurrent.futures
 import os
-import requests
 from playwright.async_api import async_playwright
 
-# Ortak domain yapılandırması
-BASE_PREFIX = ""
-BASE_SUFFIX = ".com"
+# Doğrudan güncel domaini buraya sabitliyoruz
+ACTIVE_BASE_URL = "https://tvnow247.top/"
 
+OUTPUT_FILE = "tv247tr.m3u"
 
-CACHE_FILE = "domain_cache.txt"
-OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı dosya adı
-
-# Güncellenecek kanallar ve M3U içindeki aranacak isimleri
 CHANNELS_TO_UPDATE = [
     {
-        "name": "BEİN SPORTS 1-TV",  # tv247tr.m3u içerisindeki kanal adı
+        "name": "BEİN SPORTS 1-TV",
         "path": "embed-r4/bein-sports-1-turkey"
     },
     {
-        "name": "BEİN SPORTS 2-TV",  # tv247tr.m3u içerisindeki kanal adı
+        "name": "BEİN SPORTS 2-TV",
         "path": "embed-r4/bein-sports-2-turkey"
     },
     {
-        "name": "BEİN SPORTS 3-TV",  # tv247tr.m3u içerisindeki kanal adı
+        "name": "BEİN SPORTS 3-TV",
         "path": "embed-r4/bein-sports-3-turkey"
     },
     {
-        "name": "BEİN SPORTS 4-TV",  # tv247tr.m3u içerisindeki kanal adı
+        "name": "BEİN SPORTS 4-TV",
         "path": "embed-r4/bein-sports-4-turkey"
     },
     {
-        "name": "BEİN SPORTS 5-TV",  # tv247tr.m3u içerisindeki kanal adı
+        "name": "BEİN SPORTS 5-TV",
         "path": "embed-r4/bein-sports-5-turkey"
     }
 ]
-
-def test_url_is_active(url):
-    try:
-        response = requests.head(url, timeout=2.0, allow_redirects=True)
-        return response.status_code < 400
-    except requests.RequestException:
-        return False
-
-def check_single_domain_num(num):
-    url = f"{BASE_PREFIX}{num}{BASE_SUFFIX}"
-    if test_url_is_active(url):
-        return url
-    return None
-
-def get_active_base_domain(max_workers=50):
-    if os.path.exists(CACHE_FILE):
-        with open(CACHE_FILE, "r", encoding="utf-8") as f:
-            cached_url = f.read().strip()
-            if cached_url and test_url_is_active(cached_url):
-                print(f"Cache'teki domain aktif: {cached_url}")
-                return cached_url
-
-    print(f"Güncel ana domain aranıyor ({START_NUM}-{END_NUM} aralığı taranıyor)...")
-    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        futures = {executor.submit(check_single_domain_num, num): num for num in range(START_NUM, END_NUM)}
-        for future in concurrent.futures.as_completed(futures):
-            result = future.result()
-            if result:
-                print(f"Yeni aktif ana domain bulundu: {result}")
-                with open(CACHE_FILE, "w", encoding="utf-8") as f:
-                    f.write(result)
-                return result
-                
-    print("Aktif ana domain bulunamadı!")
-    return None
 
 async def get_stream_url(page, full_url):
     stream_url = None
@@ -77,7 +36,6 @@ async def get_stream_url(page, full_url):
     def handle_request(request):
         nonlocal stream_url
         if ".m3u8" in request.url and not stream_url:
-            # AVVA proxy ön eki kaldırıldı, yakalanan ham m3u8 adresi doğrudan atanıyor
             stream_url = request.url
 
     page.on("request", handle_request)
@@ -93,9 +51,7 @@ async def get_stream_url(page, full_url):
     return stream_url
 
 async def main():
-    active_base_url = get_active_base_domain()
-    if not active_base_url:
-        return
+    print(f"Kullanılan Ana Domain: {ACTIVE_BASE_URL}")
 
     # 1. Adım: Güncel m3u8 linklerini bul
     updated_links = {}
@@ -104,18 +60,18 @@ async def main():
         page = await browser.new_page()
 
         for ch in CHANNELS_TO_UPDATE:
-            full_url = f"{active_base_url}{ch['path']}"
+            full_url = f"{ACTIVE_BASE_URL}{ch['path']}"
             print(f"\nTaranıyor: {ch['name']} ({full_url})")
             stream_url = await get_stream_url(page, full_url)
             if stream_url:
-                print(f" Başarılı! Doğrudan .m3u8 linki alındı.")
+                print(" Başarılı! Doğrudan .m3u8 linki alındı.")
                 updated_links[ch['name']] = stream_url
             else:
-                print(f" Link alınamadı, eski link korunacak.")
+                print(" Link alınamadı, eski link korunacak.")
 
         await browser.close()
 
-    # 2. Adım: tv247tr.m3u dosyasını oku ve #EXTVLCOPT satırlarına dokunmadan linkleri güncelle
+    # 2. Adım: tv247tr.m3u dosyasını oku ve linkleri güncelle
     if not os.path.exists(OUTPUT_FILE):
         print(f"Hata: {OUTPUT_FILE} dosyası bulunamadı!")
         return
@@ -134,19 +90,16 @@ async def main():
                 break
 
         if matched_channel:
-            # Kanal adının bulunduğu satırı ekle
             new_lines.append(line)
             i += 1
             
-            # Aradaki tüm ek satırları (#EXTVLCOPT vb.) bozmadan aynen kopyala
             while i < len(lines) and lines[i].strip().startswith("#"):
                 new_lines.append(lines[i])
                 i += 1
             
-            # Artık sırada eski akış linki var. Onu yeni link ile değiştir ve eskisini atla
             if i < len(lines):
                 new_lines.append(f"{updated_links[matched_channel]}\n")
-                i += 1  # Eski link satırını geç
+                i += 1
         else:
             new_lines.append(line)
             i += 1
