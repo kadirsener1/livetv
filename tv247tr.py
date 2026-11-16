@@ -25,7 +25,7 @@ DEFAULT_CHANNELS = [
         "name": "Abc",
         "group": "Spor",
         "logo": "",
-        "url": "https://tvnow247.top/watch/abc-usa/"
+        "url": "https://tvnow247.top/embed-r4/bein-sports-1-turkey"
     }
 ]
 
