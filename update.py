@@ -1,3 +1,4 @@
+import os
 import re
 import urllib.request
 
@@ -30,7 +31,8 @@ channelsMap = {
 user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 ua_suffix = f"|{user_agent}"
 
-m3u_content = '#EXTM3U\n'
+# Yeni linkleri geçici olarak saklayacağımız sözlük
+updated_links = {}
 
 for name, target_url in channelsMap.items():
     try:
@@ -42,15 +44,39 @@ for name, target_url in channelsMap.items():
         if match:
             raw_m3u8 = match.group(1)
             final_url = raw_m3u8 + ua_suffix
-            m3u_content += f'#EXTINF:-1 tvg-name="{name}",{name}\n{final_url}\n'
-            print(f"[BAŞARILI] {name} eklendi.")
+            updated_links[name] = final_url
+            print(f"[BAŞARILI] {name} linki alındı.")
         else:
             print(f"[BULUNAMADI] {name} için .m3u8 linki bulunamadı.")
     except Exception as e:
         print(f"[HATA] {name}: {str(e)}")
 
-# Playlist dosyasını kaydet
-with open("playlist.m3u", "w", encoding="utf-8") as f:
-    f.write(m3u_content)
+# Mevcut tv247tr playlist dosyasını oku ve güncelle
+playlist_filename = "tv247tr.m3u"
 
-print("Playlist başarıyla güncellendi!")
+if os.path.exists(playlist_filename):
+    with open(playlist_filename, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+
+    new_lines = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        new_lines.append(line)
+
+        if line.startswith("#EXTINF"):
+            match_name = re.search(r",\s*(.+)$", line.strip())
+            if match_name:
+                channel_name = match_name.group(1).strip()
+                if channel_name in updated_links and i + 1 < len(lines):
+                    new_lines.append(updated_links[channel_name] + "\n")
+                    i += 2
+                    continue
+        i += 1
+
+    with open(playlist_filename, "w", encoding="utf-8") as f:
+        f.writelines(new_lines)
+
+    print("Playlist başarıyla güncellendi!")
+else:
+    print(f"[HATA] {playlist_filename} dosyası bulunamadı!")
