@@ -3,13 +3,13 @@ import urllib.request
 
 # Kanal haritası
 channelsMap = {
-    "Bein Sports 1 TR": "https://elif.eromaxe.com/zeynep/bein1tr",
-    "Bein Sports 2 TR": "https://elif.eromaxe.com/zeynep/bein2tr",
-    "Bein Sports 3 TR": "https://elif.eromaxe.com/zeynep/bein3tr",
-    "Bein Sports 4 TR": "https://elif.eromaxe.com/zeynep/bein4tr",
-    "Bein Sports 5 TR": "https://elif.eromaxe.com/zeynep/bein5tr",
-    "Bein Sports Max 1": "https://elif.eromaxe.com/zeynep/beinmax1tr",
-    "Bein Sports Max 2": "https://elif.eromaxe.com/zeynep/beinmax2tr",
+    "Bein Sports 1-BS": "https://elif.eromaxe.com/zeynep/bein1tr",
+    "Bein Sports 2-BS": "https://elif.eromaxe.com/zeynep/bein2tr",
+    "Bein Sports 3-BS": "https://elif.eromaxe.com/zeynep/bein3tr",
+    "Bein Sports 4-BS": "https://elif.eromaxe.com/zeynep/bein4tr",
+    "Bein Sports 5-BS": "https://elif.eromaxe.com/zeynep/bein5tr",
+    "Bein Sports Max 1-BS": "https://elif.eromaxe.com/zeynep/beinmax1tr",
+    "Bein Sports Max 2-BS": "https://elif.eromaxe.com/zeynep/beinmax2tr",
     "Bein Haber": "https://elif.eromaxe.com/zeynep/beinhabertr",
     "S Sport 1 TR": "https://elif.eromaxe.com/zeynep/ssport1tr",
     "S Sport 2 TR": "https://elif.eromaxe.com/zeynep/ssport2tr",
