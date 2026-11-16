@@ -78,14 +78,13 @@ async def main():
 
         await browser.close()
 
-    # 2. Adım: tvnow klasörünü oluştur ve her kanal için ayrı m3u8 dosyası kaydet
+    # 2. Adım: tvnow klasörünü otomatik oluştur ve her kanal için ayrı m3u8 dosyası kaydet
     if updated_links:
         os.makedirs(OUTPUT_DIR, exist_ok=True)
         for ch_name, stream_url in updated_links.items():
             safe_name = sanitize_filename(ch_name)
             file_path = os.path.join(OUTPUT_DIR, f"{safe_name}.m3u8")
             
-            # İçeriği standart bir M3U formatında yazıyoruz
             m3u_content = f"#EXTM3U\n#EXTINF:-1,{ch_name}\n{stream_url}\n"
             with open(file_path, "w", encoding="utf-8") as f:
                 f.write(m3u_content)
