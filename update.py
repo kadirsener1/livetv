@@ -1,5 +1,6 @@
 import asyncio
 import os
+import re
 import requests
 from playwright.async_api import async_playwright
 
@@ -27,14 +28,18 @@ def fetch_channels_from_api():
                     logo = item.get("logo", "")
                     
                     if raw_name and path:
-                        # Kanal adının sonuna -BS ekleme ve " TR" ifadesini temizleme/düzenleme
-                        clean_name = raw_name.strip()
+                        # "TR" ifadesini (büyük/küçük harf duyarsız) isimden temizle
+                        clean_name = re.sub(r'\bTR\b', '', raw_name, flags=re.IGNORECASE).strip()
+                        # Fazla boşlukları düzelt
+                        clean_name = re.sub(r'\s+', ' ', clean_name)
+                        
+                        # Sonuna "-BS" ekle (zaten yoksa)
                         if not clean_name.endswith("-BS"):
                             clean_name = f"{clean_name}-BS"
                             
                         channels.append({"name": clean_name, "url": path, "logo": logo})
                         
-            print(f"API'den toplam {len(channels)} Türkiye kanalı başarıyla filtrelendi ve yeniden adlandırıldı.")
+            print(f"API'den toplam {len(channels)} Türkiye kanalı başarıyla filtrelendi ve TR ekleri temizlenerek yeniden adlandırıldı.")
             return channels
     except Exception as e:
         print(f"API'den kanal listesi alınırken hata oluştu: {e}")
@@ -124,7 +129,6 @@ async def main():
     for ch_name, data in updated_links.items():
         if ch_name not in existing_content:
             logo_attr = f' tvg-logo="{data["logo"]}"' if data["logo"] else ''
-            # Kategori kısmı burada istenen "Spor-BS" olarak ayarlandı
             new_lines.append(f'\n#EXTINF:-1 tvg-name="{ch_name}"{logo_attr} group-title="Spor-BS",{ch_name}\n')
             new_lines.append("#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\n")
             new_lines.append("#EXTVLCOPT:network-caching=5000\n")
@@ -134,7 +138,7 @@ async def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
     
-    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası 'Spor-BS' kategorisi ve güncellenmiş kanal isimleriyle kaydedildi.")
+    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası 'Spor-BS' kategorisi, temizlenmiş isimler ve ham linklerle güncellendi.")
 
 if __name__ == "__main__":
     asyncio.run(main())
