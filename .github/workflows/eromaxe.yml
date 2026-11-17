@@ -28,7 +28,7 @@ jobs:
 
       - name: Run scraper script
         run: |
-          python scrape_channels.py
+          python update.py
 
       - name: Commit and push changes if playlist updated
         run: |
