@@ -120,7 +120,7 @@ async def main():
     for ch_name, data in updated_links.items():
         if ch_name not in existing_content:
             logo_attr = f' tvg-logo="{data["logo"]}"' if data["logo"] else ''
-            new_lines.append(f'\n#EXTINF:-1 tvg-name="{ch_name}"{logo_attr} group-title="TURKEY SPOR",{ch_name}\n')
+            new_lines.append(f'\n#EXTINF:-1 tvg-name="{ch_name}"{logo_attr} group-title="Spor-BS",{ch_name}\n')
             new_lines.append("#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\n")
             new_lines.append("#EXTVLCOPT:network-caching=5000\n")
             new_lines.append("#EXTVLCOPT:live-caching=5000\n")
