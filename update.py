@@ -22,14 +22,19 @@ def fetch_channels_from_api():
                 region_name = str(item.get("regionName", "")).lower()
                 
                 if "turkey" in region or "turkey" in region_name or "türkiye" in region_name:
-                    name = item.get("name") or item.get("title")
+                    raw_name = item.get("name") or item.get("title")
                     path = item.get("path") or item.get("url") or item.get("code")
                     logo = item.get("logo", "")
                     
-                    if name and path:
-                        channels.append({"name": name, "url": path, "logo": logo})
+                    if raw_name and path:
+                        # Kanal adının sonuna -BS ekleme ve " TR" ifadesini temizleme/düzenleme
+                        clean_name = raw_name.strip()
+                        if not clean_name.endswith("-BS"):
+                            clean_name = f"{clean_name}-BS"
+                            
+                        channels.append({"name": clean_name, "url": path, "logo": logo})
                         
-            print(f"API'den toplam {len(channels)} Türkiye kanalı başarıyla filtrelendi.")
+            print(f"API'den toplam {len(channels)} Türkiye kanalı başarıyla filtrelendi ve yeniden adlandırıldı.")
             return channels
     except Exception as e:
         print(f"API'den kanal listesi alınırken hata oluştu: {e}")
@@ -42,7 +47,6 @@ async def get_stream_url(browser, ch):
     def handle_request(request):
         nonlocal stream_url
         if ".m3u8" in request.url and not stream_url:
-            # Proxy prefix kaldırıldı, ham m3u8 linki doğrudan alınıyor
             stream_url = request.url
 
     page.on("request", handle_request)
@@ -120,7 +124,8 @@ async def main():
     for ch_name, data in updated_links.items():
         if ch_name not in existing_content:
             logo_attr = f' tvg-logo="{data["logo"]}"' if data["logo"] else ''
-            new_lines.append(f'\n#EXTINF:-1 tvg-name="{ch_name}"{logo_attr} group-title="TURKEY SPOR",{ch_name}\n')
+            # Kategori kısmı burada istenen "Spor-BS" olarak ayarlandı
+            new_lines.append(f'\n#EXTINF:-1 tvg-name="{ch_name}"{logo_attr} group-title="Spor-BS",{ch_name}\n')
             new_lines.append("#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\n")
             new_lines.append("#EXTVLCOPT:network-caching=5000\n")
             new_lines.append("#EXTVLCOPT:live-caching=5000\n")
@@ -129,7 +134,7 @@ async def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
     
-    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası sadece Türkiye kanalları ve ham linklerle güncellendi.")
+    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası 'Spor-BS' kategorisi ve güncellenmiş kanal isimleriyle kaydedildi.")
 
 if __name__ == "__main__":
     asyncio.run(main())
