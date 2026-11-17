@@ -1,82 +1,135 @@
+import asyncio
 import os
-import re
-import urllib.request
+import requests
+from playwright.async_api import async_playwright
 
-# Kanal haritası
-channelsMap = {
-    "Bein Sports 1-BS": "https://elif.eromaxe.com/zeynep/bein1tr",
-    "Bein Sports 2-BS": "https://elif.eromaxe.com/zeynep/bein2tr",
-    "Bein Sports 3-BS": "https://elif.eromaxe.com/zeynep/bein3tr",
-    "Bein Sports 4-BS": "https://elif.eromaxe.com/zeynep/bein4tr",
-    "Bein Sports 5-BS": "https://elif.eromaxe.com/zeynep/bein5tr",
-    "Bein Sports Max 1-BS": "https://elif.eromaxe.com/zeynep/beinmax1tr",
-    "Bein Sports Max 2-BS": "https://elif.eromaxe.com/zeynep/beinmax2tr",
-    "Bein Haber": "https://elif.eromaxe.com/zeynep/beinhabertr",
-    "S Sport 1-BS": "https://elif.eromaxe.com/zeynep/ssport1tr",
-    "S Sport 2-BS": "https://elif.eromaxe.com/zeynep/ssport2tr",
-    "A Sport-BS": "https://elif.eromaxe.com/zeynep/asport",
-    "TRT Spor-BS": "https://elif.eromaxe.com/zeynep/trtsport",
-    "Eurosport 1-BS": "https://elif.eromaxe.com/zeynep/eruosport1",
-    "Eurosport 2-BS": "https://elif.eromaxe.com/zeynep/eruosport2",
-    "Smart Spor-BS": "https://elif.eromaxe.com/zeynep/sportsmart",
-    "Smart Spor 2-BS": "https://elif.eromaxe.com/zeynep/sportsmart2",
-    "ATV-BS": "https://elif.eromaxe.com/zeynep/atv",
-    "Tabii Spor": "https://elif.eromaxe.com/zeynep/tabiisport",
-    "Tabii Spor 1": "https://elif.eromaxe.com/zeynep/tabiisport1",
-    "Tabii Spor 2": "https://elif.eromaxe.com/zeynep/tabiisport2",
-    "Tabii Spor 3": "https://elif.eromaxe.com/zeynep/tabiisport3",
-    "Tabii Spor 4": "https://elif.eromaxe.com/zeynep/tabiisport4",
-}
+OUTPUT_FILE = "playlist.m3u"
+API_URL = "https://tflix-document-channels.cloudvix001.workers.dev/api/channels"
+CONCURRENCY_LIMIT = 4  # Aynı anda taranacak kanal sayısı
 
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-ua_suffix = f"|{user_agent}"
-
-# Yeni linkleri geçici olarak saklayacağımız sözlük
-updated_links = {}
-
-for name, target_url in channelsMap.items():
+def fetch_channels_from_api():
     try:
-        req = urllib.request.Request(target_url, headers={"User-Agent": user_agent})
-        with urllib.request.urlopen(req, timeout=10) as response:
-            html = response.read().decode('utf-8', errors='ignore')
+        print("API'den kanal listesi alınıyor...")
+        response = requests.get(API_URL, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            channels = []
+            items = data if isinstance(data, list) else data.get("channels", data.get("data", []))
             
-        match = re.search(r'(https?://[^\s<>"]+?\.m3u8[^\s<>"]*)', html)
-        if match:
-            raw_m3u8 = match.group(1)
-            final_url = raw_m3u8 + ua_suffix
-            updated_links[name] = final_url
-            print(f"[BAŞARILI] {name} linki alındı.")
-        else:
-            print(f"[BULUNAMADI] {name} için .m3u8 linki bulunamadı.")
+            for item in items:
+                # Sadece Turkey (Türkiye) bölgesine ait kanalları filtrele
+                region = str(item.get("region", "")).lower()
+                region_name = str(item.get("regionName", "")).lower()
+                
+                if "turkey" in region or "turkey" in region_name or "türkiye" in region_name:
+                    name = item.get("name") or item.get("title")
+                    path = item.get("path") or item.get("url") or item.get("code")
+                    logo = item.get("logo", "")
+                    
+                    if name and path:
+                        channels.append({"name": name, "url": path, "logo": logo})
+                        
+            print(f"API'den toplam {len(channels)} Türkiye kanalı başarıyla filtrelendi.")
+            return channels
     except Exception as e:
-        print(f"[HATA] {name}: {str(e)}")
+        print(f"API'den kanal listesi alınırken hata oluştu: {e}")
+    return []
 
-# Mevcut tv247tr playlist dosyasını oku ve güncelle
-playlist_filename = "tv247tr.m3u"
+async def get_stream_url(browser, ch):
+    page = await browser.new_page()
+    stream_url = None
 
-if os.path.exists(playlist_filename):
-    with open(playlist_filename, "r", encoding="utf-8") as f:
+    def handle_request(request):
+        nonlocal stream_url
+        if ".m3u8" in request.url and not stream_url:
+            # Proxy prefix kaldırıldı, ham m3u8 linki doğrudan alınıyor
+            stream_url = request.url
+
+    page.on("request", handle_request)
+
+    try:
+        print(f"Taranıyor: {ch['name']} ({ch['url']})")
+        await page.goto(ch['url'], timeout=45000)
+        await page.wait_for_timeout(5000)
+    except Exception as e:
+        print(f"Yükleme hatası ({ch['name']}): {e}")
+
+    await page.close()
+    return ch['name'], ch['logo'], stream_url
+
+async def main():
+    channels_to_update = fetch_channels_from_api()
+    if not channels_to_update:
+        print("Taranacak Türkiye kanalı bulunamadı!")
+        return
+
+    updated_links = {}
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        
+        semaphore = asyncio.Semaphore(CONCURRENCY_LIMIT)
+
+        async def sem_task(ch):
+            async with semaphore:
+                return await get_stream_url(browser, ch)
+
+        tasks = [sem_task(ch) for ch in channels_to_update]
+        results = await asyncio.gather(*tasks)
+
+        for name, logo, link in results:
+            if link:
+                print(f" Başarılı! {name} linki alındı.")
+                updated_links[name] = {"link": link, "logo": logo}
+            else:
+                print(f" {name} için link alınamadı.")
+
+        await browser.close()
+
+    # Dosya güncelleme adımı
+    if not os.path.exists(OUTPUT_FILE):
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+
+    with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
         lines = f.readlines()
 
     new_lines = []
     i = 0
     while i < len(lines):
         line = lines[i]
-        new_lines.append(line)
+        matched_channel = None
+        for ch_name in updated_links.keys():
+            if ch_name in line:
+                matched_channel = ch_name
+                break
 
-        if line.startswith("#EXTINF"):
-            match_name = re.search(r",\s*(.+)$", line.strip())
-            if match_name:
-                channel_name = match_name.group(1).strip()
-                if channel_name in updated_links and i + 1 < len(lines):
-                    new_lines.append(updated_links[channel_name] + "\n")
-                    i += 2
-                    continue
-        i += 1
+        if matched_channel:
+            new_lines.append(line)
+            i += 1
+            while i < len(lines) and lines[i].strip().startswith("#"):
+                new_lines.append(lines[i])
+                i += 1
+            if i < len(lines):
+                new_lines.append(f"{updated_links[matched_channel]['link']}\n")
+                i += 1
+        else:
+            new_lines.append(line)
+            i += 1
 
-    with open(playlist_filename, "w", encoding="utf-8") as f:
+    existing_content = "".join(new_lines)
+    for ch_name, data in updated_links.items():
+        if ch_name not in existing_content:
+            logo_attr = f' tvg-logo="{data["logo"]}"' if data["logo"] else ''
+            new_lines.append(f'\n#EXTINF:-1 tvg-name="{ch_name}"{logo_attr} group-title="TURKEY SPOR",{ch_name}\n')
+            new_lines.append("#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\n")
+            new_lines.append("#EXTVLCOPT:network-caching=5000\n")
+            new_lines.append("#EXTVLCOPT:live-caching=5000\n")
+            new_lines.append(f"{data['link']}\n")
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
+    
+    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası sadece Türkiye kanalları ve ham linklerle güncellendi.")
 
-    print("Playlist başarıyla güncellendi!")
-else:
-    print(f"[HATA] {playlist_filename} dosyası bulunamadı!")
+if __name__ == "__main__":
+    asyncio.run(main())
