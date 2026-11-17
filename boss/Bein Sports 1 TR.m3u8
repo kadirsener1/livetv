@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="Bein Sports 1 TR" tvg-logo="https://tflix-document-channels.cloudvix001.workers.dev/logos/bein-sports-1-4k.png" group-title="Spor-BS",Bein Sports 1 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=8000000
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/a9ce1a70599926aca258c2e4ae585753e6038c3600f96b733be0c295bbe38f0e/1794943356/bein1tr.m3u8
