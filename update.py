@@ -44,7 +44,6 @@ async def get_stream_url(browser, ch):
     def handle_request(request):
         nonlocal stream_url
         if ".m3u8" in request.url and not stream_url:
-            # Proxy prefix kaldırıldı, ham m3u8 linki doğrudan alınıyor
             stream_url = request.url
 
     page.on("request", handle_request)
@@ -125,10 +124,15 @@ async def main():
     for ch_name, data in updated_links.items():
         logo_attr = f' tvg-logo="{data["logo"]}"' if data["logo"] else ''
         
-        # Her kanal için 'boss' klasörüne .m3u8 uzantılı dosya olarak kaydetme
+        # Her kanal için 'boss' klasörüne .m3u8 dosyası olarak Tivimate uyumlu formatta kaydetme
         safe_filename = re.sub(r'[\\/*?:"<>|]', "", ch_name) + ".m3u8"
         channel_file_path = os.path.join(BOSS_DIR, safe_filename)
         with open(channel_file_path, "w", encoding="utf-8") as cf:
+            cf.write("#EXTM3U\n")
+            cf.write(f'#EXTINF:-1 tvg-name="{ch_name}"{logo_attr} group-title="Spor-BS",{ch_name}\n')
+            cf.write("#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\n")
+            cf.write("#EXTVLCOPT:network-caching=5000\n")
+            cf.write("#EXTVLCOPT:live-caching=5000\n")
             cf.write(f"{data['link']}\n")
 
         if ch_name not in existing_content:
@@ -141,7 +145,7 @@ async def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
     
-    print(f"\nİşlem tamam! Ana liste güncellendi ve tüm .m3u8 bağlantıları '{BOSS_DIR}' klasörüne ayrı dosyalar olarak kaydedildi.")
+    print(f"\nİşlem tamam! Ana liste ve 'boss' klasöründeki .m3u8 dosyaları Tivimate uyumlu formatla güncellendi.")
 
 if __name__ == "__main__":
     asyncio.run(main())
