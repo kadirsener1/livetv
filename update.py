@@ -6,7 +6,7 @@ from playwright.async_api import async_playwright
 
 OUTPUT_FILE = "playlist.m3u"
 API_URL = "https://tflix-document-channels.cloudvix001.workers.dev/api/channels"
-CONCURRENCY_LIMIT = 4  # Aynı anda taranacak kanal sayısı
+CONCURRENCY_LIMIT = 4
 
 def fetch_channels_from_api():
     try:
@@ -18,7 +18,6 @@ def fetch_channels_from_api():
             items = data if isinstance(data, list) else data.get("channels", data.get("data", []))
             
             for item in items:
-                # Sadece Turkey (Türkiye) bölgesine ait kanalları filtrele
                 region = str(item.get("region", "")).lower()
                 region_name = str(item.get("regionName", "")).lower()
                 
@@ -28,18 +27,16 @@ def fetch_channels_from_api():
                     logo = item.get("logo", "")
                     
                     if raw_name and path:
-                        # "TR" ifadesini (büyük/küçük harf duyarsız) isimden temizle
+                        # "TR" ifadesini temizle
                         clean_name = re.sub(r'\bTR\b', '', raw_name, flags=re.IGNORECASE).strip()
-                        # Fazla boşlukları düzelt
                         clean_name = re.sub(r'\s+', ' ', clean_name)
                         
-                        # Sonuna "-BS" ekle (zaten yoksa)
                         if not clean_name.endswith("-BS"):
                             clean_name = f"{clean_name}-BS"
                             
                         channels.append({"name": clean_name, "url": path, "logo": logo})
                         
-            print(f"API'den toplam {len(channels)} Türkiye kanalı başarıyla filtrelendi ve TR ekleri temizlenerek yeniden adlandırıldı.")
+            print(f"API'den toplam {len(channels)} Türkiye kanalı filtrelendi.")
             return channels
     except Exception as e:
         print(f"API'den kanal listesi alınırken hata oluştu: {e}")
@@ -75,7 +72,6 @@ async def main():
     updated_links = {}
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
-        
         semaphore = asyncio.Semaphore(CONCURRENCY_LIMIT)
 
         async def sem_task(ch):
@@ -94,51 +90,64 @@ async def main():
 
         await browser.close()
 
-    # Dosya güncelleme adımı
-    if not os.path.exists(OUTPUT_FILE):
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
+    # --- AKILLI DOSYA TEMİZLEME VE GÜNCELLEME ---
+    # Mevcut m3u dosyasını oku (yoksa boş başlat)
+    existing_lines = []
+    if os.path.exists(OUTPUT_FILE):
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            existing_lines = f.readlines()
 
-    with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-        lines = f.readlines()
+    # Dosya hiç yoksa başlığı koy
+    if not existing_lines:
+        existing_lines = ["#EXTM3U\n"]
 
-    new_lines = []
+    # Yeni taranan/başarılı olan kanalları dosyadan tamamen siliyoruz (eski bozuk/silinmiş linkler kirlilik yapmasın diye)
+    cleaned_lines = []
+    skip_lines = 0
     i = 0
-    while i < len(lines):
-        line = lines[i]
-        matched_channel = None
+    while i < len(existing_lines):
+        line = existing_lines[i]
+        
+        # Eğer satır bir kanal tanımı (#EXTINF) içeriyorsa ve güncellenen kanallarımızdan biriyse
+        matched_ch = None
         for ch_name in updated_links.keys():
-            if ch_name in line:
-                matched_channel = ch_name
+            if f'tvg-name="{ch_name}"' in line or line.strip().endswith(f",{ch_name}"):
+                matched_ch = ch_name
                 break
-
-        if matched_channel:
-            new_lines.append(line)
+                
+        if matched_ch:
+            # Bu kanalın kendisine ait alt satırları (VLC opsiyonları ve m3u8 linki) atla
             i += 1
-            while i < len(lines) and lines[i].strip().startswith("#"):
-                new_lines.append(lines[i])
+            while i < len(existing_lines) and (existing_lines[i].strip().startswith("#") or not existing_lines[i].strip().startswith("#EXTINF")):
+                # Eğer yeni bir #EXTINF görmediysek ve önceki kanalın link satırındaysak atlamaya devam et
+                if existing_lines[i].strip().startswith("#EXTINF") or existing_lines[i].strip() == "":
+                    break
+                # Eğer link satırı veya vlc opt satırı ise atla
                 i += 1
-            if i < len(lines):
-                new_lines.append(f"{updated_links[matched_channel]['link']}\n")
-                i += 1
+            # Fazladan boşluk kalmaması için kontrol
+            continue
         else:
-            new_lines.append(line)
+            cleaned_lines.append(line)
             i += 1
 
-    existing_content = "".join(new_lines)
-    for ch_name, data in updated_links.items():
-        if ch_name not in existing_content:
-            logo_attr = f' tvg-logo="{data["logo"]}"' if data["logo"] else ''
-            new_lines.append(f'\n#EXTINF:-1 tvg-name="{ch_name}"{logo_attr} group-title="Spor-BS",{ch_name}\n')
-            new_lines.append("#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\n")
-            new_lines.append("#EXTVLCOPT:network-caching=5000\n")
-            new_lines.append("#EXTVLCOPT:live-caching=5000\n")
-            new_lines.append(f"{data['link']}\n")
-
+    # Dosyanın en sonuna güncel ve taze linkleri ekle
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.writelines(new_lines)
+        f.writelines(cleaned_lines)
+        
+        # Eğer dosya sonunda yeni satır yoksa ekle
+        if cleaned_lines and not cleaned_lines[-1].endswith("\n"):
+            f.write("\n")
+
+        # Yeni/güncellenmiş çalışan linkleri ekle
+        for ch_name, data in updated_links.items():
+            logo_attr = f' tvg-logo="{data["logo"]}"' if data["logo"] else ''
+            f.write(f'\n#EXTINF:-1 tvg-name="{ch_name}"{logo_attr} group-title="Spor-BS",{ch_name}\n')
+            f.write("#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\n")
+            f.write("#EXTVLCOPT:network-caching=5000\n")
+            f.write("#EXTVLCOPT:live-caching=5000\n")
+            f.write(f"{data['link']}\n")
     
-    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası 'Spor-BS' kategorisi, temizlenmiş isimler ve ham linklerle güncellendi.")
+    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası güncel ve çalışan linklerle tamamen yenilendi.")
 
 if __name__ == "__main__":
     asyncio.run(main())
