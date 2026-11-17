@@ -1,9 +1,11 @@
 import asyncio
 import os
+import re
 import requests
 from playwright.async_api import async_playwright
 
 OUTPUT_FILE = "playlist.m3u"
+BOSS_DIR = "boss"
 API_URL = "https://tflix-document-channels.cloudvix001.workers.dev/api/channels"
 CONCURRENCY_LIMIT = 4  # Aynı anda taranacak kanal sayısı
 
@@ -85,6 +87,9 @@ async def main():
 
         await browser.close()
 
+    # 'boss' klasörünü oluştur (yoksa)
+    os.makedirs(BOSS_DIR, exist_ok=True)
+
     # Dosya güncelleme adımı
     if not os.path.exists(OUTPUT_FILE):
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
@@ -118,8 +123,15 @@ async def main():
 
     existing_content = "".join(new_lines)
     for ch_name, data in updated_links.items():
+        logo_attr = f' tvg-logo="{data["logo"]}"' if data["logo"] else ''
+        
+        # Her kanal için 'boss' klasörüne .m3u8 uzantılı dosya olarak kaydetme
+        safe_filename = re.sub(r'[\\/*?:"<>|]', "", ch_name) + ".m3u8"
+        channel_file_path = os.path.join(BOSS_DIR, safe_filename)
+        with open(channel_file_path, "w", encoding="utf-8") as cf:
+            cf.write(f"{data['link']}\n")
+
         if ch_name not in existing_content:
-            logo_attr = f' tvg-logo="{data["logo"]}"' if data["logo"] else ''
             new_lines.append(f'\n#EXTINF:-1 tvg-name="{ch_name}"{logo_attr} group-title="Spor-BS",{ch_name}\n')
             new_lines.append("#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\n")
             new_lines.append("#EXTVLCOPT:network-caching=5000\n")
@@ -129,7 +141,7 @@ async def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
     
-    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası sadece Türkiye kanalları ve ham linklerle güncellendi.")
+    print(f"\nİşlem tamam! Ana liste güncellendi ve tüm .m3u8 bağlantıları '{BOSS_DIR}' klasörüne ayrı dosyalar olarak kaydedildi.")
 
 if __name__ == "__main__":
     asyncio.run(main())
