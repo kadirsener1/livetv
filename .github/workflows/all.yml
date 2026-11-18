@@ -92,7 +92,7 @@ jobs:
       - name: Run bosstv Scraper & Save
         continue-on-error: true
         run: |
-          python bosstv.py
+          python erotr.py
           git add -A
           if ! git diff --cached --quiet; then
             git commit -m "tv247ws linkleri güncellendi [skip ci]"
