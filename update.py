@@ -4,7 +4,7 @@ import re
 import requests
 from playwright.async_api import async_playwright
 
-OUTPUT_FILE = "playlist.m3u"
+OUTPUT_FILE = "tv247tr.m3u"
 BOSS_DIR = "boss"
 API_URL = "https://tflix-document-channels.cloudvix001.workers.dev/api/channels"
 CONCURRENCY_LIMIT = 4  # Aynı anda taranacak kanal sayısı
