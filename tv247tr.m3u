@@ -398,12 +398,14 @@ https://aktif-q65v.onrender.com/play/eurosport2
 https://andro.evrenesoglu241.click/checklist/androstreamlivees2.m3u8
 #EXTINF:-1 tvg-logo="https://www.diaicon.xyz/wp-content/uploads/2024/12/trt-spor-hd.png" group-title="TR Spor", TRT SPOR*
 https://tv-trtspor1.medya.trt.com.tr/master_1080.m3u8
+#EXTINF:-1 tvg-id="trt-spor" tvg-name="TRT SPOR-A" group-title="Spor", TRT SPOR-A
+https://css.d6e3eds5e065t5.help//trtspor/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VWygoj9.png" group-title="TR Spor", TRT SPOR YILDIZ
 https://tv-trtspor2.medya.trt.com.tr/master_1440p.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/UGbdQLv.png" group-title="TR Spor", BEİN SPORTS HABER-BS
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/e4e377f14c2e87de23b720a27b454f2f8d48f5aa888d445325b4be916d47a4c7/1795016007/beinhabertr.m3u8
 #EXTINF:-1 tvg-logo="" group-title="TR Spor", A SPOR-BS
-https://elif.eromaxe.com/zeynep/asport?format=m3u8
+https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/e4e377f14c2e87de23b720a27b454f2f8d48f5aa888d445325b4be916d47a4c7/1795016007/beinhabertr.m3u8
 #EXTINF:-1 tvg-id="a-spor" tvg-name="A SPOR-A" group-title="Spor", A SPOR-A
 https://css.d6e3eds5e065t5.help//aspor/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://www.htspor.com/images/manifest/social-share-logo.png" group-title="TR Spor", HT Spor
@@ -2266,5 +2268,3 @@ https://raw.githubusercontent.com/kadirsener1/catcast/refs/heads/main/catcast/fa
 https://sportsbite.org/247/arenasport1premiumrs
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/bein-sports-us.png" group-title="World Sport", Bein Sports usa
 https://sportsbite.org/247/beinsportsus
-#EXTINF:-1 tvg-id="trt-spor" tvg-name="TRT SPOR-A" group-title="Spor", TRT SPOR-A
-https://css.d6e3eds5e065t5.help//trtspor/tracks-v1a1/mono.m3u8
