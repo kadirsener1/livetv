@@ -12,15 +12,29 @@ HEADERS = {
 }
 
 M3U_FILE = "tv247tr.m3u"
+SUFFIX = "-Avva"
+
+
+def strip_suffix(name):
+    """Varsa sondaki -Avva ekini kaldırarak saf kanal adını döndür"""
+    return re.sub(r'-Avva$', '', name.strip(), flags=re.IGNORECASE).strip()
+
+
+def append_suffix(name):
+    """Kanal adının sonuna -Avva ekler (zaten varsa tekrar eklemez)"""
+    clean_name = name.strip()
+    if not clean_name.lower().endswith(SUFFIX.lower()):
+        return f"{clean_name}{SUFFIX}"
+    return clean_name
 
 
 def normalize(name):
     """Kanal ismini normalize et: küçük harf, sadece harf-rakam"""
-    return re.sub(r'[^a-z0-9]', '', name.lower())
+    return re.sub(r'[^a-z0-9]', '', strip_suffix(name).lower())
 
 
 def get_fresh_links():
-    """API'den güncel m3u8 linklerini çek"""
+    """API'den güncel m3u8 linklerini çek ve kanal adlarının sonuna -Avva ekle"""
     try:
         response = requests.get(API_URL, headers=HEADERS, timeout=30)
         response.raise_for_status()
@@ -31,13 +45,18 @@ def get_fresh_links():
 
     link_map = {}
     for ch in channels:
-        name = ch.get("name", "").strip()
+        raw_name = ch.get("name", "").strip()
         url = ch.get("m3u8_url", "")
-        if name and url:
-            # 1. Orijinal isim (BÜYÜK HARF)
-            link_map[name.upper()] = url
+        if raw_name and url:
+            avva_name = append_suffix(raw_name)
+            base_name = strip_suffix(raw_name)
+
+            # 1. -Avva eklenmiş isim (BÜYÜK HARF) ve saf isim (BÜYÜK HARF)
+            link_map[avva_name.upper()] = url
+            link_map[base_name.upper()] = url
+
             # 2. Normalize edilmiş isim (boşluksuz, özel karaktersiz)
-            link_map[normalize(name)] = url
+            link_map[normalize(avva_name)] = url
 
             # 3. URL'den slug çıkar (örn: .../live/bein1/playlist.m3u8 -> bein1)
             slug_match = re.search(r'/([^/]+)/[^/]*\.m3u8', url)
@@ -48,7 +67,7 @@ def get_fresh_links():
 
 
 def update_playlist(link_map):
-    """Mevcut tv247tr.m3u dosyasındaki sadece linkleri güncelle"""
+    """Mevcut tv247tr.m3u dosyasındaki kanal adlarına -Avva ekle ve linkleri güncelle"""
     try:
         with open(M3U_FILE, "r", encoding="utf-8") as f:
             lines = f.readlines()
@@ -64,27 +83,30 @@ def update_playlist(link_map):
     for i, line in enumerate(lines):
         stripped = line.strip()
 
-        # #EXTINF satırından kanal adını al
+        # #EXTINF satırından kanal adını al ve sonuna -Avva ekle
         if stripped.startswith("#EXTINF"):
             comma_pos = stripped.rfind(",")
             if comma_pos != -1:
-                current_channel_name = stripped[comma_pos + 1:].strip()
-            new_lines.append(line)
+                prefix_part = stripped[:comma_pos + 1]
+                raw_channel_name = stripped[comma_pos + 1:].strip()
+                current_channel_name = append_suffix(raw_channel_name)
+                line_ending = "\n" if line.endswith("\n") else ""
+                new_lines.append(f"{prefix_part} {current_channel_name}{line_ending}")
+            else:
+                new_lines.append(line)
 
         # m3u8 link satırı - bunu güncelle
         elif "avvaupdate.com" in stripped and ".m3u8" in stripped:
-            # Eşleşme sırası:
-            # 1. Kanal ismi (BÜYÜK HARF) — EN GÜVENİLİR
-            # 2. Normalize edilmiş kanal ismi
-            # 3. URL'deki slug — SON ÇARE (bozuk URL'lerde yanlış olabilir)
             norm_name = normalize(current_channel_name)
             upper_name = current_channel_name.upper()
+            base_upper_name = strip_suffix(current_channel_name).upper()
 
             slug_match = re.search(r'/([^/]+)/[^/]*\.m3u8', stripped)
             old_slug = slug_match.group(1).lower() if slug_match else ""
 
             new_url = (
                 link_map.get(upper_name)
+                or link_map.get(base_upper_name)
                 or link_map.get(norm_name)
                 or link_map.get(old_slug)
             )
@@ -100,7 +122,7 @@ def update_playlist(link_map):
 
                 new_lines.append(new_url + "\n")
                 updated += 1
-                print(f"✅ Güncellendi: {current_channel_name} (eşleşme: {upper_name if link_map.get(upper_name) else norm_name if link_map.get(norm_name) else old_slug})")
+                print(f"✅ Güncellendi: {current_channel_name}")
             else:
                 new_lines.append(line)
                 print(f"⚠️ Eşleşme yok, eski link korundu: {current_channel_name} (aranan: '{upper_name}', '{norm_name}', '{old_slug}')")
@@ -123,22 +145,22 @@ def update_playlist(link_map):
 
 def main():
     now = datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')
-    print(f"🚀 [{now}] Linkler güncelleniyor...\n")
+    print(f"🚀 [{now}] Linkler ve kanal adları güncelleniyor...\n")
 
     # 1. API'den güncel linkleri al
     link_map = get_fresh_links()
     if not link_map:
         return
 
-    print(f"📡 API'den {len(link_map)} kanal linki alındı.\n")
+    print(f"📡 API'den {len(link_map)} eşleşme anahtarı alındı.\n")
 
-    # 2. Mevcut playlist'teki linkleri güncelle
+    # 2. Mevcut playlist'teki kanal adlarını ve linkleri güncelle
     updated = update_playlist(link_map)
 
     if updated:
-        print(f"\n🎉 Tamamlandı! {updated} kanal linki güncellendi.")
+        print(f"\n🎉 Tamamlandı! {updated} kanal güncellendi.")
     else:
-        print("\n⚠️ Hiçbir link güncellenemedi.")
+        print("\n⚠️ Hiçbir kanal güncellenemedi.")
 
 
 if __name__ == "__main__":
