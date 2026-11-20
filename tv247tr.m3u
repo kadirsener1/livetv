@@ -2,7 +2,8 @@
 #EXTINF:-1 tvg-logo="" group-title="İNFO",BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 1-TV ren
+#EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 1-TV ren1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://aktif-q65v.onrender.com/play/tvnow1
 #EXTINF:-1 tvg-logo="" group-title="Spor-TV",BEİN SPORTS 2-TV
 https://live.tvnow247.today/live/63/index.m3u8?v=1&e=1794952970&k=2e24706be1789311f44d3b0db8246779&src=r2
