@@ -1,7 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="" group-title="İNFO", BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
-
+#EXTINF:-1 tvg-name="Bein Sports 1 TR" tvg-logo="bein-sports-1-4k.png" group-title="Spor-BS", Bein Sports 1 macbox
+https://ugursportsyayin1.xyz/m/AdT3X0_Bx72c-PfoLhMLMGmXf0KyulWTxebkdj4UY4nh4wrsA5949xWSgg
 #EXTINF:-1 tvg-name="Bein Sports 1 TR" tvg-logo="bein-sports-1-4k.png" group-title="Spor-BS", kocaelispor-vs-fenerbahce
 https://rajumakitocengave3.cfd/702/mono.m3u8?kid=cust_8094&stream=702&expires=1795356603&sign=2437b9c32c8427066465692b27c3dcd7c417e3c9ec36e6a98f74228f5939f823
 
