@@ -158,47 +158,17 @@ async def main():
 
         await browser.close()
 
-    # 2. Adım: tv247tr.m3u dosyasını oku ve #EXTVLCOPT satırlarına dokunmadan linkleri güncelle
-    if not os.path.exists(OUTPUT_FILE):
-        print(f"Hata: {OUTPUT_FILE} dosyası bulunamadı!")
-        return
+    # 2. Adım: Bulunan linkleri boss/<kanaladi>.m3u8 dosyalarına ayrı ayrı yaz
+    boss_dir = "boss"
+    os.makedirs(boss_dir, exist_ok=True)
 
-    with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-        lines = f.readlines()
+    for ch_name, stream_url in updated_links.items():
+        safe_name = ch_name.replace("/", "_").replace("\\", "_")
+        channel_file = os.path.join(boss_dir, f"{safe_name}.m3u8")
+        with open(channel_file, "w", encoding="utf-8") as f:
+            f.write(f"{stream_url}\n")
 
-    new_lines = []
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        matched_channel = None
-        for ch_name in updated_links.keys():
-            if ch_name in line:
-                matched_channel = ch_name
-                break
-
-        if matched_channel:
-            # Kanal adının bulunduğu satırı ekle
-            new_lines.append(line)
-            i += 1
-
-            # Aradaki tüm ek satırları (#EXTVLCOPT vb.) bozmadan aynen kopyala
-            while i < len(lines) and lines[i].strip().startswith("#"):
-                new_lines.append(lines[i])
-                i += 1
-
-            # Artık sırada eski akış linki var. Onu yeni link ile değiştir ve eskisini atla
-            if i < len(lines):
-                new_lines.append(f"{updated_links[matched_channel]}\n")
-                i += 1  # Eski link satırını geç
-        else:
-            new_lines.append(line)
-            i += 1
-
-    # 3. Adım: Dosyayı kaydet
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.writelines(new_lines)
-
-    print(f"\nİşlem tamam! {OUTPUT_FILE} dosyası güncellendi.")
+    print(f"\nİşlem tamam! {len(updated_links)} kanal linki '{boss_dir}' klasörüne yazıldı.")
 
 if __name__ == "__main__":
     asyncio.run(main())
