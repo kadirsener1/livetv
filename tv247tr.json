@@ -1,11 +1,5 @@
 [
     {
-    "name": "now_tv",
-    "group": "Spor-TV",
-    "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://tvnow247.top/embed-r4/now-tv-turkey/"
-},
-    {
     "name": "BEIN SPORTS 1-TV",
     "group": "Spor-TV",
     "logo": "https://logo-adresi.com/logo.png",
@@ -34,29 +28,5 @@
     "group": "Spor-TV",
     "logo": "https://logo-adresi.com/logo.png",
     "url": "https://tvnow247.top/embed-r4/bein-sports-5-turkey/"
-},
-    {
-    "name": "BEIN SPORTS 2-TVNOW",
-    "group": "Spor",
-    "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://tvnow247.top/embed/bein-sports-2-turkey/"
-},
-    {
-    "name": "BEIN SPORTS 3-TVNOW",
-    "group": "Spor",
-    "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://tvnow247.top/embed/bein-sports-3-turkey/"
-},
-    {
-    "name": "BEIN SPORTS 4-TVNOW",
-    "group": "Spor",
-    "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://tvnow247.top/embed/bein-sports-4-turkey/"
-},
-    {
-    "name": "BEIN SPORTS 5-TVNOW",
-    "group": "Spor",
-    "logo": "https://logo-adresi.com/logo.png",
-    "url": "https://tvnow247.top/embed/bein-sports-5-turkey/"
 }
 ]
