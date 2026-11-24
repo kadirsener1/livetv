@@ -45,7 +45,7 @@ https://app-kuc5.onrender.com/live/futbol_tv.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Spor", BEİN SPORTS 1-TV
 https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/tv247tr/BEIN_SPORTS_1-TV.m3u8
 
-#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", beIN SPORTS 1 HD-Avva 2
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", beIN SPORTS 1 HD-Avva
 #EXTVLCOPT:http-referrer=https://avvasportshd1.com/
 https://avvaupdate.com/live/bein1/playlist.m3u8?o=1%26e=1795530295%26tk=a46295a3515ce2f2699696c1cae23739
 
