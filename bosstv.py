@@ -1,6 +1,7 @@
 import asyncio
 import concurrent.futures
 import os
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 import requests
 from playwright.async_api import async_playwright
 
@@ -16,7 +17,7 @@ OUTPUT_FILE = "tv247tr.m3u"  # Çıktının yazılacağı dosya adı
 # Güncellenecek kanallar ve M3U içindeki aranacak isimleri
 CHANNELS_TO_UPDATE = [
     {
-        "name": "BEiNSPORTS1_BS",  # tv247tr.m3u içerisindeki kanal adı
+        "name": "BEİN SPORTS 1-BS",  # tv247tr.m3u içerisindeki kanal adı
         "path": "?channel=channel%3Atflix-MDJjNzUwY2JiYTUzYTZlZg"
     },
     {
@@ -113,6 +114,14 @@ def get_active_base_domain(max_workers=50):
     print("Aktif ana domain bulunamadı!")
     return None
 
+def append_ref_param(stream_url, ref_base_url):
+    ref_value = f"{ref_base_url.rstrip('/')}/"
+    parts = urlsplit(stream_url)
+    query_items = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True) if k != "ref"]
+    query_items.append(("ref", ref_value))
+    new_query = urlencode(query_items)
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, new_query, parts.fragment))
+
 async def get_stream_url(page, full_url):
     stream_url = None
 
@@ -166,11 +175,12 @@ async def main():
     for ch_name, stream_url in updated_links.items():
         safe_name = ch_name.replace("/", "_").replace("\\", "_")
         channel_file = os.path.join(boss_dir, f"{safe_name}.m3u8")
+        link_with_ref = append_ref_param(stream_url, active_base_url)
         content = (
             "#EXTM3U\n"
             "#EXT-X-VERSION:3\n"
             "#EXT-X-STREAM-INF:BANDWIDTH=8000000\n"
-            f"{stream_url}\n"
+            f"{link_with_ref}\n"
         )
         with open(channel_file, "w", encoding="utf-8") as f:
             f.write(content)
