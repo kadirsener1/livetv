@@ -39,14 +39,8 @@ https://aktif-q65v.onrender.com/play/beinsports4kfeedkutu
 https://aktif-q65v.onrender.com/play/beinsports4kfeeduydu
 
 
-#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", beIN SPORTS 1 HD-CDN
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/tv247tr/BEIN_SPORTS_1-CDN.m3u8
-
-#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", beIN SPORTS 1 HD-CDN MOZİLLA
-#EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/tv247tr/BEIN_SPORTS_1-CDN.m3u8
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", beIN SPORTS 3 HD-now
+https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/tv247tr/BEIN_SPORTS_3-TVNOW.m3u8
 
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", Spor Tv
 https://app-kuc5.onrender.com/live/futbol_tv.m3u8
