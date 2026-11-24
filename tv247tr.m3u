@@ -13,13 +13,10 @@ https://ugursportsyayin1.xyz/m/AdT3X0_Bx72c-PfoLhMLMGmXf0KyulWTxebkdj4UY4nh4wrsA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/e96e1f0a011660139f77ce9e7a6648e59112299188b6dc1b301018bfcef5fd09/1795175599/bein1tr.m3u8
+https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/boss/BEİN%20SPORTS%201-BS.m3u8
 
-#EXTINF:-1 tvg-name="Bein Sports 2 TR" tvg-logo="bein-sports-2-4k.png" group-title="Spor-BS", Bein Sports 2 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/cc89ae7a9f7600f4917493393b1518b031d2095c2a00031d5c7c83c14fb10a09/1795175599/bein2tr.m3u8
+#EXTINF:-1 tvg-name="Bein Sports 2 TR" tvg-logo="bein-sports-2-4k.png" group-title="Spor-BS", Bein Sports 1 TR no vlc
+https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/boss/BEİN%20SPORTS%201-BS.m3u8
 
 #EXTINF:-1 tvg-name="Bein Sports 3 TR" tvg-logo="bein-sports-3-4k.png" group-title="Spor-BS", Bein Sports 3 TR
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
