@@ -1,156 +1,9 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="" group-title="İNFO", BİLGİ
 https://clips.kick.com/clips/17/clip_01M535NWA4ZV5XGHSP0BPYRHRM/playlist.m3u8
-#EXTINF:-1 tvg-name="Bein Sports 1 TR" tvg-logo="bein-sports-1-4k.png" group-title="Spor", ahaber-mb
-https://ugursportsyayin1.xyz/
-#EXTINF:-1 tvg-name="Bein Sports 1 TR" tvg-logo="bein-sports-1-4k.png" group-title="Spor", Bein Sports 1 MB
-https://ugursportsyayin1.xyz/m/AQ_b_k6Gpqj7Qy0i_yKxcXMFiQaOoKT7G8T88uPqxAD7OMpACFB_8_FO-A
-#EXTINF:-1 tvg-name="Bein Sports 1 TR" tvg-logo="bein-sports-1-4k.png" group-title="Spor", Bein Sports 1 yerel
-https://ugursportsyayin1.xyz/m/AdT3X0_Bx72c-PfoLhMLMGmXf0KyulWTxebkdj4UY4nh4wrsA5949xWSgg
 
 
-#EXTINF:-1 tvg-name="Bein Sports 1 TR" tvg-logo="bein-sports-1-4k.png" group-title="Spor-BS", Bein Sports 1 TR2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/boss/BEiNSPORTS1_BS.m3u8
 
-#EXTINF:-1 tvg-name="Bein Sports 2 TR" tvg-logo="bein-sports-2-4k.png" group-title="Spor-BS", Bein Sports 1 TR no vlc2
-#EXTVLCOPT:http-referrer=https://bosssports1080.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/boss/BEiNSPORTS1_BS.m3u8
-
-#EXTINF:-1 tvg-name="Bein Sports 3 TR" tvg-logo="bein-sports-3-4k.png" group-title="Spor-BS", Bein Sports 3 TR2
-#EXTVLCOPT:http-referrer=https://bosssports1080.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://elif.eromaxe.com/zeynep/bein1tr?format=m3u8
-#EXTINF:-1 tvg-name="Bein Sports 4 TR" tvg-logo="bein-sports-4-hd.png" group-title="Spor-BS", Bein Sports 4 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/78cf5ab64054ed699fb2439cec077cb8e4fd17361517e9cdf2ba7b4361f462ae/1795175599/bein4tr.m3u8
-
-#EXTINF:-1 tvg-name="Bein Sports 5 TR" tvg-logo="bein-sports-5-hd-7fd6f7a3dc.png" group-title="Spor-BS", Bein Sports 5 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/ff80591ca0591a1230619d0200a203a4a7bd6edd8644cc8952e284bd5c109427/1795175605/bein5tr.m3u8
-
-#EXTINF:-1 tvg-name="Bein Sports Max 1 TR" tvg-logo="bein-sports-max-1-hd-fd63b361ac.png" group-title="Spor-BS", Bein Sports Max 1 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/0f5a1f25e8430bb6788a8624fcbe6c7f90f827ec29c484d37f7844d24a1f90db/1795175605/beinmax1tr.m3u8
-
-#EXTINF:-1 tvg-name="Bein Sports Max 2 TR" tvg-logo="bein-sports-max-2-hd-e436a0ab22.png" group-title="Spor-BS", Bein Sports Max 2 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/4d78328d76b77f14883571ddb1799797f67c5236e360d9a48d334dc6adda6972/1795175605/beinmax2tr.m3u8
-
-#EXTINF:-1 tvg-name="Bein Sports Haber TR" tvg-logo="097de801326b8f8b.jpg" group-title="Spor-BS", Bein Sports Haber TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/bc07dfd55a36dc21139e8b9a784712e30dfe73af6796f41f6c599c1170beb9eb/1795175605/beinhabertr.m3u8
-
-#EXTINF:-1 tvg-name="S Sport 1 TR" tvg-logo="s-sport-1-hd.png" group-title="Spor-BS", S Sport 1 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/a06ccc5b45d03a8a3f24500e1362c46c85a00ffc22be701168f79aa168422af0/1795175611/ssport1tr.m3u8
-
-#EXTINF:-1 tvg-name="S Sport 2 TR" tvg-logo="s-sport-2-hd.png" group-title="Spor-BS", S Sport 2 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/39bfe8842d7f6026e51152ff32208517e82a99ed314f713f87e0206499b29660/1795175611/ssport2tr.m3u8
-
-#EXTINF:-1 tvg-name="A Spor TR" tvg-logo="a-spor-hd.png" group-title="Spor-BS", A Spor TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/0cad2358ce0f6dcef6c2d839b92caf4e13962e2d0f82d540fb4c813695778882/1795175611/asport.m3u8
-
-#EXTINF:-1 tvg-name="TRT Sport TR" tvg-logo="trt-spor-hd.png" group-title="Spor-BS", TRT Sport TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/6160d724adec179a08f550fc42078f49c8b6435f2fec9754609dae50de2124e2/1795175611/trtsport.m3u8
-
-#EXTINF:-1 tvg-name="EUROSPORT 1 TR" tvg-logo="f792ac3139ea9b41.png" group-title="Spor-BS", EUROSPORT 1 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/482c882615b5351a7fa464ff23fc73c388264ef39fff16b5efd929fb6d374b93/1795175616/eruosport1.m3u8
-
-#EXTINF:-1 tvg-name="EUROSPORT 2 TR" tvg-logo="d27d6f7732bb5775.png" group-title="Spor-BS", EUROSPORT 2 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/fa2d1e2f98e85334589cde30c33a88851356e67199025e5acb11b1029aa62231/1795175616/eruosport2.m3u8
-
-#EXTINF:-1 tvg-name="FENERBAHCE TV TR" tvg-logo="271d8c726437a711.svg" group-title="Spor-BS", FENERBAHCE TV TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/dd7b78e6878e404efaed9f6b44185176f64db0b31d9f06efb577c72d350cd297/1795175616/fenerbahcetv.m3u8
-
-#EXTINF:-1 tvg-name="Galatasaray TV TR" tvg-logo="0b62c5d996fcae2b.png" group-title="Spor-BS", Galatasaray TV TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/98ced354ca666dc05924c3c67a9afda377548f7380ec11bdb5aa1fa9a42cda49/1795175616/galatasaraytv.m3u8
-
-#EXTINF:-1 tvg-name="SPOR SMART 1 TR" tvg-logo="9b544c246acdbdc4.png" group-title="Spor-BS", SPOR SMART 1 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/88ef8e4c5a8d40cab818eb265fa9a855a748b4baa517a9bd3668a5b5b67d31a8/1795175622/sportsmart.m3u8
-
-#EXTINF:-1 tvg-name="SPOR SMART 2 TR" tvg-logo="8b854ac4fc5a2f80.png" group-title="Spor-BS", SPOR SMART 2 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/f28458f11c88e85865c0af86cb9fa2cdcdabf40c5fc24612902289099a5da8b8/1795175622/sportsmart2.m3u8
-
-#EXTINF:-1 tvg-name="Tabii Spor TR" tvg-logo="e1b3927c84ddca27.svg" group-title="Spor-BS", Tabii Spor TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/8033445dd8bcfe88936d080faaa230d6bb47ebc1efa4c1e680e56dc1693d4e1d/1795175622/tabiisport.m3u8
-
-#EXTINF:-1 tvg-name="Tabii Spor 1 TR" tvg-logo="0b057dee3cd4caa4.svg" group-title="Spor-BS", Tabii Spor 1 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/228dddb670afc65137613ea90507505ab23253ab6ec846eeb2ed149681583956/1795175622/tabiisport1.m3u8
-
-#EXTINF:-1 tvg-name="Tabii Spor 2 TR" tvg-logo="a00123184ed3fe94.svg" group-title="Spor-BS", Tabii Spor 2 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/efb52c40cf64f12245b502b511ec9893d7c297fe6ffbb885e9eb97b9d9fe9cb9/1795175628/tabiisport2.m3u8
-
-#EXTINF:-1 tvg-name="Tabii Spor 3 TR" tvg-logo="b753d24ba14f7606.svg" group-title="Spor-BS", Tabii Spor 3 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/0bce511921e2eadb26654d29af4532f7ef969ac403bc048c5d1a4166922d0e89/1795175628/tabiisport3.m3u8
-
-#EXTINF:-1 tvg-name="Tabii Spor 4 TR" tvg-logo="e7f2d7e25eb6baf2.svg" group-title="Spor-BS", Tabii Spor 4 TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/d6366aa9430f6124e8e8105ca483d48f6adb322aadf0f22f78ba3e8e25cdd7b3/1795175628/tabiisport4.m3u8
-
-#EXTINF:-1 tvg-name="ATV TR" tvg-logo="atv-hd.png" group-title="Spor-BS", ATV TR
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=5000
-#EXTVLCOPT:live-caching=5000
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/b0d18f9e741270c000e96e672f04a6e463339eb35dbb7e2bb0bc07f25e0888db/1795175628/atv.m3u8
 
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor Vavoo", BEIN 1 FEED (720P)
 https://aktif-q65v.onrender.com/play/bein1feed720p
@@ -193,6 +46,10 @@ https://app-kuc5.onrender.com/live/futbol_tv.m3u8
 https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/tv247tr/BEIN_SPORTS_1-TV.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", beIN SPORTS 1 HD-Avva
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/bein1/playlist.m3u8?o=1%26e=1795521714%26tk=c0e7c29c1bce9a6030e0a2601a05ad1c
+#EXTINF:-1 tvg-name="Bein Sports 1 TR" tvg-logo="bein-sports-1-4k.png" group-title="Spor", Bein Sports 1 MB
+https://ugursportsyayin1.xyz/m/AQ_b_k6Gpqj7Qy0i_yKxcXMFiQaOoKT7G8T88uPqxAD7OMpACFB_8_FO-A
+#EXTINF:-1 tvg-name="Bein Sports 1 TR" tvg-logo="bein-sports-1-4k.png" group-title="Spor", Bein Sports 1 MBYER
+https://ugursportsyayin1.xyz/m/AdT3X0_Bx72c-PfoLhMLMGmXf0KyulWTxebkdj4UY4nh4wrsA5949xWSgg
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1-A" group-title="Spor",BEIN SPORTS 1-A
 https://css.d6e3ess6e065r5.help//beyin1/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="beIN Sports 1" tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", BEIN SPORTS 1-B
@@ -213,6 +70,8 @@ https://andro.evrenesoglu235.click/checklist/androstreamlivebs1.m3u8
 https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/tv247tr/BEIN_SPORTS_2-TV.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3ltQ8.png" group-title="Spor", beIN SPORTS 2 HD-Avva
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/bein2/playlist.m3u8?o=1%26e=1795521714%26tk=c0e7c29c1bce9a6030e0a2601a05ad1c
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3ltQ8.png" group-title="Spor", beIN SPORTS 2 HD-MB
+https://ugursportsyayin1.xyz/m/AbRrzZIB2isA9iNhXX-elOiqBsZTud-BrzGAZoaw7llX4l4nzNKb-NRxZw
 #EXTINF:-1 tvg-id="bein-sports-2" tvg-name="BEIN SPORTS 2-A" group-title="Spor",BEIN SPORTS 2-A
 https://css.d6e3ess6e065r5.help//b2/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="beIN Sports 2" tvg-logo="https://resmim.net/cdn/2026/11/10/H3ltQ8.png" group-title="Spor", BEIN SPORTS 2-B
@@ -230,6 +89,8 @@ https://andro.evrenesoglu235.click/checklist/androstreamlivebs2.m3u8
 https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/tv247tr/BEIN_SPORTS_3-TV.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3l7B6.png" group-title="Spor", beIN SPORTS 3 HD-Avva
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/bein3/playlist.m3u8?o=1%26e=1795521714%26tk=c0e7c29c1bce9a6030e0a2601a05ad1c
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3l7B6.png" group-title="Spor", beIN SPORTS 3 HD-MB
+https://ugursportsyayin1.xyz/m/AVRkUy1tqBU4WTw4EpcJfGKHvMudQpO_hHEGB6oLBBWOh3QxijTdU4d8fg
 #EXTINF:-1 tvg-id="bein-sports-3" tvg-name="BEIN SPORTS 3-A" group-title="Spor",BEIN SPORTS 3-A
 https://css.d6e3ess6e065r5.help//b3/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3l7B6.png" group-title="Spor", BEIN SPORTS 3-B
@@ -247,6 +108,8 @@ https://andro.evrenesoglu235.click/checklist/androstreamlivebs3.m3u8
 https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/tv247tr/BEIN_SPORTS_4-TV.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3l4fZ.png" group-title="Spor", beIN SPORTS 4 HD-Avva
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/bein4/playlist.m3u8?o=1%26e=1795521714%26tk=c0e7c29c1bce9a6030e0a2601a05ad1c
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3l4fZ.png" group-title="Spor", beIN SPORTS 4 HD-MB
+https://ugursportsyayin1.xyz/m/AYQrT7gkQAQ1icThIousImdM-63WjoJad35HzlZALHGv3G-3ZkWcMVCy8Q
 #EXTINF:-1 tvg-id="bein-sports-4" tvg-name="BEIN SPORTS 4-A" group-title="Spor",BEIN SPORTS 4-A
 https://css.d6e3ess6e065r5.help//b4/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3l4fZ.png" group-title="Spor", BEIN SPORTS 4-B
@@ -264,6 +127,8 @@ https://andro.evrenesoglu235.click/checklist/androstreamlivebs4.m3u8
 https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/tv247tr/BEIN_SPORTS_5-TV.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3lQdx.png" group-title="Spor", beIN SPORTS 5 HD-Avva
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/bein5/playlist.m3u8?o=1%26e=1795521714%26tk=c0e7c29c1bce9a6030e0a2601a05ad1c
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3lQdx.png" group-title="Spor", beIN SPORTS 5 HD-MB
+https://ugursportsyayin1.xyz/m/AZ23FRgHsAS9vDqw87NYPrVPle8GMP4jkVC_GAfnkQsx-wyhjP-HC9Qcmg
 #EXTINF:-1 tvg-id="bein-sports-5" tvg-name="BEIN SPORTS 5-A" group-title="Spor",BEIN SPORTS 5-A
 https://css.d6e3ess6e065r5.help//b5/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3lQdx.png" group-title="Spor", BEIN SPORTS 5-B
@@ -278,6 +143,8 @@ https://andro.evrenesoglu235.click/checklist/androstreamlivebs5.m3u8
 
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3lVik.png" group-title="Spor", beIN SPORTS HD MAX 1-Avva
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/beinmax1/playlist.m3u8?o=1%26e=1795521714%26tk=c0e7c29c1bce9a6030e0a2601a05ad1c
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3lVik.png" group-title="Spor", beIN SPORTS HD MAX 1-MB
+https://ugursportsyayin1.xyz/m/AditgajqctYiT1cVqMNgqo8d9TBhpGgUNcAPeBANbW1y-KGna6xcs7bXXg
 #EXTINF:-1 tvg-id="bein-sports-max-1" tvg-name="BEIN SPORTS MAX 1-A" group-title="Spor",BEIN SPORTS MAX 1-A
 https://css.d6e3ess6e065r5.help//bm1/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="BeIN Sport MAX 1" tvg-logo="https://resmim.net/cdn/2026/11/10/H3lVik.png" group-title="Spor", BEIN SPORTS MAX 1-Z
@@ -288,6 +155,9 @@ https://andro.evrenesoglu235.click/checklist/androstreamlivebsm1.m3u8
 
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3l6GF.png" group-title="Spor", beIN SPORTS HD MAX 2-Avva
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/beinmax2/playlist.m3u8?o=1%26e=1795521714%26tk=c0e7c29c1bce9a6030e0a2601a05ad1c
+
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3l6GF.png" group-title="Spor", beIN SPORTS HD MAX 2-MB
+https://ugursportsyayin1.xyz/m/AQwnoaIJtrx7E66uBLJv84mW73rbPhYQpPi94CetKwbYUcyWFE01yDjdYw
 #EXTINF:-1 tvg-id="bein-sports-max-2" tvg-name="BEIN SPORTS MAX 2-A" group-title="Spor",BEIN SPORTS MAX 2-A
 https://css.d6e3ess6e065r5.help//bm2/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="BeIN Sport MAX 2" tvg-logo="https://resmim.net/cdn/2026/11/10/H3l6GF.png" group-title="Spor", BEIN SPORTS MAX 2-Z
@@ -298,18 +168,20 @@ https://andro.evrenesoglu235.click/checklist/androstreamlivebsm2.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor", S SPORT 1-Avva
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/ssport1/playlist.m3u8?o=1%26e=1795521714%26tk=c0e7c29c1bce9a6030e0a2601a05ad1c
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/azfgva3.png" group-title="Spor", S SPORT 1-MB
+https://ugursportsyayin1.xyz/m/ATtYEeFUFLOf-KI04kAsq4o3xF4rdcoflQnlAHSDrcII-5PTOWkWMDiziA
 #EXTINF:-1 tvg-id="s-sport" tvg-name="S SPORT-A" group-title="Spor",S SPORT-A
 https://css.d6e3ess6e065r5.help//ss/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="ssport" tvg-name="S Sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/azfgva3.png" group-title="Spor", S Sport 1-Z
 https://zeus645423.cfd/s1/index.txt
-#EXTINF:-1 tvg-logo="https://i.hizliresim.com/azfgva3.png" group-title="Spor", S SPORT 1-MB
-https://ugursportsyayin1.xyz/m/ATtYEeFUFLOf-KI04kAsq4o3xF4rdcoflQnlAHSDrcII-5PTOWkWMDiziA
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/azfgva3.png" group-title="Spor", S SPORT 1-M
 #EXTVLCOPT:http-referrer=https://mahsunsports34.xyz/
 https://andro.evrenesoglu235.click/checklist/androstreamlivess1.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor", S SPORT 2-Avva
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/ssport2/playlist.m3u8?o=1%26e=1795521714%26tk=c0e7c29c1bce9a6030e0a2601a05ad1c
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/azfgva3.png" group-title="Spor", S SPORT 2-MB
+https://ugursportsyayin1.xyz/m/ASYxFjDf3m6NoMOJqhwq_TDP1EgrpCAoSrA2JqNluFOTW_NehrV9ykI-gA
 #EXTINF:-1 tvg-id="s-sport-2" tvg-name="S SPORT 2-A" group-title="Spor",S SPORT 2-A
 https://css.d6e3ess6e065r5.help//ss2/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="ssport" tvg-name="S Sport 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/bcnszq0.png" group-title="Spor", S Sport 2-Z
