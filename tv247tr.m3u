@@ -281,9 +281,11 @@ https://css.d6e3eds5e065t5.help//trtspor/tracks-v1a1/mono.m3u8
 https://tv-trtspor2.medya.trt.com.tr/master_1440p.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/UGbdQLv.png" group-title="TR Spor", BEİN SPORTS HABER-BS
 https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/581d011667c4dffe502e86d1d4ada601d055561481461714c65cd21595e6a2a1/1795525593/beinhabertr.m3u8
-#EXTINF:-1 tvg-logo="" group-title="TR Spor", A SPOR-MB
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="TR Spor", A SPOR
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="TR Spor", A SPOR-MB
 https://ugursportsyayin1.xyz/m/AUd_Ozq4PAP2MkfGZ0GJ9YgZ7E07-ArQTeVBF5coMDGoZOz2naA7fYx5qQ
-#EXTINF:-1 tvg-id="a-spor" tvg-name="A SPOR-A" group-title="Spor",A SPOR-A
+#EXTINF:-1 tvg-id="a-spor" tvg-name="A SPOR-A" tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Spor",A SPOR-A
 https://css.d6e3ess6e065r5.help//aspor/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="TR Spor", A SPOR-Avva
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/aspor/playlist.m3u8?o=1%26e=1795529119%26tk=d137a262d6b4801ee25a0dd26b28ffac
@@ -417,15 +419,16 @@ https://tv-trt2.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwxg3Q.png" group-title="Ulusal", Kanal D
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal", ATV
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal", ATV-BS
+https://ugursportsyayin1.xyz/m/ATKTYL-QslZ7NI-OMHkGcP3IG8FCP_MlfIChVskYuPs0zOruVxkex7belg
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal", ATV-Avva
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/live/atv/playlist.m3u8?o=1%26e=1795529119%26tk=d137a262d6b4801ee25a0dd26b28ffac
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal", ATV FHD-V
 https://aktif-q65v.onrender.com/play/atv
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwtzw6.png" group-title="Ulusal", ATV FHD-V2
 https://aktif-q65v.onrender.com/play/atv2
-#EXTINF:-1 tvg-logo="" group-title="Ulusal", ATV-BS
-https://pdg854df9gddsfg59xfcg5695df9g85s9fdgsd9f5g95d5fhg9.pokemon596.store/osldfgo9569s6gstreyhdfghsddfg/secure/c673b6923a8aa1de875317c0138b3c9803042c106be883014460570b081e0617/1795525637/atv.m3u8
+
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/HwxYC7.png" group-title="Ulusal", Show Tv
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/10/28/Hwx7EZ.png" group-title="Ulusal", Star Tv
@@ -464,10 +467,12 @@ https://dogus.daioncdn.net/ntv/ntv.m3u8?app=7c4bb802-0c41-409e-8cd2-799984995694
 https://aktif-q65v.onrender.com/play/cnn
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/78/Haberturk_logo.png" group-title="Haber", Haber  Türk
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8
-#EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber", A Haber
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/Bb9HrsDc/Ahaber-Logo.png" group-title="Haber", A Haber
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/Bb9HrsDc/Ahaber-Logo.png" group-title="Haber", A HABER 2
 https://trkvz-live.ercdn.net/ahaberhd/ahaberhd.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/Bb9HrsDc/Ahaber-Logo.png" group-title="Haber", A HABER-MB
+https://ugursportsyayin1.xyz/m/AeW4huhsxpLP3MW3y4nMZ_rS8Y_71aRMMA1WwqgP6fI4BT-P-NW6mCUfUA
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/qg6q0zx.png" group-title="Haber", Haber Global
 https://tv.ensonhaber.com/haberglobal/haberglobal_720p.m3u8
 #EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber", Tv 100
