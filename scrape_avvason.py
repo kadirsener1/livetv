@@ -89,7 +89,7 @@ def update_playlist(link_map, api_names):
             if is_same_name and new_url:
                 new_url = new_url.replace("o=1&e", "o=1%26e")
                 new_url = new_url.replace("&", "%26")
-                prefix = "https://avva.magnitude.workers.dev/?url="
+                prefix = "https://avva.magnitude2.workers.dev/?url="
                 temp_lines[i] = prefix + new_url + "\n"
 
                 if current_extinf_idx is not None:
