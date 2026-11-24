@@ -159,16 +159,25 @@ async def main():
         await browser.close()
 
     # 2. Adım: Bulunan linkleri boss/<kanaladi>.m3u8 dosyalarına ayrı ayrı yaz
-    boss_dir = "boss"
+    boss_dir = os.path.abspath("boss")
     os.makedirs(boss_dir, exist_ok=True)
 
+    written_count = 0
     for ch_name, stream_url in updated_links.items():
         safe_name = ch_name.replace("/", "_").replace("\\", "_")
         channel_file = os.path.join(boss_dir, f"{safe_name}.m3u8")
+        content = (
+            "#EXTM3U\n"
+            "#EXT-X-VERSION:3\n"
+            "#EXT-X-STREAM-INF:BANDWIDTH=8000000\n"
+            f"{stream_url}\n"
+        )
         with open(channel_file, "w", encoding="utf-8") as f:
-            f.write(f"{stream_url}\n")
+            f.write(content)
+        if os.path.exists(channel_file):
+            written_count += 1
 
-    print(f"\nİşlem tamam! {len(updated_links)} kanal linki '{boss_dir}' klasörüne yazıldı.")
+    print(f"\nİşlem tamam! {written_count} kanal linki '{boss_dir}' klasörüne yazıldı.")
 
 if __name__ == "__main__":
     asyncio.run(main())
