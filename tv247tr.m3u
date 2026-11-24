@@ -9,14 +9,14 @@ https://ugursportsyayin1.xyz/m/AQ_b_k6Gpqj7Qy0i_yKxcXMFiQaOoKT7G8T88uPqxAD7OMpAC
 https://ugursportsyayin1.xyz/m/AdT3X0_Bx72c-PfoLhMLMGmXf0KyulWTxebkdj4UY4nh4wrsA5949xWSgg
 
 
-#EXTINF:-1 tvg-name="Bein Sports 1 TR" tvg-logo="bein-sports-1-4k.png" group-title="Spor-BS", Bein Sports 1 TR1
+#EXTINF:-1 tvg-name="Bein Sports 1 TR" tvg-logo="bein-sports-1-4k.png" group-title="Spor-BS", Bein Sports 1 TR2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=5000
 #EXTVLCOPT:live-caching=5000
-https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/boss/BEİN SPORTS 1-BS.m3u8
+https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/boss/BEiNSPORTS1_BS.m3u8
 
-#EXTINF:-1 tvg-name="Bein Sports 2 TR" tvg-logo="bein-sports-2-4k.png" group-title="Spor-BS", Bein Sports 1 TR no vlc
-https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/boss/BEİN SPORTS 1-BS.m3u8
+#EXTINF:-1 tvg-name="Bein Sports 2 TR" tvg-logo="bein-sports-2-4k.png" group-title="Spor-BS", Bein Sports 1 TR no vlc2
+https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/boss/BEiNSPORTS1_BS.m3u8
 
 #EXTINF:-1 tvg-name="Bein Sports 3 TR" tvg-logo="bein-sports-3-4k.png" group-title="Spor-BS", Bein Sports 3 TR
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
