@@ -72,7 +72,8 @@ https://andro.evrenesoglu235.click/checklist/androstreamlivebs1.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Spor", BEİN SPORTS 2-TV
 https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/tv247tr/BEIN_SPORTS_2-TV.m3u8
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3ltQ8.png" group-title="Spor", beIN SPORTS 2 HD-Avva
-https://avvaupdate.com/live/bein2/playlist.m3u8?o=1%26e=1795531498%26tk=c8621d124760b3f4f2bab242b3adc16b
+#EXTVLCOPT:http-referrer=https://avvasportshd1.com/
+https://avvaupdate.com/live/bein2/playlist.m3u8?o=1%26e=
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H3ltQ8.png" group-title="Spor", beIN SPORTS 2 HD-MB
 https://ugursportsyayin1.xyz/m/AbRrzZIB2isA9iNhXX-elOiqBsZTud-BrzGAZoaw7llX4l4nzNKb-NRxZw
 #EXTINF:-1 tvg-id="bein-sports-2" tvg-name="BEIN SPORTS 2-A" group-title="Spor",BEIN SPORTS 2-A
