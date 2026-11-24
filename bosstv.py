@@ -22,6 +22,7 @@ CHANNELS_TO_UPDATE = [
     {
         "name": "BEİN SPORTS 2-BS",  # tv247tr.m3u içerisindeki kanal adı
         "path": "?channel=channel%3Atflix-NjNlZmVjMzI1MGY3NzgyYg"
+        
     },
     {
         "name": "BEİN SPORTS 3-BS",  # tv247tr.m3u içerisindeki kanal adı
