@@ -87,16 +87,3 @@ jobs:
           else
             echo "mahsun için değişiklik yok."
           fi
-
-      # --- 5. Bosstv İŞLEMİ ---
-      - name: Run bosstv Scraper & Save
-        continue-on-error: true
-        run: |
-          python erotr.py
-          git add -A
-          if ! git diff --cached --quiet; then
-            git commit -m "tv247ws linkleri güncellendi [skip ci]"
-            git push
-          else
-            echo "bosstv için değişiklik yok."
-          fi
