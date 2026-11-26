@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=8000000
-https://live.tvnow247.today/live/1010/index.m3u8?v=1&e=1795748524&k=12507247d2ab7ac70beb98783f1403b6&src=r2
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIxMDEwIiwiY2hhaW4iOiJyMiIsInRzIjoxNzk1NjY1Njc3OTYzfQ
