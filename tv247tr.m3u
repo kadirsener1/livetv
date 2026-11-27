@@ -42,10 +42,10 @@ https://aktif-alpha.vercel.app/play/beinsports4kfeeduydu
 #EXTINF:-1 tvg-id="bein-sports-1" tvg-name="BEIN SPORTS 1" tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", Spor Tv
 https://app-kuc5.onrender.com/live/futbol_tv.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Spor", Maç Yayını 1
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", Maç Yayını 1-BS
 https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/tv247tr/1.m3u8
 
-#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", Maç Yayını 1
+#EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", Maç Yayını 2-BS
 https://raw.githubusercontent.com/kadirsener1/livetv/refs/heads/main/tv247tr/2.m3u8
 
 #EXTINF:-1 tvg-logo="https://resmim.net/cdn/2026/11/10/H33d28.png" group-title="Spor", BEİN SPORTS 1-TV
